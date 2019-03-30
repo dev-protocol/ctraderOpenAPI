@@ -7,13 +7,17 @@ Visit https://www.spotware.com/ctrader/trading/ctrader-open-api-trading
 This is a C++ Open API 2.0 client template for those dont want to use C# or Java examples.
 It was compiled in Debian 9 with g++ compiler.
 
-Copy the headers to protobuf folder after install the dependencies:
-cp include/*.h /usr/include/google/protobuf
+Define your credentials in src/credentials.h
 
-Also define your credentials in src/credentials.h
+# Build protobuf compiler
+This example will not compile if you dont have protobuf compiler and the headers in your system. 
+So follow the instructions here: https://developers.google.com/protocol-buffers/docs/cpptutorial
 
-# Dependencies
-apt-get install libssl-dev libprotoc-dev
+The Makefile inside src folder set libraries and headers to /usr/local folder. If you have installed protobuf
+in another folder, change src/Makefile:
 
-# Optional dependencies
-apt-get install protobuf-compiler libprotobuf-c-dev
+// Define protobuf header folder
+OPT += -I /usr/local/include/google/protobuf
+
+// Define protobuf libraries folder
+LIBS += -L /usr/local/lib
