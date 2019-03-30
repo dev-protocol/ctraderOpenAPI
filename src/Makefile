@@ -8,17 +8,18 @@ SRCS = $(FILE1) $(FILE2) $(FILE3)
 
 DEBUG=-g
 OPTIM=0
-#OPTIM=fast
 #OPTIM=3
 
-current_dir = $(shell pwd)
+OPT = -Wall -O$(OPTIM) $(DEBUG)
+OPT += -I../include
+OPT += -Wno-write-strings
+LIBS = -L ../lib -lpthread -lssl -lcrypto -lprotobuf
 
-OPT = -Wall -O$(OPTIM) $(DEBUG) -I../include
-OPT += -Wno-pointer-sign -Wno-write-strings
-LIBS = -L ../lib -lpthread -lssl -lcrypto
+# Define protobuf header folder
+OPT += -I /usr/local/include/google/protobuf
 
-# -levent_openssl
-#LIBS += $(EXTRALIBS)
+# Define protobuf libraries folder
+LIBS += -L /usr/local/lib
 
 CC= g++
 
