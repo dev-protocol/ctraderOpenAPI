@@ -10,6 +10,10 @@
 #include <stdint.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
+#include <netinet/in.h>
+
+#define _BSD_SOURCE
+#include <netdb.h>
 
 #include "OpenApiMessages.pb.h"
 #include "OpenApiModelMessages.pb.h"
@@ -87,6 +91,7 @@ int readSSLSocket(SSL *sslx)
 int openSSLSocket()
 {
     int err = 0;
+    struct hostent *host_entry;
     struct sockaddr_in sa;
     const SSL_METHOD *meth = TLS_client_method();
 
@@ -102,9 +107,10 @@ int openSSLSocket()
     CHK_ERR(sd, "socket");
 
     memset(&sa, 0, sizeof(sa));
+    host_entry = gethostbyname(_apiHost.c_str());
     sa.sin_family      = AF_INET;
-    sa.sin_addr.s_addr = inet_addr (_apiHost.c_str());   /* Server IP */
-    sa.sin_port        = htons     (_apiPort);          /* Server Port number */
+    sa.sin_addr        = *((struct in_addr *)host_entry->h_addr);
+    sa.sin_port        = htons(_apiPort);
 
     err = connect(sd, (struct sockaddr*) &sa,
         sizeof(sa));
