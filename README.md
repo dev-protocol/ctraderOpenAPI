@@ -1,11 +1,11 @@
 # ctraderOpenAPI
-Ctrader Open API C++ client
+Ctrader Open API C++ client template
 
-Ctrader Open API 2.0 is an API created for trading API in any broker supporting Ctrader.
-Visit https://www.spotware.com/ctrader/trading/ctrader-open-api-trading
+Ctrader Open API 2.0 is an API created by Spotware for trading API and can be used in any broker supporting Ctrader.
+Visit https://www.spotware.com/ctrader/trading/ctrader-open-api-trading. 
 
 This is a C++ Open API 2.0 client template for those dont want to use C# or Java examples.
-It was compiled in Debian 9 with g++ compiler.
+It was compiled in Debian 9 with g++ compiler. It should work fine in any Linux system.
 
 Define your credentials in src/credentials.h
 
