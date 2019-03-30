@@ -146,8 +146,8 @@
 #define PROTOBUF_NAMESPACE_CLOSE \
   } /* namespace protobuf */     \
   } /* namespace google */
-//#define PROTOBUF_DEPRECATED
-//#define PROTOBUF_DEPRECATED_MSG(x)
+#define PROTOBUF_DEPRECATED
+#define PROTOBUF_DEPRECATED_MSG(x)
 #define PROTOBUF_SECTION_VARIABLE(x)
 #define PROTOBUF_MUST_USE_RESULT
 
