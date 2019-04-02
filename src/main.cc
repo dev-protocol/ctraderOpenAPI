@@ -17,6 +17,8 @@
 
 #include "OpenApiMessages.pb.h"
 #include "OpenApiModelMessages.pb.h"
+#include "OpenApiCommonMessages.pb.h"
+#include "OpenApiCommonModelMessages.pb.h"
 #include "credentials.h"
 
 #define CHK_NULL(x) if ((x)==NULL) exit (1)
@@ -136,6 +138,21 @@ int openSSLSocket()
 
     return err;
 }
+
+/*void transmit(ProtoMessage msg)
+{
+    var msgByteArray = msg.ToByteArray();
+    byte[] length = BitConverter.GetBytes(msgByteArray.Length).Reverse().ToArray();
+    _apiSocket.Write(length);
+    _apiSocket.Write(msgByteArray);
+}
+
+void authorizeApplication()
+{
+    var msgFactory = new OpenApiMessagesFactory();
+    var msg = msgFactory.CreateAppAuthorizationRequest(clientId, clientSecret);
+    transmit(msg);
+}*/
 
 int main(int argc, char* argv[])
 {
