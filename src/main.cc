@@ -19,6 +19,7 @@
 #include "OpenApiModelMessages.pb.h"
 #include "OpenApiCommonMessages.pb.h"
 #include "OpenApiCommonModelMessages.pb.h"
+#include "OpenApiMessagesFactory.h"
 #include "credentials.h"
 
 #define CHK_NULL(x) if ((x)==NULL) exit (1)
@@ -83,9 +84,10 @@ int writeSSLSocket(SSL *sslx, string msg)
 
 int readSSLSocket(SSL *sslx)
 {
+    memset(buf, 0, sizeof(buf));
     int err = SSL_read (sslx, buf, sizeof(buf) - 1);
     CHK_SSL(err);
-    buf[err] = '\0';
+    //buf[err] = '\0';
     printf ("Got %d chars:'%s'\n", err, buf);
     return err;
 }
@@ -139,30 +141,43 @@ int openSSLSocket()
     return err;
 }
 
-/*void transmit(ProtoMessage msg)
+void transmit(ProtoMessage msg)
 {
-    var msgByteArray = msg.ToByteArray();
-    byte[] length = BitConverter.GetBytes(msgByteArray.Length).Reverse().ToArray();
-    _apiSocket.Write(length);
-    _apiSocket.Write(msgByteArray);
+    string msgStr;
+    msg.SerializeToString(&msgStr);
+    cout << "Msg: " << msgStr << endl;
+    writeSSLSocket(ssl, msgStr);
 }
 
 void authorizeApplication()
 {
-    var msgFactory = new OpenApiMessagesFactory();
-    var msg = msgFactory.CreateAppAuthorizationRequest(clientId, clientSecret);
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage msg = msgFactory.CreateAppAuthorizationRequest(clientId,
+                        clientSecret);
     transmit(msg);
-}*/
+}
 
 int main(int argc, char* argv[])
 {
-    clientId = "777";
+    char opt;
+    clientId = CLIID;
     clientSecret = CLSECRET;
     accessToken = ACCTOKEN;
     _accountID = ACCID;
 
     openSSLSocket();
-    readSSLSocket(ssl);
+    while (1) {
+        cout << "1 - Authorize App\n2 - Authorize Account\n";
+        cin >> opt;
+        switch(opt)
+        {
+            case '1':
+                authorizeApplication();
+                break;
+        }
+        readSSLSocket(ssl);
+        readSSLSocket(ssl);
+    }
 
     SSL_shutdown (ssl);  /* send SSL/TLS close_notify */
     /* Clean up. */

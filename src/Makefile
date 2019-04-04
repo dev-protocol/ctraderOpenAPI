@@ -3,9 +3,11 @@ PROG = openApiClient
 FILE1 = main.cc
 FILE2 = OpenApiMessages.pb.cc
 FILE3 = OpenApiModelMessages.pb.cc
-FILE4 = OpenApiMessagesFactory.cc
+FILE4 = OpenApiCommonMessages.pb.cc
+FILE5 = OpenApiCommonModelMessages.pb.cc
+FILE6 = OpenApiMessagesFactory.cc
 
-SRCS = $(FILE1) $(FILE2) $(FILE3) $(FILE4)
+SRCS = $(FILE1) $(FILE2) $(FILE3) $(FILE4) $(FILE5) $(FILE6)
 
 DEBUG=-g
 OPTIM=0

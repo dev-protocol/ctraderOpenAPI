@@ -3,37 +3,46 @@
 #include "OpenApiModelMessages.pb.h"
 #include "OpenApiCommonMessages.pb.h"
 #include "OpenApiCommonModelMessages.pb.h"
+#include "OpenApiMessagesFactory.h"
 
 using namespace std;
 
-class OpenApiMessagesFactory
+
+ProtoMessage OpenApiMessagesFactory::CreateMessage(uint payloadType,
+    string &payload, string &clientMsgId)
 {
-    uint lastMessagePayloadType = 0;
-    string lastMessagePayload = nullptr;
+    //auto protoMsg = ProtoMessage.CreateBuilder();
+    ProtoMessage protoMsg;
+    protoMsg.set_payloadtype(payloadType);
 
-public:
-    ProtoMessage CreateMessage(uint payloadType, ByteString payload = nullptr,
-                string clientMsgId = nullptr)
-    {
-        //auto protoMsg = ProtoMessage.CreateBuilder();
-        ProtoMessage protoMsg;
-        protoMsg.set_payloadtype(payloadType);
+    //if (payload != nullptr)
+        protoMsg.set_payload(payload);
+    //if (clientMsgId != nullptr)
+        protoMsg.set_clientmsgid(clientMsgId);
 
-        if (payload != nullptr)
-            protoMsg.set_payload(payload);
-        if (clientMsgId != nullptr)
-            protoMsg.set_clientmsgid(clientMsgId);
+    return protoMsg;
+}
 
-        return protoMsg;
-    }
+ProtoMessage OpenApiMessagesFactory::CreateMessage(uint payloadType,
+                string &payload)
+{
+    //auto protoMsg = ProtoMessage.CreateBuilder();
+    ProtoMessage protoMsg;
+    protoMsg.set_payloadtype(payloadType);
 
-    ProtoMessage CreateAppAuthorizationRequest(string clientId,
-        string clientSecret, string clientMsgId = nullptr)
-    {
-        ProtoOAApplicationAuthReq _msg;
-        _msg.set_clientid(clientId);
-        _msg.set_clientsecret(clientSecret);
-        return CreateMessage(_msg.payloadtype_,
-                _msg.ToByteString(), clientMsgId);
-    }
+    //if (payload != nullptr)
+    protoMsg.set_payload(payload);
+
+    return protoMsg;
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateAppAuthorizationRequest(string clientId,
+    string clientSecret)
+{
+    ProtoOAApplicationAuthReq _msg;
+    string msg_str;
+    _msg.set_clientid(clientId);
+    _msg.set_clientsecret(clientSecret);
+    _msg.SerializeToString(&msg_str);
+    return CreateMessage(_msg.payloadtype(), msg_str);
 }
