@@ -12,6 +12,12 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
 
+#include <google/protobuf/message.h>
+#include <google/protobuf/descriptor.h>
+#include <google/protobuf/io/zero_copy_stream_impl.h>
+#include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/io/zero_copy_stream_impl_lite.h>
+
 #define _BSD_SOURCE
 #include <netdb.h>
 
@@ -26,6 +32,7 @@
 #define CHK_ERR(err,s) if ((err)==-1) { perror(s); exit(1); }
 #define CHK_SSL(err) if ((err)==-1) { ERR_print_errors_fp(stderr); exit(2); }
 
+using namespace google::protobuf::io;
 using namespace std;
 
 // ctrader vars
@@ -55,6 +62,10 @@ void printfCertInfo(SSL *sslx)
 {
     char*    str;
     X509*    server_cert;
+    //EVP_PKEY *pubkey;
+    //int pkeyLen;
+    //unsigned char *ucBuf, *uctempBuf;
+
     server_cert = SSL_get_peer_certificate (sslx);
     CHK_NULL(server_cert);
     printf ("Server certificate:\n");
@@ -67,6 +78,19 @@ void printfCertInfo(SSL *sslx)
     str = X509_NAME_oneline (X509_get_issuer_name  (server_cert),0,0);
     CHK_NULL(str);
     printf ("\t issuer: %s\n", str);
+
+    /*pubkey = X509_get_pubkey (server_cert);
+    pkeyLen = i2d_PublicKey(pubkey, NULL);
+    ucBuf = (unsigned char *)malloc(pkeyLen+1);
+    uctempBuf = ucBuf;
+    i2d_PublicKey(pubkey, &uctempBuf);
+    for (int i = 0; i < pkeyLen; i++)
+    {
+        printf("%02x ", (unsigned char) ucBuf[i]);
+    }
+    free(ucBuf);
+    putchar('\n');*/
+
     OPENSSL_free (str);
 
     /* We could do all sorts of certificate verification stuff here before
@@ -75,12 +99,12 @@ void printfCertInfo(SSL *sslx)
     X509_free (server_cert);
 }
 
-int writeSSLSocket(SSL *sslx, string msg)
+int writeSSLSocket(SSL *sslx, char *msg)
 {
     int err = 0;
     /* --------------------------------------------------- */
     /* DATA EXCHANGE - Send a message and receive a reply. */
-    err = SSL_write (sslx, msg.c_str(), strlen(msg.c_str()));
+    err = SSL_write (sslx, msg, strlen(msg));
     CHK_SSL(err);
 
     return err;
@@ -131,11 +155,7 @@ int openSSLSocket()
     err = SSL_connect (ssl);
     CHK_SSL(err);
 
-    /* Following two steps are optional and not required for
-        data exchange to be successful. */
-
     /* Get the cipher - opt */
-
     printf ("SSL connection using %s\n", SSL_get_cipher (ssl));
 
     /* Get server's certificate (note: beware of dynamic allocation) - opt */
@@ -149,9 +169,16 @@ int openSSLSocket()
 void transmit(ProtoMessage msg)
 {
     string msgStr;
-    msg.SerializeToString(&msgStr);
-    cout << "Msg: " << msgStr << endl;
-    writeSSLSocket(ssl, msgStr);
+    int siz = msg.ByteSize();
+    char *pkt = new char [siz];
+    google::protobuf::io::ArrayOutputStream aos(pkt,siz);
+    //
+    printf("Msg(%d): ", siz);
+    for(int i = 0; i < 5; i++) {
+        printf("%d ", pkt[i]);
+    }
+    cout << "\n";
+    writeSSLSocket(ssl, pkt);
 }
 
 void authorizeApplication()
@@ -165,22 +192,31 @@ void authorizeApplication()
 void *read_task(void *arg)
 {
     int ret = 0;
-    int lenght;
+    int lenght, num;
     OpenApiMessagesFactory msgFactory;
     ProtoMessage protoMessage;
     while (1)
     {
         lenght = 0;
         ret = readSSLSocket(ssl);
-        if (ret > 0)
-            memcpy(&lenght, buf, 4);
+        if (ret > 0) {
+            memcpy(&num, buf, 4);
+            // big endian to little endian
+            lenght = ((num>>24)&0xff) | // move byte 3 to byte 0
+                    ((num<<8)&0xff0000) | // move byte 1 to byte 2
+                    ((num>>8)&0xff00) | // move byte 2 to byte 1
+                    ((num<<24)&0xff000000); // byte 0 to byte 3
+        }
         if (lenght > 0) {
             printf("lenght: %d\n", lenght);
             if (lenght > MaxMessageSize) {
                 cout << "Invalid lenght\n";
                 continue;
             }
-            string _message(buf + 4);
+            ret = readSSLSocket(ssl);
+            if (ret != lenght)
+                continue;
+            string _message(buf);
             protoMessage = msgFactory.GetMessage(_message);
             //
             switch ((ProtoOAPayloadType)protoMessage.payloadtype())

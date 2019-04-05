@@ -47,5 +47,12 @@ ProtoMessage OpenApiMessagesFactory::CreateAppAuthorizationRequest(string client
     _msg.set_clientid(clientId);
     _msg.set_clientsecret(clientSecret);
     _msg.SerializeToString(&msg_str);
+    //
+    cout << "Payload: ";
+    for(int i = 0; i < 5; i++) {
+        printf("%d ", msg_str[i]);
+    }
+    cout << "\n";
+    //
     return CreateMessage(_msg.payloadtype(), msg_str);
 }
