@@ -13,6 +13,9 @@ class OpenApiMessagesFactory
     string lastMessagePayload;
 
 public:
+
+    ProtoMessage GetMessage(string msg);
+
     ProtoMessage CreateMessage(uint payloadType, string &payload,
                 string &clientMsgId);
 

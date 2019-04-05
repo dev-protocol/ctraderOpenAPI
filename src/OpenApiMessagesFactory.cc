@@ -7,18 +7,23 @@
 
 using namespace std;
 
+ProtoMessage OpenApiMessagesFactory::GetMessage(string msg)
+{
+    ProtoMessage _msg;
+    _msg.ParseFromString(msg);
+    lastMessagePayloadType = _msg.payloadtype();
+    lastMessagePayload = _msg.payload();
+    return _msg;
+}
 
 ProtoMessage OpenApiMessagesFactory::CreateMessage(uint payloadType,
     string &payload, string &clientMsgId)
 {
-    //auto protoMsg = ProtoMessage.CreateBuilder();
     ProtoMessage protoMsg;
-    protoMsg.set_payloadtype(payloadType);
 
-    //if (payload != nullptr)
-        protoMsg.set_payload(payload);
-    //if (clientMsgId != nullptr)
-        protoMsg.set_clientmsgid(clientMsgId);
+    protoMsg.set_payloadtype(payloadType);
+    protoMsg.set_payload(payload);
+    protoMsg.set_clientmsgid(clientMsgId);
 
     return protoMsg;
 }
@@ -26,11 +31,9 @@ ProtoMessage OpenApiMessagesFactory::CreateMessage(uint payloadType,
 ProtoMessage OpenApiMessagesFactory::CreateMessage(uint payloadType,
                 string &payload)
 {
-    //auto protoMsg = ProtoMessage.CreateBuilder();
     ProtoMessage protoMsg;
-    protoMsg.set_payloadtype(payloadType);
 
-    //if (payload != nullptr)
+    protoMsg.set_payloadtype(payloadType);
     protoMsg.set_payload(payload);
 
     return protoMsg;

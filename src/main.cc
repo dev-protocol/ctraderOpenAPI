@@ -41,11 +41,15 @@ long testPositionId = -1;
 //IList<ProtoOACtidTraderAccount> _accounts;
 //List<ProtoOATrader> _traders;
 
+pthread_t thread_sslread;
+pthread_attr_t tattr;
+
 // SSL vars
 int sd;
 SSL_CTX* ctx;
 SSL*     ssl;
 char buf[4096];
+
 
 void printfCertInfo(SSL *sslx)
 {
@@ -88,7 +92,6 @@ int readSSLSocket(SSL *sslx)
     int err = SSL_read (sslx, buf, sizeof(buf) - 1);
     CHK_SSL(err);
     //buf[err] = '\0';
-    printf ("Got %d chars:'%s'\n", err, buf);
     return err;
 }
 
@@ -141,6 +144,8 @@ int openSSLSocket()
     return err;
 }
 
+
+
 void transmit(ProtoMessage msg)
 {
     string msgStr;
@@ -157,6 +162,65 @@ void authorizeApplication()
     transmit(msg);
 }
 
+void *read_task(void *arg)
+{
+    int ret = 0;
+    int lenght;
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage protoMessage;
+    while (1)
+    {
+        lenght = 0;
+        ret = readSSLSocket(ssl);
+        if (ret > 0)
+            memcpy(&lenght, buf, 4);
+        if (lenght > 0) {
+            printf("lenght: %d\n", lenght);
+            if (lenght > MaxMessageSize) {
+                cout << "Invalid lenght\n";
+                continue;
+            }
+            string _message(buf + 4);
+            protoMessage = msgFactory.GetMessage(_message);
+            //
+            switch ((ProtoOAPayloadType)protoMessage.payloadtype())
+            {
+                case PROTO_OA_EXECUTION_EVENT:
+                    cout << "Event\n";
+                    /*var _payload_msg = msgFactory.GetExecutionEvent(_message);
+                    if (_payload_msg.HasOrder)
+                    {
+                        testOrderId = _payload_msg.Order.OrderId;
+                    }
+                    if (_payload_msg.HasPosition)
+                    {
+                        testPositionId = _payload_msg.Position.PositionId;
+                    }*/
+                    break;
+
+                case PROTO_OA_GET_ACCOUNTS_BY_ACCESS_TOKEN_RES:
+                    cout << "TokenRes\n";
+                    //var _accounts_list = ProtoOAGetAccountListByAccessTokenRes.CreateBuilder().MergeFrom(protoMessage.Payload).Build();
+                    //_accounts = _accounts_list.CtidTraderAccountList;
+
+                    break;
+
+                case PROTO_OA_TRADER_RES:
+                    cout << "TraderResp\n";
+                    //var trader = ProtoOATraderRes.CreateBuilder().MergeFrom(protoMessage.Payload).Build();
+                    //_traders.Add(trader.Trader);
+                    break;
+
+                default:
+                    break;
+            }
+            //
+        }
+        usleep(100000);
+    }
+    pthread_exit(&ret);
+}
+
 int main(int argc, char* argv[])
 {
     char opt;
@@ -165,7 +229,11 @@ int main(int argc, char* argv[])
     accessToken = ACCTOKEN;
     _accountID = ACCID;
 
+    pthread_attr_init(&tattr);
+    pthread_attr_setdetachstate(&tattr, PTHREAD_CREATE_DETACHED);
+    //
     openSSLSocket();
+    pthread_create(&thread_sslread, &tattr, read_task, NULL);
     while (1) {
         cout << "1 - Authorize App\n2 - Authorize Account\n";
         cin >> opt;
@@ -175,8 +243,6 @@ int main(int argc, char* argv[])
                 authorizeApplication();
                 break;
         }
-        readSSLSocket(ssl);
-        readSSLSocket(ssl);
     }
 
     SSL_shutdown (ssl);  /* send SSL/TLS close_notify */
