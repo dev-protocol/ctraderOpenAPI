@@ -75,23 +75,10 @@ void printfCertInfo(SSL *sslx)
     printf ("\t subject: %s\n", str);
     OPENSSL_free (str);
 
-    str = X509_NAME_oneline (X509_get_issuer_name  (server_cert),0,0);
-    CHK_NULL(str);
-    printf ("\t issuer: %s\n", str);
-
-    /*pubkey = X509_get_pubkey (server_cert);
-    pkeyLen = i2d_PublicKey(pubkey, NULL);
-    ucBuf = (unsigned char *)malloc(pkeyLen+1);
-    uctempBuf = ucBuf;
-    i2d_PublicKey(pubkey, &uctempBuf);
-    for (int i = 0; i < pkeyLen; i++)
-    {
-        printf("%02x ", (unsigned char) ucBuf[i]);
-    }
-    free(ucBuf);
-    putchar('\n');*/
-
-    OPENSSL_free (str);
+    //str = X509_NAME_oneline (X509_get_issuer_name  (server_cert),0,0);
+    //CHK_NULL(str);
+    //printf ("\t issuer: %s\n", str);
+    //OPENSSL_free (str);
 
     /* We could do all sorts of certificate verification stuff here before
         deallocating the certificate. */
@@ -99,12 +86,12 @@ void printfCertInfo(SSL *sslx)
     X509_free (server_cert);
 }
 
-int writeSSLSocket(SSL *sslx, char *msg)
+int writeSSLSocket(SSL *sslx, char *msg, uint16_t size)
 {
     int err = 0;
     /* --------------------------------------------------- */
     /* DATA EXCHANGE - Send a message and receive a reply. */
-    err = SSL_write (sslx, msg, strlen(msg));
+    err = SSL_write (sslx, msg, size);
     CHK_SSL(err);
 
     return err;
@@ -159,26 +146,31 @@ int openSSLSocket()
     printf ("SSL connection using %s\n", SSL_get_cipher (ssl));
 
     /* Get server's certificate (note: beware of dynamic allocation) - opt */
-    printfCertInfo(ssl);
+    //printfCertInfo(ssl);
 
     return err;
 }
 
-
-
 void transmit(ProtoMessage msg)
 {
     string msgStr;
-    int siz = msg.ByteSize();
-    char *pkt = new char [siz];
-    google::protobuf::io::ArrayOutputStream aos(pkt,siz);
+    unsigned char sizeArray[4];
+    int size = msg.ByteSize();
+    unsigned char *pkt = new unsigned char [size];
+    //google::protobuf::io::ArrayOutputStream aos(pkt,size);
+    msg.SerializeToArray(pkt, size);
     //
-    printf("Msg(%d): ", siz);
-    for(int i = 0; i < 5; i++) {
-        printf("%d ", pkt[i]);
+    printf("Msg(%u): ", size);
+    for(int i = 0; i < 10; i++) {
+        printf("%u ", pkt[i]);
     }
     cout << "\n";
-    writeSSLSocket(ssl, pkt);
+    //
+    size = htonl(size);
+    memcpy(sizeArray, &size, 4);
+    //
+    writeSSLSocket(ssl, (char*)sizeArray, 4);
+    writeSSLSocket(ssl, (char*)pkt, msg.ByteSize());
 }
 
 void authorizeApplication()
@@ -202,25 +194,19 @@ void *read_task(void *arg)
         if (ret > 0) {
             memcpy(&num, buf, 4);
             // big endian to little endian
-            lenght = ((num>>24)&0xff) | // move byte 3 to byte 0
-                    ((num<<8)&0xff0000) | // move byte 1 to byte 2
-                    ((num>>8)&0xff00) | // move byte 2 to byte 1
-                    ((num<<24)&0xff000000); // byte 0 to byte 3
-        }
-        if (lenght > 0) {
+            lenght = ntohl(num);
             printf("lenght: %d\n", lenght);
-            if (lenght > MaxMessageSize) {
-                cout << "Invalid lenght\n";
-                continue;
-            }
-            ret = readSSLSocket(ssl);
-            if (ret != lenght)
-                continue;
-            string _message(buf);
+        }
+        if (lenght > 4) {
+            string _message(buf+4);
             protoMessage = msgFactory.GetMessage(_message);
             //
-            switch ((ProtoOAPayloadType)protoMessage.payloadtype())
+            switch (protoMessage.payloadtype())
             {
+                case PROTO_OA_APPLICATION_AUTH_RES:
+                    cout << "Auth res\n";
+                    break;
+
                 case PROTO_OA_EXECUTION_EVENT:
                     cout << "Event\n";
                     /*var _payload_msg = msgFactory.GetExecutionEvent(_message);
