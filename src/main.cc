@@ -181,6 +181,14 @@ void authorizeApplication()
     transmit(msg);
 }
 
+void authorizeAccount()
+{
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage msg = msgFactory.CreateAccAuthorizationRequest(accessToken,
+                        _accountID);
+    transmit(msg);
+}
+
 void *read_task(void *arg)
 {
     int ret = 0;
@@ -207,6 +215,12 @@ void *read_task(void *arg)
                     cout << "Auth res\n";
                     break;
 
+                case PROTO_OA_TRADER_RES:
+                    cout << "TraderResp\n";
+                    //var trader = ProtoOATraderRes.CreateBuilder().MergeFrom(protoMessage.Payload).Build();
+                    //_traders.Add(trader.Trader);
+                    break;
+
                 case PROTO_OA_EXECUTION_EVENT:
                     cout << "Event\n";
                     /*var _payload_msg = msgFactory.GetExecutionEvent(_message);
@@ -220,17 +234,16 @@ void *read_task(void *arg)
                     }*/
                     break;
 
+                case PROTO_OA_ERROR_RES:
+                    cout << "Error\n";
+                    cout << "Payload: " << msgFactory.getLastMessage() << endl;
+                    break;
+
                 case PROTO_OA_GET_ACCOUNTS_BY_ACCESS_TOKEN_RES:
                     cout << "TokenRes\n";
                     //var _accounts_list = ProtoOAGetAccountListByAccessTokenRes.CreateBuilder().MergeFrom(protoMessage.Payload).Build();
                     //_accounts = _accounts_list.CtidTraderAccountList;
 
-                    break;
-
-                case PROTO_OA_TRADER_RES:
-                    cout << "TraderResp\n";
-                    //var trader = ProtoOATraderRes.CreateBuilder().MergeFrom(protoMessage.Payload).Build();
-                    //_traders.Add(trader.Trader);
                     break;
 
                 default:
@@ -263,6 +276,9 @@ int main(int argc, char* argv[])
         {
             case '1':
                 authorizeApplication();
+                break;
+            case '2':
+                authorizeAccount();
                 break;
         }
     }

@@ -7,6 +7,11 @@
 
 using namespace std;
 
+string OpenApiMessagesFactory::getLastMessage(void)
+{
+    return lastMessagePayload;
+}
+
 ProtoMessage OpenApiMessagesFactory::GetMessage(string msg)
 {
     ProtoMessage _msg;
@@ -47,12 +52,18 @@ ProtoMessage OpenApiMessagesFactory::CreateAppAuthorizationRequest(string client
     _msg.set_clientid(clientId);
     _msg.set_clientsecret(clientSecret);
     _msg.SerializeToString(&msg_str);
-    //
-    cout << "Payload: ";
-    for(int i = 0; i < 5; i++) {
-        printf("%d ", msg_str[i]);
-    }
-    cout << "\n";
-    //
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateAccAuthorizationRequest(string token,
+    long accountId)
+{
+    ProtoOAAccountAuthReq _msg;
+    string msg_str;
+    _msg.set_accesstoken(token);
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.SerializeToString(&msg_str);
+
     return CreateMessage(_msg.payloadtype(), msg_str);
 }
