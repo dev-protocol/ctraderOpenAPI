@@ -24,4 +24,5 @@ public:
         string clientSecret);
     ProtoMessage CreateAccAuthorizationRequest(string token,
         long accountId);
+    ProtoMessage CreateAccountListRequest(string token);
 };

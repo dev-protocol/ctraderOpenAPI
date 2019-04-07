@@ -67,3 +67,13 @@ ProtoMessage OpenApiMessagesFactory::CreateAccAuthorizationRequest(string token,
 
     return CreateMessage(_msg.payloadtype(), msg_str);
 }
+
+ProtoMessage OpenApiMessagesFactory::CreateAccountListRequest(string token)
+{
+    ProtoOAGetAccountListByAccessTokenReq _msg;
+    string msg_str;
+    _msg.set_accesstoken(token);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}

@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <list>
+#include <iterator>
 #include <openssl/crypto.h>
 #include <openssl/x509.h>
 #include <openssl/pem.h>
@@ -45,11 +47,13 @@ int _apiPort = 5035;
 int MaxMessageSize = 1000000;
 long testOrderId = -1;
 long testPositionId = -1;
-//IList<ProtoOACtidTraderAccount> _accounts;
-//List<ProtoOATrader> _traders;
+list <ProtoOACtidTraderAccount> _accounts;
+list <ProtoOATrader> _traders;
 
 pthread_t thread_sslread;
 pthread_attr_t tattr;
+pthread_mutex_t mutex_resp;
+pthread_cond_t wait_resp;
 
 // SSL vars
 int sd;
@@ -189,12 +193,25 @@ void authorizeAccount()
     transmit(msg);
 }
 
+void getAccountsList()
+{
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage msg = msgFactory.CreateAccountListRequest(accessToken);
+    transmit(msg);
+    // Wait for response
+    //pthread_mutex_lock(&mutex_resp);
+    //pthread_cond_wait(&wait_resp, &mutex_resp);
+    //pthread_mutex_unlock(&mutex_resp);
+}
+
 void *read_task(void *arg)
 {
     int ret = 0;
     int lenght, num;
+    int msgType = 0;
     OpenApiMessagesFactory msgFactory;
     ProtoMessage protoMessage;
+    ProtoOAGetAccountListByAccessTokenRes _accounts_list;
     while (1)
     {
         lenght = 0;
@@ -205,14 +222,20 @@ void *read_task(void *arg)
             lenght = ntohl(num);
             printf("lenght: %d\n", lenght);
         }
-        if (lenght > 4) {
+        if (lenght > 0) {
             string _message(buf+4);
             protoMessage = msgFactory.GetMessage(_message);
+            msgType = protoMessage.payloadtype();
+            cout << "MsgType: " << msgType << endl;
             //
-            switch (protoMessage.payloadtype())
+            switch (msgType)
             {
                 case PROTO_OA_APPLICATION_AUTH_RES:
-                    cout << "Auth res\n";
+                    cout << "App Auth res\n";
+                    break;
+
+                case PROTO_OA_ACCOUNT_AUTH_RES:
+                    cout << "Acc Auth res\n";
                     break;
 
                 case PROTO_OA_TRADER_RES:
@@ -240,10 +263,12 @@ void *read_task(void *arg)
                     break;
 
                 case PROTO_OA_GET_ACCOUNTS_BY_ACCESS_TOKEN_RES:
-                    cout << "TokenRes\n";
-                    //var _accounts_list = ProtoOAGetAccountListByAccessTokenRes.CreateBuilder().MergeFrom(protoMessage.Payload).Build();
-                    //_accounts = _accounts_list.CtidTraderAccountList;
-
+                    cout << "Acc TokenRes\n";
+                    cout << "Msg " << protoMessage.payload() << endl;
+                    _accounts_list.MergeFrom(protoMessage);
+                    for (int i = 0; i < _accounts_list.ctidtraderaccount_size(); i++) {
+                        _accounts.push_back(_accounts_list.ctidtraderaccount(i));
+                    }
                     break;
 
                 default:
@@ -264,13 +289,15 @@ int main(int argc, char* argv[])
     accessToken = ACCTOKEN;
     _accountID = ACCID;
 
+    pthread_mutex_init(&mutex_resp, NULL);
+    pthread_cond_init(&wait_resp, NULL);
     pthread_attr_init(&tattr);
     pthread_attr_setdetachstate(&tattr, PTHREAD_CREATE_DETACHED);
     //
     openSSLSocket();
     pthread_create(&thread_sslread, &tattr, read_task, NULL);
     while (1) {
-        cout << "1 - Authorize App\n2 - Authorize Account\n";
+        cout << "1- Authorize App\n2- getAccountsList\n3- Authorize Account\n";
         cin >> opt;
         switch(opt)
         {
@@ -278,6 +305,9 @@ int main(int argc, char* argv[])
                 authorizeApplication();
                 break;
             case '2':
+                getAccountsList();
+                break;
+            case '3':
                 authorizeAccount();
                 break;
         }
