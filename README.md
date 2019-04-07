@@ -11,7 +11,7 @@ Define your credentials in src/credentials.h
 
 # Build protobuf compiler
 This example will not compile if you dont have protobuf compiler and the headers in your system. 
-So follow the instructions here: https://developers.google.com/protocol-buffers/docs/cpptutorial
+So follow the instructions here: https://github.com/protocolbuffers/protobuf/blob/master/src/README.md
 
 The Makefile inside src folder set libraries and headers to /usr/local folder. If you have installed protobuf
 in another folder, change src/Makefile:
