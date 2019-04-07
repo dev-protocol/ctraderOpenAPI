@@ -77,3 +77,33 @@ ProtoMessage OpenApiMessagesFactory::CreateAccountListRequest(string token)
 
     return CreateMessage(_msg.payloadtype(), msg_str);
 }
+
+ProtoMessage OpenApiMessagesFactory::CreateSubscribeForSpotsRequest(
+        long accountId, int symbolId)
+{
+    ProtoOASubscribeSpotsReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.add_symbolid(symbolId);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateUnsubscribeFromSpotsRequest(
+    long accountId,int symbolId)
+{
+    ProtoOAUnsubscribeSpotsReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.add_symbolid(symbolId);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoOAExecutionEvent OpenApiMessagesFactory::GetExecutionEvent(string msg)
+{
+    ProtoOAExecutionEvent _msg;
+    return _msg; //.MergeFrom(msg);
+}

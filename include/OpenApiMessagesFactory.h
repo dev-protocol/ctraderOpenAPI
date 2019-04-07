@@ -25,4 +25,8 @@ public:
     ProtoMessage CreateAccAuthorizationRequest(string token,
         long accountId);
     ProtoMessage CreateAccountListRequest(string token);
+    ProtoMessage CreateSubscribeForSpotsRequest(long accountId, int symbolId);
+    ProtoMessage CreateUnsubscribeFromSpotsRequest(long accountId,int symbolId);
+
+    ProtoOAExecutionEvent GetExecutionEvent(string msg);
 };

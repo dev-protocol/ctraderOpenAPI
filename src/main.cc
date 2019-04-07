@@ -161,15 +161,8 @@ void transmit(ProtoMessage msg)
     unsigned char sizeArray[4];
     int size = msg.ByteSize();
     unsigned char *pkt = new unsigned char [size];
-    //google::protobuf::io::ArrayOutputStream aos(pkt,size);
+
     msg.SerializeToArray(pkt, size);
-    //
-    printf("Msg(%u): ", size);
-    for(int i = 0; i < 10; i++) {
-        printf("%u ", pkt[i]);
-    }
-    cout << "\n";
-    //
     size = htonl(size);
     memcpy(sizeArray, &size, 4);
     //
@@ -204,14 +197,29 @@ void getAccountsList()
     //pthread_mutex_unlock(&mutex_resp);
 }
 
+void subscribeForSpots()
+{
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage msg = msgFactory.CreateSubscribeForSpotsRequest(_accountID, 1);
+    transmit(msg);
+}
+
+void unSubscribeFromSpots()
+{
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage msg = msgFactory.CreateUnsubscribeFromSpotsRequest(_accountID, 1);
+    transmit(msg);
+}
+
 void *read_task(void *arg)
 {
     int ret = 0;
     int lenght, num;
     int msgType = 0;
+    string msgStr;
     OpenApiMessagesFactory msgFactory;
     ProtoMessage protoMessage;
-    ProtoOAGetAccountListByAccessTokenRes _accounts_list;
+
     while (1)
     {
         lenght = 0;
@@ -245,16 +253,23 @@ void *read_task(void *arg)
                     break;
 
                 case PROTO_OA_EXECUTION_EVENT:
-                    cout << "Event\n";
-                    /*var _payload_msg = msgFactory.GetExecutionEvent(_message);
-                    if (_payload_msg.HasOrder)
                     {
-                        testOrderId = _payload_msg.Order.OrderId;
+                        cout << "Event\n";
+                        protoMessage.SerializeToString(&msgStr);
+                        /*ProtoOAExecutionEvent _payload_msg =
+                                msgFactory.GetExecutionEvent(msgStr);
+                        if (_payload_msg.has_order())
+                        {
+                            testOrderId = _payload_msg.order.OrderId;
+                        }
+                        if (_payload_msg.has_position())
+                        {
+                            testPositionId = _payload_msg.position.PositionId;
+                        }*/
                     }
-                    if (_payload_msg.HasPosition)
-                    {
-                        testPositionId = _payload_msg.Position.PositionId;
-                    }*/
+                    break;
+
+                case PROTO_OA_SPOT_EVENT:
                     break;
 
                 case PROTO_OA_ERROR_RES:
@@ -263,12 +278,15 @@ void *read_task(void *arg)
                     break;
 
                 case PROTO_OA_GET_ACCOUNTS_BY_ACCESS_TOKEN_RES:
+                {
                     cout << "Acc TokenRes\n";
-                    cout << "Msg " << protoMessage.payload() << endl;
-                    _accounts_list.MergeFrom(protoMessage);
-                    for (int i = 0; i < _accounts_list.ctidtraderaccount_size(); i++) {
-                        _accounts.push_back(_accounts_list.ctidtraderaccount(i));
+                    ProtoOAGetAccountListByAccessTokenRes _acc_list;
+                    //protoMessage.SerializeToString(&msgStr);
+                    _acc_list.MergeFrom(msgStr);
+                    for (int i = 0; i < _acc_list.ctidtraderaccount_size(); i++) {
+                        _accounts.push_back(_acc_list.ctidtraderaccount(i));
                     }
+                }
                     break;
 
                 default:
@@ -297,7 +315,8 @@ int main(int argc, char* argv[])
     openSSLSocket();
     pthread_create(&thread_sslread, &tattr, read_task, NULL);
     while (1) {
-        cout << "1- Authorize App\n2- getAccountsList\n3- Authorize Account\n";
+        cout << "1- Authorize App\n2- Authorize Account\n"
+        "3- Subscribe For Spots\n4- Unsubscribe From Spots\n";
         cin >> opt;
         switch(opt)
         {
@@ -305,10 +324,13 @@ int main(int argc, char* argv[])
                 authorizeApplication();
                 break;
             case '2':
-                getAccountsList();
+                authorizeAccount();
                 break;
             case '3':
-                authorizeAccount();
+                subscribeForSpots();
+                break;
+            case '4':
+                unSubscribeFromSpots();
                 break;
         }
     }
