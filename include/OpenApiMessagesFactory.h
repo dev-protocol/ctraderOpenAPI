@@ -27,6 +27,7 @@ public:
     ProtoMessage CreateAccountListRequest(string token);
     ProtoMessage CreateSubscribeForSpotsRequest(long accountId, int symbolId);
     ProtoMessage CreateUnsubscribeFromSpotsRequest(long accountId,int symbolId);
+    ProtoMessage CreateTraderRequest(long accountID);
 
     ProtoOAExecutionEvent GetExecutionEvent(string msg);
 };

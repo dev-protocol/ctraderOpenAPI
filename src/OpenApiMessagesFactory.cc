@@ -78,6 +78,16 @@ ProtoMessage OpenApiMessagesFactory::CreateAccountListRequest(string token)
     return CreateMessage(_msg.payloadtype(), msg_str);
 }
 
+ProtoMessage OpenApiMessagesFactory::CreateTraderRequest(long accountID)
+{
+    ProtoOATraderReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountID);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
 ProtoMessage OpenApiMessagesFactory::CreateSubscribeForSpotsRequest(
         long accountId, int symbolId)
 {

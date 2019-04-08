@@ -163,6 +163,7 @@ void transmit(ProtoMessage msg)
     unsigned char *pkt = new unsigned char [size];
 
     msg.SerializeToArray(pkt, size);
+    // little endian to big endian
     size = htonl(size);
     memcpy(sizeArray, &size, 4);
     //
@@ -184,6 +185,12 @@ void authorizeAccount()
     ProtoMessage msg = msgFactory.CreateAccAuthorizationRequest(accessToken,
                         _accountID);
     transmit(msg);
+    // Wait for response
+    pthread_mutex_lock(&mutex_resp);
+    pthread_cond_wait(&wait_resp, &mutex_resp);
+    pthread_mutex_unlock(&mutex_resp);
+    msg = msgFactory.CreateTraderRequest(_accountID);
+    transmit(msg);
 }
 
 void getAccountsList()
@@ -195,6 +202,8 @@ void getAccountsList()
     //pthread_mutex_lock(&mutex_resp);
     //pthread_cond_wait(&wait_resp, &mutex_resp);
     //pthread_mutex_unlock(&mutex_resp);
+    //msg = msgFactory.CreateTraderRequest(_accountID);
+    //transmit(msg);
 }
 
 void subscribeForSpots()
@@ -216,7 +225,6 @@ void *read_task(void *arg)
     int ret = 0;
     int lenght, num;
     int msgType = 0;
-    string msgStr;
     OpenApiMessagesFactory msgFactory;
     ProtoMessage protoMessage;
 
@@ -243,15 +251,33 @@ void *read_task(void *arg)
                     break;
 
                 case PROTO_OA_ACCOUNT_AUTH_RES:
-                    cout << "Acc Auth res\n";
+                    {
+                        cout << "Account Auth res\n";
+                        ProtoOAAccountAuthRes msg;
+                        string _message(buf+4);
+                        msg.ParseFromString(_message);
+                        if (msg.has_ctidtraderaccountid())
+                            cout << "CtidAccID " <<
+                                msg.ctidtraderaccountid() << endl;
+                        pthread_cond_signal(&wait_resp);
+                    }
                     break;
 
                 case PROTO_OA_TRADER_RES:
                     {
                         cout << "TraderResp\n";
-                        ProtoOATraderRes trader;
+                        ProtoOATraderRes msg;
                         string _message(buf+4);
-                        trader.ParseFromString(_message);
+                        msg.ParseFromString(_message);
+                        if (msg.trader().has_balance())
+                            cout << "Balance " << msg.trader().balance() <<
+                                endl;
+                        if (msg.trader().has_leverageincents())
+                            cout << "Leverage " <<
+                                msg.trader().leverageincents() << endl;
+                        if (msg.trader().has_brokername())
+                            cout << "Broker " <<
+                                msg.trader().brokername() << endl;
                         //_traders.Add(trader.Trader);
                     }
                     break;
@@ -261,7 +287,7 @@ void *read_task(void *arg)
                         cout << "Event\n";
                         string _message(buf+4);
                         ProtoOAExecutionEvent _payload_msg =
-                                msgFactory.GetExecutionEvent(msgStr);
+                                msgFactory.GetExecutionEvent(_message);
                         if (_payload_msg.has_order())
                         {
                             //testOrderId = _payload_msg.order.OrderId;
@@ -279,9 +305,9 @@ void *read_task(void *arg)
 
                 case PROTO_OA_SPOT_EVENT:
                     {
+                        cout << "SpotEvet: " << endl;
                         ProtoOASpotEvent spotEvent;
                         string _message(buf+4);
-                        cout << "SpotEvet: " << _message << endl;
                         spotEvent.ParseFromString(_message);
                         if (spotEvent.has_bid())
                             cout << "Bid " << spotEvent.bid() << endl;
@@ -297,7 +323,7 @@ void *read_task(void *arg)
 
                 case PROTO_OA_GET_ACCOUNTS_BY_ACCESS_TOKEN_RES:
                 {
-                    cout << "Acc TokenRes\n";
+                    cout << "Account Acess TokenRes\n";
                     ProtoOAGetAccountListByAccessTokenRes _acc_list;
                     string _message(buf+4);
                     _acc_list.ParseFromString(_message);
