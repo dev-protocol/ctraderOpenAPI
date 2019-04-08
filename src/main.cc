@@ -247,29 +247,47 @@ void *read_task(void *arg)
                     break;
 
                 case PROTO_OA_TRADER_RES:
-                    cout << "TraderResp\n";
-                    //var trader = ProtoOATraderRes.CreateBuilder().MergeFrom(protoMessage.Payload).Build();
-                    //_traders.Add(trader.Trader);
+                    {
+                        cout << "TraderResp\n";
+                        ProtoOATraderRes trader;
+                        string _message(buf+4);
+                        trader.ParseFromString(_message);
+                        //_traders.Add(trader.Trader);
+                    }
                     break;
 
                 case PROTO_OA_EXECUTION_EVENT:
                     {
                         cout << "Event\n";
-                        protoMessage.SerializeToString(&msgStr);
-                        /*ProtoOAExecutionEvent _payload_msg =
+                        string _message(buf+4);
+                        ProtoOAExecutionEvent _payload_msg =
                                 msgFactory.GetExecutionEvent(msgStr);
                         if (_payload_msg.has_order())
                         {
-                            testOrderId = _payload_msg.order.OrderId;
+                            //testOrderId = _payload_msg.order.OrderId;
                         }
                         if (_payload_msg.has_position())
                         {
-                            testPositionId = _payload_msg.position.PositionId;
-                        }*/
+                            //testPositionId = _payload_msg.position.PositionId;
+                        }
                     }
                     break;
 
+                case PROTO_OA_SUBSCRIBE_SPOTS_RES:
+                    cout << "SpotRes" << endl;
+                    break;
+
                 case PROTO_OA_SPOT_EVENT:
+                    {
+                        ProtoOASpotEvent spotEvent;
+                        string _message(buf+4);
+                        cout << "SpotEvet: " << _message << endl;
+                        spotEvent.ParseFromString(_message);
+                        if (spotEvent.has_bid())
+                            cout << "Bid " << spotEvent.bid() << endl;
+                        if (spotEvent.has_ask())
+                            cout << "Ask " << spotEvent.ask() << endl;
+                    }
                     break;
 
                 case PROTO_OA_ERROR_RES:
@@ -281,10 +299,12 @@ void *read_task(void *arg)
                 {
                     cout << "Acc TokenRes\n";
                     ProtoOAGetAccountListByAccessTokenRes _acc_list;
-                    //protoMessage.SerializeToString(&msgStr);
-                    _acc_list.MergeFrom(msgStr);
+                    string _message(buf+4);
+                    _acc_list.ParseFromString(_message);
                     for (int i = 0; i < _acc_list.ctidtraderaccount_size(); i++) {
                         _accounts.push_back(_acc_list.ctidtraderaccount(i));
+                        cout << "CTID " << i << ": " <<
+                        _acc_list.ctidtraderaccount(i).ctidtraderaccountid() << endl;
                     }
                 }
                     break;
@@ -316,7 +336,8 @@ int main(int argc, char* argv[])
     pthread_create(&thread_sslread, &tattr, read_task, NULL);
     while (1) {
         cout << "1- Authorize App\n2- Authorize Account\n"
-        "3- Subscribe For Spots\n4- Unsubscribe From Spots\n";
+        "3- Get Accounts List\n"
+        "4- Subscribe For Spots\n5- Unsubscribe From Spots\n";
         cin >> opt;
         switch(opt)
         {
@@ -327,9 +348,12 @@ int main(int argc, char* argv[])
                 authorizeAccount();
                 break;
             case '3':
-                subscribeForSpots();
+                getAccountsList();
                 break;
             case '4':
+                subscribeForSpots();
+                break;
+            case '5':
                 unSubscribeFromSpots();
                 break;
         }

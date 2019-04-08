@@ -105,5 +105,6 @@ ProtoMessage OpenApiMessagesFactory::CreateUnsubscribeFromSpotsRequest(
 ProtoOAExecutionEvent OpenApiMessagesFactory::GetExecutionEvent(string msg)
 {
     ProtoOAExecutionEvent _msg;
-    return _msg; //.MergeFrom(msg);
+    _msg.ParseFromString(msg);
+    return _msg;
 }
