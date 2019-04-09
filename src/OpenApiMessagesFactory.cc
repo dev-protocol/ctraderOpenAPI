@@ -112,6 +112,14 @@ ProtoMessage OpenApiMessagesFactory::CreateUnsubscribeFromSpotsRequest(
     return CreateMessage(_msg.payloadtype(), msg_str);
 }
 
+ProtoMessage OpenApiMessagesFactory::CreateHeartbeatEvent(void)
+{
+    ProtoHeartbeatEvent _msg;
+    string msg_str;
+    _msg.SerializeToString(&msg_str);
+    return CreateMessage(HEARTBEAT_EVENT, msg_str);
+}
+
 ProtoOAExecutionEvent OpenApiMessagesFactory::GetExecutionEvent(string msg)
 {
     ProtoOAExecutionEvent _msg;

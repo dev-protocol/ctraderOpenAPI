@@ -220,6 +220,13 @@ void unSubscribeFromSpots()
     transmit(msg);
 }
 
+void heartBeatACK()
+{
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage msg = msgFactory.CreateHeartbeatEvent();
+    transmit(msg);
+}
+
 void *read_task(void *arg)
 {
     int ret = 0;
@@ -242,10 +249,16 @@ void *read_task(void *arg)
             string _message(buf+4);
             protoMessage = msgFactory.GetMessage(_message);
             msgType = protoMessage.payloadtype();
-            cout << "MsgType: " << msgType << endl;
+            if (msgType != HEARTBEAT_EVENT)
+                cout << "MsgType: " << msgType << endl;
             //
             switch (msgType)
             {
+                case HEARTBEAT_EVENT:
+                    //cout << "Heart Beat" << endl;
+                    heartBeatACK();
+                    break;
+
                 case PROTO_OA_APPLICATION_AUTH_RES:
                     cout << "App Auth res\n";
                     break;

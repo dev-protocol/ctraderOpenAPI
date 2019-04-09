@@ -28,6 +28,7 @@ public:
     ProtoMessage CreateSubscribeForSpotsRequest(long accountId, int symbolId);
     ProtoMessage CreateUnsubscribeFromSpotsRequest(long accountId,int symbolId);
     ProtoMessage CreateTraderRequest(long accountID);
+    ProtoMessage CreateHeartbeatEvent(void);
 
     ProtoOAExecutionEvent GetExecutionEvent(string msg);
 };
