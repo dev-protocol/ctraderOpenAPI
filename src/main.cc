@@ -254,8 +254,7 @@ void *read_task(void *arg)
                     {
                         cout << "Account Auth res\n";
                         ProtoOAAccountAuthRes msg;
-                        string _message(buf+4);
-                        msg.ParseFromString(_message);
+                        msg.ParseFromString(protoMessage.payload());
                         if (msg.has_ctidtraderaccountid())
                             cout << "CtidAccID " <<
                                 msg.ctidtraderaccountid() << endl;
@@ -267,8 +266,7 @@ void *read_task(void *arg)
                     {
                         cout << "TraderResp\n";
                         ProtoOATraderRes msg;
-                        string _message(buf+4);
-                        msg.ParseFromString(_message);
+                        msg.ParseFromString(protoMessage.payload());
                         if (msg.trader().has_balance())
                             cout << "Balance " << msg.trader().balance() <<
                                 endl;
@@ -285,9 +283,8 @@ void *read_task(void *arg)
                 case PROTO_OA_EXECUTION_EVENT:
                     {
                         cout << "Event\n";
-                        string _message(buf+4);
                         ProtoOAExecutionEvent _payload_msg =
-                                msgFactory.GetExecutionEvent(_message);
+                                msgFactory.GetExecutionEvent(protoMessage.payload());
                         if (_payload_msg.has_order())
                         {
                             //testOrderId = _payload_msg.order.OrderId;
@@ -307,8 +304,7 @@ void *read_task(void *arg)
                     {
                         cout << "SpotEvet: " << endl;
                         ProtoOASpotEvent spotEvent;
-                        string _message(buf+4);
-                        spotEvent.ParseFromString(_message);
+                        spotEvent.ParseFromString(protoMessage.payload());
                         if (spotEvent.has_bid())
                             cout << "Bid " << spotEvent.bid() << endl;
                         if (spotEvent.has_ask())
@@ -325,8 +321,7 @@ void *read_task(void *arg)
                 {
                     cout << "Account Acess TokenRes\n";
                     ProtoOAGetAccountListByAccessTokenRes _acc_list;
-                    string _message(buf+4);
-                    _acc_list.ParseFromString(_message);
+                    _acc_list.ParseFromString(protoMessage.payload());
                     for (int i = 0; i < _acc_list.ctidtraderaccount_size(); i++) {
                         _accounts.push_back(_acc_list.ctidtraderaccount(i));
                         cout << "CTID " << i << ": " <<
