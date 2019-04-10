@@ -117,7 +117,49 @@ ProtoMessage OpenApiMessagesFactory::CreateHeartbeatEvent(void)
     ProtoHeartbeatEvent _msg;
     string msg_str;
     _msg.SerializeToString(&msg_str);
+
     return CreateMessage(HEARTBEAT_EVENT, msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateMarketOrderRequest(long accountId,
+    string accessToken, int symbolId, ProtoOATradeSide tradeSide, long volume)
+{
+    ProtoOANewOrderReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_symbolid(symbolId);
+    _msg.set_ordertype(MARKET);
+    _msg.set_tradeside(tradeSide);
+    _msg.set_volume(volume);
+    _msg.set_comment("Market order test");
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateReconcileRequest(long accountId)
+{
+    ProtoOAReconcileReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateTickDataRequest(long accountId,
+    int symbolId, long from, long to, ProtoOAQuoteType type)
+{
+    ProtoOAGetTickDataReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_symbolid(symbolId);
+    _msg.set_type(type);
+    _msg.set_fromtimestamp(from);
+    _msg.set_totimestamp(to);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
 }
 
 ProtoOAExecutionEvent OpenApiMessagesFactory::GetExecutionEvent(string msg)

@@ -195,15 +195,28 @@ void authorizeAccount()
 
 void getAccountsList()
 {
+    //int i = 0;
+    //std::list<ProtoOACtidTraderAccount>::iterator it;
+    //ProtoOACtidTraderAccount _acc_list;
     OpenApiMessagesFactory msgFactory;
     ProtoMessage msg = msgFactory.CreateAccountListRequest(accessToken);
     transmit(msg);
     // Wait for response
-    //pthread_mutex_lock(&mutex_resp);
-    //pthread_cond_wait(&wait_resp, &mutex_resp);
-    //pthread_mutex_unlock(&mutex_resp);
-    //msg = msgFactory.CreateTraderRequest(_accountID);
-    //transmit(msg);
+    pthread_mutex_lock(&mutex_resp);
+    pthread_cond_wait(&wait_resp, &mutex_resp);
+    pthread_mutex_unlock(&mutex_resp);
+    /*for (it = _accounts.begin(); it < _accounts.end(); it++) {
+        //_acc_list = it;
+        msg = msgFactory.CreateAccAuthorizationRequest(accessToken,
+            _acc_list.ctidtraderaccountid());
+        transmit(msg);
+        // Wait for response
+        pthread_mutex_lock(&mutex_resp);
+        pthread_cond_wait(&wait_resp, &mutex_resp);
+        pthread_mutex_unlock(&mutex_resp);
+        msg = msgFactory.CreateTraderRequest(_acc_list.ctidtraderaccountid());
+        transmit(msg);
+    }*/
 }
 
 void subscribeForSpots()
@@ -217,6 +230,31 @@ void unSubscribeFromSpots()
 {
     OpenApiMessagesFactory msgFactory;
     ProtoMessage msg = msgFactory.CreateUnsubscribeFromSpotsRequest(_accountID, 1);
+    transmit(msg);
+}
+
+void SendMarketOrder()
+{
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage msg = msgFactory.CreateMarketOrderRequest(_accountID,
+        accessToken, 1, BUY, 1000);
+    transmit(msg);
+}
+
+void GetOrders()
+{
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage msg = msgFactory.CreateReconcileRequest(_accountID);
+    transmit(msg);
+}
+
+void GetTickData(int days)
+{
+    OpenApiMessagesFactory msgFactory;
+    //time_end = days * 24 * 60 * 60 * 1000;
+    ProtoMessage msg = msgFactory.CreateTickDataRequest(_accountID, 1,
+        ((DateTimeOffset)DateTime.Now.AddDays(-5)).ToUnixTimeMilliseconds(),
+        ((DateTimeOffset)DateTime.Now).ToUnixTimeMilliseconds(), BID);
     transmit(msg);
 }
 
@@ -332,14 +370,16 @@ void *read_task(void *arg)
 
                 case PROTO_OA_GET_ACCOUNTS_BY_ACCESS_TOKEN_RES:
                 {
-                    cout << "Account Acess TokenRes\n";
+                    cout << "Accounts Access TokenRes\n";
                     ProtoOAGetAccountListByAccessTokenRes _acc_list;
                     _acc_list.ParseFromString(protoMessage.payload());
+                    cout << "Msg " << protoMessage.payload() << endl;
                     for (int i = 0; i < _acc_list.ctidtraderaccount_size(); i++) {
                         _accounts.push_back(_acc_list.ctidtraderaccount(i));
                         cout << "CTID " << i << ": " <<
                         _acc_list.ctidtraderaccount(i).ctidtraderaccountid() << endl;
                     }
+                    pthread_cond_signal(&wait_resp);
                 }
                     break;
 
@@ -348,7 +388,7 @@ void *read_task(void *arg)
             }
             //
         }
-        usleep(100000);
+        //usleep(100000);
     }
     pthread_exit(&ret);
 }
