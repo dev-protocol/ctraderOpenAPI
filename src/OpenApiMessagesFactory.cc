@@ -137,6 +137,24 @@ ProtoMessage OpenApiMessagesFactory::CreateMarketOrderRequest(long accountId,
     return CreateMessage(_msg.payloadtype(), msg_str);
 }
 
+ProtoMessage OpenApiMessagesFactory::CreateStopOrderRequest(long accountId,
+    string accessToken, int symbolId, ProtoOATradeSide tradeSide, long volume,
+    double stopPrice)
+{
+    ProtoOANewOrderReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_symbolid(symbolId);
+    _msg.set_ordertype(STOP);
+    _msg.set_tradeside(tradeSide);
+    _msg.set_volume(volume);
+    _msg.set_stopprice(stopPrice);
+    _msg.set_comment("Stop order");
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
 ProtoMessage OpenApiMessagesFactory::CreateReconcileRequest(long accountId)
 {
     ProtoOAReconcileReq _msg;

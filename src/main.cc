@@ -233,11 +233,11 @@ void unSubscribeFromSpots()
     transmit(msg);
 }
 
-void SendMarketOrder()
+void SendMarketOrder(int symbol, ProtoOATradeSide side, int volume)
 {
     OpenApiMessagesFactory msgFactory;
     ProtoMessage msg = msgFactory.CreateMarketOrderRequest(_accountID,
-        accessToken, 1, BUY, 1000);
+        accessToken, symbol, side, volume);
     transmit(msg);
 }
 
@@ -248,13 +248,20 @@ void GetOrders()
     transmit(msg);
 }
 
-void GetTickData(int days)
+void GetTickData(int days, int symbol)
 {
     OpenApiMessagesFactory msgFactory;
-    //time_end = days * 24 * 60 * 60 * 1000;
-    ProtoMessage msg = msgFactory.CreateTickDataRequest(_accountID, 1,
-        ((DateTimeOffset)DateTime.Now.AddDays(-5)).ToUnixTimeMilliseconds(),
-        ((DateTimeOffset)DateTime.Now).ToUnixTimeMilliseconds(), BID);
+    long time_end = days * 24 * 60 * 60;
+    ProtoMessage msg = msgFactory.CreateTickDataRequest(_accountID, symbol,
+        (time(NULL) - time_end)*1000, time(NULL)*1000, BID);
+    transmit(msg);
+}
+
+void SendStopOrder(int symbol, ProtoOATradeSide side, int volume, double stopPrice)
+{
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage msg = msgFactory.CreateStopOrderRequest(_accountID,
+        accessToken, symbol, side, volume, stopPrice);
     transmit(msg);
 }
 
