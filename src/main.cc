@@ -40,7 +40,7 @@ using namespace std;
 // ctrader vars
 string clientId;
 string clientSecret;
-string accessToken;
+string _token;
 long _accountID;
 string _apiHost = "demo.ctraderapi.com";
 int _apiPort = 5035;
@@ -182,7 +182,7 @@ void authorizeApplication()
 void authorizeAccount()
 {
     OpenApiMessagesFactory msgFactory;
-    ProtoMessage msg = msgFactory.CreateAccAuthorizationRequest(accessToken,
+    ProtoMessage msg = msgFactory.CreateAccAuthorizationRequest(_token,
                         _accountID);
     transmit(msg);
     // Wait for response
@@ -199,7 +199,7 @@ void getAccountsList()
     //std::list<ProtoOACtidTraderAccount>::iterator it;
     //ProtoOACtidTraderAccount _acc_list;
     OpenApiMessagesFactory msgFactory;
-    ProtoMessage msg = msgFactory.CreateAccountListRequest(accessToken);
+    ProtoMessage msg = msgFactory.CreateAccountListRequest(_token);
     transmit(msg);
     // Wait for response
     pthread_mutex_lock(&mutex_resp);
@@ -207,7 +207,7 @@ void getAccountsList()
     pthread_mutex_unlock(&mutex_resp);
     /*for (it = _accounts.begin(); it < _accounts.end(); it++) {
         //_acc_list = it;
-        msg = msgFactory.CreateAccAuthorizationRequest(accessToken,
+        msg = msgFactory.CreateAccAuthorizationRequest(_token,
             _acc_list.ctidtraderaccountid());
         transmit(msg);
         // Wait for response
@@ -233,11 +233,11 @@ void unSubscribeFromSpots()
     transmit(msg);
 }
 
-void SendMarketOrder(int symbol, ProtoOATradeSide side, int volume)
+void SendMarketOrder(int symbol, ProtoOATradeSide side, long volume)
 {
     OpenApiMessagesFactory msgFactory;
     ProtoMessage msg = msgFactory.CreateMarketOrderRequest(_accountID,
-        accessToken, symbol, side, volume);
+        _token, symbol, side, volume);
     transmit(msg);
 }
 
@@ -261,7 +261,23 @@ void SendStopOrder(int symbol, ProtoOATradeSide side, int volume, double stopPri
 {
     OpenApiMessagesFactory msgFactory;
     ProtoMessage msg = msgFactory.CreateStopOrderRequest(_accountID,
-        accessToken, symbol, side, volume, stopPrice);
+        _token, symbol, side, volume, stopPrice);
+    transmit(msg);
+}
+
+void ClosePosition(long positionId, long volume)
+{
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage msg = msgFactory.CreateClosePositionRequest(_accountID,
+        positionId, volume);
+    transmit(msg);
+}
+
+void SendLimitOrder(ProtoOATradeSide side, int volume, double price)
+{
+    OpenApiMessagesFactory msgFactory;
+    ProtoMessage msg = msgFactory.CreateLimitOrderRequest(_accountID,
+        _token, 1, side, volume, price);
     transmit(msg);
 }
 
@@ -288,7 +304,7 @@ void *read_task(void *arg)
             memcpy(&num, buf, 4);
             // big endian to little endian
             lenght = ntohl(num);
-            printf("lenght: %d\n", lenght);
+            //printf("lenght: %d\n", lenght);
         }
         if (lenght > 0) {
             string _message(buf+4);
@@ -345,11 +361,11 @@ void *read_task(void *arg)
                                 msgFactory.GetExecutionEvent(protoMessage.payload());
                         if (_payload_msg.has_order())
                         {
-                            //testOrderId = _payload_msg.order.OrderId;
+                            testOrderId = _payload_msg.order().orderid();
                         }
                         if (_payload_msg.has_position())
                         {
-                            //testPositionId = _payload_msg.position.PositionId;
+                            testPositionId = _payload_msg.position().positionid();
                         }
                     }
                     break;
@@ -367,6 +383,16 @@ void *read_task(void *arg)
                             cout << "Bid " << spotEvent.bid() << endl;
                         if (spotEvent.has_ask())
                             cout << "Ask " << spotEvent.ask() << endl;
+                    }
+                    break;
+
+                case PROTO_OA_ORDER_ERROR_EVENT:
+                    {
+                        cout << "OrderError: " << endl;
+                        ProtoOAOrderErrorEvent orderErr;
+                        orderErr.ParseFromString(protoMessage.payload());
+                        if (orderErr.has_description())
+                            cout << "Err: " << orderErr.description() << endl;
                     }
                     break;
 
@@ -405,7 +431,7 @@ int main(int argc, char* argv[])
     char opt;
     clientId = CLIID;
     clientSecret = CLSECRET;
-    accessToken = ACCTOKEN;
+    _token = ACCTOKEN;
     _accountID = ACCID;
 
     pthread_mutex_init(&mutex_resp, NULL);
@@ -418,7 +444,8 @@ int main(int argc, char* argv[])
     while (1) {
         cout << "1- Authorize App\n2- Authorize Account\n"
         "3- Get Accounts List\n"
-        "4- Subscribe For Spots\n5- Unsubscribe From Spots\n";
+        "4- Subscribe For Spots\n5- Unsubscribe From Spots\n"
+        "6- Market Order\n7- Close Position\n";
         cin >> opt;
         switch(opt)
         {
@@ -436,6 +463,12 @@ int main(int argc, char* argv[])
                 break;
             case '5':
                 unSubscribeFromSpots();
+                break;
+            case '6':
+                SendMarketOrder(1, BUY, 100000);
+                break;
+            case '7':
+                ClosePosition(testPositionId, 100000);
                 break;
         }
     }

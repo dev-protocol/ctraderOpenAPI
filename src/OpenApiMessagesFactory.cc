@@ -131,7 +131,7 @@ ProtoMessage OpenApiMessagesFactory::CreateMarketOrderRequest(long accountId,
     _msg.set_ordertype(MARKET);
     _msg.set_tradeside(tradeSide);
     _msg.set_volume(volume);
-    _msg.set_comment("Market order test");
+    _msg.set_comment("MarketOrder");
     _msg.SerializeToString(&msg_str);
 
     return CreateMessage(_msg.payloadtype(), msg_str);
@@ -149,7 +149,138 @@ ProtoMessage OpenApiMessagesFactory::CreateStopOrderRequest(long accountId,
     _msg.set_tradeside(tradeSide);
     _msg.set_volume(volume);
     _msg.set_stopprice(stopPrice);
-    _msg.set_comment("Stop order");
+    _msg.set_comment("StopOrder");
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateLimitOrderRequest(long accountId,
+    string accessToken, int symbolId, ProtoOATradeSide tradeSide, long volume,
+    double limitPrice)
+{
+    ProtoOANewOrderReq _msg;
+    string msg_str;
+    long epoch = (time(NULL) + 60) * 1000;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_symbolid(symbolId);
+    _msg.set_ordertype(LIMIT);
+    _msg.set_tradeside(tradeSide);
+    _msg.set_volume(volume);
+    _msg.set_limitprice(limitPrice);
+    _msg.set_comment("LimitOrder");
+    _msg.set_expirationtimestamp(epoch);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateStopLimitOrderRequest(long accountId,
+    string accessToken, int symbolId, ProtoOATradeSide tradeSide, long volume,
+    double stopPrice, int slippageInPoints)
+{
+    ProtoOANewOrderReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_symbolid(symbolId);
+    _msg.set_ordertype(STOP_LIMIT);
+    _msg.set_tradeside(tradeSide);
+    _msg.set_volume(volume);
+    _msg.set_slippageinpoints(slippageInPoints);
+    _msg.set_stopprice(stopPrice);
+    _msg.set_comment("StopLimitOrder");
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateCancelOrderRequest(long accountId,
+    long orderId)
+{
+    ProtoOACancelOrderReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_orderid(orderId);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateClosePositionRequest(long accountId,
+    long positionId, long volume)
+{
+    ProtoOAClosePositionReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_positionid(positionId);
+    _msg.set_volume(volume);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateAmendPositionStopLossRequest(
+    long accountId, long positionId, double stopLossPrice)
+{
+    ProtoOAAmendPositionSLTPReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_positionid(positionId);
+    _msg.set_stoploss(stopLossPrice);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateAmendPositionTakeProfitRequest(
+    long accountId, long positionId, double takeProfitPrice)
+{
+    ProtoOAAmendPositionSLTPReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_positionid(positionId);
+    _msg.set_takeprofit(takeProfitPrice);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateAmendPositionSLTPRequest(
+    long accountId, long positionId, double stopLossPrice,
+    double takeProfitPrice)
+{
+    ProtoOAAmendPositionSLTPReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_positionid(positionId);
+    _msg.set_stoploss(stopLossPrice);
+    _msg.set_takeprofit(takeProfitPrice);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+
+ProtoMessage OpenApiMessagesFactory::CreateAmendLimitOrderRequest(
+    long accountId, long orderId, double limitPrice)
+{
+    ProtoOAAmendOrderReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_orderid(orderId);
+    _msg.set_limitprice(limitPrice);
+    _msg.set_takeprofit(limitPrice + 0.02);
+    _msg.SerializeToString(&msg_str);
+
+    return CreateMessage(_msg.payloadtype(), msg_str);
+}
+ProtoMessage OpenApiMessagesFactory::CreateAmendStopOrderRequest(long accountId,
+    long orderId, double stopPrice)
+{
+    ProtoOAAmendOrderReq _msg;
+    string msg_str;
+    _msg.set_ctidtraderaccountid(accountId);
+    _msg.set_orderid(orderId);
+    _msg.set_stopprice(stopPrice);
     _msg.SerializeToString(&msg_str);
 
     return CreateMessage(_msg.payloadtype(), msg_str);

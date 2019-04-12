@@ -29,12 +29,43 @@ public:
     ProtoMessage CreateUnsubscribeFromSpotsRequest(long accountId,int symbolId);
     ProtoMessage CreateTraderRequest(long accountID);
     ProtoMessage CreateHeartbeatEvent(void);
+    ProtoMessage CreateReconcileRequest(long accountId);
+
     ProtoMessage CreateMarketOrderRequest(long accountId, string accessToken,
         int symbolId, ProtoOATradeSide tradeSide, long volume);
+
     ProtoMessage CreateStopOrderRequest(long accountId, string accessToken,
         int symbolId, ProtoOATradeSide tradeSide, long volume,
         double stopPrice);
-    ProtoMessage CreateReconcileRequest(long accountId);
+
+    ProtoMessage CreateLimitOrderRequest(long accountId,
+        string accessToken, int symbolId, ProtoOATradeSide tradeSide,
+        long volume, double limitPrice);
+
+    ProtoMessage CreateStopLimitOrderRequest(long accountId, string accessToken,
+        int symbolId, ProtoOATradeSide tradeSide, long volume, double stopPrice,
+        int slippageInPoints);
+
+    ProtoMessage CreateCancelOrderRequest(long accountId, long orderId);
+
+    ProtoMessage CreateClosePositionRequest(long accountId, long positionId,
+        long volume);
+
+    ProtoMessage CreateAmendPositionStopLossRequest(long accountId,
+        long positionId, double stopLossPrice);
+
+    ProtoMessage CreateAmendPositionTakeProfitRequest(long accountId,
+        long positionId, double takeProfitPrice);
+
+    ProtoMessage CreateAmendPositionSLTPRequest(long accountId,
+        long positionId, double stopLossPrice, double takeProfitPrice);
+
+    ProtoMessage CreateAmendLimitOrderRequest(long accountId, long orderId,
+        double limitPrice);
+
+    ProtoMessage CreateAmendStopOrderRequest(long accountId, long orderId,
+        double stopPrice);
+
     ProtoMessage CreateTickDataRequest(long accountId, int symbolId, long from,
         long to, ProtoOAQuoteType type);
 
