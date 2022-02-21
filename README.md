@@ -24,7 +24,7 @@ LIBS += -L /usr/local/lib
 
 # Donations
 
-1. Bitcoin address: 3K299PU6dVdTjJq99NPXsRqKU8JjA3ZUuC
+1. Bitcoin address: 3LVEhsDKBQwGE6WfCWGXvvK5m99CFsQR9v
 
 2. Ethereum address: 0x80aac844f39b478c699d1c0c8bc2e6c9c9e02026
 
