@@ -47,13 +47,16 @@ struct TableStruct_OpenApiModelMessages_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[20]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[23]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 void AddDescriptors_OpenApiModelMessages_2eproto();
+class ProtoOAArchivedSymbol;
+class ProtoOAArchivedSymbolDefaultTypeInternal;
+extern ProtoOAArchivedSymbolDefaultTypeInternal _ProtoOAArchivedSymbol_default_instance_;
 class ProtoOAAsset;
 class ProtoOAAssetDefaultTypeInternal;
 extern ProtoOAAssetDefaultTypeInternal _ProtoOAAsset_default_instance_;
@@ -84,12 +87,18 @@ extern ProtoOADepthQuoteDefaultTypeInternal _ProtoOADepthQuote_default_instance_
 class ProtoOAExpectedMargin;
 class ProtoOAExpectedMarginDefaultTypeInternal;
 extern ProtoOAExpectedMarginDefaultTypeInternal _ProtoOAExpectedMargin_default_instance_;
+class ProtoOAHoliday;
+class ProtoOAHolidayDefaultTypeInternal;
+extern ProtoOAHolidayDefaultTypeInternal _ProtoOAHoliday_default_instance_;
 class ProtoOAInterval;
 class ProtoOAIntervalDefaultTypeInternal;
 extern ProtoOAIntervalDefaultTypeInternal _ProtoOAInterval_default_instance_;
 class ProtoOALightSymbol;
 class ProtoOALightSymbolDefaultTypeInternal;
 extern ProtoOALightSymbolDefaultTypeInternal _ProtoOALightSymbol_default_instance_;
+class ProtoOAMarginCall;
+class ProtoOAMarginCallDefaultTypeInternal;
+extern ProtoOAMarginCallDefaultTypeInternal _ProtoOAMarginCall_default_instance_;
 class ProtoOAOrder;
 class ProtoOAOrderDefaultTypeInternal;
 extern ProtoOAOrderDefaultTypeInternal _ProtoOAOrder_default_instance_;
@@ -115,6 +124,7 @@ class ProtoOATrendbar;
 class ProtoOATrendbarDefaultTypeInternal;
 extern ProtoOATrendbarDefaultTypeInternal _ProtoOATrendbar_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
+template<> ::ProtoOAArchivedSymbol* Arena::CreateMaybeMessage<::ProtoOAArchivedSymbol>(Arena*);
 template<> ::ProtoOAAsset* Arena::CreateMaybeMessage<::ProtoOAAsset>(Arena*);
 template<> ::ProtoOAAssetClass* Arena::CreateMaybeMessage<::ProtoOAAssetClass>(Arena*);
 template<> ::ProtoOABonusDepositWithdraw* Arena::CreateMaybeMessage<::ProtoOABonusDepositWithdraw>(Arena*);
@@ -125,8 +135,10 @@ template<> ::ProtoOADeal* Arena::CreateMaybeMessage<::ProtoOADeal>(Arena*);
 template<> ::ProtoOADepositWithdraw* Arena::CreateMaybeMessage<::ProtoOADepositWithdraw>(Arena*);
 template<> ::ProtoOADepthQuote* Arena::CreateMaybeMessage<::ProtoOADepthQuote>(Arena*);
 template<> ::ProtoOAExpectedMargin* Arena::CreateMaybeMessage<::ProtoOAExpectedMargin>(Arena*);
+template<> ::ProtoOAHoliday* Arena::CreateMaybeMessage<::ProtoOAHoliday>(Arena*);
 template<> ::ProtoOAInterval* Arena::CreateMaybeMessage<::ProtoOAInterval>(Arena*);
 template<> ::ProtoOALightSymbol* Arena::CreateMaybeMessage<::ProtoOALightSymbol>(Arena*);
+template<> ::ProtoOAMarginCall* Arena::CreateMaybeMessage<::ProtoOAMarginCall>(Arena*);
 template<> ::ProtoOAOrder* Arena::CreateMaybeMessage<::ProtoOAOrder>(Arena*);
 template<> ::ProtoOAPosition* Arena::CreateMaybeMessage<::ProtoOAPosition>(Arena*);
 template<> ::ProtoOASymbol* Arena::CreateMaybeMessage<::ProtoOASymbol>(Arena*);
@@ -202,11 +214,21 @@ enum ProtoOAPayloadType {
   PROTO_OA_SYMBOL_CATEGORY_RES = 2161,
   PROTO_OA_ACCOUNT_LOGOUT_REQ = 2162,
   PROTO_OA_ACCOUNT_LOGOUT_RES = 2163,
-  PROTO_OA_ACCOUNT_DISCONNECT_EVENT = 2164
+  PROTO_OA_ACCOUNT_DISCONNECT_EVENT = 2164,
+  PROTO_OA_SUBSCRIBE_LIVE_TRENDBAR_RES = 2165,
+  PROTO_OA_UNSUBSCRIBE_LIVE_TRENDBAR_RES = 2166,
+  PROTO_OA_MARGIN_CALL_LIST_REQ = 2167,
+  PROTO_OA_MARGIN_CALL_LIST_RES = 2168,
+  PROTO_OA_MARGIN_CALL_UPDATE_REQ = 2169,
+  PROTO_OA_MARGIN_CALL_UPDATE_RES = 2170,
+  PROTO_OA_MARGIN_CALL_UPDATE_EVENT = 2171,
+  PROTO_OA_MARGIN_CALL_TRIGGER_EVENT = 2172,
+  PROTO_OA_REFRESH_TOKEN_REQ = 2173,
+  PROTO_OA_REFRESH_TOKEN_RES = 2174
 };
 bool ProtoOAPayloadType_IsValid(int value);
 constexpr ProtoOAPayloadType ProtoOAPayloadType_MIN = PROTO_OA_APPLICATION_AUTH_REQ;
-constexpr ProtoOAPayloadType ProtoOAPayloadType_MAX = PROTO_OA_ACCOUNT_DISCONNECT_EVENT;
+constexpr ProtoOAPayloadType ProtoOAPayloadType_MAX = PROTO_OA_REFRESH_TOKEN_RES;
 constexpr int ProtoOAPayloadType_ARRAYSIZE = ProtoOAPayloadType_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAPayloadType_descriptor();
@@ -245,13 +267,13 @@ inline bool ProtoOADayOfWeek_Parse(
     ProtoOADayOfWeek_descriptor(), name, value);
 }
 enum ProtoOACommissionType {
-  USD_PER_MIL_USD = 1,
+  USD_PER_MILLION_USD = 1,
   USD_PER_LOT = 2,
-  PERCENTAGE = 3,
+  PERCENTAGE_OF_VALUE = 3,
   QUOTE_CCY_PER_LOT = 4
 };
 bool ProtoOACommissionType_IsValid(int value);
-constexpr ProtoOACommissionType ProtoOACommissionType_MIN = USD_PER_MIL_USD;
+constexpr ProtoOACommissionType ProtoOACommissionType_MIN = USD_PER_MILLION_USD;
 constexpr ProtoOACommissionType ProtoOACommissionType_MAX = QUOTE_CCY_PER_LOT;
 constexpr int ProtoOACommissionType_ARRAYSIZE = ProtoOACommissionType_MAX + 1;
 
@@ -323,6 +345,25 @@ inline bool ProtoOATradingMode_Parse(
     const std::string& name, ProtoOATradingMode* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ProtoOATradingMode>(
     ProtoOATradingMode_descriptor(), name, value);
+}
+enum ProtoOASwapCalculationType {
+  PIPS = 0,
+  PERCENTAGE = 1
+};
+bool ProtoOASwapCalculationType_IsValid(int value);
+constexpr ProtoOASwapCalculationType ProtoOASwapCalculationType_MIN = PIPS;
+constexpr ProtoOASwapCalculationType ProtoOASwapCalculationType_MAX = PERCENTAGE;
+constexpr int ProtoOASwapCalculationType_ARRAYSIZE = ProtoOASwapCalculationType_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOASwapCalculationType_descriptor();
+inline const std::string& ProtoOASwapCalculationType_Name(ProtoOASwapCalculationType value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    ProtoOASwapCalculationType_descriptor(), value);
+}
+inline bool ProtoOASwapCalculationType_Parse(
+    const std::string& name, ProtoOASwapCalculationType* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ProtoOASwapCalculationType>(
+    ProtoOASwapCalculationType_descriptor(), name, value);
 }
 enum ProtoOAAccessRights {
   FULL_ACCESS = 0,
@@ -586,11 +627,19 @@ enum ProtoOAChangeBalanceType {
   BALANCE_DEPOSIT_MANAGEMENT_FEE = 27,
   BALANCE_WITHDRAW_MANAGEMENT_FEE = 28,
   BALANCE_DEPOSIT_PERFORMANCE_FEE = 29,
-  BALANCE_WITHDRAW_INACTIVITY_FEE = 35
+  BALANCE_WITHDRAW_FOR_SUBACCOUNT = 30,
+  BALANCE_DEPOSIT_TO_SUBACCOUNT = 31,
+  BALANCE_WITHDRAW_FROM_SUBACCOUNT = 32,
+  BALANCE_DEPOSIT_FROM_SUBACCOUNT = 33,
+  BALANCE_WITHDRAW_COPY_FEE = 34,
+  BALANCE_WITHDRAW_INACTIVITY_FEE = 35,
+  BALANCE_DEPOSIT_TRANSFER = 36,
+  BALANCE_WITHDRAW_TRANSFER = 37,
+  BALANCE_DEPOSIT_CONVERTED_BONUS = 38
 };
 bool ProtoOAChangeBalanceType_IsValid(int value);
 constexpr ProtoOAChangeBalanceType ProtoOAChangeBalanceType_MIN = BALANCE_DEPOSIT;
-constexpr ProtoOAChangeBalanceType ProtoOAChangeBalanceType_MAX = BALANCE_WITHDRAW_INACTIVITY_FEE;
+constexpr ProtoOAChangeBalanceType ProtoOAChangeBalanceType_MAX = BALANCE_DEPOSIT_CONVERTED_BONUS;
 constexpr int ProtoOAChangeBalanceType_ARRAYSIZE = ProtoOAChangeBalanceType_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAChangeBalanceType_descriptor();
@@ -695,15 +744,72 @@ inline bool ProtoOAClientPermissionScope_Parse(
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ProtoOAClientPermissionScope>(
     ProtoOAClientPermissionScope_descriptor(), name, value);
 }
+enum ProtoOANotificationType {
+  MARGIN_LEVEL_THRESHOLD_1 = 61,
+  MARGIN_LEVEL_THRESHOLD_2 = 62,
+  MARGIN_LEVEL_THRESHOLD_3 = 63
+};
+bool ProtoOANotificationType_IsValid(int value);
+constexpr ProtoOANotificationType ProtoOANotificationType_MIN = MARGIN_LEVEL_THRESHOLD_1;
+constexpr ProtoOANotificationType ProtoOANotificationType_MAX = MARGIN_LEVEL_THRESHOLD_3;
+constexpr int ProtoOANotificationType_ARRAYSIZE = ProtoOANotificationType_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOANotificationType_descriptor();
+inline const std::string& ProtoOANotificationType_Name(ProtoOANotificationType value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    ProtoOANotificationType_descriptor(), value);
+}
+inline bool ProtoOANotificationType_Parse(
+    const std::string& name, ProtoOANotificationType* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ProtoOANotificationType>(
+    ProtoOANotificationType_descriptor(), name, value);
+}
 enum ProtoOAErrorCode {
   OA_AUTH_TOKEN_EXPIRED = 1,
   ACCOUNT_NOT_AUTHORIZED = 2,
+  ALREADY_LOGGED_IN = 14,
+  CH_CLIENT_AUTH_FAILURE = 101,
+  CH_CLIENT_NOT_AUTHENTICATED = 102,
+  CH_CLIENT_ALREADY_AUTHENTICATED = 103,
+  CH_ACCESS_TOKEN_INVALID = 104,
+  CH_SERVER_NOT_REACHABLE = 105,
+  CH_CTID_TRADER_ACCOUNT_NOT_FOUND = 106,
+  CH_OA_CLIENT_NOT_FOUND = 107,
+  REQUEST_FREQUENCY_EXCEEDED = 108,
+  SERVER_IS_UNDER_MAINTENANCE = 109,
+  CHANNEL_IS_BLOCKED = 110,
+  CONNECTIONS_LIMIT_EXCEEDED = 67,
+  WORSE_GSL_NOT_ALLOWED = 68,
+  SYMBOL_HAS_HOLIDAY = 69,
+  NOT_SUBSCRIBED_TO_SPOTS = 112,
+  ALREADY_SUBSCRIBED = 113,
+  SYMBOL_NOT_FOUND = 114,
+  UNKNOWN_SYMBOL = 115,
   INCORRECT_BOUNDARIES = 35,
-  CONNECTIONS_LIMIT_EXCEEDED = 67
+  NO_QUOTES = 117,
+  NOT_ENOUGH_MONEY = 118,
+  MAX_EXPOSURE_REACHED = 119,
+  POSITION_NOT_FOUND = 120,
+  ORDER_NOT_FOUND = 121,
+  POSITION_NOT_OPEN = 122,
+  POSITION_LOCKED = 123,
+  TOO_MANY_POSITIONS = 124,
+  TRADING_BAD_VOLUME = 125,
+  TRADING_BAD_STOPS = 126,
+  TRADING_BAD_PRICES = 127,
+  TRADING_BAD_STAKE = 128,
+  PROTECTION_IS_TOO_CLOSE_TO_MARKET = 129,
+  TRADING_BAD_EXPIRATION_DATE = 130,
+  PENDING_EXECUTION = 131,
+  TRADING_DISABLED = 132,
+  TRADING_NOT_ALLOWED = 133,
+  UNABLE_TO_CANCEL_ORDER = 134,
+  UNABLE_TO_AMEND_ORDER = 135,
+  SHORT_SELLING_NOT_ALLOWED = 136
 };
 bool ProtoOAErrorCode_IsValid(int value);
 constexpr ProtoOAErrorCode ProtoOAErrorCode_MIN = OA_AUTH_TOKEN_EXPIRED;
-constexpr ProtoOAErrorCode ProtoOAErrorCode_MAX = CONNECTIONS_LIMIT_EXCEEDED;
+constexpr ProtoOAErrorCode ProtoOAErrorCode_MAX = SHORT_SELLING_NOT_ALLOWED;
 constexpr int ProtoOAErrorCode_ARRAYSIZE = ProtoOAErrorCode_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAErrorCode_descriptor();
@@ -715,6 +821,26 @@ inline bool ProtoOAErrorCode_Parse(
     const std::string& name, ProtoOAErrorCode* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ProtoOAErrorCode>(
     ProtoOAErrorCode_descriptor(), name, value);
+}
+enum ProtoOALimitedRiskMarginCalculationStrategy {
+  ACCORDING_TO_LEVERAGE = 0,
+  ACCORDING_TO_GSL = 1,
+  ACCORDING_TO_GSL_AND_LEVERAGE = 2
+};
+bool ProtoOALimitedRiskMarginCalculationStrategy_IsValid(int value);
+constexpr ProtoOALimitedRiskMarginCalculationStrategy ProtoOALimitedRiskMarginCalculationStrategy_MIN = ACCORDING_TO_LEVERAGE;
+constexpr ProtoOALimitedRiskMarginCalculationStrategy ProtoOALimitedRiskMarginCalculationStrategy_MAX = ACCORDING_TO_GSL_AND_LEVERAGE;
+constexpr int ProtoOALimitedRiskMarginCalculationStrategy_ARRAYSIZE = ProtoOALimitedRiskMarginCalculationStrategy_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOALimitedRiskMarginCalculationStrategy_descriptor();
+inline const std::string& ProtoOALimitedRiskMarginCalculationStrategy_Name(ProtoOALimitedRiskMarginCalculationStrategy value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    ProtoOALimitedRiskMarginCalculationStrategy_descriptor(), value);
+}
+inline bool ProtoOALimitedRiskMarginCalculationStrategy_Parse(
+    const std::string& name, ProtoOALimitedRiskMarginCalculationStrategy* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ProtoOALimitedRiskMarginCalculationStrategy>(
+    ProtoOALimitedRiskMarginCalculationStrategy_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -854,6 +980,13 @@ class ProtoOAAsset final :
   ::PROTOBUF_NAMESPACE_ID::int64 assetid() const;
   void set_assetid(::PROTOBUF_NAMESPACE_ID::int64 value);
 
+  // optional int32 digits = 4;
+  bool has_digits() const;
+  void clear_digits();
+  static const int kDigitsFieldNumber = 4;
+  ::PROTOBUF_NAMESPACE_ID::int32 digits() const;
+  void set_digits(::PROTOBUF_NAMESPACE_ID::int32 value);
+
   // @@protoc_insertion_point(class_scope:ProtoOAAsset)
  private:
   class HasBitSetters;
@@ -867,6 +1000,7 @@ class ProtoOAAsset final :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr displayname_;
   ::PROTOBUF_NAMESPACE_ID::int64 assetid_;
+  ::PROTOBUF_NAMESPACE_ID::int32 digits_;
   friend struct ::TableStruct_OpenApiModelMessages_2eproto;
 };
 // -------------------------------------------------------------------
@@ -986,6 +1120,18 @@ class ProtoOASymbol final :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAInterval >&
       schedule() const;
 
+  // repeated .ProtoOAHoliday holiday = 33;
+  int holiday_size() const;
+  void clear_holiday();
+  static const int kHolidayFieldNumber = 33;
+  ::ProtoOAHoliday* mutable_holiday(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAHoliday >*
+      mutable_holiday();
+  const ::ProtoOAHoliday& holiday(int index) const;
+  ::ProtoOAHoliday* add_holiday();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAHoliday >&
+      holiday() const;
+
   // optional string minCommissionAsset = 23 [default = "USD"];
   bool has_mincommissionasset() const;
   void clear_mincommissionasset();
@@ -1096,12 +1242,12 @@ class ProtoOASymbol final :
   ::PROTOBUF_NAMESPACE_ID::uint64 maxexposure() const;
   void set_maxexposure(::PROTOBUF_NAMESPACE_ID::uint64 value);
 
-  // required int64 commission = 14;
-  bool has_commission() const;
-  void clear_commission();
-  static const int kCommissionFieldNumber = 14;
-  ::PROTOBUF_NAMESPACE_ID::int64 commission() const;
-  void set_commission(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // optional int64 commission = 14 [deprecated = true];
+  PROTOBUF_DEPRECATED bool has_commission() const;
+  PROTOBUF_DEPRECATED void clear_commission();
+  PROTOBUF_DEPRECATED static const int kCommissionFieldNumber = 14;
+  PROTOBUF_DEPRECATED ::PROTOBUF_NAMESPACE_ID::int64 commission() const;
+  PROTOBUF_DEPRECATED void set_commission(::PROTOBUF_NAMESPACE_ID::int64 value);
 
   // optional uint32 tpDistance = 17;
   bool has_tpdistance() const;
@@ -1124,12 +1270,12 @@ class ProtoOASymbol final :
   ::PROTOBUF_NAMESPACE_ID::int64 gslcharge() const;
   void set_gslcharge(::PROTOBUF_NAMESPACE_ID::int64 value);
 
-  // optional int64 minCommission = 21;
-  bool has_mincommission() const;
-  void clear_mincommission();
-  static const int kMinCommissionFieldNumber = 21;
-  ::PROTOBUF_NAMESPACE_ID::int64 mincommission() const;
-  void set_mincommission(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // optional int64 minCommission = 21 [deprecated = true];
+  PROTOBUF_DEPRECATED bool has_mincommission() const;
+  PROTOBUF_DEPRECATED void clear_mincommission();
+  PROTOBUF_DEPRECATED static const int kMinCommissionFieldNumber = 21;
+  PROTOBUF_DEPRECATED ::PROTOBUF_NAMESPACE_ID::int64 mincommission() const;
+  PROTOBUF_DEPRECATED void set_mincommission(::PROTOBUF_NAMESPACE_ID::int64 value);
 
   // optional int64 rolloverCommission = 24;
   bool has_rollovercommission() const;
@@ -1152,6 +1298,34 @@ class ProtoOASymbol final :
   ::ProtoOATradingMode tradingmode() const;
   void set_tradingmode(::ProtoOATradingMode value);
 
+  // optional int64 lotSize = 30;
+  bool has_lotsize() const;
+  void clear_lotsize();
+  static const int kLotSizeFieldNumber = 30;
+  ::PROTOBUF_NAMESPACE_ID::int64 lotsize() const;
+  void set_lotsize(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // optional int64 preciseTradingCommissionRate = 31;
+  bool has_precisetradingcommissionrate() const;
+  void clear_precisetradingcommissionrate();
+  static const int kPreciseTradingCommissionRateFieldNumber = 31;
+  ::PROTOBUF_NAMESPACE_ID::int64 precisetradingcommissionrate() const;
+  void set_precisetradingcommissionrate(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // optional int64 preciseMinCommission = 32;
+  bool has_precisemincommission() const;
+  void clear_precisemincommission();
+  static const int kPreciseMinCommissionFieldNumber = 32;
+  ::PROTOBUF_NAMESPACE_ID::int64 precisemincommission() const;
+  void set_precisemincommission(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // optional .ProtoOASwapCalculationType swapCalculationType = 29 [default = PIPS];
+  bool has_swapcalculationtype() const;
+  void clear_swapcalculationtype();
+  static const int kSwapCalculationTypeFieldNumber = 29;
+  ::ProtoOASwapCalculationType swapcalculationtype() const;
+  void set_swapcalculationtype(::ProtoOASwapCalculationType value);
+
   // optional .ProtoOADayOfWeek rolloverCommission3Days = 28 [default = MONDAY];
   bool has_rollovercommission3days() const;
   void clear_rollovercommission3days();
@@ -1166,7 +1340,7 @@ class ProtoOASymbol final :
   ::ProtoOADayOfWeek swaprollover3days() const;
   void set_swaprollover3days(::ProtoOADayOfWeek value);
 
-  // optional .ProtoOACommissionType commissionType = 15 [default = USD_PER_MIL_USD];
+  // optional .ProtoOACommissionType commissionType = 15 [default = USD_PER_MILLION_USD];
   bool has_commissiontype() const;
   void clear_commissiontype();
   static const int kCommissionTypeFieldNumber = 15;
@@ -1198,6 +1372,7 @@ class ProtoOASymbol final :
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAInterval > schedule_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAHoliday > holiday_;
   public:
   static ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<std::string> _i_give_permission_to_break_this_code_default_mincommissionasset_;
   private:
@@ -1223,6 +1398,10 @@ class ProtoOASymbol final :
   ::PROTOBUF_NAMESPACE_ID::int64 rollovercommission_;
   ::PROTOBUF_NAMESPACE_ID::int32 skiprolloverdays_;
   int tradingmode_;
+  ::PROTOBUF_NAMESPACE_ID::int64 lotsize_;
+  ::PROTOBUF_NAMESPACE_ID::int64 precisetradingcommissionrate_;
+  ::PROTOBUF_NAMESPACE_ID::int64 precisemincommission_;
+  int swapcalculationtype_;
   int rollovercommission3days_;
   int swaprollover3days_;
   int commissiontype_;
@@ -1414,6 +1593,167 @@ class ProtoOALightSymbol final :
 };
 // -------------------------------------------------------------------
 
+class ProtoOAArchivedSymbol final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAArchivedSymbol) */ {
+ public:
+  ProtoOAArchivedSymbol();
+  virtual ~ProtoOAArchivedSymbol();
+
+  ProtoOAArchivedSymbol(const ProtoOAArchivedSymbol& from);
+  ProtoOAArchivedSymbol(ProtoOAArchivedSymbol&& from) noexcept
+    : ProtoOAArchivedSymbol() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOAArchivedSymbol& operator=(const ProtoOAArchivedSymbol& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOAArchivedSymbol& operator=(ProtoOAArchivedSymbol&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOAArchivedSymbol& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOAArchivedSymbol* internal_default_instance() {
+    return reinterpret_cast<const ProtoOAArchivedSymbol*>(
+               &_ProtoOAArchivedSymbol_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    3;
+
+  void Swap(ProtoOAArchivedSymbol* other);
+  friend void swap(ProtoOAArchivedSymbol& a, ProtoOAArchivedSymbol& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOAArchivedSymbol* New() const final {
+    return CreateMaybeMessage<ProtoOAArchivedSymbol>(nullptr);
+  }
+
+  ProtoOAArchivedSymbol* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOAArchivedSymbol>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOAArchivedSymbol& from);
+  void MergeFrom(const ProtoOAArchivedSymbol& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOAArchivedSymbol* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOAArchivedSymbol";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required string name = 2;
+  bool has_name() const;
+  void clear_name();
+  static const int kNameFieldNumber = 2;
+  const std::string& name() const;
+  void set_name(const std::string& value);
+  void set_name(std::string&& value);
+  void set_name(const char* value);
+  void set_name(const char* value, size_t size);
+  std::string* mutable_name();
+  std::string* release_name();
+  void set_allocated_name(std::string* name);
+
+  // optional string description = 4;
+  bool has_description() const;
+  void clear_description();
+  static const int kDescriptionFieldNumber = 4;
+  const std::string& description() const;
+  void set_description(const std::string& value);
+  void set_description(std::string&& value);
+  void set_description(const char* value);
+  void set_description(const char* value, size_t size);
+  std::string* mutable_description();
+  std::string* release_description();
+  void set_allocated_description(std::string* description);
+
+  // required int64 symbolId = 1;
+  bool has_symbolid() const;
+  void clear_symbolid();
+  static const int kSymbolIdFieldNumber = 1;
+  ::PROTOBUF_NAMESPACE_ID::int64 symbolid() const;
+  void set_symbolid(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // required int64 utcLastUpdateTimestamp = 3;
+  bool has_utclastupdatetimestamp() const;
+  void clear_utclastupdatetimestamp();
+  static const int kUtcLastUpdateTimestampFieldNumber = 3;
+  ::PROTOBUF_NAMESPACE_ID::int64 utclastupdatetimestamp() const;
+  void set_utclastupdatetimestamp(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOAArchivedSymbol)
+ private:
+  class HasBitSetters;
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr description_;
+  ::PROTOBUF_NAMESPACE_ID::int64 symbolid_;
+  ::PROTOBUF_NAMESPACE_ID::int64 utclastupdatetimestamp_;
+  friend struct ::TableStruct_OpenApiModelMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
 class ProtoOASymbolCategory final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOASymbolCategory) */ {
  public:
@@ -1457,7 +1797,7 @@ class ProtoOASymbolCategory final :
                &_ProtoOASymbolCategory_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   void Swap(ProtoOASymbolCategory* other);
   friend void swap(ProtoOASymbolCategory& a, ProtoOASymbolCategory& b) {
@@ -1604,7 +1944,7 @@ class ProtoOAInterval final :
                &_ProtoOAInterval_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    5;
 
   void Swap(ProtoOAInterval* other);
   friend void swap(ProtoOAInterval& a, ProtoOAInterval& b) {
@@ -1737,7 +2077,7 @@ class ProtoOATrader final :
                &_ProtoOATrader_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   void Swap(ProtoOATrader* other);
   friend void swap(ProtoOATrader& a, ProtoOATrader& b) {
@@ -1880,6 +2220,13 @@ class ProtoOATrader final :
   ::ProtoOATotalMarginCalculationType totalmargincalculationtype() const;
   void set_totalmargincalculationtype(::ProtoOATotalMarginCalculationType value);
 
+  // optional uint32 maxLeverage = 12;
+  bool has_maxleverage() const;
+  void clear_maxleverage();
+  static const int kMaxLeverageFieldNumber = 12;
+  ::PROTOBUF_NAMESPACE_ID::uint32 maxleverage() const;
+  void set_maxleverage(::PROTOBUF_NAMESPACE_ID::uint32 value);
+
   // optional bool swapFree = 9;
   bool has_swapfree() const;
   void clear_swapfree();
@@ -1887,19 +2234,19 @@ class ProtoOATrader final :
   bool swapfree() const;
   void set_swapfree(bool value);
 
-  // optional bool frenchRisk = 13;
-  bool has_frenchrisk() const;
-  void clear_frenchrisk();
-  static const int kFrenchRiskFieldNumber = 13;
-  bool frenchrisk() const;
-  void set_frenchrisk(bool value);
+  // optional bool frenchRisk = 13 [deprecated = true];
+  PROTOBUF_DEPRECATED bool has_frenchrisk() const;
+  PROTOBUF_DEPRECATED void clear_frenchrisk();
+  PROTOBUF_DEPRECATED static const int kFrenchRiskFieldNumber = 13;
+  PROTOBUF_DEPRECATED bool frenchrisk() const;
+  PROTOBUF_DEPRECATED void set_frenchrisk(bool value);
 
-  // optional uint32 maxLeverage = 12;
-  bool has_maxleverage() const;
-  void clear_maxleverage();
-  static const int kMaxLeverageFieldNumber = 12;
-  ::PROTOBUF_NAMESPACE_ID::uint32 maxleverage() const;
-  void set_maxleverage(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  // optional bool isLimitedRisk = 18;
+  bool has_islimitedrisk() const;
+  void clear_islimitedrisk();
+  static const int kIsLimitedRiskFieldNumber = 18;
+  bool islimitedrisk() const;
+  void set_islimitedrisk(bool value);
 
   // optional .ProtoOAAccountType accountType = 15 [default = HEDGED];
   bool has_accounttype() const;
@@ -1922,6 +2269,20 @@ class ProtoOATrader final :
   ::PROTOBUF_NAMESPACE_ID::int64 registrationtimestamp() const;
   void set_registrationtimestamp(::PROTOBUF_NAMESPACE_ID::int64 value);
 
+  // optional .ProtoOALimitedRiskMarginCalculationStrategy limitedRiskMarginCalculationStrategy = 19 [default = ACCORDING_TO_LEVERAGE];
+  bool has_limitedriskmargincalculationstrategy() const;
+  void clear_limitedriskmargincalculationstrategy();
+  static const int kLimitedRiskMarginCalculationStrategyFieldNumber = 19;
+  ::ProtoOALimitedRiskMarginCalculationStrategy limitedriskmargincalculationstrategy() const;
+  void set_limitedriskmargincalculationstrategy(::ProtoOALimitedRiskMarginCalculationStrategy value);
+
+  // optional uint32 moneyDigits = 20;
+  bool has_moneydigits() const;
+  void clear_moneydigits();
+  static const int kMoneyDigitsFieldNumber = 20;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits() const;
+  void set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value);
+
   // @@protoc_insertion_point(class_scope:ProtoOATrader)
  private:
   class HasBitSetters;
@@ -1943,12 +2304,15 @@ class ProtoOATrader final :
   int accessrights_;
   ::PROTOBUF_NAMESPACE_ID::uint32 leverageincents_;
   int totalmargincalculationtype_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 maxleverage_;
   bool swapfree_;
   bool frenchrisk_;
-  ::PROTOBUF_NAMESPACE_ID::uint32 maxleverage_;
+  bool islimitedrisk_;
   int accounttype_;
   ::PROTOBUF_NAMESPACE_ID::int64 traderlogin_;
   ::PROTOBUF_NAMESPACE_ID::int64 registrationtimestamp_;
+  int limitedriskmargincalculationstrategy_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits_;
   friend struct ::TableStruct_OpenApiModelMessages_2eproto;
 };
 // -------------------------------------------------------------------
@@ -1996,7 +2360,7 @@ class ProtoOAPosition final :
                &_ProtoOAPosition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   void Swap(ProtoOAPosition* other);
   friend void swap(ProtoOAPosition& a, ProtoOAPosition& b) {
@@ -2142,6 +2506,13 @@ class ProtoOAPosition final :
   bool guaranteedstoploss() const;
   void set_guaranteedstoploss(bool value);
 
+  // optional uint32 moneyDigits = 15;
+  bool has_moneydigits() const;
+  void clear_moneydigits();
+  static const int kMoneyDigitsFieldNumber = 15;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits() const;
+  void set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value);
+
   // required .ProtoOAPositionStatus positionStatus = 3;
   bool has_positionstatus() const;
   void clear_positionstatus();
@@ -2178,6 +2549,7 @@ class ProtoOAPosition final :
   ::PROTOBUF_NAMESPACE_ID::int64 mirroringcommission_;
   ::PROTOBUF_NAMESPACE_ID::uint64 usedmargin_;
   bool guaranteedstoploss_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits_;
   int positionstatus_;
   int stoplosstriggermethod_;
   friend struct ::TableStruct_OpenApiModelMessages_2eproto;
@@ -2227,7 +2599,7 @@ class ProtoOATradeData final :
                &_ProtoOATradeData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   void Swap(ProtoOATradeData* other);
   friend void swap(ProtoOATradeData& a, ProtoOATradeData& b) {
@@ -2300,6 +2672,19 @@ class ProtoOATradeData final :
   std::string* release_label();
   void set_allocated_label(std::string* label);
 
+  // optional string comment = 7;
+  bool has_comment() const;
+  void clear_comment();
+  static const int kCommentFieldNumber = 7;
+  const std::string& comment() const;
+  void set_comment(const std::string& value);
+  void set_comment(std::string&& value);
+  void set_comment(const char* value);
+  void set_comment(const char* value, size_t size);
+  std::string* mutable_comment();
+  std::string* release_comment();
+  void set_allocated_comment(std::string* comment);
+
   // required int64 symbolId = 1;
   bool has_symbolid() const;
   void clear_symbolid();
@@ -2346,6 +2731,7 @@ class ProtoOATradeData final :
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr label_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr comment_;
   ::PROTOBUF_NAMESPACE_ID::int64 symbolid_;
   ::PROTOBUF_NAMESPACE_ID::int64 volume_;
   ::PROTOBUF_NAMESPACE_ID::int64 opentimestamp_;
@@ -2398,7 +2784,7 @@ class ProtoOAOrder final :
                &_ProtoOAOrder_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   void Swap(ProtoOAOrder* other);
   friend void swap(ProtoOAOrder& a, ProtoOAOrder& b) {
@@ -2707,7 +3093,7 @@ class ProtoOABonusDepositWithdraw final :
                &_ProtoOABonusDepositWithdraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   void Swap(ProtoOABonusDepositWithdraw* other);
   friend void swap(ProtoOABonusDepositWithdraw& a, ProtoOABonusDepositWithdraw& b) {
@@ -2808,6 +3194,20 @@ class ProtoOABonusDepositWithdraw final :
   ::PROTOBUF_NAMESPACE_ID::int64 ibbonus() const;
   void set_ibbonus(::PROTOBUF_NAMESPACE_ID::int64 value);
 
+  // required .ProtoOAChangeBonusType operationType = 1;
+  bool has_operationtype() const;
+  void clear_operationtype();
+  static const int kOperationTypeFieldNumber = 1;
+  ::ProtoOAChangeBonusType operationtype() const;
+  void set_operationtype(::ProtoOAChangeBonusType value);
+
+  // optional uint32 moneyDigits = 10;
+  bool has_moneydigits() const;
+  void clear_moneydigits();
+  static const int kMoneyDigitsFieldNumber = 10;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits() const;
+  void set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value);
+
   // required int64 ibDelta = 6;
   bool has_ibdelta() const;
   void clear_ibdelta();
@@ -2829,13 +3229,6 @@ class ProtoOABonusDepositWithdraw final :
   ::PROTOBUF_NAMESPACE_ID::int64 introducingbrokerid() const;
   void set_introducingbrokerid(::PROTOBUF_NAMESPACE_ID::int64 value);
 
-  // required .ProtoOAChangeBonusType operationType = 1;
-  bool has_operationtype() const;
-  void clear_operationtype();
-  static const int kOperationTypeFieldNumber = 1;
-  ::ProtoOAChangeBonusType operationtype() const;
-  void set_operationtype(::ProtoOAChangeBonusType value);
-
   // @@protoc_insertion_point(class_scope:ProtoOABonusDepositWithdraw)
  private:
   class HasBitSetters;
@@ -2851,10 +3244,11 @@ class ProtoOABonusDepositWithdraw final :
   ::PROTOBUF_NAMESPACE_ID::int64 managerbonus_;
   ::PROTOBUF_NAMESPACE_ID::int64 managerdelta_;
   ::PROTOBUF_NAMESPACE_ID::int64 ibbonus_;
+  int operationtype_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits_;
   ::PROTOBUF_NAMESPACE_ID::int64 ibdelta_;
   ::PROTOBUF_NAMESPACE_ID::int64 changebonustimestamp_;
   ::PROTOBUF_NAMESPACE_ID::int64 introducingbrokerid_;
-  int operationtype_;
   friend struct ::TableStruct_OpenApiModelMessages_2eproto;
 };
 // -------------------------------------------------------------------
@@ -2902,7 +3296,7 @@ class ProtoOADepositWithdraw final :
                &_ProtoOADepositWithdraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   void Swap(ProtoOADepositWithdraw* other);
   friend void swap(ProtoOADepositWithdraw& a, ProtoOADepositWithdraw& b) {
@@ -3003,6 +3397,20 @@ class ProtoOADepositWithdraw final :
   ::PROTOBUF_NAMESPACE_ID::int64 changebalancetimestamp() const;
   void set_changebalancetimestamp(::PROTOBUF_NAMESPACE_ID::int64 value);
 
+  // required .ProtoOAChangeBalanceType operationType = 1;
+  bool has_operationtype() const;
+  void clear_operationtype();
+  static const int kOperationTypeFieldNumber = 1;
+  ::ProtoOAChangeBalanceType operationtype() const;
+  void set_operationtype(::ProtoOAChangeBalanceType value);
+
+  // optional uint32 moneyDigits = 9;
+  bool has_moneydigits() const;
+  void clear_moneydigits();
+  static const int kMoneyDigitsFieldNumber = 9;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits() const;
+  void set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value);
+
   // optional int64 balanceVersion = 7;
   bool has_balanceversion() const;
   void clear_balanceversion();
@@ -3016,13 +3424,6 @@ class ProtoOADepositWithdraw final :
   static const int kEquityFieldNumber = 8;
   ::PROTOBUF_NAMESPACE_ID::int64 equity() const;
   void set_equity(::PROTOBUF_NAMESPACE_ID::int64 value);
-
-  // required .ProtoOAChangeBalanceType operationType = 1;
-  bool has_operationtype() const;
-  void clear_operationtype();
-  static const int kOperationTypeFieldNumber = 1;
-  ::ProtoOAChangeBalanceType operationtype() const;
-  void set_operationtype(::ProtoOAChangeBalanceType value);
 
   // @@protoc_insertion_point(class_scope:ProtoOADepositWithdraw)
  private:
@@ -3039,9 +3440,10 @@ class ProtoOADepositWithdraw final :
   ::PROTOBUF_NAMESPACE_ID::int64 balance_;
   ::PROTOBUF_NAMESPACE_ID::int64 delta_;
   ::PROTOBUF_NAMESPACE_ID::int64 changebalancetimestamp_;
+  int operationtype_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits_;
   ::PROTOBUF_NAMESPACE_ID::int64 balanceversion_;
   ::PROTOBUF_NAMESPACE_ID::int64 equity_;
-  int operationtype_;
   friend struct ::TableStruct_OpenApiModelMessages_2eproto;
 };
 // -------------------------------------------------------------------
@@ -3089,7 +3491,7 @@ class ProtoOADeal final :
                &_ProtoOADeal_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   void Swap(ProtoOADeal* other);
   friend void swap(ProtoOADeal& a, ProtoOADeal& b) {
@@ -3249,6 +3651,13 @@ class ProtoOADeal final :
   double basetousdconversionrate() const;
   void set_basetousdconversionrate(double value);
 
+  // optional uint32 moneyDigits = 17;
+  bool has_moneydigits() const;
+  void clear_moneydigits();
+  static const int kMoneyDigitsFieldNumber = 17;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits() const;
+  void set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value);
+
   // required .ProtoOATradeSide tradeSide = 11;
   bool has_tradeside() const;
   void clear_tradeside();
@@ -3287,6 +3696,7 @@ class ProtoOADeal final :
   double marginrate_;
   ::PROTOBUF_NAMESPACE_ID::int64 commission_;
   double basetousdconversionrate_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits_;
   int tradeside_;
   int dealstatus_;
   friend struct ::TableStruct_OpenApiModelMessages_2eproto;
@@ -3336,7 +3746,7 @@ class ProtoOAClosePositionDetail final :
                &_ProtoOAClosePositionDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   void Swap(ProtoOAClosePositionDetail* other);
   friend void swap(ProtoOAClosePositionDetail& a, ProtoOAClosePositionDetail& b) {
@@ -3452,6 +3862,13 @@ class ProtoOAClosePositionDetail final :
   ::PROTOBUF_NAMESPACE_ID::int64 balanceversion() const;
   void set_balanceversion(::PROTOBUF_NAMESPACE_ID::int64 value);
 
+  // optional uint32 moneyDigits = 9;
+  bool has_moneydigits() const;
+  void clear_moneydigits();
+  static const int kMoneyDigitsFieldNumber = 9;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits() const;
+  void set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value);
+
   // @@protoc_insertion_point(class_scope:ProtoOAClosePositionDetail)
  private:
   class HasBitSetters;
@@ -3470,6 +3887,7 @@ class ProtoOAClosePositionDetail final :
   double quotetodepositconversionrate_;
   ::PROTOBUF_NAMESPACE_ID::int64 closedvolume_;
   ::PROTOBUF_NAMESPACE_ID::int64 balanceversion_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits_;
   friend struct ::TableStruct_OpenApiModelMessages_2eproto;
 };
 // -------------------------------------------------------------------
@@ -3517,7 +3935,7 @@ class ProtoOATrendbar final :
                &_ProtoOATrendbar_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   void Swap(ProtoOATrendbar* other);
   friend void swap(ProtoOATrendbar& a, ProtoOATrendbar& b) {
@@ -3687,7 +4105,7 @@ class ProtoOAExpectedMargin final :
                &_ProtoOAExpectedMargin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   void Swap(ProtoOAExpectedMargin* other);
   friend void swap(ProtoOAExpectedMargin& a, ProtoOAExpectedMargin& b) {
@@ -3828,7 +4246,7 @@ class ProtoOATickData final :
                &_ProtoOATickData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   void Swap(ProtoOATickData* other);
   friend void swap(ProtoOATickData& a, ProtoOATickData& b) {
@@ -3961,7 +4379,7 @@ class ProtoOACtidProfile final :
                &_ProtoOACtidProfile_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   void Swap(ProtoOACtidProfile* other);
   friend void swap(ProtoOACtidProfile& a, ProtoOACtidProfile& b) {
@@ -4083,7 +4501,7 @@ class ProtoOACtidTraderAccount final :
                &_ProtoOACtidTraderAccount_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    18;
 
   void Swap(ProtoOACtidTraderAccount* other);
   friend void swap(ProtoOACtidTraderAccount& a, ProtoOACtidTraderAccount& b) {
@@ -4221,7 +4639,7 @@ class ProtoOAAssetClass final :
                &_ProtoOAAssetClass_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   void Swap(ProtoOAAssetClass* other);
   friend void swap(ProtoOAAssetClass& a, ProtoOAAssetClass& b) {
@@ -4357,7 +4775,7 @@ class ProtoOADepthQuote final :
                &_ProtoOADepthQuote_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   void Swap(ProtoOADepthQuote* other);
   friend void swap(ProtoOADepthQuote& a, ProtoOADepthQuote& b) {
@@ -4459,6 +4877,346 @@ class ProtoOADepthQuote final :
   ::PROTOBUF_NAMESPACE_ID::uint64 size_;
   ::PROTOBUF_NAMESPACE_ID::uint64 bid_;
   ::PROTOBUF_NAMESPACE_ID::uint64 ask_;
+  friend struct ::TableStruct_OpenApiModelMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ProtoOAMarginCall final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAMarginCall) */ {
+ public:
+  ProtoOAMarginCall();
+  virtual ~ProtoOAMarginCall();
+
+  ProtoOAMarginCall(const ProtoOAMarginCall& from);
+  ProtoOAMarginCall(ProtoOAMarginCall&& from) noexcept
+    : ProtoOAMarginCall() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOAMarginCall& operator=(const ProtoOAMarginCall& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOAMarginCall& operator=(ProtoOAMarginCall&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOAMarginCall& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOAMarginCall* internal_default_instance() {
+    return reinterpret_cast<const ProtoOAMarginCall*>(
+               &_ProtoOAMarginCall_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    21;
+
+  void Swap(ProtoOAMarginCall* other);
+  friend void swap(ProtoOAMarginCall& a, ProtoOAMarginCall& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOAMarginCall* New() const final {
+    return CreateMaybeMessage<ProtoOAMarginCall>(nullptr);
+  }
+
+  ProtoOAMarginCall* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOAMarginCall>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOAMarginCall& from);
+  void MergeFrom(const ProtoOAMarginCall& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOAMarginCall* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOAMarginCall";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required double marginLevelThreshold = 2;
+  bool has_marginlevelthreshold() const;
+  void clear_marginlevelthreshold();
+  static const int kMarginLevelThresholdFieldNumber = 2;
+  double marginlevelthreshold() const;
+  void set_marginlevelthreshold(double value);
+
+  // optional int64 utcLastUpdateTimestamp = 3;
+  bool has_utclastupdatetimestamp() const;
+  void clear_utclastupdatetimestamp();
+  static const int kUtcLastUpdateTimestampFieldNumber = 3;
+  ::PROTOBUF_NAMESPACE_ID::int64 utclastupdatetimestamp() const;
+  void set_utclastupdatetimestamp(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // required .ProtoOANotificationType marginCallType = 1;
+  bool has_margincalltype() const;
+  void clear_margincalltype();
+  static const int kMarginCallTypeFieldNumber = 1;
+  ::ProtoOANotificationType margincalltype() const;
+  void set_margincalltype(::ProtoOANotificationType value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOAMarginCall)
+ private:
+  class HasBitSetters;
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  double marginlevelthreshold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 utclastupdatetimestamp_;
+  int margincalltype_;
+  friend struct ::TableStruct_OpenApiModelMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ProtoOAHoliday final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAHoliday) */ {
+ public:
+  ProtoOAHoliday();
+  virtual ~ProtoOAHoliday();
+
+  ProtoOAHoliday(const ProtoOAHoliday& from);
+  ProtoOAHoliday(ProtoOAHoliday&& from) noexcept
+    : ProtoOAHoliday() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOAHoliday& operator=(const ProtoOAHoliday& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOAHoliday& operator=(ProtoOAHoliday&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOAHoliday& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOAHoliday* internal_default_instance() {
+    return reinterpret_cast<const ProtoOAHoliday*>(
+               &_ProtoOAHoliday_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    22;
+
+  void Swap(ProtoOAHoliday* other);
+  friend void swap(ProtoOAHoliday& a, ProtoOAHoliday& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOAHoliday* New() const final {
+    return CreateMaybeMessage<ProtoOAHoliday>(nullptr);
+  }
+
+  ProtoOAHoliday* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOAHoliday>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOAHoliday& from);
+  void MergeFrom(const ProtoOAHoliday& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOAHoliday* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOAHoliday";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required string name = 2;
+  bool has_name() const;
+  void clear_name();
+  static const int kNameFieldNumber = 2;
+  const std::string& name() const;
+  void set_name(const std::string& value);
+  void set_name(std::string&& value);
+  void set_name(const char* value);
+  void set_name(const char* value, size_t size);
+  std::string* mutable_name();
+  std::string* release_name();
+  void set_allocated_name(std::string* name);
+
+  // optional string description = 3;
+  bool has_description() const;
+  void clear_description();
+  static const int kDescriptionFieldNumber = 3;
+  const std::string& description() const;
+  void set_description(const std::string& value);
+  void set_description(std::string&& value);
+  void set_description(const char* value);
+  void set_description(const char* value, size_t size);
+  std::string* mutable_description();
+  std::string* release_description();
+  void set_allocated_description(std::string* description);
+
+  // required string scheduleTimeZone = 4;
+  bool has_scheduletimezone() const;
+  void clear_scheduletimezone();
+  static const int kScheduleTimeZoneFieldNumber = 4;
+  const std::string& scheduletimezone() const;
+  void set_scheduletimezone(const std::string& value);
+  void set_scheduletimezone(std::string&& value);
+  void set_scheduletimezone(const char* value);
+  void set_scheduletimezone(const char* value, size_t size);
+  std::string* mutable_scheduletimezone();
+  std::string* release_scheduletimezone();
+  void set_allocated_scheduletimezone(std::string* scheduletimezone);
+
+  // required int64 holidayId = 1;
+  bool has_holidayid() const;
+  void clear_holidayid();
+  static const int kHolidayIdFieldNumber = 1;
+  ::PROTOBUF_NAMESPACE_ID::int64 holidayid() const;
+  void set_holidayid(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // required int64 holidayDate = 5;
+  bool has_holidaydate() const;
+  void clear_holidaydate();
+  static const int kHolidayDateFieldNumber = 5;
+  ::PROTOBUF_NAMESPACE_ID::int64 holidaydate() const;
+  void set_holidaydate(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // required bool isRecurring = 6;
+  bool has_isrecurring() const;
+  void clear_isrecurring();
+  static const int kIsRecurringFieldNumber = 6;
+  bool isrecurring() const;
+  void set_isrecurring(bool value);
+
+  // optional int32 startSecond = 7;
+  bool has_startsecond() const;
+  void clear_startsecond();
+  static const int kStartSecondFieldNumber = 7;
+  ::PROTOBUF_NAMESPACE_ID::int32 startsecond() const;
+  void set_startsecond(::PROTOBUF_NAMESPACE_ID::int32 value);
+
+  // optional int32 endSecond = 8;
+  bool has_endsecond() const;
+  void clear_endsecond();
+  static const int kEndSecondFieldNumber = 8;
+  ::PROTOBUF_NAMESPACE_ID::int32 endsecond() const;
+  void set_endsecond(::PROTOBUF_NAMESPACE_ID::int32 value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOAHoliday)
+ private:
+  class HasBitSetters;
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr description_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr scheduletimezone_;
+  ::PROTOBUF_NAMESPACE_ID::int64 holidayid_;
+  ::PROTOBUF_NAMESPACE_ID::int64 holidaydate_;
+  bool isrecurring_;
+  ::PROTOBUF_NAMESPACE_ID::int32 startsecond_;
+  ::PROTOBUF_NAMESPACE_ID::int32 endsecond_;
   friend struct ::TableStruct_OpenApiModelMessages_2eproto;
 };
 // ===================================================================
@@ -4606,6 +5364,24 @@ inline void ProtoOAAsset::set_allocated_displayname(std::string* displayname) {
   // @@protoc_insertion_point(field_set_allocated:ProtoOAAsset.displayName)
 }
 
+// optional int32 digits = 4;
+inline bool ProtoOAAsset::has_digits() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void ProtoOAAsset::clear_digits() {
+  digits_ = 0;
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 ProtoOAAsset::digits() const {
+  // @@protoc_insertion_point(field_get:ProtoOAAsset.digits)
+  return digits_;
+}
+inline void ProtoOAAsset::set_digits(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _has_bits_[0] |= 0x00000008u;
+  digits_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAAsset.digits)
+}
+
 // -------------------------------------------------------------------
 
 // ProtoOASymbol
@@ -4702,11 +5478,11 @@ inline void ProtoOASymbol::set_guaranteedstoploss(bool value) {
 
 // optional .ProtoOADayOfWeek swapRollover3Days = 6 [default = MONDAY];
 inline bool ProtoOASymbol::has_swaprollover3days() const {
-  return (_has_bits_[0] & 0x00800000u) != 0;
+  return (_has_bits_[0] & 0x08000000u) != 0;
 }
 inline void ProtoOASymbol::clear_swaprollover3days() {
   swaprollover3days_ = 1;
-  _has_bits_[0] &= ~0x00800000u;
+  _has_bits_[0] &= ~0x08000000u;
 }
 inline ::ProtoOADayOfWeek ProtoOASymbol::swaprollover3days() const {
   // @@protoc_insertion_point(field_get:ProtoOASymbol.swapRollover3Days)
@@ -4714,7 +5490,7 @@ inline ::ProtoOADayOfWeek ProtoOASymbol::swaprollover3days() const {
 }
 inline void ProtoOASymbol::set_swaprollover3days(::ProtoOADayOfWeek value) {
   assert(::ProtoOADayOfWeek_IsValid(value));
-  _has_bits_[0] |= 0x00800000u;
+  _has_bits_[0] |= 0x08000000u;
   swaprollover3days_ = value;
   // @@protoc_insertion_point(field_set:ProtoOASymbol.swapRollover3Days)
 }
@@ -4857,7 +5633,7 @@ ProtoOASymbol::schedule() const {
   return schedule_;
 }
 
-// required int64 commission = 14;
+// optional int64 commission = 14 [deprecated = true];
 inline bool ProtoOASymbol::has_commission() const {
   return (_has_bits_[0] & 0x00004000u) != 0;
 }
@@ -4875,13 +5651,13 @@ inline void ProtoOASymbol::set_commission(::PROTOBUF_NAMESPACE_ID::int64 value) 
   // @@protoc_insertion_point(field_set:ProtoOASymbol.commission)
 }
 
-// optional .ProtoOACommissionType commissionType = 15 [default = USD_PER_MIL_USD];
+// optional .ProtoOACommissionType commissionType = 15 [default = USD_PER_MILLION_USD];
 inline bool ProtoOASymbol::has_commissiontype() const {
-  return (_has_bits_[0] & 0x01000000u) != 0;
+  return (_has_bits_[0] & 0x10000000u) != 0;
 }
 inline void ProtoOASymbol::clear_commissiontype() {
   commissiontype_ = 1;
-  _has_bits_[0] &= ~0x01000000u;
+  _has_bits_[0] &= ~0x10000000u;
 }
 inline ::ProtoOACommissionType ProtoOASymbol::commissiontype() const {
   // @@protoc_insertion_point(field_get:ProtoOASymbol.commissionType)
@@ -4889,7 +5665,7 @@ inline ::ProtoOACommissionType ProtoOASymbol::commissiontype() const {
 }
 inline void ProtoOASymbol::set_commissiontype(::ProtoOACommissionType value) {
   assert(::ProtoOACommissionType_IsValid(value));
-  _has_bits_[0] |= 0x01000000u;
+  _has_bits_[0] |= 0x10000000u;
   commissiontype_ = value;
   // @@protoc_insertion_point(field_set:ProtoOASymbol.commissionType)
 }
@@ -4968,11 +5744,11 @@ inline void ProtoOASymbol::set_gslcharge(::PROTOBUF_NAMESPACE_ID::int64 value) {
 
 // optional .ProtoOASymbolDistanceType distanceSetIn = 20 [default = SYMBOL_DISTANCE_IN_POINTS];
 inline bool ProtoOASymbol::has_distancesetin() const {
-  return (_has_bits_[0] & 0x02000000u) != 0;
+  return (_has_bits_[0] & 0x20000000u) != 0;
 }
 inline void ProtoOASymbol::clear_distancesetin() {
   distancesetin_ = 1;
-  _has_bits_[0] &= ~0x02000000u;
+  _has_bits_[0] &= ~0x20000000u;
 }
 inline ::ProtoOASymbolDistanceType ProtoOASymbol::distancesetin() const {
   // @@protoc_insertion_point(field_get:ProtoOASymbol.distanceSetIn)
@@ -4980,12 +5756,12 @@ inline ::ProtoOASymbolDistanceType ProtoOASymbol::distancesetin() const {
 }
 inline void ProtoOASymbol::set_distancesetin(::ProtoOASymbolDistanceType value) {
   assert(::ProtoOASymbolDistanceType_IsValid(value));
-  _has_bits_[0] |= 0x02000000u;
+  _has_bits_[0] |= 0x20000000u;
   distancesetin_ = value;
   // @@protoc_insertion_point(field_set:ProtoOASymbol.distanceSetIn)
 }
 
-// optional int64 minCommission = 21;
+// optional int64 minCommission = 21 [deprecated = true];
 inline bool ProtoOASymbol::has_mincommission() const {
   return (_has_bits_[0] & 0x00040000u) != 0;
 }
@@ -5005,11 +5781,11 @@ inline void ProtoOASymbol::set_mincommission(::PROTOBUF_NAMESPACE_ID::int64 valu
 
 // optional .ProtoOAMinCommissionType minCommissionType = 22 [default = CURRENCY];
 inline bool ProtoOASymbol::has_mincommissiontype() const {
-  return (_has_bits_[0] & 0x04000000u) != 0;
+  return (_has_bits_[0] & 0x40000000u) != 0;
 }
 inline void ProtoOASymbol::clear_mincommissiontype() {
   mincommissiontype_ = 1;
-  _has_bits_[0] &= ~0x04000000u;
+  _has_bits_[0] &= ~0x40000000u;
 }
 inline ::ProtoOAMinCommissionType ProtoOASymbol::mincommissiontype() const {
   // @@protoc_insertion_point(field_get:ProtoOASymbol.minCommissionType)
@@ -5017,7 +5793,7 @@ inline ::ProtoOAMinCommissionType ProtoOASymbol::mincommissiontype() const {
 }
 inline void ProtoOASymbol::set_mincommissiontype(::ProtoOAMinCommissionType value) {
   assert(::ProtoOAMinCommissionType_IsValid(value));
-  _has_bits_[0] |= 0x04000000u;
+  _has_bits_[0] |= 0x40000000u;
   mincommissiontype_ = value;
   // @@protoc_insertion_point(field_set:ProtoOASymbol.minCommissionType)
 }
@@ -5195,11 +5971,11 @@ inline void ProtoOASymbol::set_tradingmode(::ProtoOATradingMode value) {
 
 // optional .ProtoOADayOfWeek rolloverCommission3Days = 28 [default = MONDAY];
 inline bool ProtoOASymbol::has_rollovercommission3days() const {
-  return (_has_bits_[0] & 0x00400000u) != 0;
+  return (_has_bits_[0] & 0x04000000u) != 0;
 }
 inline void ProtoOASymbol::clear_rollovercommission3days() {
   rollovercommission3days_ = 1;
-  _has_bits_[0] &= ~0x00400000u;
+  _has_bits_[0] &= ~0x04000000u;
 }
 inline ::ProtoOADayOfWeek ProtoOASymbol::rollovercommission3days() const {
   // @@protoc_insertion_point(field_get:ProtoOASymbol.rolloverCommission3Days)
@@ -5207,9 +5983,112 @@ inline ::ProtoOADayOfWeek ProtoOASymbol::rollovercommission3days() const {
 }
 inline void ProtoOASymbol::set_rollovercommission3days(::ProtoOADayOfWeek value) {
   assert(::ProtoOADayOfWeek_IsValid(value));
-  _has_bits_[0] |= 0x00400000u;
+  _has_bits_[0] |= 0x04000000u;
   rollovercommission3days_ = value;
   // @@protoc_insertion_point(field_set:ProtoOASymbol.rolloverCommission3Days)
+}
+
+// optional .ProtoOASwapCalculationType swapCalculationType = 29 [default = PIPS];
+inline bool ProtoOASymbol::has_swapcalculationtype() const {
+  return (_has_bits_[0] & 0x02000000u) != 0;
+}
+inline void ProtoOASymbol::clear_swapcalculationtype() {
+  swapcalculationtype_ = 0;
+  _has_bits_[0] &= ~0x02000000u;
+}
+inline ::ProtoOASwapCalculationType ProtoOASymbol::swapcalculationtype() const {
+  // @@protoc_insertion_point(field_get:ProtoOASymbol.swapCalculationType)
+  return static_cast< ::ProtoOASwapCalculationType >(swapcalculationtype_);
+}
+inline void ProtoOASymbol::set_swapcalculationtype(::ProtoOASwapCalculationType value) {
+  assert(::ProtoOASwapCalculationType_IsValid(value));
+  _has_bits_[0] |= 0x02000000u;
+  swapcalculationtype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOASymbol.swapCalculationType)
+}
+
+// optional int64 lotSize = 30;
+inline bool ProtoOASymbol::has_lotsize() const {
+  return (_has_bits_[0] & 0x00400000u) != 0;
+}
+inline void ProtoOASymbol::clear_lotsize() {
+  lotsize_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00400000u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOASymbol::lotsize() const {
+  // @@protoc_insertion_point(field_get:ProtoOASymbol.lotSize)
+  return lotsize_;
+}
+inline void ProtoOASymbol::set_lotsize(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00400000u;
+  lotsize_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOASymbol.lotSize)
+}
+
+// optional int64 preciseTradingCommissionRate = 31;
+inline bool ProtoOASymbol::has_precisetradingcommissionrate() const {
+  return (_has_bits_[0] & 0x00800000u) != 0;
+}
+inline void ProtoOASymbol::clear_precisetradingcommissionrate() {
+  precisetradingcommissionrate_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00800000u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOASymbol::precisetradingcommissionrate() const {
+  // @@protoc_insertion_point(field_get:ProtoOASymbol.preciseTradingCommissionRate)
+  return precisetradingcommissionrate_;
+}
+inline void ProtoOASymbol::set_precisetradingcommissionrate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00800000u;
+  precisetradingcommissionrate_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOASymbol.preciseTradingCommissionRate)
+}
+
+// optional int64 preciseMinCommission = 32;
+inline bool ProtoOASymbol::has_precisemincommission() const {
+  return (_has_bits_[0] & 0x01000000u) != 0;
+}
+inline void ProtoOASymbol::clear_precisemincommission() {
+  precisemincommission_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x01000000u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOASymbol::precisemincommission() const {
+  // @@protoc_insertion_point(field_get:ProtoOASymbol.preciseMinCommission)
+  return precisemincommission_;
+}
+inline void ProtoOASymbol::set_precisemincommission(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x01000000u;
+  precisemincommission_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOASymbol.preciseMinCommission)
+}
+
+// repeated .ProtoOAHoliday holiday = 33;
+inline int ProtoOASymbol::holiday_size() const {
+  return holiday_.size();
+}
+inline void ProtoOASymbol::clear_holiday() {
+  holiday_.Clear();
+}
+inline ::ProtoOAHoliday* ProtoOASymbol::mutable_holiday(int index) {
+  // @@protoc_insertion_point(field_mutable:ProtoOASymbol.holiday)
+  return holiday_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAHoliday >*
+ProtoOASymbol::mutable_holiday() {
+  // @@protoc_insertion_point(field_mutable_list:ProtoOASymbol.holiday)
+  return &holiday_;
+}
+inline const ::ProtoOAHoliday& ProtoOASymbol::holiday(int index) const {
+  // @@protoc_insertion_point(field_get:ProtoOASymbol.holiday)
+  return holiday_.Get(index);
+}
+inline ::ProtoOAHoliday* ProtoOASymbol::add_holiday() {
+  // @@protoc_insertion_point(field_add:ProtoOASymbol.holiday)
+  return holiday_.Add();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAHoliday >&
+ProtoOASymbol::holiday() const {
+  // @@protoc_insertion_point(field_list:ProtoOASymbol.holiday)
+  return holiday_;
 }
 
 // -------------------------------------------------------------------
@@ -5420,6 +6299,162 @@ inline void ProtoOALightSymbol::set_allocated_description(std::string* descripti
   }
   description_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), description);
   // @@protoc_insertion_point(field_set_allocated:ProtoOALightSymbol.description)
+}
+
+// -------------------------------------------------------------------
+
+// ProtoOAArchivedSymbol
+
+// required int64 symbolId = 1;
+inline bool ProtoOAArchivedSymbol::has_symbolid() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void ProtoOAArchivedSymbol::clear_symbolid() {
+  symbolid_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOAArchivedSymbol::symbolid() const {
+  // @@protoc_insertion_point(field_get:ProtoOAArchivedSymbol.symbolId)
+  return symbolid_;
+}
+inline void ProtoOAArchivedSymbol::set_symbolid(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000004u;
+  symbolid_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAArchivedSymbol.symbolId)
+}
+
+// required string name = 2;
+inline bool ProtoOAArchivedSymbol::has_name() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ProtoOAArchivedSymbol::clear_name() {
+  name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline const std::string& ProtoOAArchivedSymbol::name() const {
+  // @@protoc_insertion_point(field_get:ProtoOAArchivedSymbol.name)
+  return name_.GetNoArena();
+}
+inline void ProtoOAArchivedSymbol::set_name(const std::string& value) {
+  _has_bits_[0] |= 0x00000001u;
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:ProtoOAArchivedSymbol.name)
+}
+inline void ProtoOAArchivedSymbol::set_name(std::string&& value) {
+  _has_bits_[0] |= 0x00000001u;
+  name_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:ProtoOAArchivedSymbol.name)
+}
+inline void ProtoOAArchivedSymbol::set_name(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000001u;
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:ProtoOAArchivedSymbol.name)
+}
+inline void ProtoOAArchivedSymbol::set_name(const char* value, size_t size) {
+  _has_bits_[0] |= 0x00000001u;
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:ProtoOAArchivedSymbol.name)
+}
+inline std::string* ProtoOAArchivedSymbol::mutable_name() {
+  _has_bits_[0] |= 0x00000001u;
+  // @@protoc_insertion_point(field_mutable:ProtoOAArchivedSymbol.name)
+  return name_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* ProtoOAArchivedSymbol::release_name() {
+  // @@protoc_insertion_point(field_release:ProtoOAArchivedSymbol.name)
+  if (!has_name()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000001u;
+  return name_.ReleaseNonDefaultNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void ProtoOAArchivedSymbol::set_allocated_name(std::string* name) {
+  if (name != nullptr) {
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  name_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), name);
+  // @@protoc_insertion_point(field_set_allocated:ProtoOAArchivedSymbol.name)
+}
+
+// required int64 utcLastUpdateTimestamp = 3;
+inline bool ProtoOAArchivedSymbol::has_utclastupdatetimestamp() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void ProtoOAArchivedSymbol::clear_utclastupdatetimestamp() {
+  utclastupdatetimestamp_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOAArchivedSymbol::utclastupdatetimestamp() const {
+  // @@protoc_insertion_point(field_get:ProtoOAArchivedSymbol.utcLastUpdateTimestamp)
+  return utclastupdatetimestamp_;
+}
+inline void ProtoOAArchivedSymbol::set_utclastupdatetimestamp(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000008u;
+  utclastupdatetimestamp_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAArchivedSymbol.utcLastUpdateTimestamp)
+}
+
+// optional string description = 4;
+inline bool ProtoOAArchivedSymbol::has_description() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOAArchivedSymbol::clear_description() {
+  description_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline const std::string& ProtoOAArchivedSymbol::description() const {
+  // @@protoc_insertion_point(field_get:ProtoOAArchivedSymbol.description)
+  return description_.GetNoArena();
+}
+inline void ProtoOAArchivedSymbol::set_description(const std::string& value) {
+  _has_bits_[0] |= 0x00000002u;
+  description_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:ProtoOAArchivedSymbol.description)
+}
+inline void ProtoOAArchivedSymbol::set_description(std::string&& value) {
+  _has_bits_[0] |= 0x00000002u;
+  description_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:ProtoOAArchivedSymbol.description)
+}
+inline void ProtoOAArchivedSymbol::set_description(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000002u;
+  description_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:ProtoOAArchivedSymbol.description)
+}
+inline void ProtoOAArchivedSymbol::set_description(const char* value, size_t size) {
+  _has_bits_[0] |= 0x00000002u;
+  description_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:ProtoOAArchivedSymbol.description)
+}
+inline std::string* ProtoOAArchivedSymbol::mutable_description() {
+  _has_bits_[0] |= 0x00000002u;
+  // @@protoc_insertion_point(field_mutable:ProtoOAArchivedSymbol.description)
+  return description_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* ProtoOAArchivedSymbol::release_description() {
+  // @@protoc_insertion_point(field_release:ProtoOAArchivedSymbol.description)
+  if (!has_description()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000002u;
+  return description_.ReleaseNonDefaultNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void ProtoOAArchivedSymbol::set_allocated_description(std::string* description) {
+  if (description != nullptr) {
+    _has_bits_[0] |= 0x00000002u;
+  } else {
+    _has_bits_[0] &= ~0x00000002u;
+  }
+  description_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), description);
+  // @@protoc_insertion_point(field_set_allocated:ProtoOAArchivedSymbol.description)
 }
 
 // -------------------------------------------------------------------
@@ -5711,18 +6746,18 @@ inline void ProtoOATrader::set_depositassetid(::PROTOBUF_NAMESPACE_ID::int64 val
 
 // optional bool swapFree = 9;
 inline bool ProtoOATrader::has_swapfree() const {
-  return (_has_bits_[0] & 0x00000800u) != 0;
+  return (_has_bits_[0] & 0x00001000u) != 0;
 }
 inline void ProtoOATrader::clear_swapfree() {
   swapfree_ = false;
-  _has_bits_[0] &= ~0x00000800u;
+  _has_bits_[0] &= ~0x00001000u;
 }
 inline bool ProtoOATrader::swapfree() const {
   // @@protoc_insertion_point(field_get:ProtoOATrader.swapFree)
   return swapfree_;
 }
 inline void ProtoOATrader::set_swapfree(bool value) {
-  _has_bits_[0] |= 0x00000800u;
+  _has_bits_[0] |= 0x00001000u;
   swapfree_ = value;
   // @@protoc_insertion_point(field_set:ProtoOATrader.swapFree)
 }
@@ -5766,65 +6801,65 @@ inline void ProtoOATrader::set_totalmargincalculationtype(::ProtoOATotalMarginCa
 
 // optional uint32 maxLeverage = 12;
 inline bool ProtoOATrader::has_maxleverage() const {
-  return (_has_bits_[0] & 0x00002000u) != 0;
+  return (_has_bits_[0] & 0x00000800u) != 0;
 }
 inline void ProtoOATrader::clear_maxleverage() {
   maxleverage_ = 0u;
-  _has_bits_[0] &= ~0x00002000u;
+  _has_bits_[0] &= ~0x00000800u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::uint32 ProtoOATrader::maxleverage() const {
   // @@protoc_insertion_point(field_get:ProtoOATrader.maxLeverage)
   return maxleverage_;
 }
 inline void ProtoOATrader::set_maxleverage(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _has_bits_[0] |= 0x00002000u;
+  _has_bits_[0] |= 0x00000800u;
   maxleverage_ = value;
   // @@protoc_insertion_point(field_set:ProtoOATrader.maxLeverage)
 }
 
-// optional bool frenchRisk = 13;
+// optional bool frenchRisk = 13 [deprecated = true];
 inline bool ProtoOATrader::has_frenchrisk() const {
-  return (_has_bits_[0] & 0x00001000u) != 0;
+  return (_has_bits_[0] & 0x00002000u) != 0;
 }
 inline void ProtoOATrader::clear_frenchrisk() {
   frenchrisk_ = false;
-  _has_bits_[0] &= ~0x00001000u;
+  _has_bits_[0] &= ~0x00002000u;
 }
 inline bool ProtoOATrader::frenchrisk() const {
   // @@protoc_insertion_point(field_get:ProtoOATrader.frenchRisk)
   return frenchrisk_;
 }
 inline void ProtoOATrader::set_frenchrisk(bool value) {
-  _has_bits_[0] |= 0x00001000u;
+  _has_bits_[0] |= 0x00002000u;
   frenchrisk_ = value;
   // @@protoc_insertion_point(field_set:ProtoOATrader.frenchRisk)
 }
 
 // optional int64 traderLogin = 14;
 inline bool ProtoOATrader::has_traderlogin() const {
-  return (_has_bits_[0] & 0x00008000u) != 0;
+  return (_has_bits_[0] & 0x00010000u) != 0;
 }
 inline void ProtoOATrader::clear_traderlogin() {
   traderlogin_ = PROTOBUF_LONGLONG(0);
-  _has_bits_[0] &= ~0x00008000u;
+  _has_bits_[0] &= ~0x00010000u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOATrader::traderlogin() const {
   // @@protoc_insertion_point(field_get:ProtoOATrader.traderLogin)
   return traderlogin_;
 }
 inline void ProtoOATrader::set_traderlogin(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _has_bits_[0] |= 0x00008000u;
+  _has_bits_[0] |= 0x00010000u;
   traderlogin_ = value;
   // @@protoc_insertion_point(field_set:ProtoOATrader.traderLogin)
 }
 
 // optional .ProtoOAAccountType accountType = 15 [default = HEDGED];
 inline bool ProtoOATrader::has_accounttype() const {
-  return (_has_bits_[0] & 0x00004000u) != 0;
+  return (_has_bits_[0] & 0x00008000u) != 0;
 }
 inline void ProtoOATrader::clear_accounttype() {
   accounttype_ = 0;
-  _has_bits_[0] &= ~0x00004000u;
+  _has_bits_[0] &= ~0x00008000u;
 }
 inline ::ProtoOAAccountType ProtoOATrader::accounttype() const {
   // @@protoc_insertion_point(field_get:ProtoOATrader.accountType)
@@ -5832,7 +6867,7 @@ inline ::ProtoOAAccountType ProtoOATrader::accounttype() const {
 }
 inline void ProtoOATrader::set_accounttype(::ProtoOAAccountType value) {
   assert(::ProtoOAAccountType_IsValid(value));
-  _has_bits_[0] |= 0x00004000u;
+  _has_bits_[0] |= 0x00008000u;
   accounttype_ = value;
   // @@protoc_insertion_point(field_set:ProtoOATrader.accountType)
 }
@@ -5897,20 +6932,75 @@ inline void ProtoOATrader::set_allocated_brokername(std::string* brokername) {
 
 // optional int64 registrationTimestamp = 17;
 inline bool ProtoOATrader::has_registrationtimestamp() const {
-  return (_has_bits_[0] & 0x00010000u) != 0;
+  return (_has_bits_[0] & 0x00020000u) != 0;
 }
 inline void ProtoOATrader::clear_registrationtimestamp() {
   registrationtimestamp_ = PROTOBUF_LONGLONG(0);
-  _has_bits_[0] &= ~0x00010000u;
+  _has_bits_[0] &= ~0x00020000u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOATrader::registrationtimestamp() const {
   // @@protoc_insertion_point(field_get:ProtoOATrader.registrationTimestamp)
   return registrationtimestamp_;
 }
 inline void ProtoOATrader::set_registrationtimestamp(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _has_bits_[0] |= 0x00010000u;
+  _has_bits_[0] |= 0x00020000u;
   registrationtimestamp_ = value;
   // @@protoc_insertion_point(field_set:ProtoOATrader.registrationTimestamp)
+}
+
+// optional bool isLimitedRisk = 18;
+inline bool ProtoOATrader::has_islimitedrisk() const {
+  return (_has_bits_[0] & 0x00004000u) != 0;
+}
+inline void ProtoOATrader::clear_islimitedrisk() {
+  islimitedrisk_ = false;
+  _has_bits_[0] &= ~0x00004000u;
+}
+inline bool ProtoOATrader::islimitedrisk() const {
+  // @@protoc_insertion_point(field_get:ProtoOATrader.isLimitedRisk)
+  return islimitedrisk_;
+}
+inline void ProtoOATrader::set_islimitedrisk(bool value) {
+  _has_bits_[0] |= 0x00004000u;
+  islimitedrisk_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOATrader.isLimitedRisk)
+}
+
+// optional .ProtoOALimitedRiskMarginCalculationStrategy limitedRiskMarginCalculationStrategy = 19 [default = ACCORDING_TO_LEVERAGE];
+inline bool ProtoOATrader::has_limitedriskmargincalculationstrategy() const {
+  return (_has_bits_[0] & 0x00040000u) != 0;
+}
+inline void ProtoOATrader::clear_limitedriskmargincalculationstrategy() {
+  limitedriskmargincalculationstrategy_ = 0;
+  _has_bits_[0] &= ~0x00040000u;
+}
+inline ::ProtoOALimitedRiskMarginCalculationStrategy ProtoOATrader::limitedriskmargincalculationstrategy() const {
+  // @@protoc_insertion_point(field_get:ProtoOATrader.limitedRiskMarginCalculationStrategy)
+  return static_cast< ::ProtoOALimitedRiskMarginCalculationStrategy >(limitedriskmargincalculationstrategy_);
+}
+inline void ProtoOATrader::set_limitedriskmargincalculationstrategy(::ProtoOALimitedRiskMarginCalculationStrategy value) {
+  assert(::ProtoOALimitedRiskMarginCalculationStrategy_IsValid(value));
+  _has_bits_[0] |= 0x00040000u;
+  limitedriskmargincalculationstrategy_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOATrader.limitedRiskMarginCalculationStrategy)
+}
+
+// optional uint32 moneyDigits = 20;
+inline bool ProtoOATrader::has_moneydigits() const {
+  return (_has_bits_[0] & 0x00080000u) != 0;
+}
+inline void ProtoOATrader::clear_moneydigits() {
+  moneydigits_ = 0u;
+  _has_bits_[0] &= ~0x00080000u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 ProtoOATrader::moneydigits() const {
+  // @@protoc_insertion_point(field_get:ProtoOATrader.moneyDigits)
+  return moneydigits_;
+}
+inline void ProtoOATrader::set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _has_bits_[0] |= 0x00080000u;
+  moneydigits_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOATrader.moneyDigits)
 }
 
 // -------------------------------------------------------------------
@@ -5986,11 +7076,11 @@ inline void ProtoOAPosition::set_allocated_tradedata(::ProtoOATradeData* tradeda
 
 // required .ProtoOAPositionStatus positionStatus = 3;
 inline bool ProtoOAPosition::has_positionstatus() const {
-  return (_has_bits_[0] & 0x00001000u) != 0;
+  return (_has_bits_[0] & 0x00002000u) != 0;
 }
 inline void ProtoOAPosition::clear_positionstatus() {
   positionstatus_ = 1;
-  _has_bits_[0] &= ~0x00001000u;
+  _has_bits_[0] &= ~0x00002000u;
 }
 inline ::ProtoOAPositionStatus ProtoOAPosition::positionstatus() const {
   // @@protoc_insertion_point(field_get:ProtoOAPosition.positionStatus)
@@ -5998,7 +7088,7 @@ inline ::ProtoOAPositionStatus ProtoOAPosition::positionstatus() const {
 }
 inline void ProtoOAPosition::set_positionstatus(::ProtoOAPositionStatus value) {
   assert(::ProtoOAPositionStatus_IsValid(value));
-  _has_bits_[0] |= 0x00001000u;
+  _has_bits_[0] |= 0x00002000u;
   positionstatus_ = value;
   // @@protoc_insertion_point(field_set:ProtoOAPosition.positionStatus)
 }
@@ -6185,11 +7275,11 @@ inline void ProtoOAPosition::set_usedmargin(::PROTOBUF_NAMESPACE_ID::uint64 valu
 
 // optional .ProtoOAOrderTriggerMethod stopLossTriggerMethod = 14 [default = TRADE];
 inline bool ProtoOAPosition::has_stoplosstriggermethod() const {
-  return (_has_bits_[0] & 0x00002000u) != 0;
+  return (_has_bits_[0] & 0x00004000u) != 0;
 }
 inline void ProtoOAPosition::clear_stoplosstriggermethod() {
   stoplosstriggermethod_ = 1;
-  _has_bits_[0] &= ~0x00002000u;
+  _has_bits_[0] &= ~0x00004000u;
 }
 inline ::ProtoOAOrderTriggerMethod ProtoOAPosition::stoplosstriggermethod() const {
   // @@protoc_insertion_point(field_get:ProtoOAPosition.stopLossTriggerMethod)
@@ -6197,9 +7287,27 @@ inline ::ProtoOAOrderTriggerMethod ProtoOAPosition::stoplosstriggermethod() cons
 }
 inline void ProtoOAPosition::set_stoplosstriggermethod(::ProtoOAOrderTriggerMethod value) {
   assert(::ProtoOAOrderTriggerMethod_IsValid(value));
-  _has_bits_[0] |= 0x00002000u;
+  _has_bits_[0] |= 0x00004000u;
   stoplosstriggermethod_ = value;
   // @@protoc_insertion_point(field_set:ProtoOAPosition.stopLossTriggerMethod)
+}
+
+// optional uint32 moneyDigits = 15;
+inline bool ProtoOAPosition::has_moneydigits() const {
+  return (_has_bits_[0] & 0x00001000u) != 0;
+}
+inline void ProtoOAPosition::clear_moneydigits() {
+  moneydigits_ = 0u;
+  _has_bits_[0] &= ~0x00001000u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 ProtoOAPosition::moneydigits() const {
+  // @@protoc_insertion_point(field_get:ProtoOAPosition.moneyDigits)
+  return moneydigits_;
+}
+inline void ProtoOAPosition::set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _has_bits_[0] |= 0x00001000u;
+  moneydigits_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAPosition.moneyDigits)
 }
 
 // -------------------------------------------------------------------
@@ -6208,47 +7316,47 @@ inline void ProtoOAPosition::set_stoplosstriggermethod(::ProtoOAOrderTriggerMeth
 
 // required int64 symbolId = 1;
 inline bool ProtoOATradeData::has_symbolid() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+  return (_has_bits_[0] & 0x00000004u) != 0;
 }
 inline void ProtoOATradeData::clear_symbolid() {
   symbolid_ = PROTOBUF_LONGLONG(0);
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOATradeData::symbolid() const {
   // @@protoc_insertion_point(field_get:ProtoOATradeData.symbolId)
   return symbolid_;
 }
 inline void ProtoOATradeData::set_symbolid(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000004u;
   symbolid_ = value;
   // @@protoc_insertion_point(field_set:ProtoOATradeData.symbolId)
 }
 
 // required int64 volume = 2;
 inline bool ProtoOATradeData::has_volume() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
+  return (_has_bits_[0] & 0x00000008u) != 0;
 }
 inline void ProtoOATradeData::clear_volume() {
   volume_ = PROTOBUF_LONGLONG(0);
-  _has_bits_[0] &= ~0x00000004u;
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOATradeData::volume() const {
   // @@protoc_insertion_point(field_get:ProtoOATradeData.volume)
   return volume_;
 }
 inline void ProtoOATradeData::set_volume(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000008u;
   volume_ = value;
   // @@protoc_insertion_point(field_set:ProtoOATradeData.volume)
 }
 
 // required .ProtoOATradeSide tradeSide = 3;
 inline bool ProtoOATradeData::has_tradeside() const {
-  return (_has_bits_[0] & 0x00000020u) != 0;
+  return (_has_bits_[0] & 0x00000040u) != 0;
 }
 inline void ProtoOATradeData::clear_tradeside() {
   tradeside_ = 1;
-  _has_bits_[0] &= ~0x00000020u;
+  _has_bits_[0] &= ~0x00000040u;
 }
 inline ::ProtoOATradeSide ProtoOATradeData::tradeside() const {
   // @@protoc_insertion_point(field_get:ProtoOATradeData.tradeSide)
@@ -6256,25 +7364,25 @@ inline ::ProtoOATradeSide ProtoOATradeData::tradeside() const {
 }
 inline void ProtoOATradeData::set_tradeside(::ProtoOATradeSide value) {
   assert(::ProtoOATradeSide_IsValid(value));
-  _has_bits_[0] |= 0x00000020u;
+  _has_bits_[0] |= 0x00000040u;
   tradeside_ = value;
   // @@protoc_insertion_point(field_set:ProtoOATradeData.tradeSide)
 }
 
 // optional int64 openTimestamp = 4;
 inline bool ProtoOATradeData::has_opentimestamp() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
+  return (_has_bits_[0] & 0x00000010u) != 0;
 }
 inline void ProtoOATradeData::clear_opentimestamp() {
   opentimestamp_ = PROTOBUF_LONGLONG(0);
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOATradeData::opentimestamp() const {
   // @@protoc_insertion_point(field_get:ProtoOATradeData.openTimestamp)
   return opentimestamp_;
 }
 inline void ProtoOATradeData::set_opentimestamp(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000010u;
   opentimestamp_ = value;
   // @@protoc_insertion_point(field_set:ProtoOATradeData.openTimestamp)
 }
@@ -6339,20 +7447,78 @@ inline void ProtoOATradeData::set_allocated_label(std::string* label) {
 
 // optional bool guaranteedStopLoss = 6;
 inline bool ProtoOATradeData::has_guaranteedstoploss() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
+  return (_has_bits_[0] & 0x00000020u) != 0;
 }
 inline void ProtoOATradeData::clear_guaranteedstoploss() {
   guaranteedstoploss_ = false;
-  _has_bits_[0] &= ~0x00000010u;
+  _has_bits_[0] &= ~0x00000020u;
 }
 inline bool ProtoOATradeData::guaranteedstoploss() const {
   // @@protoc_insertion_point(field_get:ProtoOATradeData.guaranteedStopLoss)
   return guaranteedstoploss_;
 }
 inline void ProtoOATradeData::set_guaranteedstoploss(bool value) {
-  _has_bits_[0] |= 0x00000010u;
+  _has_bits_[0] |= 0x00000020u;
   guaranteedstoploss_ = value;
   // @@protoc_insertion_point(field_set:ProtoOATradeData.guaranteedStopLoss)
+}
+
+// optional string comment = 7;
+inline bool ProtoOATradeData::has_comment() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOATradeData::clear_comment() {
+  comment_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline const std::string& ProtoOATradeData::comment() const {
+  // @@protoc_insertion_point(field_get:ProtoOATradeData.comment)
+  return comment_.GetNoArena();
+}
+inline void ProtoOATradeData::set_comment(const std::string& value) {
+  _has_bits_[0] |= 0x00000002u;
+  comment_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:ProtoOATradeData.comment)
+}
+inline void ProtoOATradeData::set_comment(std::string&& value) {
+  _has_bits_[0] |= 0x00000002u;
+  comment_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:ProtoOATradeData.comment)
+}
+inline void ProtoOATradeData::set_comment(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000002u;
+  comment_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:ProtoOATradeData.comment)
+}
+inline void ProtoOATradeData::set_comment(const char* value, size_t size) {
+  _has_bits_[0] |= 0x00000002u;
+  comment_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:ProtoOATradeData.comment)
+}
+inline std::string* ProtoOATradeData::mutable_comment() {
+  _has_bits_[0] |= 0x00000002u;
+  // @@protoc_insertion_point(field_mutable:ProtoOATradeData.comment)
+  return comment_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* ProtoOATradeData::release_comment() {
+  // @@protoc_insertion_point(field_release:ProtoOATradeData.comment)
+  if (!has_comment()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000002u;
+  return comment_.ReleaseNonDefaultNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void ProtoOATradeData::set_allocated_comment(std::string* comment) {
+  if (comment != nullptr) {
+    _has_bits_[0] |= 0x00000002u;
+  } else {
+    _has_bits_[0] &= ~0x00000002u;
+  }
+  comment_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), comment);
+  // @@protoc_insertion_point(field_set_allocated:ProtoOATradeData.comment)
 }
 
 // -------------------------------------------------------------------
@@ -6854,11 +8020,11 @@ inline void ProtoOAOrder::set_stoptriggermethod(::ProtoOAOrderTriggerMethod valu
 
 // required .ProtoOAChangeBonusType operationType = 1;
 inline bool ProtoOABonusDepositWithdraw::has_operationtype() const {
-  return (_has_bits_[0] & 0x00000100u) != 0;
+  return (_has_bits_[0] & 0x00000020u) != 0;
 }
 inline void ProtoOABonusDepositWithdraw::clear_operationtype() {
   operationtype_ = 0;
-  _has_bits_[0] &= ~0x00000100u;
+  _has_bits_[0] &= ~0x00000020u;
 }
 inline ::ProtoOAChangeBonusType ProtoOABonusDepositWithdraw::operationtype() const {
   // @@protoc_insertion_point(field_get:ProtoOABonusDepositWithdraw.operationType)
@@ -6866,7 +8032,7 @@ inline ::ProtoOAChangeBonusType ProtoOABonusDepositWithdraw::operationtype() con
 }
 inline void ProtoOABonusDepositWithdraw::set_operationtype(::ProtoOAChangeBonusType value) {
   assert(::ProtoOAChangeBonusType_IsValid(value));
-  _has_bits_[0] |= 0x00000100u;
+  _has_bits_[0] |= 0x00000020u;
   operationtype_ = value;
   // @@protoc_insertion_point(field_set:ProtoOABonusDepositWithdraw.operationType)
 }
@@ -6945,36 +8111,36 @@ inline void ProtoOABonusDepositWithdraw::set_ibbonus(::PROTOBUF_NAMESPACE_ID::in
 
 // required int64 ibDelta = 6;
 inline bool ProtoOABonusDepositWithdraw::has_ibdelta() const {
-  return (_has_bits_[0] & 0x00000020u) != 0;
+  return (_has_bits_[0] & 0x00000080u) != 0;
 }
 inline void ProtoOABonusDepositWithdraw::clear_ibdelta() {
   ibdelta_ = PROTOBUF_LONGLONG(0);
-  _has_bits_[0] &= ~0x00000020u;
+  _has_bits_[0] &= ~0x00000080u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOABonusDepositWithdraw::ibdelta() const {
   // @@protoc_insertion_point(field_get:ProtoOABonusDepositWithdraw.ibDelta)
   return ibdelta_;
 }
 inline void ProtoOABonusDepositWithdraw::set_ibdelta(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _has_bits_[0] |= 0x00000020u;
+  _has_bits_[0] |= 0x00000080u;
   ibdelta_ = value;
   // @@protoc_insertion_point(field_set:ProtoOABonusDepositWithdraw.ibDelta)
 }
 
 // required int64 changeBonusTimestamp = 7;
 inline bool ProtoOABonusDepositWithdraw::has_changebonustimestamp() const {
-  return (_has_bits_[0] & 0x00000040u) != 0;
+  return (_has_bits_[0] & 0x00000100u) != 0;
 }
 inline void ProtoOABonusDepositWithdraw::clear_changebonustimestamp() {
   changebonustimestamp_ = PROTOBUF_LONGLONG(0);
-  _has_bits_[0] &= ~0x00000040u;
+  _has_bits_[0] &= ~0x00000100u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOABonusDepositWithdraw::changebonustimestamp() const {
   // @@protoc_insertion_point(field_get:ProtoOABonusDepositWithdraw.changeBonusTimestamp)
   return changebonustimestamp_;
 }
 inline void ProtoOABonusDepositWithdraw::set_changebonustimestamp(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _has_bits_[0] |= 0x00000040u;
+  _has_bits_[0] |= 0x00000100u;
   changebonustimestamp_ = value;
   // @@protoc_insertion_point(field_set:ProtoOABonusDepositWithdraw.changeBonusTimestamp)
 }
@@ -7039,20 +8205,38 @@ inline void ProtoOABonusDepositWithdraw::set_allocated_externalnote(std::string*
 
 // optional int64 introducingBrokerId = 9;
 inline bool ProtoOABonusDepositWithdraw::has_introducingbrokerid() const {
-  return (_has_bits_[0] & 0x00000080u) != 0;
+  return (_has_bits_[0] & 0x00000200u) != 0;
 }
 inline void ProtoOABonusDepositWithdraw::clear_introducingbrokerid() {
   introducingbrokerid_ = PROTOBUF_LONGLONG(0);
-  _has_bits_[0] &= ~0x00000080u;
+  _has_bits_[0] &= ~0x00000200u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOABonusDepositWithdraw::introducingbrokerid() const {
   // @@protoc_insertion_point(field_get:ProtoOABonusDepositWithdraw.introducingBrokerId)
   return introducingbrokerid_;
 }
 inline void ProtoOABonusDepositWithdraw::set_introducingbrokerid(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _has_bits_[0] |= 0x00000080u;
+  _has_bits_[0] |= 0x00000200u;
   introducingbrokerid_ = value;
   // @@protoc_insertion_point(field_set:ProtoOABonusDepositWithdraw.introducingBrokerId)
+}
+
+// optional uint32 moneyDigits = 10;
+inline bool ProtoOABonusDepositWithdraw::has_moneydigits() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void ProtoOABonusDepositWithdraw::clear_moneydigits() {
+  moneydigits_ = 0u;
+  _has_bits_[0] &= ~0x00000040u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 ProtoOABonusDepositWithdraw::moneydigits() const {
+  // @@protoc_insertion_point(field_get:ProtoOABonusDepositWithdraw.moneyDigits)
+  return moneydigits_;
+}
+inline void ProtoOABonusDepositWithdraw::set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _has_bits_[0] |= 0x00000040u;
+  moneydigits_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOABonusDepositWithdraw.moneyDigits)
 }
 
 // -------------------------------------------------------------------
@@ -7061,11 +8245,11 @@ inline void ProtoOABonusDepositWithdraw::set_introducingbrokerid(::PROTOBUF_NAME
 
 // required .ProtoOAChangeBalanceType operationType = 1;
 inline bool ProtoOADepositWithdraw::has_operationtype() const {
-  return (_has_bits_[0] & 0x00000080u) != 0;
+  return (_has_bits_[0] & 0x00000020u) != 0;
 }
 inline void ProtoOADepositWithdraw::clear_operationtype() {
   operationtype_ = 0;
-  _has_bits_[0] &= ~0x00000080u;
+  _has_bits_[0] &= ~0x00000020u;
 }
 inline ::ProtoOAChangeBalanceType ProtoOADepositWithdraw::operationtype() const {
   // @@protoc_insertion_point(field_get:ProtoOADepositWithdraw.operationType)
@@ -7073,7 +8257,7 @@ inline ::ProtoOAChangeBalanceType ProtoOADepositWithdraw::operationtype() const 
 }
 inline void ProtoOADepositWithdraw::set_operationtype(::ProtoOAChangeBalanceType value) {
   assert(::ProtoOAChangeBalanceType_IsValid(value));
-  _has_bits_[0] |= 0x00000080u;
+  _has_bits_[0] |= 0x00000020u;
   operationtype_ = value;
   // @@protoc_insertion_point(field_set:ProtoOADepositWithdraw.operationType)
 }
@@ -7210,38 +8394,56 @@ inline void ProtoOADepositWithdraw::set_allocated_externalnote(std::string* exte
 
 // optional int64 balanceVersion = 7;
 inline bool ProtoOADepositWithdraw::has_balanceversion() const {
-  return (_has_bits_[0] & 0x00000020u) != 0;
+  return (_has_bits_[0] & 0x00000080u) != 0;
 }
 inline void ProtoOADepositWithdraw::clear_balanceversion() {
   balanceversion_ = PROTOBUF_LONGLONG(0);
-  _has_bits_[0] &= ~0x00000020u;
+  _has_bits_[0] &= ~0x00000080u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOADepositWithdraw::balanceversion() const {
   // @@protoc_insertion_point(field_get:ProtoOADepositWithdraw.balanceVersion)
   return balanceversion_;
 }
 inline void ProtoOADepositWithdraw::set_balanceversion(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _has_bits_[0] |= 0x00000020u;
+  _has_bits_[0] |= 0x00000080u;
   balanceversion_ = value;
   // @@protoc_insertion_point(field_set:ProtoOADepositWithdraw.balanceVersion)
 }
 
 // optional int64 equity = 8;
 inline bool ProtoOADepositWithdraw::has_equity() const {
-  return (_has_bits_[0] & 0x00000040u) != 0;
+  return (_has_bits_[0] & 0x00000100u) != 0;
 }
 inline void ProtoOADepositWithdraw::clear_equity() {
   equity_ = PROTOBUF_LONGLONG(0);
-  _has_bits_[0] &= ~0x00000040u;
+  _has_bits_[0] &= ~0x00000100u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOADepositWithdraw::equity() const {
   // @@protoc_insertion_point(field_get:ProtoOADepositWithdraw.equity)
   return equity_;
 }
 inline void ProtoOADepositWithdraw::set_equity(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _has_bits_[0] |= 0x00000040u;
+  _has_bits_[0] |= 0x00000100u;
   equity_ = value;
   // @@protoc_insertion_point(field_set:ProtoOADepositWithdraw.equity)
+}
+
+// optional uint32 moneyDigits = 9;
+inline bool ProtoOADepositWithdraw::has_moneydigits() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void ProtoOADepositWithdraw::clear_moneydigits() {
+  moneydigits_ = 0u;
+  _has_bits_[0] &= ~0x00000040u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 ProtoOADepositWithdraw::moneydigits() const {
+  // @@protoc_insertion_point(field_get:ProtoOADepositWithdraw.moneyDigits)
+  return moneydigits_;
+}
+inline void ProtoOADepositWithdraw::set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _has_bits_[0] |= 0x00000040u;
+  moneydigits_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOADepositWithdraw.moneyDigits)
 }
 
 // -------------------------------------------------------------------
@@ -7430,11 +8632,11 @@ inline void ProtoOADeal::set_executionprice(double value) {
 
 // required .ProtoOATradeSide tradeSide = 11;
 inline bool ProtoOADeal::has_tradeside() const {
-  return (_has_bits_[0] & 0x00004000u) != 0;
+  return (_has_bits_[0] & 0x00008000u) != 0;
 }
 inline void ProtoOADeal::clear_tradeside() {
   tradeside_ = 1;
-  _has_bits_[0] &= ~0x00004000u;
+  _has_bits_[0] &= ~0x00008000u;
 }
 inline ::ProtoOATradeSide ProtoOADeal::tradeside() const {
   // @@protoc_insertion_point(field_get:ProtoOADeal.tradeSide)
@@ -7442,18 +8644,18 @@ inline ::ProtoOATradeSide ProtoOADeal::tradeside() const {
 }
 inline void ProtoOADeal::set_tradeside(::ProtoOATradeSide value) {
   assert(::ProtoOATradeSide_IsValid(value));
-  _has_bits_[0] |= 0x00004000u;
+  _has_bits_[0] |= 0x00008000u;
   tradeside_ = value;
   // @@protoc_insertion_point(field_set:ProtoOADeal.tradeSide)
 }
 
 // required .ProtoOADealStatus dealStatus = 12;
 inline bool ProtoOADeal::has_dealstatus() const {
-  return (_has_bits_[0] & 0x00008000u) != 0;
+  return (_has_bits_[0] & 0x00010000u) != 0;
 }
 inline void ProtoOADeal::clear_dealstatus() {
   dealstatus_ = 2;
-  _has_bits_[0] &= ~0x00008000u;
+  _has_bits_[0] &= ~0x00010000u;
 }
 inline ::ProtoOADealStatus ProtoOADeal::dealstatus() const {
   // @@protoc_insertion_point(field_get:ProtoOADeal.dealStatus)
@@ -7461,7 +8663,7 @@ inline ::ProtoOADealStatus ProtoOADeal::dealstatus() const {
 }
 inline void ProtoOADeal::set_dealstatus(::ProtoOADealStatus value) {
   assert(::ProtoOADealStatus_IsValid(value));
-  _has_bits_[0] |= 0x00008000u;
+  _has_bits_[0] |= 0x00010000u;
   dealstatus_ = value;
   // @@protoc_insertion_point(field_set:ProtoOADeal.dealStatus)
 }
@@ -7567,6 +8769,24 @@ inline void ProtoOADeal::set_allocated_closepositiondetail(::ProtoOAClosePositio
   }
   closepositiondetail_ = closepositiondetail;
   // @@protoc_insertion_point(field_set_allocated:ProtoOADeal.closePositionDetail)
+}
+
+// optional uint32 moneyDigits = 17;
+inline bool ProtoOADeal::has_moneydigits() const {
+  return (_has_bits_[0] & 0x00004000u) != 0;
+}
+inline void ProtoOADeal::clear_moneydigits() {
+  moneydigits_ = 0u;
+  _has_bits_[0] &= ~0x00004000u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 ProtoOADeal::moneydigits() const {
+  // @@protoc_insertion_point(field_get:ProtoOADeal.moneyDigits)
+  return moneydigits_;
+}
+inline void ProtoOADeal::set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _has_bits_[0] |= 0x00004000u;
+  moneydigits_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOADeal.moneyDigits)
 }
 
 // -------------------------------------------------------------------
@@ -7715,6 +8935,24 @@ inline void ProtoOAClosePositionDetail::set_balanceversion(::PROTOBUF_NAMESPACE_
   _has_bits_[0] |= 0x00000080u;
   balanceversion_ = value;
   // @@protoc_insertion_point(field_set:ProtoOAClosePositionDetail.balanceVersion)
+}
+
+// optional uint32 moneyDigits = 9;
+inline bool ProtoOAClosePositionDetail::has_moneydigits() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+inline void ProtoOAClosePositionDetail::clear_moneydigits() {
+  moneydigits_ = 0u;
+  _has_bits_[0] &= ~0x00000100u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 ProtoOAClosePositionDetail::moneydigits() const {
+  // @@protoc_insertion_point(field_get:ProtoOAClosePositionDetail.moneyDigits)
+  return moneydigits_;
+}
+inline void ProtoOAClosePositionDetail::set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _has_bits_[0] |= 0x00000100u;
+  moneydigits_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAClosePositionDetail.moneyDigits)
 }
 
 // -------------------------------------------------------------------
@@ -8182,9 +9420,342 @@ inline void ProtoOADepthQuote::set_ask(::PROTOBUF_NAMESPACE_ID::uint64 value) {
   // @@protoc_insertion_point(field_set:ProtoOADepthQuote.ask)
 }
 
+// -------------------------------------------------------------------
+
+// ProtoOAMarginCall
+
+// required .ProtoOANotificationType marginCallType = 1;
+inline bool ProtoOAMarginCall::has_margincalltype() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void ProtoOAMarginCall::clear_margincalltype() {
+  margincalltype_ = 61;
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline ::ProtoOANotificationType ProtoOAMarginCall::margincalltype() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCall.marginCallType)
+  return static_cast< ::ProtoOANotificationType >(margincalltype_);
+}
+inline void ProtoOAMarginCall::set_margincalltype(::ProtoOANotificationType value) {
+  assert(::ProtoOANotificationType_IsValid(value));
+  _has_bits_[0] |= 0x00000004u;
+  margincalltype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCall.marginCallType)
+}
+
+// required double marginLevelThreshold = 2;
+inline bool ProtoOAMarginCall::has_marginlevelthreshold() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ProtoOAMarginCall::clear_marginlevelthreshold() {
+  marginlevelthreshold_ = 0;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline double ProtoOAMarginCall::marginlevelthreshold() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCall.marginLevelThreshold)
+  return marginlevelthreshold_;
+}
+inline void ProtoOAMarginCall::set_marginlevelthreshold(double value) {
+  _has_bits_[0] |= 0x00000001u;
+  marginlevelthreshold_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCall.marginLevelThreshold)
+}
+
+// optional int64 utcLastUpdateTimestamp = 3;
+inline bool ProtoOAMarginCall::has_utclastupdatetimestamp() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOAMarginCall::clear_utclastupdatetimestamp() {
+  utclastupdatetimestamp_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOAMarginCall::utclastupdatetimestamp() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCall.utcLastUpdateTimestamp)
+  return utclastupdatetimestamp_;
+}
+inline void ProtoOAMarginCall::set_utclastupdatetimestamp(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000002u;
+  utclastupdatetimestamp_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCall.utcLastUpdateTimestamp)
+}
+
+// -------------------------------------------------------------------
+
+// ProtoOAHoliday
+
+// required int64 holidayId = 1;
+inline bool ProtoOAHoliday::has_holidayid() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void ProtoOAHoliday::clear_holidayid() {
+  holidayid_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOAHoliday::holidayid() const {
+  // @@protoc_insertion_point(field_get:ProtoOAHoliday.holidayId)
+  return holidayid_;
+}
+inline void ProtoOAHoliday::set_holidayid(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000008u;
+  holidayid_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAHoliday.holidayId)
+}
+
+// required string name = 2;
+inline bool ProtoOAHoliday::has_name() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ProtoOAHoliday::clear_name() {
+  name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline const std::string& ProtoOAHoliday::name() const {
+  // @@protoc_insertion_point(field_get:ProtoOAHoliday.name)
+  return name_.GetNoArena();
+}
+inline void ProtoOAHoliday::set_name(const std::string& value) {
+  _has_bits_[0] |= 0x00000001u;
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:ProtoOAHoliday.name)
+}
+inline void ProtoOAHoliday::set_name(std::string&& value) {
+  _has_bits_[0] |= 0x00000001u;
+  name_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:ProtoOAHoliday.name)
+}
+inline void ProtoOAHoliday::set_name(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000001u;
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:ProtoOAHoliday.name)
+}
+inline void ProtoOAHoliday::set_name(const char* value, size_t size) {
+  _has_bits_[0] |= 0x00000001u;
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:ProtoOAHoliday.name)
+}
+inline std::string* ProtoOAHoliday::mutable_name() {
+  _has_bits_[0] |= 0x00000001u;
+  // @@protoc_insertion_point(field_mutable:ProtoOAHoliday.name)
+  return name_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* ProtoOAHoliday::release_name() {
+  // @@protoc_insertion_point(field_release:ProtoOAHoliday.name)
+  if (!has_name()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000001u;
+  return name_.ReleaseNonDefaultNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void ProtoOAHoliday::set_allocated_name(std::string* name) {
+  if (name != nullptr) {
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  name_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), name);
+  // @@protoc_insertion_point(field_set_allocated:ProtoOAHoliday.name)
+}
+
+// optional string description = 3;
+inline bool ProtoOAHoliday::has_description() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOAHoliday::clear_description() {
+  description_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline const std::string& ProtoOAHoliday::description() const {
+  // @@protoc_insertion_point(field_get:ProtoOAHoliday.description)
+  return description_.GetNoArena();
+}
+inline void ProtoOAHoliday::set_description(const std::string& value) {
+  _has_bits_[0] |= 0x00000002u;
+  description_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:ProtoOAHoliday.description)
+}
+inline void ProtoOAHoliday::set_description(std::string&& value) {
+  _has_bits_[0] |= 0x00000002u;
+  description_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:ProtoOAHoliday.description)
+}
+inline void ProtoOAHoliday::set_description(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000002u;
+  description_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:ProtoOAHoliday.description)
+}
+inline void ProtoOAHoliday::set_description(const char* value, size_t size) {
+  _has_bits_[0] |= 0x00000002u;
+  description_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:ProtoOAHoliday.description)
+}
+inline std::string* ProtoOAHoliday::mutable_description() {
+  _has_bits_[0] |= 0x00000002u;
+  // @@protoc_insertion_point(field_mutable:ProtoOAHoliday.description)
+  return description_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* ProtoOAHoliday::release_description() {
+  // @@protoc_insertion_point(field_release:ProtoOAHoliday.description)
+  if (!has_description()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000002u;
+  return description_.ReleaseNonDefaultNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void ProtoOAHoliday::set_allocated_description(std::string* description) {
+  if (description != nullptr) {
+    _has_bits_[0] |= 0x00000002u;
+  } else {
+    _has_bits_[0] &= ~0x00000002u;
+  }
+  description_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), description);
+  // @@protoc_insertion_point(field_set_allocated:ProtoOAHoliday.description)
+}
+
+// required string scheduleTimeZone = 4;
+inline bool ProtoOAHoliday::has_scheduletimezone() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void ProtoOAHoliday::clear_scheduletimezone() {
+  scheduletimezone_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline const std::string& ProtoOAHoliday::scheduletimezone() const {
+  // @@protoc_insertion_point(field_get:ProtoOAHoliday.scheduleTimeZone)
+  return scheduletimezone_.GetNoArena();
+}
+inline void ProtoOAHoliday::set_scheduletimezone(const std::string& value) {
+  _has_bits_[0] |= 0x00000004u;
+  scheduletimezone_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:ProtoOAHoliday.scheduleTimeZone)
+}
+inline void ProtoOAHoliday::set_scheduletimezone(std::string&& value) {
+  _has_bits_[0] |= 0x00000004u;
+  scheduletimezone_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:ProtoOAHoliday.scheduleTimeZone)
+}
+inline void ProtoOAHoliday::set_scheduletimezone(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000004u;
+  scheduletimezone_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:ProtoOAHoliday.scheduleTimeZone)
+}
+inline void ProtoOAHoliday::set_scheduletimezone(const char* value, size_t size) {
+  _has_bits_[0] |= 0x00000004u;
+  scheduletimezone_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:ProtoOAHoliday.scheduleTimeZone)
+}
+inline std::string* ProtoOAHoliday::mutable_scheduletimezone() {
+  _has_bits_[0] |= 0x00000004u;
+  // @@protoc_insertion_point(field_mutable:ProtoOAHoliday.scheduleTimeZone)
+  return scheduletimezone_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* ProtoOAHoliday::release_scheduletimezone() {
+  // @@protoc_insertion_point(field_release:ProtoOAHoliday.scheduleTimeZone)
+  if (!has_scheduletimezone()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000004u;
+  return scheduletimezone_.ReleaseNonDefaultNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void ProtoOAHoliday::set_allocated_scheduletimezone(std::string* scheduletimezone) {
+  if (scheduletimezone != nullptr) {
+    _has_bits_[0] |= 0x00000004u;
+  } else {
+    _has_bits_[0] &= ~0x00000004u;
+  }
+  scheduletimezone_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), scheduletimezone);
+  // @@protoc_insertion_point(field_set_allocated:ProtoOAHoliday.scheduleTimeZone)
+}
+
+// required int64 holidayDate = 5;
+inline bool ProtoOAHoliday::has_holidaydate() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void ProtoOAHoliday::clear_holidaydate() {
+  holidaydate_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOAHoliday::holidaydate() const {
+  // @@protoc_insertion_point(field_get:ProtoOAHoliday.holidayDate)
+  return holidaydate_;
+}
+inline void ProtoOAHoliday::set_holidaydate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000010u;
+  holidaydate_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAHoliday.holidayDate)
+}
+
+// required bool isRecurring = 6;
+inline bool ProtoOAHoliday::has_isrecurring() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void ProtoOAHoliday::clear_isrecurring() {
+  isrecurring_ = false;
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline bool ProtoOAHoliday::isrecurring() const {
+  // @@protoc_insertion_point(field_get:ProtoOAHoliday.isRecurring)
+  return isrecurring_;
+}
+inline void ProtoOAHoliday::set_isrecurring(bool value) {
+  _has_bits_[0] |= 0x00000020u;
+  isrecurring_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAHoliday.isRecurring)
+}
+
+// optional int32 startSecond = 7;
+inline bool ProtoOAHoliday::has_startsecond() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void ProtoOAHoliday::clear_startsecond() {
+  startsecond_ = 0;
+  _has_bits_[0] &= ~0x00000040u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 ProtoOAHoliday::startsecond() const {
+  // @@protoc_insertion_point(field_get:ProtoOAHoliday.startSecond)
+  return startsecond_;
+}
+inline void ProtoOAHoliday::set_startsecond(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _has_bits_[0] |= 0x00000040u;
+  startsecond_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAHoliday.startSecond)
+}
+
+// optional int32 endSecond = 8;
+inline bool ProtoOAHoliday::has_endsecond() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+inline void ProtoOAHoliday::clear_endsecond() {
+  endsecond_ = 0;
+  _has_bits_[0] &= ~0x00000080u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 ProtoOAHoliday::endsecond() const {
+  // @@protoc_insertion_point(field_get:ProtoOAHoliday.endSecond)
+  return endsecond_;
+}
+inline void ProtoOAHoliday::set_endsecond(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _has_bits_[0] |= 0x00000080u;
+  endsecond_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAHoliday.endSecond)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -8258,6 +9829,11 @@ template <> struct is_proto_enum< ::ProtoOATradingMode> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::ProtoOATradingMode>() {
   return ::ProtoOATradingMode_descriptor();
+}
+template <> struct is_proto_enum< ::ProtoOASwapCalculationType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::ProtoOASwapCalculationType>() {
+  return ::ProtoOASwapCalculationType_descriptor();
 }
 template <> struct is_proto_enum< ::ProtoOAAccessRights> : ::std::true_type {};
 template <>
@@ -8339,10 +9915,20 @@ template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::ProtoOAClientPermissionScope>() {
   return ::ProtoOAClientPermissionScope_descriptor();
 }
+template <> struct is_proto_enum< ::ProtoOANotificationType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::ProtoOANotificationType>() {
+  return ::ProtoOANotificationType_descriptor();
+}
 template <> struct is_proto_enum< ::ProtoOAErrorCode> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::ProtoOAErrorCode>() {
   return ::ProtoOAErrorCode_descriptor();
+}
+template <> struct is_proto_enum< ::ProtoOALimitedRiskMarginCalculationStrategy> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::ProtoOALimitedRiskMarginCalculationStrategy>() {
+  return ::ProtoOALimitedRiskMarginCalculationStrategy_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

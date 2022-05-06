@@ -47,7 +47,7 @@ struct TableStruct_OpenApiMessages_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[65]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[75]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -156,6 +156,24 @@ extern ProtoOAGetTrendbarsReqDefaultTypeInternal _ProtoOAGetTrendbarsReq_default
 class ProtoOAGetTrendbarsRes;
 class ProtoOAGetTrendbarsResDefaultTypeInternal;
 extern ProtoOAGetTrendbarsResDefaultTypeInternal _ProtoOAGetTrendbarsRes_default_instance_;
+class ProtoOAMarginCallListReq;
+class ProtoOAMarginCallListReqDefaultTypeInternal;
+extern ProtoOAMarginCallListReqDefaultTypeInternal _ProtoOAMarginCallListReq_default_instance_;
+class ProtoOAMarginCallListRes;
+class ProtoOAMarginCallListResDefaultTypeInternal;
+extern ProtoOAMarginCallListResDefaultTypeInternal _ProtoOAMarginCallListRes_default_instance_;
+class ProtoOAMarginCallTriggerEvent;
+class ProtoOAMarginCallTriggerEventDefaultTypeInternal;
+extern ProtoOAMarginCallTriggerEventDefaultTypeInternal _ProtoOAMarginCallTriggerEvent_default_instance_;
+class ProtoOAMarginCallUpdateEvent;
+class ProtoOAMarginCallUpdateEventDefaultTypeInternal;
+extern ProtoOAMarginCallUpdateEventDefaultTypeInternal _ProtoOAMarginCallUpdateEvent_default_instance_;
+class ProtoOAMarginCallUpdateReq;
+class ProtoOAMarginCallUpdateReqDefaultTypeInternal;
+extern ProtoOAMarginCallUpdateReqDefaultTypeInternal _ProtoOAMarginCallUpdateReq_default_instance_;
+class ProtoOAMarginCallUpdateRes;
+class ProtoOAMarginCallUpdateResDefaultTypeInternal;
+extern ProtoOAMarginCallUpdateResDefaultTypeInternal _ProtoOAMarginCallUpdateRes_default_instance_;
 class ProtoOAMarginChangedEvent;
 class ProtoOAMarginChangedEventDefaultTypeInternal;
 extern ProtoOAMarginChangedEventDefaultTypeInternal _ProtoOAMarginChangedEvent_default_instance_;
@@ -171,6 +189,12 @@ extern ProtoOAReconcileReqDefaultTypeInternal _ProtoOAReconcileReq_default_insta
 class ProtoOAReconcileRes;
 class ProtoOAReconcileResDefaultTypeInternal;
 extern ProtoOAReconcileResDefaultTypeInternal _ProtoOAReconcileRes_default_instance_;
+class ProtoOARefreshTokenReq;
+class ProtoOARefreshTokenReqDefaultTypeInternal;
+extern ProtoOARefreshTokenReqDefaultTypeInternal _ProtoOARefreshTokenReq_default_instance_;
+class ProtoOARefreshTokenRes;
+class ProtoOARefreshTokenResDefaultTypeInternal;
+extern ProtoOARefreshTokenResDefaultTypeInternal _ProtoOARefreshTokenRes_default_instance_;
 class ProtoOASpotEvent;
 class ProtoOASpotEventDefaultTypeInternal;
 extern ProtoOASpotEventDefaultTypeInternal _ProtoOASpotEvent_default_instance_;
@@ -183,6 +207,9 @@ extern ProtoOASubscribeDepthQuotesResDefaultTypeInternal _ProtoOASubscribeDepthQ
 class ProtoOASubscribeLiveTrendbarReq;
 class ProtoOASubscribeLiveTrendbarReqDefaultTypeInternal;
 extern ProtoOASubscribeLiveTrendbarReqDefaultTypeInternal _ProtoOASubscribeLiveTrendbarReq_default_instance_;
+class ProtoOASubscribeLiveTrendbarRes;
+class ProtoOASubscribeLiveTrendbarResDefaultTypeInternal;
+extern ProtoOASubscribeLiveTrendbarResDefaultTypeInternal _ProtoOASubscribeLiveTrendbarRes_default_instance_;
 class ProtoOASubscribeSpotsReq;
 class ProtoOASubscribeSpotsReqDefaultTypeInternal;
 extern ProtoOASubscribeSpotsReqDefaultTypeInternal _ProtoOASubscribeSpotsReq_default_instance_;
@@ -237,6 +264,9 @@ extern ProtoOAUnsubscribeDepthQuotesResDefaultTypeInternal _ProtoOAUnsubscribeDe
 class ProtoOAUnsubscribeLiveTrendbarReq;
 class ProtoOAUnsubscribeLiveTrendbarReqDefaultTypeInternal;
 extern ProtoOAUnsubscribeLiveTrendbarReqDefaultTypeInternal _ProtoOAUnsubscribeLiveTrendbarReq_default_instance_;
+class ProtoOAUnsubscribeLiveTrendbarRes;
+class ProtoOAUnsubscribeLiveTrendbarResDefaultTypeInternal;
+extern ProtoOAUnsubscribeLiveTrendbarResDefaultTypeInternal _ProtoOAUnsubscribeLiveTrendbarRes_default_instance_;
 class ProtoOAUnsubscribeSpotsReq;
 class ProtoOAUnsubscribeSpotsReqDefaultTypeInternal;
 extern ProtoOAUnsubscribeSpotsReqDefaultTypeInternal _ProtoOAUnsubscribeSpotsReq_default_instance_;
@@ -284,15 +314,24 @@ template<> ::ProtoOAGetTickDataReq* Arena::CreateMaybeMessage<::ProtoOAGetTickDa
 template<> ::ProtoOAGetTickDataRes* Arena::CreateMaybeMessage<::ProtoOAGetTickDataRes>(Arena*);
 template<> ::ProtoOAGetTrendbarsReq* Arena::CreateMaybeMessage<::ProtoOAGetTrendbarsReq>(Arena*);
 template<> ::ProtoOAGetTrendbarsRes* Arena::CreateMaybeMessage<::ProtoOAGetTrendbarsRes>(Arena*);
+template<> ::ProtoOAMarginCallListReq* Arena::CreateMaybeMessage<::ProtoOAMarginCallListReq>(Arena*);
+template<> ::ProtoOAMarginCallListRes* Arena::CreateMaybeMessage<::ProtoOAMarginCallListRes>(Arena*);
+template<> ::ProtoOAMarginCallTriggerEvent* Arena::CreateMaybeMessage<::ProtoOAMarginCallTriggerEvent>(Arena*);
+template<> ::ProtoOAMarginCallUpdateEvent* Arena::CreateMaybeMessage<::ProtoOAMarginCallUpdateEvent>(Arena*);
+template<> ::ProtoOAMarginCallUpdateReq* Arena::CreateMaybeMessage<::ProtoOAMarginCallUpdateReq>(Arena*);
+template<> ::ProtoOAMarginCallUpdateRes* Arena::CreateMaybeMessage<::ProtoOAMarginCallUpdateRes>(Arena*);
 template<> ::ProtoOAMarginChangedEvent* Arena::CreateMaybeMessage<::ProtoOAMarginChangedEvent>(Arena*);
 template<> ::ProtoOANewOrderReq* Arena::CreateMaybeMessage<::ProtoOANewOrderReq>(Arena*);
 template<> ::ProtoOAOrderErrorEvent* Arena::CreateMaybeMessage<::ProtoOAOrderErrorEvent>(Arena*);
 template<> ::ProtoOAReconcileReq* Arena::CreateMaybeMessage<::ProtoOAReconcileReq>(Arena*);
 template<> ::ProtoOAReconcileRes* Arena::CreateMaybeMessage<::ProtoOAReconcileRes>(Arena*);
+template<> ::ProtoOARefreshTokenReq* Arena::CreateMaybeMessage<::ProtoOARefreshTokenReq>(Arena*);
+template<> ::ProtoOARefreshTokenRes* Arena::CreateMaybeMessage<::ProtoOARefreshTokenRes>(Arena*);
 template<> ::ProtoOASpotEvent* Arena::CreateMaybeMessage<::ProtoOASpotEvent>(Arena*);
 template<> ::ProtoOASubscribeDepthQuotesReq* Arena::CreateMaybeMessage<::ProtoOASubscribeDepthQuotesReq>(Arena*);
 template<> ::ProtoOASubscribeDepthQuotesRes* Arena::CreateMaybeMessage<::ProtoOASubscribeDepthQuotesRes>(Arena*);
 template<> ::ProtoOASubscribeLiveTrendbarReq* Arena::CreateMaybeMessage<::ProtoOASubscribeLiveTrendbarReq>(Arena*);
+template<> ::ProtoOASubscribeLiveTrendbarRes* Arena::CreateMaybeMessage<::ProtoOASubscribeLiveTrendbarRes>(Arena*);
 template<> ::ProtoOASubscribeSpotsReq* Arena::CreateMaybeMessage<::ProtoOASubscribeSpotsReq>(Arena*);
 template<> ::ProtoOASubscribeSpotsRes* Arena::CreateMaybeMessage<::ProtoOASubscribeSpotsRes>(Arena*);
 template<> ::ProtoOASymbolByIdReq* Arena::CreateMaybeMessage<::ProtoOASymbolByIdReq>(Arena*);
@@ -311,6 +350,7 @@ template<> ::ProtoOATrailingSLChangedEvent* Arena::CreateMaybeMessage<::ProtoOAT
 template<> ::ProtoOAUnsubscribeDepthQuotesReq* Arena::CreateMaybeMessage<::ProtoOAUnsubscribeDepthQuotesReq>(Arena*);
 template<> ::ProtoOAUnsubscribeDepthQuotesRes* Arena::CreateMaybeMessage<::ProtoOAUnsubscribeDepthQuotesRes>(Arena*);
 template<> ::ProtoOAUnsubscribeLiveTrendbarReq* Arena::CreateMaybeMessage<::ProtoOAUnsubscribeLiveTrendbarReq>(Arena*);
+template<> ::ProtoOAUnsubscribeLiveTrendbarRes* Arena::CreateMaybeMessage<::ProtoOAUnsubscribeLiveTrendbarRes>(Arena*);
 template<> ::ProtoOAUnsubscribeSpotsReq* Arena::CreateMaybeMessage<::ProtoOAUnsubscribeSpotsReq>(Arena*);
 template<> ::ProtoOAUnsubscribeSpotsRes* Arena::CreateMaybeMessage<::ProtoOAUnsubscribeSpotsRes>(Arena*);
 template<> ::ProtoOAVersionReq* Arena::CreateMaybeMessage<::ProtoOAVersionReq>(Arena*);
@@ -1007,6 +1047,13 @@ class ProtoOAErrorRes final :
   ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid() const;
   void set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value);
 
+  // optional int64 maintenanceEndTimestamp = 5;
+  bool has_maintenanceendtimestamp() const;
+  void clear_maintenanceendtimestamp();
+  static const int kMaintenanceEndTimestampFieldNumber = 5;
+  ::PROTOBUF_NAMESPACE_ID::int64 maintenanceendtimestamp() const;
+  void set_maintenanceendtimestamp(::PROTOBUF_NAMESPACE_ID::int64 value);
+
   // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_ERROR_RES];
   bool has_payloadtype() const;
   void clear_payloadtype();
@@ -1024,6 +1071,7 @@ class ProtoOAErrorRes final :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr errorcode_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr description_;
   ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
+  ::PROTOBUF_NAMESPACE_ID::int64 maintenanceendtimestamp_;
   int payloadtype_;
   friend struct ::TableStruct_OpenApiMessages_2eproto;
 };
@@ -3360,6 +3408,13 @@ class ProtoOASymbolsListReq final :
   ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid() const;
   void set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value);
 
+  // optional bool includeArchivedSymbols = 3 [default = false];
+  bool has_includearchivedsymbols() const;
+  void clear_includearchivedsymbols();
+  static const int kIncludeArchivedSymbolsFieldNumber = 3;
+  bool includearchivedsymbols() const;
+  void set_includearchivedsymbols(bool value);
+
   // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_SYMBOLS_LIST_REQ];
   bool has_payloadtype() const;
   void clear_payloadtype();
@@ -3375,6 +3430,7 @@ class ProtoOASymbolsListReq final :
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
+  bool includearchivedsymbols_;
   int payloadtype_;
   friend struct ::TableStruct_OpenApiMessages_2eproto;
 };
@@ -3495,6 +3551,18 @@ class ProtoOASymbolsListRes final :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOALightSymbol >&
       symbol() const;
 
+  // repeated .ProtoOAArchivedSymbol archivedSymbol = 4;
+  int archivedsymbol_size() const;
+  void clear_archivedsymbol();
+  static const int kArchivedSymbolFieldNumber = 4;
+  ::ProtoOAArchivedSymbol* mutable_archivedsymbol(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAArchivedSymbol >*
+      mutable_archivedsymbol();
+  const ::ProtoOAArchivedSymbol& archivedsymbol(int index) const;
+  ::ProtoOAArchivedSymbol* add_archivedsymbol();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAArchivedSymbol >&
+      archivedsymbol() const;
+
   // required int64 ctidTraderAccountId = 2;
   bool has_ctidtraderaccountid() const;
   void clear_ctidtraderaccountid();
@@ -3517,6 +3585,7 @@ class ProtoOASymbolsListRes final :
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOALightSymbol > symbol_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAArchivedSymbol > archivedsymbol_;
   ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
   int payloadtype_;
   friend struct ::TableStruct_OpenApiMessages_2eproto;
@@ -3781,6 +3850,18 @@ class ProtoOASymbolByIdRes final :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOASymbol >&
       symbol() const;
 
+  // repeated .ProtoOAArchivedSymbol archivedSymbol = 4;
+  int archivedsymbol_size() const;
+  void clear_archivedsymbol();
+  static const int kArchivedSymbolFieldNumber = 4;
+  ::ProtoOAArchivedSymbol* mutable_archivedsymbol(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAArchivedSymbol >*
+      mutable_archivedsymbol();
+  const ::ProtoOAArchivedSymbol& archivedsymbol(int index) const;
+  ::ProtoOAArchivedSymbol* add_archivedsymbol();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAArchivedSymbol >&
+      archivedsymbol() const;
+
   // required int64 ctidTraderAccountId = 2;
   bool has_ctidtraderaccountid() const;
   void clear_ctidtraderaccountid();
@@ -3803,6 +3884,7 @@ class ProtoOASymbolByIdRes final :
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOASymbol > symbol_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAArchivedSymbol > archivedsymbol_;
   ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
   int payloadtype_;
   friend struct ::TableStruct_OpenApiMessages_2eproto;
@@ -5983,6 +6065,13 @@ class ProtoOAExpectedMarginRes final :
   ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid() const;
   void set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value);
 
+  // optional uint32 moneyDigits = 4;
+  bool has_moneydigits() const;
+  void clear_moneydigits();
+  static const int kMoneyDigitsFieldNumber = 4;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits() const;
+  void set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value);
+
   // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_EXPECTED_MARGIN_RES];
   bool has_payloadtype() const;
   void clear_payloadtype();
@@ -5999,6 +6088,7 @@ class ProtoOAExpectedMarginRes final :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAExpectedMargin > margin_;
   ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits_;
   int payloadtype_;
   friend struct ::TableStruct_OpenApiMessages_2eproto;
 };
@@ -6128,6 +6218,13 @@ class ProtoOAMarginChangedEvent final :
   ::PROTOBUF_NAMESPACE_ID::uint64 usedmargin() const;
   void set_usedmargin(::PROTOBUF_NAMESPACE_ID::uint64 value);
 
+  // optional uint32 moneyDigits = 5;
+  bool has_moneydigits() const;
+  void clear_moneydigits();
+  static const int kMoneyDigitsFieldNumber = 5;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits() const;
+  void set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value);
+
   // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CHANGED_EVENT];
   bool has_payloadtype() const;
   void clear_payloadtype();
@@ -6148,6 +6245,7 @@ class ProtoOAMarginChangedEvent final :
   ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
   ::PROTOBUF_NAMESPACE_ID::uint64 positionid_;
   ::PROTOBUF_NAMESPACE_ID::uint64 usedmargin_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 moneydigits_;
   int payloadtype_;
   friend struct ::TableStruct_OpenApiMessages_2eproto;
 };
@@ -6738,6 +6836,317 @@ class ProtoOAGetAccountListByAccessTokenRes final :
 };
 // -------------------------------------------------------------------
 
+class ProtoOARefreshTokenReq final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOARefreshTokenReq) */ {
+ public:
+  ProtoOARefreshTokenReq();
+  virtual ~ProtoOARefreshTokenReq();
+
+  ProtoOARefreshTokenReq(const ProtoOARefreshTokenReq& from);
+  ProtoOARefreshTokenReq(ProtoOARefreshTokenReq&& from) noexcept
+    : ProtoOARefreshTokenReq() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOARefreshTokenReq& operator=(const ProtoOARefreshTokenReq& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOARefreshTokenReq& operator=(ProtoOARefreshTokenReq&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOARefreshTokenReq& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOARefreshTokenReq* internal_default_instance() {
+    return reinterpret_cast<const ProtoOARefreshTokenReq*>(
+               &_ProtoOARefreshTokenReq_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    42;
+
+  void Swap(ProtoOARefreshTokenReq* other);
+  friend void swap(ProtoOARefreshTokenReq& a, ProtoOARefreshTokenReq& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOARefreshTokenReq* New() const final {
+    return CreateMaybeMessage<ProtoOARefreshTokenReq>(nullptr);
+  }
+
+  ProtoOARefreshTokenReq* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOARefreshTokenReq>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOARefreshTokenReq& from);
+  void MergeFrom(const ProtoOARefreshTokenReq& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOARefreshTokenReq* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOARefreshTokenReq";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required string refreshToken = 2;
+  bool has_refreshtoken() const;
+  void clear_refreshtoken();
+  static const int kRefreshTokenFieldNumber = 2;
+  const std::string& refreshtoken() const;
+  void set_refreshtoken(const std::string& value);
+  void set_refreshtoken(std::string&& value);
+  void set_refreshtoken(const char* value);
+  void set_refreshtoken(const char* value, size_t size);
+  std::string* mutable_refreshtoken();
+  std::string* release_refreshtoken();
+  void set_allocated_refreshtoken(std::string* refreshtoken);
+
+  // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_REFRESH_TOKEN_REQ];
+  bool has_payloadtype() const;
+  void clear_payloadtype();
+  static const int kPayloadTypeFieldNumber = 1;
+  ::ProtoOAPayloadType payloadtype() const;
+  void set_payloadtype(::ProtoOAPayloadType value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOARefreshTokenReq)
+ private:
+  class HasBitSetters;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr refreshtoken_;
+  int payloadtype_;
+  friend struct ::TableStruct_OpenApiMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ProtoOARefreshTokenRes final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOARefreshTokenRes) */ {
+ public:
+  ProtoOARefreshTokenRes();
+  virtual ~ProtoOARefreshTokenRes();
+
+  ProtoOARefreshTokenRes(const ProtoOARefreshTokenRes& from);
+  ProtoOARefreshTokenRes(ProtoOARefreshTokenRes&& from) noexcept
+    : ProtoOARefreshTokenRes() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOARefreshTokenRes& operator=(const ProtoOARefreshTokenRes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOARefreshTokenRes& operator=(ProtoOARefreshTokenRes&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOARefreshTokenRes& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOARefreshTokenRes* internal_default_instance() {
+    return reinterpret_cast<const ProtoOARefreshTokenRes*>(
+               &_ProtoOARefreshTokenRes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    43;
+
+  void Swap(ProtoOARefreshTokenRes* other);
+  friend void swap(ProtoOARefreshTokenRes& a, ProtoOARefreshTokenRes& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOARefreshTokenRes* New() const final {
+    return CreateMaybeMessage<ProtoOARefreshTokenRes>(nullptr);
+  }
+
+  ProtoOARefreshTokenRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOARefreshTokenRes>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOARefreshTokenRes& from);
+  void MergeFrom(const ProtoOARefreshTokenRes& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOARefreshTokenRes* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOARefreshTokenRes";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required string accessToken = 2;
+  bool has_accesstoken() const;
+  void clear_accesstoken();
+  static const int kAccessTokenFieldNumber = 2;
+  const std::string& accesstoken() const;
+  void set_accesstoken(const std::string& value);
+  void set_accesstoken(std::string&& value);
+  void set_accesstoken(const char* value);
+  void set_accesstoken(const char* value, size_t size);
+  std::string* mutable_accesstoken();
+  std::string* release_accesstoken();
+  void set_allocated_accesstoken(std::string* accesstoken);
+
+  // required string tokenType = 3;
+  bool has_tokentype() const;
+  void clear_tokentype();
+  static const int kTokenTypeFieldNumber = 3;
+  const std::string& tokentype() const;
+  void set_tokentype(const std::string& value);
+  void set_tokentype(std::string&& value);
+  void set_tokentype(const char* value);
+  void set_tokentype(const char* value, size_t size);
+  std::string* mutable_tokentype();
+  std::string* release_tokentype();
+  void set_allocated_tokentype(std::string* tokentype);
+
+  // required string refreshToken = 5;
+  bool has_refreshtoken() const;
+  void clear_refreshtoken();
+  static const int kRefreshTokenFieldNumber = 5;
+  const std::string& refreshtoken() const;
+  void set_refreshtoken(const std::string& value);
+  void set_refreshtoken(std::string&& value);
+  void set_refreshtoken(const char* value);
+  void set_refreshtoken(const char* value, size_t size);
+  std::string* mutable_refreshtoken();
+  std::string* release_refreshtoken();
+  void set_allocated_refreshtoken(std::string* refreshtoken);
+
+  // required int64 expiresIn = 4;
+  bool has_expiresin() const;
+  void clear_expiresin();
+  static const int kExpiresInFieldNumber = 4;
+  ::PROTOBUF_NAMESPACE_ID::int64 expiresin() const;
+  void set_expiresin(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_REFRESH_TOKEN_RES];
+  bool has_payloadtype() const;
+  void clear_payloadtype();
+  static const int kPayloadTypeFieldNumber = 1;
+  ::ProtoOAPayloadType payloadtype() const;
+  void set_payloadtype(::ProtoOAPayloadType value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOARefreshTokenRes)
+ private:
+  class HasBitSetters;
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr accesstoken_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr tokentype_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr refreshtoken_;
+  ::PROTOBUF_NAMESPACE_ID::int64 expiresin_;
+  int payloadtype_;
+  friend struct ::TableStruct_OpenApiMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
 class ProtoOASubscribeSpotsReq final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOASubscribeSpotsReq) */ {
  public:
@@ -6781,7 +7190,7 @@ class ProtoOASubscribeSpotsReq final :
                &_ProtoOASubscribeSpotsReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    42;
+    44;
 
   void Swap(ProtoOASubscribeSpotsReq* other);
   friend void swap(ProtoOASubscribeSpotsReq& a, ProtoOASubscribeSpotsReq& b) {
@@ -6924,7 +7333,7 @@ class ProtoOASubscribeSpotsRes final :
                &_ProtoOASubscribeSpotsRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    43;
+    45;
 
   void Swap(ProtoOASubscribeSpotsRes* other);
   friend void swap(ProtoOASubscribeSpotsRes& a, ProtoOASubscribeSpotsRes& b) {
@@ -7054,7 +7463,7 @@ class ProtoOAUnsubscribeSpotsReq final :
                &_ProtoOAUnsubscribeSpotsReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    44;
+    46;
 
   void Swap(ProtoOAUnsubscribeSpotsReq* other);
   friend void swap(ProtoOAUnsubscribeSpotsReq& a, ProtoOAUnsubscribeSpotsReq& b) {
@@ -7197,7 +7606,7 @@ class ProtoOAUnsubscribeSpotsRes final :
                &_ProtoOAUnsubscribeSpotsRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    45;
+    47;
 
   void Swap(ProtoOAUnsubscribeSpotsRes* other);
   friend void swap(ProtoOAUnsubscribeSpotsRes& a, ProtoOAUnsubscribeSpotsRes& b) {
@@ -7327,7 +7736,7 @@ class ProtoOASpotEvent final :
                &_ProtoOASpotEvent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    46;
+    48;
 
   void Swap(ProtoOASpotEvent* other);
   friend void swap(ProtoOASpotEvent& a, ProtoOASpotEvent& b) {
@@ -7427,6 +7836,13 @@ class ProtoOASpotEvent final :
   ::PROTOBUF_NAMESPACE_ID::uint64 ask() const;
   void set_ask(::PROTOBUF_NAMESPACE_ID::uint64 value);
 
+  // optional uint64 sessionClose = 7;
+  bool has_sessionclose() const;
+  void clear_sessionclose();
+  static const int kSessionCloseFieldNumber = 7;
+  ::PROTOBUF_NAMESPACE_ID::uint64 sessionclose() const;
+  void set_sessionclose(::PROTOBUF_NAMESPACE_ID::uint64 value);
+
   // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_SPOT_EVENT];
   bool has_payloadtype() const;
   void clear_payloadtype();
@@ -7449,6 +7865,7 @@ class ProtoOASpotEvent final :
   ::PROTOBUF_NAMESPACE_ID::int64 symbolid_;
   ::PROTOBUF_NAMESPACE_ID::uint64 bid_;
   ::PROTOBUF_NAMESPACE_ID::uint64 ask_;
+  ::PROTOBUF_NAMESPACE_ID::uint64 sessionclose_;
   int payloadtype_;
   friend struct ::TableStruct_OpenApiMessages_2eproto;
 };
@@ -7497,7 +7914,7 @@ class ProtoOASubscribeLiveTrendbarReq final :
                &_ProtoOASubscribeLiveTrendbarReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    47;
+    49;
 
   void Swap(ProtoOASubscribeLiveTrendbarReq* other);
   friend void swap(ProtoOASubscribeLiveTrendbarReq& a, ProtoOASubscribeLiveTrendbarReq& b) {
@@ -7603,6 +8020,136 @@ class ProtoOASubscribeLiveTrendbarReq final :
 };
 // -------------------------------------------------------------------
 
+class ProtoOASubscribeLiveTrendbarRes final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOASubscribeLiveTrendbarRes) */ {
+ public:
+  ProtoOASubscribeLiveTrendbarRes();
+  virtual ~ProtoOASubscribeLiveTrendbarRes();
+
+  ProtoOASubscribeLiveTrendbarRes(const ProtoOASubscribeLiveTrendbarRes& from);
+  ProtoOASubscribeLiveTrendbarRes(ProtoOASubscribeLiveTrendbarRes&& from) noexcept
+    : ProtoOASubscribeLiveTrendbarRes() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOASubscribeLiveTrendbarRes& operator=(const ProtoOASubscribeLiveTrendbarRes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOASubscribeLiveTrendbarRes& operator=(ProtoOASubscribeLiveTrendbarRes&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOASubscribeLiveTrendbarRes& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOASubscribeLiveTrendbarRes* internal_default_instance() {
+    return reinterpret_cast<const ProtoOASubscribeLiveTrendbarRes*>(
+               &_ProtoOASubscribeLiveTrendbarRes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    50;
+
+  void Swap(ProtoOASubscribeLiveTrendbarRes* other);
+  friend void swap(ProtoOASubscribeLiveTrendbarRes& a, ProtoOASubscribeLiveTrendbarRes& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOASubscribeLiveTrendbarRes* New() const final {
+    return CreateMaybeMessage<ProtoOASubscribeLiveTrendbarRes>(nullptr);
+  }
+
+  ProtoOASubscribeLiveTrendbarRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOASubscribeLiveTrendbarRes>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOASubscribeLiveTrendbarRes& from);
+  void MergeFrom(const ProtoOASubscribeLiveTrendbarRes& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOASubscribeLiveTrendbarRes* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOASubscribeLiveTrendbarRes";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required int64 ctidTraderAccountId = 2;
+  bool has_ctidtraderaccountid() const;
+  void clear_ctidtraderaccountid();
+  static const int kCtidTraderAccountIdFieldNumber = 2;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid() const;
+  void set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_SUBSCRIBE_LIVE_TRENDBAR_RES];
+  bool has_payloadtype() const;
+  void clear_payloadtype();
+  static const int kPayloadTypeFieldNumber = 1;
+  ::ProtoOAPayloadType payloadtype() const;
+  void set_payloadtype(::ProtoOAPayloadType value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOASubscribeLiveTrendbarRes)
+ private:
+  class HasBitSetters;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
+  int payloadtype_;
+  friend struct ::TableStruct_OpenApiMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
 class ProtoOAUnsubscribeLiveTrendbarReq final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAUnsubscribeLiveTrendbarReq) */ {
  public:
@@ -7646,7 +8193,7 @@ class ProtoOAUnsubscribeLiveTrendbarReq final :
                &_ProtoOAUnsubscribeLiveTrendbarReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    48;
+    51;
 
   void Swap(ProtoOAUnsubscribeLiveTrendbarReq* other);
   friend void swap(ProtoOAUnsubscribeLiveTrendbarReq& a, ProtoOAUnsubscribeLiveTrendbarReq& b) {
@@ -7752,6 +8299,136 @@ class ProtoOAUnsubscribeLiveTrendbarReq final :
 };
 // -------------------------------------------------------------------
 
+class ProtoOAUnsubscribeLiveTrendbarRes final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAUnsubscribeLiveTrendbarRes) */ {
+ public:
+  ProtoOAUnsubscribeLiveTrendbarRes();
+  virtual ~ProtoOAUnsubscribeLiveTrendbarRes();
+
+  ProtoOAUnsubscribeLiveTrendbarRes(const ProtoOAUnsubscribeLiveTrendbarRes& from);
+  ProtoOAUnsubscribeLiveTrendbarRes(ProtoOAUnsubscribeLiveTrendbarRes&& from) noexcept
+    : ProtoOAUnsubscribeLiveTrendbarRes() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOAUnsubscribeLiveTrendbarRes& operator=(const ProtoOAUnsubscribeLiveTrendbarRes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOAUnsubscribeLiveTrendbarRes& operator=(ProtoOAUnsubscribeLiveTrendbarRes&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOAUnsubscribeLiveTrendbarRes& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOAUnsubscribeLiveTrendbarRes* internal_default_instance() {
+    return reinterpret_cast<const ProtoOAUnsubscribeLiveTrendbarRes*>(
+               &_ProtoOAUnsubscribeLiveTrendbarRes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    52;
+
+  void Swap(ProtoOAUnsubscribeLiveTrendbarRes* other);
+  friend void swap(ProtoOAUnsubscribeLiveTrendbarRes& a, ProtoOAUnsubscribeLiveTrendbarRes& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOAUnsubscribeLiveTrendbarRes* New() const final {
+    return CreateMaybeMessage<ProtoOAUnsubscribeLiveTrendbarRes>(nullptr);
+  }
+
+  ProtoOAUnsubscribeLiveTrendbarRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOAUnsubscribeLiveTrendbarRes>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOAUnsubscribeLiveTrendbarRes& from);
+  void MergeFrom(const ProtoOAUnsubscribeLiveTrendbarRes& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOAUnsubscribeLiveTrendbarRes* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOAUnsubscribeLiveTrendbarRes";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required int64 ctidTraderAccountId = 2;
+  bool has_ctidtraderaccountid() const;
+  void clear_ctidtraderaccountid();
+  static const int kCtidTraderAccountIdFieldNumber = 2;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid() const;
+  void set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_UNSUBSCRIBE_LIVE_TRENDBAR_RES];
+  bool has_payloadtype() const;
+  void clear_payloadtype();
+  static const int kPayloadTypeFieldNumber = 1;
+  ::ProtoOAPayloadType payloadtype() const;
+  void set_payloadtype(::ProtoOAPayloadType value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOAUnsubscribeLiveTrendbarRes)
+ private:
+  class HasBitSetters;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
+  int payloadtype_;
+  friend struct ::TableStruct_OpenApiMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
 class ProtoOAGetTrendbarsReq final :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAGetTrendbarsReq) */ {
  public:
@@ -7795,7 +8472,7 @@ class ProtoOAGetTrendbarsReq final :
                &_ProtoOAGetTrendbarsReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    49;
+    53;
 
   void Swap(ProtoOAGetTrendbarsReq* other);
   friend void swap(ProtoOAGetTrendbarsReq& a, ProtoOAGetTrendbarsReq& b) {
@@ -7960,7 +8637,7 @@ class ProtoOAGetTrendbarsRes final :
                &_ProtoOAGetTrendbarsRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    50;
+    54;
 
   void Swap(ProtoOAGetTrendbarsRes* other);
   friend void swap(ProtoOAGetTrendbarsRes& a, ProtoOAGetTrendbarsRes& b) {
@@ -8130,7 +8807,7 @@ class ProtoOAGetTickDataReq final :
                &_ProtoOAGetTickDataReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    51;
+    55;
 
   void Swap(ProtoOAGetTickDataReq* other);
   friend void swap(ProtoOAGetTickDataReq& a, ProtoOAGetTickDataReq& b) {
@@ -8295,7 +8972,7 @@ class ProtoOAGetTickDataRes final :
                &_ProtoOAGetTickDataRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    52;
+    56;
 
   void Swap(ProtoOAGetTickDataRes* other);
   friend void swap(ProtoOAGetTickDataRes& a, ProtoOAGetTickDataRes& b) {
@@ -8449,7 +9126,7 @@ class ProtoOAGetCtidProfileByTokenReq final :
                &_ProtoOAGetCtidProfileByTokenReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    53;
+    57;
 
   void Swap(ProtoOAGetCtidProfileByTokenReq* other);
   friend void swap(ProtoOAGetCtidProfileByTokenReq& a, ProtoOAGetCtidProfileByTokenReq& b) {
@@ -8585,7 +9262,7 @@ class ProtoOAGetCtidProfileByTokenRes final :
                &_ProtoOAGetCtidProfileByTokenRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    54;
+    58;
 
   void Swap(ProtoOAGetCtidProfileByTokenRes* other);
   friend void swap(ProtoOAGetCtidProfileByTokenRes& a, ProtoOAGetCtidProfileByTokenRes& b) {
@@ -8717,7 +9394,7 @@ class ProtoOADepthEvent final :
                &_ProtoOADepthEvent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    55;
+    59;
 
   void Swap(ProtoOADepthEvent* other);
   friend void swap(ProtoOADepthEvent& a, ProtoOADepthEvent& b) {
@@ -8885,7 +9562,7 @@ class ProtoOASubscribeDepthQuotesReq final :
                &_ProtoOASubscribeDepthQuotesReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    56;
+    60;
 
   void Swap(ProtoOASubscribeDepthQuotesReq* other);
   friend void swap(ProtoOASubscribeDepthQuotesReq& a, ProtoOASubscribeDepthQuotesReq& b) {
@@ -9028,7 +9705,7 @@ class ProtoOASubscribeDepthQuotesRes final :
                &_ProtoOASubscribeDepthQuotesRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    57;
+    61;
 
   void Swap(ProtoOASubscribeDepthQuotesRes* other);
   friend void swap(ProtoOASubscribeDepthQuotesRes& a, ProtoOASubscribeDepthQuotesRes& b) {
@@ -9158,7 +9835,7 @@ class ProtoOAUnsubscribeDepthQuotesReq final :
                &_ProtoOAUnsubscribeDepthQuotesReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    58;
+    62;
 
   void Swap(ProtoOAUnsubscribeDepthQuotesReq* other);
   friend void swap(ProtoOAUnsubscribeDepthQuotesReq& a, ProtoOAUnsubscribeDepthQuotesReq& b) {
@@ -9301,7 +9978,7 @@ class ProtoOAUnsubscribeDepthQuotesRes final :
                &_ProtoOAUnsubscribeDepthQuotesRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    59;
+    63;
 
   void Swap(ProtoOAUnsubscribeDepthQuotesRes* other);
   friend void swap(ProtoOAUnsubscribeDepthQuotesRes& a, ProtoOAUnsubscribeDepthQuotesRes& b) {
@@ -9431,7 +10108,7 @@ class ProtoOASymbolCategoryListReq final :
                &_ProtoOASymbolCategoryListReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    60;
+    64;
 
   void Swap(ProtoOASymbolCategoryListReq* other);
   friend void swap(ProtoOASymbolCategoryListReq& a, ProtoOASymbolCategoryListReq& b) {
@@ -9561,7 +10238,7 @@ class ProtoOASymbolCategoryListRes final :
                &_ProtoOASymbolCategoryListRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    61;
+    65;
 
   void Swap(ProtoOASymbolCategoryListRes* other);
   friend void swap(ProtoOASymbolCategoryListRes& a, ProtoOASymbolCategoryListRes& b) {
@@ -9704,7 +10381,7 @@ class ProtoOAAccountLogoutReq final :
                &_ProtoOAAccountLogoutReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    62;
+    66;
 
   void Swap(ProtoOAAccountLogoutReq* other);
   friend void swap(ProtoOAAccountLogoutReq& a, ProtoOAAccountLogoutReq& b) {
@@ -9834,7 +10511,7 @@ class ProtoOAAccountLogoutRes final :
                &_ProtoOAAccountLogoutRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    63;
+    67;
 
   void Swap(ProtoOAAccountLogoutRes* other);
   friend void swap(ProtoOAAccountLogoutRes& a, ProtoOAAccountLogoutRes& b) {
@@ -9964,7 +10641,7 @@ class ProtoOAAccountDisconnectEvent final :
                &_ProtoOAAccountDisconnectEvent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    64;
+    68;
 
   void Swap(ProtoOAAccountDisconnectEvent* other);
   friend void swap(ProtoOAAccountDisconnectEvent& a, ProtoOAAccountDisconnectEvent& b) {
@@ -10045,6 +10722,822 @@ class ProtoOAAccountDisconnectEvent final :
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
+  int payloadtype_;
+  friend struct ::TableStruct_OpenApiMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ProtoOAMarginCallListReq final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAMarginCallListReq) */ {
+ public:
+  ProtoOAMarginCallListReq();
+  virtual ~ProtoOAMarginCallListReq();
+
+  ProtoOAMarginCallListReq(const ProtoOAMarginCallListReq& from);
+  ProtoOAMarginCallListReq(ProtoOAMarginCallListReq&& from) noexcept
+    : ProtoOAMarginCallListReq() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOAMarginCallListReq& operator=(const ProtoOAMarginCallListReq& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOAMarginCallListReq& operator=(ProtoOAMarginCallListReq&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOAMarginCallListReq& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOAMarginCallListReq* internal_default_instance() {
+    return reinterpret_cast<const ProtoOAMarginCallListReq*>(
+               &_ProtoOAMarginCallListReq_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    69;
+
+  void Swap(ProtoOAMarginCallListReq* other);
+  friend void swap(ProtoOAMarginCallListReq& a, ProtoOAMarginCallListReq& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOAMarginCallListReq* New() const final {
+    return CreateMaybeMessage<ProtoOAMarginCallListReq>(nullptr);
+  }
+
+  ProtoOAMarginCallListReq* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOAMarginCallListReq>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOAMarginCallListReq& from);
+  void MergeFrom(const ProtoOAMarginCallListReq& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOAMarginCallListReq* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOAMarginCallListReq";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required int64 ctidTraderAccountId = 2;
+  bool has_ctidtraderaccountid() const;
+  void clear_ctidtraderaccountid();
+  static const int kCtidTraderAccountIdFieldNumber = 2;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid() const;
+  void set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_LIST_REQ];
+  bool has_payloadtype() const;
+  void clear_payloadtype();
+  static const int kPayloadTypeFieldNumber = 1;
+  ::ProtoOAPayloadType payloadtype() const;
+  void set_payloadtype(::ProtoOAPayloadType value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOAMarginCallListReq)
+ private:
+  class HasBitSetters;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
+  int payloadtype_;
+  friend struct ::TableStruct_OpenApiMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ProtoOAMarginCallListRes final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAMarginCallListRes) */ {
+ public:
+  ProtoOAMarginCallListRes();
+  virtual ~ProtoOAMarginCallListRes();
+
+  ProtoOAMarginCallListRes(const ProtoOAMarginCallListRes& from);
+  ProtoOAMarginCallListRes(ProtoOAMarginCallListRes&& from) noexcept
+    : ProtoOAMarginCallListRes() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOAMarginCallListRes& operator=(const ProtoOAMarginCallListRes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOAMarginCallListRes& operator=(ProtoOAMarginCallListRes&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOAMarginCallListRes& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOAMarginCallListRes* internal_default_instance() {
+    return reinterpret_cast<const ProtoOAMarginCallListRes*>(
+               &_ProtoOAMarginCallListRes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    70;
+
+  void Swap(ProtoOAMarginCallListRes* other);
+  friend void swap(ProtoOAMarginCallListRes& a, ProtoOAMarginCallListRes& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOAMarginCallListRes* New() const final {
+    return CreateMaybeMessage<ProtoOAMarginCallListRes>(nullptr);
+  }
+
+  ProtoOAMarginCallListRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOAMarginCallListRes>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOAMarginCallListRes& from);
+  void MergeFrom(const ProtoOAMarginCallListRes& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOAMarginCallListRes* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOAMarginCallListRes";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .ProtoOAMarginCall marginCall = 2;
+  int margincall_size() const;
+  void clear_margincall();
+  static const int kMarginCallFieldNumber = 2;
+  ::ProtoOAMarginCall* mutable_margincall(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAMarginCall >*
+      mutable_margincall();
+  const ::ProtoOAMarginCall& margincall(int index) const;
+  ::ProtoOAMarginCall* add_margincall();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAMarginCall >&
+      margincall() const;
+
+  // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_LIST_RES];
+  bool has_payloadtype() const;
+  void clear_payloadtype();
+  static const int kPayloadTypeFieldNumber = 1;
+  ::ProtoOAPayloadType payloadtype() const;
+  void set_payloadtype(::ProtoOAPayloadType value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOAMarginCallListRes)
+ private:
+  class HasBitSetters;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAMarginCall > margincall_;
+  int payloadtype_;
+  friend struct ::TableStruct_OpenApiMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ProtoOAMarginCallUpdateReq final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAMarginCallUpdateReq) */ {
+ public:
+  ProtoOAMarginCallUpdateReq();
+  virtual ~ProtoOAMarginCallUpdateReq();
+
+  ProtoOAMarginCallUpdateReq(const ProtoOAMarginCallUpdateReq& from);
+  ProtoOAMarginCallUpdateReq(ProtoOAMarginCallUpdateReq&& from) noexcept
+    : ProtoOAMarginCallUpdateReq() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOAMarginCallUpdateReq& operator=(const ProtoOAMarginCallUpdateReq& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOAMarginCallUpdateReq& operator=(ProtoOAMarginCallUpdateReq&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOAMarginCallUpdateReq& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOAMarginCallUpdateReq* internal_default_instance() {
+    return reinterpret_cast<const ProtoOAMarginCallUpdateReq*>(
+               &_ProtoOAMarginCallUpdateReq_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    71;
+
+  void Swap(ProtoOAMarginCallUpdateReq* other);
+  friend void swap(ProtoOAMarginCallUpdateReq& a, ProtoOAMarginCallUpdateReq& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOAMarginCallUpdateReq* New() const final {
+    return CreateMaybeMessage<ProtoOAMarginCallUpdateReq>(nullptr);
+  }
+
+  ProtoOAMarginCallUpdateReq* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOAMarginCallUpdateReq>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOAMarginCallUpdateReq& from);
+  void MergeFrom(const ProtoOAMarginCallUpdateReq& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOAMarginCallUpdateReq* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOAMarginCallUpdateReq";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required .ProtoOAMarginCall marginCall = 3;
+  bool has_margincall() const;
+  void clear_margincall();
+  static const int kMarginCallFieldNumber = 3;
+  const ::ProtoOAMarginCall& margincall() const;
+  ::ProtoOAMarginCall* release_margincall();
+  ::ProtoOAMarginCall* mutable_margincall();
+  void set_allocated_margincall(::ProtoOAMarginCall* margincall);
+
+  // required int64 ctidTraderAccountId = 2;
+  bool has_ctidtraderaccountid() const;
+  void clear_ctidtraderaccountid();
+  static const int kCtidTraderAccountIdFieldNumber = 2;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid() const;
+  void set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_UPDATE_REQ];
+  bool has_payloadtype() const;
+  void clear_payloadtype();
+  static const int kPayloadTypeFieldNumber = 1;
+  ::ProtoOAPayloadType payloadtype() const;
+  void set_payloadtype(::ProtoOAPayloadType value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOAMarginCallUpdateReq)
+ private:
+  class HasBitSetters;
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::ProtoOAMarginCall* margincall_;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
+  int payloadtype_;
+  friend struct ::TableStruct_OpenApiMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ProtoOAMarginCallUpdateRes final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAMarginCallUpdateRes) */ {
+ public:
+  ProtoOAMarginCallUpdateRes();
+  virtual ~ProtoOAMarginCallUpdateRes();
+
+  ProtoOAMarginCallUpdateRes(const ProtoOAMarginCallUpdateRes& from);
+  ProtoOAMarginCallUpdateRes(ProtoOAMarginCallUpdateRes&& from) noexcept
+    : ProtoOAMarginCallUpdateRes() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOAMarginCallUpdateRes& operator=(const ProtoOAMarginCallUpdateRes& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOAMarginCallUpdateRes& operator=(ProtoOAMarginCallUpdateRes&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOAMarginCallUpdateRes& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOAMarginCallUpdateRes* internal_default_instance() {
+    return reinterpret_cast<const ProtoOAMarginCallUpdateRes*>(
+               &_ProtoOAMarginCallUpdateRes_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    72;
+
+  void Swap(ProtoOAMarginCallUpdateRes* other);
+  friend void swap(ProtoOAMarginCallUpdateRes& a, ProtoOAMarginCallUpdateRes& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOAMarginCallUpdateRes* New() const final {
+    return CreateMaybeMessage<ProtoOAMarginCallUpdateRes>(nullptr);
+  }
+
+  ProtoOAMarginCallUpdateRes* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOAMarginCallUpdateRes>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOAMarginCallUpdateRes& from);
+  void MergeFrom(const ProtoOAMarginCallUpdateRes& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOAMarginCallUpdateRes* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOAMarginCallUpdateRes";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_UPDATE_RES];
+  bool has_payloadtype() const;
+  void clear_payloadtype();
+  static const int kPayloadTypeFieldNumber = 1;
+  ::ProtoOAPayloadType payloadtype() const;
+  void set_payloadtype(::ProtoOAPayloadType value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOAMarginCallUpdateRes)
+ private:
+  class HasBitSetters;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  int payloadtype_;
+  friend struct ::TableStruct_OpenApiMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ProtoOAMarginCallUpdateEvent final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAMarginCallUpdateEvent) */ {
+ public:
+  ProtoOAMarginCallUpdateEvent();
+  virtual ~ProtoOAMarginCallUpdateEvent();
+
+  ProtoOAMarginCallUpdateEvent(const ProtoOAMarginCallUpdateEvent& from);
+  ProtoOAMarginCallUpdateEvent(ProtoOAMarginCallUpdateEvent&& from) noexcept
+    : ProtoOAMarginCallUpdateEvent() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOAMarginCallUpdateEvent& operator=(const ProtoOAMarginCallUpdateEvent& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOAMarginCallUpdateEvent& operator=(ProtoOAMarginCallUpdateEvent&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOAMarginCallUpdateEvent& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOAMarginCallUpdateEvent* internal_default_instance() {
+    return reinterpret_cast<const ProtoOAMarginCallUpdateEvent*>(
+               &_ProtoOAMarginCallUpdateEvent_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    73;
+
+  void Swap(ProtoOAMarginCallUpdateEvent* other);
+  friend void swap(ProtoOAMarginCallUpdateEvent& a, ProtoOAMarginCallUpdateEvent& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOAMarginCallUpdateEvent* New() const final {
+    return CreateMaybeMessage<ProtoOAMarginCallUpdateEvent>(nullptr);
+  }
+
+  ProtoOAMarginCallUpdateEvent* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOAMarginCallUpdateEvent>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOAMarginCallUpdateEvent& from);
+  void MergeFrom(const ProtoOAMarginCallUpdateEvent& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOAMarginCallUpdateEvent* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOAMarginCallUpdateEvent";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required .ProtoOAMarginCall marginCall = 3;
+  bool has_margincall() const;
+  void clear_margincall();
+  static const int kMarginCallFieldNumber = 3;
+  const ::ProtoOAMarginCall& margincall() const;
+  ::ProtoOAMarginCall* release_margincall();
+  ::ProtoOAMarginCall* mutable_margincall();
+  void set_allocated_margincall(::ProtoOAMarginCall* margincall);
+
+  // required int64 ctidTraderAccountId = 2;
+  bool has_ctidtraderaccountid() const;
+  void clear_ctidtraderaccountid();
+  static const int kCtidTraderAccountIdFieldNumber = 2;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid() const;
+  void set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_UPDATE_EVENT];
+  bool has_payloadtype() const;
+  void clear_payloadtype();
+  static const int kPayloadTypeFieldNumber = 1;
+  ::ProtoOAPayloadType payloadtype() const;
+  void set_payloadtype(::ProtoOAPayloadType value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOAMarginCallUpdateEvent)
+ private:
+  class HasBitSetters;
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::ProtoOAMarginCall* margincall_;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
+  int payloadtype_;
+  friend struct ::TableStruct_OpenApiMessages_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ProtoOAMarginCallTriggerEvent final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ProtoOAMarginCallTriggerEvent) */ {
+ public:
+  ProtoOAMarginCallTriggerEvent();
+  virtual ~ProtoOAMarginCallTriggerEvent();
+
+  ProtoOAMarginCallTriggerEvent(const ProtoOAMarginCallTriggerEvent& from);
+  ProtoOAMarginCallTriggerEvent(ProtoOAMarginCallTriggerEvent&& from) noexcept
+    : ProtoOAMarginCallTriggerEvent() {
+    *this = ::std::move(from);
+  }
+
+  inline ProtoOAMarginCallTriggerEvent& operator=(const ProtoOAMarginCallTriggerEvent& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ProtoOAMarginCallTriggerEvent& operator=(ProtoOAMarginCallTriggerEvent&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ProtoOAMarginCallTriggerEvent& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ProtoOAMarginCallTriggerEvent* internal_default_instance() {
+    return reinterpret_cast<const ProtoOAMarginCallTriggerEvent*>(
+               &_ProtoOAMarginCallTriggerEvent_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    74;
+
+  void Swap(ProtoOAMarginCallTriggerEvent* other);
+  friend void swap(ProtoOAMarginCallTriggerEvent& a, ProtoOAMarginCallTriggerEvent& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ProtoOAMarginCallTriggerEvent* New() const final {
+    return CreateMaybeMessage<ProtoOAMarginCallTriggerEvent>(nullptr);
+  }
+
+  ProtoOAMarginCallTriggerEvent* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ProtoOAMarginCallTriggerEvent>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ProtoOAMarginCallTriggerEvent& from);
+  void MergeFrom(const ProtoOAMarginCallTriggerEvent& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  #else
+  bool MergePartialFromCodedStream(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* InternalSerializeWithCachedSizesToArray(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ProtoOAMarginCallTriggerEvent* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "ProtoOAMarginCallTriggerEvent";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required .ProtoOAMarginCall marginCall = 3;
+  bool has_margincall() const;
+  void clear_margincall();
+  static const int kMarginCallFieldNumber = 3;
+  const ::ProtoOAMarginCall& margincall() const;
+  ::ProtoOAMarginCall* release_margincall();
+  ::ProtoOAMarginCall* mutable_margincall();
+  void set_allocated_margincall(::ProtoOAMarginCall* margincall);
+
+  // required int64 ctidTraderAccountId = 2;
+  bool has_ctidtraderaccountid() const;
+  void clear_ctidtraderaccountid();
+  static const int kCtidTraderAccountIdFieldNumber = 2;
+  ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid() const;
+  void set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value);
+
+  // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_TRIGGER_EVENT];
+  bool has_payloadtype() const;
+  void clear_payloadtype();
+  static const int kPayloadTypeFieldNumber = 1;
+  ::ProtoOAPayloadType payloadtype() const;
+  void set_payloadtype(::ProtoOAPayloadType value);
+
+  // @@protoc_insertion_point(class_scope:ProtoOAMarginCallTriggerEvent)
+ private:
+  class HasBitSetters;
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::ProtoOAMarginCall* margincall_;
   ::PROTOBUF_NAMESPACE_ID::int64 ctidtraderaccountid_;
   int payloadtype_;
   friend struct ::TableStruct_OpenApiMessages_2eproto;
@@ -10364,11 +11857,11 @@ inline void ProtoOAAccountAuthRes::set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_
 
 // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_ERROR_RES];
 inline bool ProtoOAErrorRes::has_payloadtype() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
+  return (_has_bits_[0] & 0x00000010u) != 0;
 }
 inline void ProtoOAErrorRes::clear_payloadtype() {
   payloadtype_ = 2142;
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline ::ProtoOAPayloadType ProtoOAErrorRes::payloadtype() const {
   // @@protoc_insertion_point(field_get:ProtoOAErrorRes.payloadType)
@@ -10376,7 +11869,7 @@ inline ::ProtoOAPayloadType ProtoOAErrorRes::payloadtype() const {
 }
 inline void ProtoOAErrorRes::set_payloadtype(::ProtoOAPayloadType value) {
   assert(::ProtoOAPayloadType_IsValid(value));
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000010u;
   payloadtype_ = value;
   // @@protoc_insertion_point(field_set:ProtoOAErrorRes.payloadType)
 }
@@ -10513,6 +12006,24 @@ inline void ProtoOAErrorRes::set_allocated_description(std::string* description)
   }
   description_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), description);
   // @@protoc_insertion_point(field_set_allocated:ProtoOAErrorRes.description)
+}
+
+// optional int64 maintenanceEndTimestamp = 5;
+inline bool ProtoOAErrorRes::has_maintenanceendtimestamp() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void ProtoOAErrorRes::clear_maintenanceendtimestamp() {
+  maintenanceendtimestamp_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOAErrorRes::maintenanceendtimestamp() const {
+  // @@protoc_insertion_point(field_get:ProtoOAErrorRes.maintenanceEndTimestamp)
+  return maintenanceendtimestamp_;
+}
+inline void ProtoOAErrorRes::set_maintenanceendtimestamp(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000008u;
+  maintenanceendtimestamp_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAErrorRes.maintenanceEndTimestamp)
 }
 
 // -------------------------------------------------------------------
@@ -12505,11 +14016,11 @@ ProtoOAAssetListRes::asset() const {
 
 // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_SYMBOLS_LIST_REQ];
 inline bool ProtoOASymbolsListReq::has_payloadtype() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+  return (_has_bits_[0] & 0x00000004u) != 0;
 }
 inline void ProtoOASymbolsListReq::clear_payloadtype() {
   payloadtype_ = 2114;
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline ::ProtoOAPayloadType ProtoOASymbolsListReq::payloadtype() const {
   // @@protoc_insertion_point(field_get:ProtoOASymbolsListReq.payloadType)
@@ -12517,7 +14028,7 @@ inline ::ProtoOAPayloadType ProtoOASymbolsListReq::payloadtype() const {
 }
 inline void ProtoOASymbolsListReq::set_payloadtype(::ProtoOAPayloadType value) {
   assert(::ProtoOAPayloadType_IsValid(value));
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000004u;
   payloadtype_ = value;
   // @@protoc_insertion_point(field_set:ProtoOASymbolsListReq.payloadType)
 }
@@ -12538,6 +14049,24 @@ inline void ProtoOASymbolsListReq::set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_
   _has_bits_[0] |= 0x00000001u;
   ctidtraderaccountid_ = value;
   // @@protoc_insertion_point(field_set:ProtoOASymbolsListReq.ctidTraderAccountId)
+}
+
+// optional bool includeArchivedSymbols = 3 [default = false];
+inline bool ProtoOASymbolsListReq::has_includearchivedsymbols() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOASymbolsListReq::clear_includearchivedsymbols() {
+  includearchivedsymbols_ = false;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline bool ProtoOASymbolsListReq::includearchivedsymbols() const {
+  // @@protoc_insertion_point(field_get:ProtoOASymbolsListReq.includeArchivedSymbols)
+  return includearchivedsymbols_;
+}
+inline void ProtoOASymbolsListReq::set_includearchivedsymbols(bool value) {
+  _has_bits_[0] |= 0x00000002u;
+  includearchivedsymbols_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOASymbolsListReq.includeArchivedSymbols)
 }
 
 // -------------------------------------------------------------------
@@ -12606,6 +14135,33 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOALightSymbol >&
 ProtoOASymbolsListRes::symbol() const {
   // @@protoc_insertion_point(field_list:ProtoOASymbolsListRes.symbol)
   return symbol_;
+}
+
+// repeated .ProtoOAArchivedSymbol archivedSymbol = 4;
+inline int ProtoOASymbolsListRes::archivedsymbol_size() const {
+  return archivedsymbol_.size();
+}
+inline ::ProtoOAArchivedSymbol* ProtoOASymbolsListRes::mutable_archivedsymbol(int index) {
+  // @@protoc_insertion_point(field_mutable:ProtoOASymbolsListRes.archivedSymbol)
+  return archivedsymbol_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAArchivedSymbol >*
+ProtoOASymbolsListRes::mutable_archivedsymbol() {
+  // @@protoc_insertion_point(field_mutable_list:ProtoOASymbolsListRes.archivedSymbol)
+  return &archivedsymbol_;
+}
+inline const ::ProtoOAArchivedSymbol& ProtoOASymbolsListRes::archivedsymbol(int index) const {
+  // @@protoc_insertion_point(field_get:ProtoOASymbolsListRes.archivedSymbol)
+  return archivedsymbol_.Get(index);
+}
+inline ::ProtoOAArchivedSymbol* ProtoOASymbolsListRes::add_archivedsymbol() {
+  // @@protoc_insertion_point(field_add:ProtoOASymbolsListRes.archivedSymbol)
+  return archivedsymbol_.Add();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAArchivedSymbol >&
+ProtoOASymbolsListRes::archivedsymbol() const {
+  // @@protoc_insertion_point(field_list:ProtoOASymbolsListRes.archivedSymbol)
+  return archivedsymbol_;
 }
 
 // -------------------------------------------------------------------
@@ -12745,6 +14301,33 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOASymbol >&
 ProtoOASymbolByIdRes::symbol() const {
   // @@protoc_insertion_point(field_list:ProtoOASymbolByIdRes.symbol)
   return symbol_;
+}
+
+// repeated .ProtoOAArchivedSymbol archivedSymbol = 4;
+inline int ProtoOASymbolByIdRes::archivedsymbol_size() const {
+  return archivedsymbol_.size();
+}
+inline ::ProtoOAArchivedSymbol* ProtoOASymbolByIdRes::mutable_archivedsymbol(int index) {
+  // @@protoc_insertion_point(field_mutable:ProtoOASymbolByIdRes.archivedSymbol)
+  return archivedsymbol_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAArchivedSymbol >*
+ProtoOASymbolByIdRes::mutable_archivedsymbol() {
+  // @@protoc_insertion_point(field_mutable_list:ProtoOASymbolByIdRes.archivedSymbol)
+  return &archivedsymbol_;
+}
+inline const ::ProtoOAArchivedSymbol& ProtoOASymbolByIdRes::archivedsymbol(int index) const {
+  // @@protoc_insertion_point(field_get:ProtoOASymbolByIdRes.archivedSymbol)
+  return archivedsymbol_.Get(index);
+}
+inline ::ProtoOAArchivedSymbol* ProtoOASymbolByIdRes::add_archivedsymbol() {
+  // @@protoc_insertion_point(field_add:ProtoOASymbolByIdRes.archivedSymbol)
+  return archivedsymbol_.Add();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAArchivedSymbol >&
+ProtoOASymbolByIdRes::archivedsymbol() const {
+  // @@protoc_insertion_point(field_list:ProtoOASymbolByIdRes.archivedSymbol)
+  return archivedsymbol_;
 }
 
 // -------------------------------------------------------------------
@@ -13890,11 +15473,11 @@ ProtoOAExpectedMarginReq::mutable_volume() {
 
 // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_EXPECTED_MARGIN_RES];
 inline bool ProtoOAExpectedMarginRes::has_payloadtype() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+  return (_has_bits_[0] & 0x00000004u) != 0;
 }
 inline void ProtoOAExpectedMarginRes::clear_payloadtype() {
   payloadtype_ = 2140;
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline ::ProtoOAPayloadType ProtoOAExpectedMarginRes::payloadtype() const {
   // @@protoc_insertion_point(field_get:ProtoOAExpectedMarginRes.payloadType)
@@ -13902,7 +15485,7 @@ inline ::ProtoOAPayloadType ProtoOAExpectedMarginRes::payloadtype() const {
 }
 inline void ProtoOAExpectedMarginRes::set_payloadtype(::ProtoOAPayloadType value) {
   assert(::ProtoOAPayloadType_IsValid(value));
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000004u;
   payloadtype_ = value;
   // @@protoc_insertion_point(field_set:ProtoOAExpectedMarginRes.payloadType)
 }
@@ -13952,17 +15535,35 @@ ProtoOAExpectedMarginRes::margin() const {
   return margin_;
 }
 
+// optional uint32 moneyDigits = 4;
+inline bool ProtoOAExpectedMarginRes::has_moneydigits() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOAExpectedMarginRes::clear_moneydigits() {
+  moneydigits_ = 0u;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 ProtoOAExpectedMarginRes::moneydigits() const {
+  // @@protoc_insertion_point(field_get:ProtoOAExpectedMarginRes.moneyDigits)
+  return moneydigits_;
+}
+inline void ProtoOAExpectedMarginRes::set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _has_bits_[0] |= 0x00000002u;
+  moneydigits_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAExpectedMarginRes.moneyDigits)
+}
+
 // -------------------------------------------------------------------
 
 // ProtoOAMarginChangedEvent
 
 // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CHANGED_EVENT];
 inline bool ProtoOAMarginChangedEvent::has_payloadtype() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
+  return (_has_bits_[0] & 0x00000010u) != 0;
 }
 inline void ProtoOAMarginChangedEvent::clear_payloadtype() {
   payloadtype_ = 2141;
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline ::ProtoOAPayloadType ProtoOAMarginChangedEvent::payloadtype() const {
   // @@protoc_insertion_point(field_get:ProtoOAMarginChangedEvent.payloadType)
@@ -13970,7 +15571,7 @@ inline ::ProtoOAPayloadType ProtoOAMarginChangedEvent::payloadtype() const {
 }
 inline void ProtoOAMarginChangedEvent::set_payloadtype(::ProtoOAPayloadType value) {
   assert(::ProtoOAPayloadType_IsValid(value));
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000010u;
   payloadtype_ = value;
   // @@protoc_insertion_point(field_set:ProtoOAMarginChangedEvent.payloadType)
 }
@@ -14027,6 +15628,24 @@ inline void ProtoOAMarginChangedEvent::set_usedmargin(::PROTOBUF_NAMESPACE_ID::u
   _has_bits_[0] |= 0x00000004u;
   usedmargin_ = value;
   // @@protoc_insertion_point(field_set:ProtoOAMarginChangedEvent.usedMargin)
+}
+
+// optional uint32 moneyDigits = 5;
+inline bool ProtoOAMarginChangedEvent::has_moneydigits() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void ProtoOAMarginChangedEvent::clear_moneydigits() {
+  moneydigits_ = 0u;
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 ProtoOAMarginChangedEvent::moneydigits() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginChangedEvent.moneyDigits)
+  return moneydigits_;
+}
+inline void ProtoOAMarginChangedEvent::set_moneydigits(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _has_bits_[0] |= 0x00000008u;
+  moneydigits_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginChangedEvent.moneyDigits)
 }
 
 // -------------------------------------------------------------------
@@ -14384,6 +16003,302 @@ ProtoOAGetAccountListByAccessTokenRes::ctidtraderaccount() const {
 
 // -------------------------------------------------------------------
 
+// ProtoOARefreshTokenReq
+
+// optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_REFRESH_TOKEN_REQ];
+inline bool ProtoOARefreshTokenReq::has_payloadtype() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOARefreshTokenReq::clear_payloadtype() {
+  payloadtype_ = 2173;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::ProtoOAPayloadType ProtoOARefreshTokenReq::payloadtype() const {
+  // @@protoc_insertion_point(field_get:ProtoOARefreshTokenReq.payloadType)
+  return static_cast< ::ProtoOAPayloadType >(payloadtype_);
+}
+inline void ProtoOARefreshTokenReq::set_payloadtype(::ProtoOAPayloadType value) {
+  assert(::ProtoOAPayloadType_IsValid(value));
+  _has_bits_[0] |= 0x00000002u;
+  payloadtype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOARefreshTokenReq.payloadType)
+}
+
+// required string refreshToken = 2;
+inline bool ProtoOARefreshTokenReq::has_refreshtoken() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ProtoOARefreshTokenReq::clear_refreshtoken() {
+  refreshtoken_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline const std::string& ProtoOARefreshTokenReq::refreshtoken() const {
+  // @@protoc_insertion_point(field_get:ProtoOARefreshTokenReq.refreshToken)
+  return refreshtoken_.GetNoArena();
+}
+inline void ProtoOARefreshTokenReq::set_refreshtoken(const std::string& value) {
+  _has_bits_[0] |= 0x00000001u;
+  refreshtoken_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:ProtoOARefreshTokenReq.refreshToken)
+}
+inline void ProtoOARefreshTokenReq::set_refreshtoken(std::string&& value) {
+  _has_bits_[0] |= 0x00000001u;
+  refreshtoken_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:ProtoOARefreshTokenReq.refreshToken)
+}
+inline void ProtoOARefreshTokenReq::set_refreshtoken(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000001u;
+  refreshtoken_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:ProtoOARefreshTokenReq.refreshToken)
+}
+inline void ProtoOARefreshTokenReq::set_refreshtoken(const char* value, size_t size) {
+  _has_bits_[0] |= 0x00000001u;
+  refreshtoken_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:ProtoOARefreshTokenReq.refreshToken)
+}
+inline std::string* ProtoOARefreshTokenReq::mutable_refreshtoken() {
+  _has_bits_[0] |= 0x00000001u;
+  // @@protoc_insertion_point(field_mutable:ProtoOARefreshTokenReq.refreshToken)
+  return refreshtoken_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* ProtoOARefreshTokenReq::release_refreshtoken() {
+  // @@protoc_insertion_point(field_release:ProtoOARefreshTokenReq.refreshToken)
+  if (!has_refreshtoken()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000001u;
+  return refreshtoken_.ReleaseNonDefaultNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void ProtoOARefreshTokenReq::set_allocated_refreshtoken(std::string* refreshtoken) {
+  if (refreshtoken != nullptr) {
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  refreshtoken_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), refreshtoken);
+  // @@protoc_insertion_point(field_set_allocated:ProtoOARefreshTokenReq.refreshToken)
+}
+
+// -------------------------------------------------------------------
+
+// ProtoOARefreshTokenRes
+
+// optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_REFRESH_TOKEN_RES];
+inline bool ProtoOARefreshTokenRes::has_payloadtype() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void ProtoOARefreshTokenRes::clear_payloadtype() {
+  payloadtype_ = 2174;
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline ::ProtoOAPayloadType ProtoOARefreshTokenRes::payloadtype() const {
+  // @@protoc_insertion_point(field_get:ProtoOARefreshTokenRes.payloadType)
+  return static_cast< ::ProtoOAPayloadType >(payloadtype_);
+}
+inline void ProtoOARefreshTokenRes::set_payloadtype(::ProtoOAPayloadType value) {
+  assert(::ProtoOAPayloadType_IsValid(value));
+  _has_bits_[0] |= 0x00000010u;
+  payloadtype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOARefreshTokenRes.payloadType)
+}
+
+// required string accessToken = 2;
+inline bool ProtoOARefreshTokenRes::has_accesstoken() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ProtoOARefreshTokenRes::clear_accesstoken() {
+  accesstoken_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline const std::string& ProtoOARefreshTokenRes::accesstoken() const {
+  // @@protoc_insertion_point(field_get:ProtoOARefreshTokenRes.accessToken)
+  return accesstoken_.GetNoArena();
+}
+inline void ProtoOARefreshTokenRes::set_accesstoken(const std::string& value) {
+  _has_bits_[0] |= 0x00000001u;
+  accesstoken_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:ProtoOARefreshTokenRes.accessToken)
+}
+inline void ProtoOARefreshTokenRes::set_accesstoken(std::string&& value) {
+  _has_bits_[0] |= 0x00000001u;
+  accesstoken_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:ProtoOARefreshTokenRes.accessToken)
+}
+inline void ProtoOARefreshTokenRes::set_accesstoken(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000001u;
+  accesstoken_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:ProtoOARefreshTokenRes.accessToken)
+}
+inline void ProtoOARefreshTokenRes::set_accesstoken(const char* value, size_t size) {
+  _has_bits_[0] |= 0x00000001u;
+  accesstoken_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:ProtoOARefreshTokenRes.accessToken)
+}
+inline std::string* ProtoOARefreshTokenRes::mutable_accesstoken() {
+  _has_bits_[0] |= 0x00000001u;
+  // @@protoc_insertion_point(field_mutable:ProtoOARefreshTokenRes.accessToken)
+  return accesstoken_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* ProtoOARefreshTokenRes::release_accesstoken() {
+  // @@protoc_insertion_point(field_release:ProtoOARefreshTokenRes.accessToken)
+  if (!has_accesstoken()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000001u;
+  return accesstoken_.ReleaseNonDefaultNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void ProtoOARefreshTokenRes::set_allocated_accesstoken(std::string* accesstoken) {
+  if (accesstoken != nullptr) {
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  accesstoken_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), accesstoken);
+  // @@protoc_insertion_point(field_set_allocated:ProtoOARefreshTokenRes.accessToken)
+}
+
+// required string tokenType = 3;
+inline bool ProtoOARefreshTokenRes::has_tokentype() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOARefreshTokenRes::clear_tokentype() {
+  tokentype_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline const std::string& ProtoOARefreshTokenRes::tokentype() const {
+  // @@protoc_insertion_point(field_get:ProtoOARefreshTokenRes.tokenType)
+  return tokentype_.GetNoArena();
+}
+inline void ProtoOARefreshTokenRes::set_tokentype(const std::string& value) {
+  _has_bits_[0] |= 0x00000002u;
+  tokentype_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:ProtoOARefreshTokenRes.tokenType)
+}
+inline void ProtoOARefreshTokenRes::set_tokentype(std::string&& value) {
+  _has_bits_[0] |= 0x00000002u;
+  tokentype_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:ProtoOARefreshTokenRes.tokenType)
+}
+inline void ProtoOARefreshTokenRes::set_tokentype(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000002u;
+  tokentype_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:ProtoOARefreshTokenRes.tokenType)
+}
+inline void ProtoOARefreshTokenRes::set_tokentype(const char* value, size_t size) {
+  _has_bits_[0] |= 0x00000002u;
+  tokentype_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:ProtoOARefreshTokenRes.tokenType)
+}
+inline std::string* ProtoOARefreshTokenRes::mutable_tokentype() {
+  _has_bits_[0] |= 0x00000002u;
+  // @@protoc_insertion_point(field_mutable:ProtoOARefreshTokenRes.tokenType)
+  return tokentype_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* ProtoOARefreshTokenRes::release_tokentype() {
+  // @@protoc_insertion_point(field_release:ProtoOARefreshTokenRes.tokenType)
+  if (!has_tokentype()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000002u;
+  return tokentype_.ReleaseNonDefaultNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void ProtoOARefreshTokenRes::set_allocated_tokentype(std::string* tokentype) {
+  if (tokentype != nullptr) {
+    _has_bits_[0] |= 0x00000002u;
+  } else {
+    _has_bits_[0] &= ~0x00000002u;
+  }
+  tokentype_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), tokentype);
+  // @@protoc_insertion_point(field_set_allocated:ProtoOARefreshTokenRes.tokenType)
+}
+
+// required int64 expiresIn = 4;
+inline bool ProtoOARefreshTokenRes::has_expiresin() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void ProtoOARefreshTokenRes::clear_expiresin() {
+  expiresin_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOARefreshTokenRes::expiresin() const {
+  // @@protoc_insertion_point(field_get:ProtoOARefreshTokenRes.expiresIn)
+  return expiresin_;
+}
+inline void ProtoOARefreshTokenRes::set_expiresin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000008u;
+  expiresin_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOARefreshTokenRes.expiresIn)
+}
+
+// required string refreshToken = 5;
+inline bool ProtoOARefreshTokenRes::has_refreshtoken() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void ProtoOARefreshTokenRes::clear_refreshtoken() {
+  refreshtoken_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline const std::string& ProtoOARefreshTokenRes::refreshtoken() const {
+  // @@protoc_insertion_point(field_get:ProtoOARefreshTokenRes.refreshToken)
+  return refreshtoken_.GetNoArena();
+}
+inline void ProtoOARefreshTokenRes::set_refreshtoken(const std::string& value) {
+  _has_bits_[0] |= 0x00000004u;
+  refreshtoken_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:ProtoOARefreshTokenRes.refreshToken)
+}
+inline void ProtoOARefreshTokenRes::set_refreshtoken(std::string&& value) {
+  _has_bits_[0] |= 0x00000004u;
+  refreshtoken_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:ProtoOARefreshTokenRes.refreshToken)
+}
+inline void ProtoOARefreshTokenRes::set_refreshtoken(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000004u;
+  refreshtoken_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:ProtoOARefreshTokenRes.refreshToken)
+}
+inline void ProtoOARefreshTokenRes::set_refreshtoken(const char* value, size_t size) {
+  _has_bits_[0] |= 0x00000004u;
+  refreshtoken_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:ProtoOARefreshTokenRes.refreshToken)
+}
+inline std::string* ProtoOARefreshTokenRes::mutable_refreshtoken() {
+  _has_bits_[0] |= 0x00000004u;
+  // @@protoc_insertion_point(field_mutable:ProtoOARefreshTokenRes.refreshToken)
+  return refreshtoken_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* ProtoOARefreshTokenRes::release_refreshtoken() {
+  // @@protoc_insertion_point(field_release:ProtoOARefreshTokenRes.refreshToken)
+  if (!has_refreshtoken()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000004u;
+  return refreshtoken_.ReleaseNonDefaultNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void ProtoOARefreshTokenRes::set_allocated_refreshtoken(std::string* refreshtoken) {
+  if (refreshtoken != nullptr) {
+    _has_bits_[0] |= 0x00000004u;
+  } else {
+    _has_bits_[0] &= ~0x00000004u;
+  }
+  refreshtoken_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), refreshtoken);
+  // @@protoc_insertion_point(field_set_allocated:ProtoOARefreshTokenRes.refreshToken)
+}
+
+// -------------------------------------------------------------------
+
 // ProtoOASubscribeSpotsReq
 
 // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_SUBSCRIBE_SPOTS_REQ];
@@ -14612,11 +16527,11 @@ inline void ProtoOAUnsubscribeSpotsRes::set_ctidtraderaccountid(::PROTOBUF_NAMES
 
 // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_SPOT_EVENT];
 inline bool ProtoOASpotEvent::has_payloadtype() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
+  return (_has_bits_[0] & 0x00000020u) != 0;
 }
 inline void ProtoOASpotEvent::clear_payloadtype() {
   payloadtype_ = 2131;
-  _has_bits_[0] &= ~0x00000010u;
+  _has_bits_[0] &= ~0x00000020u;
 }
 inline ::ProtoOAPayloadType ProtoOASpotEvent::payloadtype() const {
   // @@protoc_insertion_point(field_get:ProtoOASpotEvent.payloadType)
@@ -14624,7 +16539,7 @@ inline ::ProtoOAPayloadType ProtoOASpotEvent::payloadtype() const {
 }
 inline void ProtoOASpotEvent::set_payloadtype(::ProtoOAPayloadType value) {
   assert(::ProtoOAPayloadType_IsValid(value));
-  _has_bits_[0] |= 0x00000010u;
+  _has_bits_[0] |= 0x00000020u;
   payloadtype_ = value;
   // @@protoc_insertion_point(field_set:ProtoOASpotEvent.payloadType)
 }
@@ -14728,6 +16643,24 @@ ProtoOASpotEvent::trendbar() const {
   return trendbar_;
 }
 
+// optional uint64 sessionClose = 7;
+inline bool ProtoOASpotEvent::has_sessionclose() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void ProtoOASpotEvent::clear_sessionclose() {
+  sessionclose_ = PROTOBUF_ULONGLONG(0);
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 ProtoOASpotEvent::sessionclose() const {
+  // @@protoc_insertion_point(field_get:ProtoOASpotEvent.sessionClose)
+  return sessionclose_;
+}
+inline void ProtoOASpotEvent::set_sessionclose(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  _has_bits_[0] |= 0x00000010u;
+  sessionclose_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOASpotEvent.sessionClose)
+}
+
 // -------------------------------------------------------------------
 
 // ProtoOASubscribeLiveTrendbarReq
@@ -14808,6 +16741,47 @@ inline void ProtoOASubscribeLiveTrendbarReq::set_symbolid(::PROTOBUF_NAMESPACE_I
 
 // -------------------------------------------------------------------
 
+// ProtoOASubscribeLiveTrendbarRes
+
+// optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_SUBSCRIBE_LIVE_TRENDBAR_RES];
+inline bool ProtoOASubscribeLiveTrendbarRes::has_payloadtype() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOASubscribeLiveTrendbarRes::clear_payloadtype() {
+  payloadtype_ = 2165;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::ProtoOAPayloadType ProtoOASubscribeLiveTrendbarRes::payloadtype() const {
+  // @@protoc_insertion_point(field_get:ProtoOASubscribeLiveTrendbarRes.payloadType)
+  return static_cast< ::ProtoOAPayloadType >(payloadtype_);
+}
+inline void ProtoOASubscribeLiveTrendbarRes::set_payloadtype(::ProtoOAPayloadType value) {
+  assert(::ProtoOAPayloadType_IsValid(value));
+  _has_bits_[0] |= 0x00000002u;
+  payloadtype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOASubscribeLiveTrendbarRes.payloadType)
+}
+
+// required int64 ctidTraderAccountId = 2;
+inline bool ProtoOASubscribeLiveTrendbarRes::has_ctidtraderaccountid() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ProtoOASubscribeLiveTrendbarRes::clear_ctidtraderaccountid() {
+  ctidtraderaccountid_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOASubscribeLiveTrendbarRes::ctidtraderaccountid() const {
+  // @@protoc_insertion_point(field_get:ProtoOASubscribeLiveTrendbarRes.ctidTraderAccountId)
+  return ctidtraderaccountid_;
+}
+inline void ProtoOASubscribeLiveTrendbarRes::set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000001u;
+  ctidtraderaccountid_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOASubscribeLiveTrendbarRes.ctidTraderAccountId)
+}
+
+// -------------------------------------------------------------------
+
 // ProtoOAUnsubscribeLiveTrendbarReq
 
 // optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_UNSUBSCRIBE_LIVE_TRENDBAR_REQ];
@@ -14882,6 +16856,47 @@ inline void ProtoOAUnsubscribeLiveTrendbarReq::set_symbolid(::PROTOBUF_NAMESPACE
   _has_bits_[0] |= 0x00000002u;
   symbolid_ = value;
   // @@protoc_insertion_point(field_set:ProtoOAUnsubscribeLiveTrendbarReq.symbolId)
+}
+
+// -------------------------------------------------------------------
+
+// ProtoOAUnsubscribeLiveTrendbarRes
+
+// optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_UNSUBSCRIBE_LIVE_TRENDBAR_RES];
+inline bool ProtoOAUnsubscribeLiveTrendbarRes::has_payloadtype() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOAUnsubscribeLiveTrendbarRes::clear_payloadtype() {
+  payloadtype_ = 2166;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::ProtoOAPayloadType ProtoOAUnsubscribeLiveTrendbarRes::payloadtype() const {
+  // @@protoc_insertion_point(field_get:ProtoOAUnsubscribeLiveTrendbarRes.payloadType)
+  return static_cast< ::ProtoOAPayloadType >(payloadtype_);
+}
+inline void ProtoOAUnsubscribeLiveTrendbarRes::set_payloadtype(::ProtoOAPayloadType value) {
+  assert(::ProtoOAPayloadType_IsValid(value));
+  _has_bits_[0] |= 0x00000002u;
+  payloadtype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAUnsubscribeLiveTrendbarRes.payloadType)
+}
+
+// required int64 ctidTraderAccountId = 2;
+inline bool ProtoOAUnsubscribeLiveTrendbarRes::has_ctidtraderaccountid() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ProtoOAUnsubscribeLiveTrendbarRes::clear_ctidtraderaccountid() {
+  ctidtraderaccountid_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOAUnsubscribeLiveTrendbarRes::ctidtraderaccountid() const {
+  // @@protoc_insertion_point(field_get:ProtoOAUnsubscribeLiveTrendbarRes.ctidTraderAccountId)
+  return ctidtraderaccountid_;
+}
+inline void ProtoOAUnsubscribeLiveTrendbarRes::set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000001u;
+  ctidtraderaccountid_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAUnsubscribeLiveTrendbarRes.ctidTraderAccountId)
 }
 
 // -------------------------------------------------------------------
@@ -16042,9 +18057,401 @@ inline void ProtoOAAccountDisconnectEvent::set_ctidtraderaccountid(::PROTOBUF_NA
   // @@protoc_insertion_point(field_set:ProtoOAAccountDisconnectEvent.ctidTraderAccountId)
 }
 
+// -------------------------------------------------------------------
+
+// ProtoOAMarginCallListReq
+
+// optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_LIST_REQ];
+inline bool ProtoOAMarginCallListReq::has_payloadtype() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOAMarginCallListReq::clear_payloadtype() {
+  payloadtype_ = 2167;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::ProtoOAPayloadType ProtoOAMarginCallListReq::payloadtype() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallListReq.payloadType)
+  return static_cast< ::ProtoOAPayloadType >(payloadtype_);
+}
+inline void ProtoOAMarginCallListReq::set_payloadtype(::ProtoOAPayloadType value) {
+  assert(::ProtoOAPayloadType_IsValid(value));
+  _has_bits_[0] |= 0x00000002u;
+  payloadtype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCallListReq.payloadType)
+}
+
+// required int64 ctidTraderAccountId = 2;
+inline bool ProtoOAMarginCallListReq::has_ctidtraderaccountid() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ProtoOAMarginCallListReq::clear_ctidtraderaccountid() {
+  ctidtraderaccountid_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOAMarginCallListReq::ctidtraderaccountid() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallListReq.ctidTraderAccountId)
+  return ctidtraderaccountid_;
+}
+inline void ProtoOAMarginCallListReq::set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000001u;
+  ctidtraderaccountid_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCallListReq.ctidTraderAccountId)
+}
+
+// -------------------------------------------------------------------
+
+// ProtoOAMarginCallListRes
+
+// optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_LIST_RES];
+inline bool ProtoOAMarginCallListRes::has_payloadtype() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ProtoOAMarginCallListRes::clear_payloadtype() {
+  payloadtype_ = 2168;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline ::ProtoOAPayloadType ProtoOAMarginCallListRes::payloadtype() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallListRes.payloadType)
+  return static_cast< ::ProtoOAPayloadType >(payloadtype_);
+}
+inline void ProtoOAMarginCallListRes::set_payloadtype(::ProtoOAPayloadType value) {
+  assert(::ProtoOAPayloadType_IsValid(value));
+  _has_bits_[0] |= 0x00000001u;
+  payloadtype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCallListRes.payloadType)
+}
+
+// repeated .ProtoOAMarginCall marginCall = 2;
+inline int ProtoOAMarginCallListRes::margincall_size() const {
+  return margincall_.size();
+}
+inline ::ProtoOAMarginCall* ProtoOAMarginCallListRes::mutable_margincall(int index) {
+  // @@protoc_insertion_point(field_mutable:ProtoOAMarginCallListRes.marginCall)
+  return margincall_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAMarginCall >*
+ProtoOAMarginCallListRes::mutable_margincall() {
+  // @@protoc_insertion_point(field_mutable_list:ProtoOAMarginCallListRes.marginCall)
+  return &margincall_;
+}
+inline const ::ProtoOAMarginCall& ProtoOAMarginCallListRes::margincall(int index) const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallListRes.marginCall)
+  return margincall_.Get(index);
+}
+inline ::ProtoOAMarginCall* ProtoOAMarginCallListRes::add_margincall() {
+  // @@protoc_insertion_point(field_add:ProtoOAMarginCallListRes.marginCall)
+  return margincall_.Add();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ProtoOAMarginCall >&
+ProtoOAMarginCallListRes::margincall() const {
+  // @@protoc_insertion_point(field_list:ProtoOAMarginCallListRes.marginCall)
+  return margincall_;
+}
+
+// -------------------------------------------------------------------
+
+// ProtoOAMarginCallUpdateReq
+
+// optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_UPDATE_REQ];
+inline bool ProtoOAMarginCallUpdateReq::has_payloadtype() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void ProtoOAMarginCallUpdateReq::clear_payloadtype() {
+  payloadtype_ = 2169;
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline ::ProtoOAPayloadType ProtoOAMarginCallUpdateReq::payloadtype() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallUpdateReq.payloadType)
+  return static_cast< ::ProtoOAPayloadType >(payloadtype_);
+}
+inline void ProtoOAMarginCallUpdateReq::set_payloadtype(::ProtoOAPayloadType value) {
+  assert(::ProtoOAPayloadType_IsValid(value));
+  _has_bits_[0] |= 0x00000004u;
+  payloadtype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCallUpdateReq.payloadType)
+}
+
+// required int64 ctidTraderAccountId = 2;
+inline bool ProtoOAMarginCallUpdateReq::has_ctidtraderaccountid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOAMarginCallUpdateReq::clear_ctidtraderaccountid() {
+  ctidtraderaccountid_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOAMarginCallUpdateReq::ctidtraderaccountid() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallUpdateReq.ctidTraderAccountId)
+  return ctidtraderaccountid_;
+}
+inline void ProtoOAMarginCallUpdateReq::set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000002u;
+  ctidtraderaccountid_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCallUpdateReq.ctidTraderAccountId)
+}
+
+// required .ProtoOAMarginCall marginCall = 3;
+inline bool ProtoOAMarginCallUpdateReq::has_margincall() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline const ::ProtoOAMarginCall& ProtoOAMarginCallUpdateReq::margincall() const {
+  const ::ProtoOAMarginCall* p = margincall_;
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallUpdateReq.marginCall)
+  return p != nullptr ? *p : *reinterpret_cast<const ::ProtoOAMarginCall*>(
+      &::_ProtoOAMarginCall_default_instance_);
+}
+inline ::ProtoOAMarginCall* ProtoOAMarginCallUpdateReq::release_margincall() {
+  // @@protoc_insertion_point(field_release:ProtoOAMarginCallUpdateReq.marginCall)
+  _has_bits_[0] &= ~0x00000001u;
+  ::ProtoOAMarginCall* temp = margincall_;
+  margincall_ = nullptr;
+  return temp;
+}
+inline ::ProtoOAMarginCall* ProtoOAMarginCallUpdateReq::mutable_margincall() {
+  _has_bits_[0] |= 0x00000001u;
+  if (margincall_ == nullptr) {
+    auto* p = CreateMaybeMessage<::ProtoOAMarginCall>(GetArenaNoVirtual());
+    margincall_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:ProtoOAMarginCallUpdateReq.marginCall)
+  return margincall_;
+}
+inline void ProtoOAMarginCallUpdateReq::set_allocated_margincall(::ProtoOAMarginCall* margincall) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(margincall_);
+  }
+  if (margincall) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      margincall = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, margincall, submessage_arena);
+    }
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  margincall_ = margincall;
+  // @@protoc_insertion_point(field_set_allocated:ProtoOAMarginCallUpdateReq.marginCall)
+}
+
+// -------------------------------------------------------------------
+
+// ProtoOAMarginCallUpdateRes
+
+// optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_UPDATE_RES];
+inline bool ProtoOAMarginCallUpdateRes::has_payloadtype() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ProtoOAMarginCallUpdateRes::clear_payloadtype() {
+  payloadtype_ = 2170;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline ::ProtoOAPayloadType ProtoOAMarginCallUpdateRes::payloadtype() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallUpdateRes.payloadType)
+  return static_cast< ::ProtoOAPayloadType >(payloadtype_);
+}
+inline void ProtoOAMarginCallUpdateRes::set_payloadtype(::ProtoOAPayloadType value) {
+  assert(::ProtoOAPayloadType_IsValid(value));
+  _has_bits_[0] |= 0x00000001u;
+  payloadtype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCallUpdateRes.payloadType)
+}
+
+// -------------------------------------------------------------------
+
+// ProtoOAMarginCallUpdateEvent
+
+// optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_UPDATE_EVENT];
+inline bool ProtoOAMarginCallUpdateEvent::has_payloadtype() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void ProtoOAMarginCallUpdateEvent::clear_payloadtype() {
+  payloadtype_ = 2171;
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline ::ProtoOAPayloadType ProtoOAMarginCallUpdateEvent::payloadtype() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallUpdateEvent.payloadType)
+  return static_cast< ::ProtoOAPayloadType >(payloadtype_);
+}
+inline void ProtoOAMarginCallUpdateEvent::set_payloadtype(::ProtoOAPayloadType value) {
+  assert(::ProtoOAPayloadType_IsValid(value));
+  _has_bits_[0] |= 0x00000004u;
+  payloadtype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCallUpdateEvent.payloadType)
+}
+
+// required int64 ctidTraderAccountId = 2;
+inline bool ProtoOAMarginCallUpdateEvent::has_ctidtraderaccountid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOAMarginCallUpdateEvent::clear_ctidtraderaccountid() {
+  ctidtraderaccountid_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOAMarginCallUpdateEvent::ctidtraderaccountid() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallUpdateEvent.ctidTraderAccountId)
+  return ctidtraderaccountid_;
+}
+inline void ProtoOAMarginCallUpdateEvent::set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000002u;
+  ctidtraderaccountid_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCallUpdateEvent.ctidTraderAccountId)
+}
+
+// required .ProtoOAMarginCall marginCall = 3;
+inline bool ProtoOAMarginCallUpdateEvent::has_margincall() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline const ::ProtoOAMarginCall& ProtoOAMarginCallUpdateEvent::margincall() const {
+  const ::ProtoOAMarginCall* p = margincall_;
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallUpdateEvent.marginCall)
+  return p != nullptr ? *p : *reinterpret_cast<const ::ProtoOAMarginCall*>(
+      &::_ProtoOAMarginCall_default_instance_);
+}
+inline ::ProtoOAMarginCall* ProtoOAMarginCallUpdateEvent::release_margincall() {
+  // @@protoc_insertion_point(field_release:ProtoOAMarginCallUpdateEvent.marginCall)
+  _has_bits_[0] &= ~0x00000001u;
+  ::ProtoOAMarginCall* temp = margincall_;
+  margincall_ = nullptr;
+  return temp;
+}
+inline ::ProtoOAMarginCall* ProtoOAMarginCallUpdateEvent::mutable_margincall() {
+  _has_bits_[0] |= 0x00000001u;
+  if (margincall_ == nullptr) {
+    auto* p = CreateMaybeMessage<::ProtoOAMarginCall>(GetArenaNoVirtual());
+    margincall_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:ProtoOAMarginCallUpdateEvent.marginCall)
+  return margincall_;
+}
+inline void ProtoOAMarginCallUpdateEvent::set_allocated_margincall(::ProtoOAMarginCall* margincall) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(margincall_);
+  }
+  if (margincall) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      margincall = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, margincall, submessage_arena);
+    }
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  margincall_ = margincall;
+  // @@protoc_insertion_point(field_set_allocated:ProtoOAMarginCallUpdateEvent.marginCall)
+}
+
+// -------------------------------------------------------------------
+
+// ProtoOAMarginCallTriggerEvent
+
+// optional .ProtoOAPayloadType payloadType = 1 [default = PROTO_OA_MARGIN_CALL_TRIGGER_EVENT];
+inline bool ProtoOAMarginCallTriggerEvent::has_payloadtype() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void ProtoOAMarginCallTriggerEvent::clear_payloadtype() {
+  payloadtype_ = 2172;
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline ::ProtoOAPayloadType ProtoOAMarginCallTriggerEvent::payloadtype() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallTriggerEvent.payloadType)
+  return static_cast< ::ProtoOAPayloadType >(payloadtype_);
+}
+inline void ProtoOAMarginCallTriggerEvent::set_payloadtype(::ProtoOAPayloadType value) {
+  assert(::ProtoOAPayloadType_IsValid(value));
+  _has_bits_[0] |= 0x00000004u;
+  payloadtype_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCallTriggerEvent.payloadType)
+}
+
+// required int64 ctidTraderAccountId = 2;
+inline bool ProtoOAMarginCallTriggerEvent::has_ctidtraderaccountid() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void ProtoOAMarginCallTriggerEvent::clear_ctidtraderaccountid() {
+  ctidtraderaccountid_ = PROTOBUF_LONGLONG(0);
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ProtoOAMarginCallTriggerEvent::ctidtraderaccountid() const {
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallTriggerEvent.ctidTraderAccountId)
+  return ctidtraderaccountid_;
+}
+inline void ProtoOAMarginCallTriggerEvent::set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _has_bits_[0] |= 0x00000002u;
+  ctidtraderaccountid_ = value;
+  // @@protoc_insertion_point(field_set:ProtoOAMarginCallTriggerEvent.ctidTraderAccountId)
+}
+
+// required .ProtoOAMarginCall marginCall = 3;
+inline bool ProtoOAMarginCallTriggerEvent::has_margincall() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline const ::ProtoOAMarginCall& ProtoOAMarginCallTriggerEvent::margincall() const {
+  const ::ProtoOAMarginCall* p = margincall_;
+  // @@protoc_insertion_point(field_get:ProtoOAMarginCallTriggerEvent.marginCall)
+  return p != nullptr ? *p : *reinterpret_cast<const ::ProtoOAMarginCall*>(
+      &::_ProtoOAMarginCall_default_instance_);
+}
+inline ::ProtoOAMarginCall* ProtoOAMarginCallTriggerEvent::release_margincall() {
+  // @@protoc_insertion_point(field_release:ProtoOAMarginCallTriggerEvent.marginCall)
+  _has_bits_[0] &= ~0x00000001u;
+  ::ProtoOAMarginCall* temp = margincall_;
+  margincall_ = nullptr;
+  return temp;
+}
+inline ::ProtoOAMarginCall* ProtoOAMarginCallTriggerEvent::mutable_margincall() {
+  _has_bits_[0] |= 0x00000001u;
+  if (margincall_ == nullptr) {
+    auto* p = CreateMaybeMessage<::ProtoOAMarginCall>(GetArenaNoVirtual());
+    margincall_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:ProtoOAMarginCallTriggerEvent.marginCall)
+  return margincall_;
+}
+inline void ProtoOAMarginCallTriggerEvent::set_allocated_margincall(::ProtoOAMarginCall* margincall) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(margincall_);
+  }
+  if (margincall) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      margincall = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, margincall, submessage_arena);
+    }
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  margincall_ = margincall;
+  // @@protoc_insertion_point(field_set_allocated:ProtoOAMarginCallTriggerEvent.marginCall)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
