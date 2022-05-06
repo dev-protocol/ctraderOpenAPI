@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -16,6 +15,7 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 
+PROTOBUF_PRAGMA_INIT_SEG
 extern PROTOBUF_INTERNAL_EXPORT_OpenApiModelMessages_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAClosePositionDetail_OpenApiModelMessages_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_OpenApiModelMessages_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAHoliday_OpenApiModelMessages_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_OpenApiModelMessages_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAInterval_OpenApiModelMessages_2eproto;
@@ -112,55 +112,7 @@ class ProtoOAHolidayDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ProtoOAHoliday> _instance;
 } _ProtoOAHoliday_default_instance_;
-static void InitDefaultsProtoOAAsset_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOAAsset_default_instance_;
-    new (ptr) ::ProtoOAAsset();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOAAsset::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAAsset_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOAAsset_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOASymbol_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  ::ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_.DefaultConstruct();
-  *::ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_.get_mutable() = std::string("USD", 3);
-  ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyString(
-      ::ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_.get_mutable());
-  {
-    void* ptr = &::_ProtoOASymbol_default_instance_;
-    new (ptr) ::ProtoOASymbol();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOASymbol::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ProtoOASymbol_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsProtoOASymbol_OpenApiModelMessages_2eproto}, {
-      &scc_info_ProtoOAInterval_OpenApiModelMessages_2eproto.base,
-      &scc_info_ProtoOAHoliday_OpenApiModelMessages_2eproto.base,}};
-
-static void InitDefaultsProtoOALightSymbol_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOALightSymbol_default_instance_;
-    new (ptr) ::ProtoOALightSymbol();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOALightSymbol::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOALightSymbol_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOALightSymbol_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOAArchivedSymbol_OpenApiModelMessages_2eproto() {
+static void InitDefaultsscc_info_ProtoOAArchivedSymbol_OpenApiModelMessages_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -168,226 +120,25 @@ static void InitDefaultsProtoOAArchivedSymbol_OpenApiModelMessages_2eproto() {
     new (ptr) ::ProtoOAArchivedSymbol();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::ProtoOAArchivedSymbol::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAArchivedSymbol_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOAArchivedSymbol_OpenApiModelMessages_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOAArchivedSymbol_OpenApiModelMessages_2eproto}, {}};
 
-static void InitDefaultsProtoOASymbolCategory_OpenApiModelMessages_2eproto() {
+static void InitDefaultsscc_info_ProtoOAAsset_OpenApiModelMessages_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_ProtoOASymbolCategory_default_instance_;
-    new (ptr) ::ProtoOASymbolCategory();
+    void* ptr = &::_ProtoOAAsset_default_instance_;
+    new (ptr) ::ProtoOAAsset();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::ProtoOASymbolCategory::InitAsDefaultInstance();
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOASymbolCategory_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOASymbolCategory_OpenApiModelMessages_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAAsset_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOAAsset_OpenApiModelMessages_2eproto}, {}};
 
-static void InitDefaultsProtoOAInterval_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOAInterval_default_instance_;
-    new (ptr) ::ProtoOAInterval();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOAInterval::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAInterval_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOAInterval_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOATrader_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOATrader_default_instance_;
-    new (ptr) ::ProtoOATrader();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOATrader::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOATrader_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOATrader_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOAPosition_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOAPosition_default_instance_;
-    new (ptr) ::ProtoOAPosition();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOAPosition::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ProtoOAPosition_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsProtoOAPosition_OpenApiModelMessages_2eproto}, {
-      &scc_info_ProtoOATradeData_OpenApiModelMessages_2eproto.base,}};
-
-static void InitDefaultsProtoOATradeData_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOATradeData_default_instance_;
-    new (ptr) ::ProtoOATradeData();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOATradeData::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOATradeData_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOATradeData_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOAOrder_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOAOrder_default_instance_;
-    new (ptr) ::ProtoOAOrder();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOAOrder::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ProtoOAOrder_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsProtoOAOrder_OpenApiModelMessages_2eproto}, {
-      &scc_info_ProtoOATradeData_OpenApiModelMessages_2eproto.base,}};
-
-static void InitDefaultsProtoOABonusDepositWithdraw_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOABonusDepositWithdraw_default_instance_;
-    new (ptr) ::ProtoOABonusDepositWithdraw();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOABonusDepositWithdraw::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOABonusDepositWithdraw_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOABonusDepositWithdraw_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOADepositWithdraw_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOADepositWithdraw_default_instance_;
-    new (ptr) ::ProtoOADepositWithdraw();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOADepositWithdraw::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOADepositWithdraw_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOADepositWithdraw_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOADeal_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOADeal_default_instance_;
-    new (ptr) ::ProtoOADeal();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOADeal::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ProtoOADeal_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsProtoOADeal_OpenApiModelMessages_2eproto}, {
-      &scc_info_ProtoOAClosePositionDetail_OpenApiModelMessages_2eproto.base,}};
-
-static void InitDefaultsProtoOAClosePositionDetail_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOAClosePositionDetail_default_instance_;
-    new (ptr) ::ProtoOAClosePositionDetail();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOAClosePositionDetail::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAClosePositionDetail_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOAClosePositionDetail_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOATrendbar_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOATrendbar_default_instance_;
-    new (ptr) ::ProtoOATrendbar();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOATrendbar::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOATrendbar_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOATrendbar_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOAExpectedMargin_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOAExpectedMargin_default_instance_;
-    new (ptr) ::ProtoOAExpectedMargin();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOAExpectedMargin::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAExpectedMargin_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOAExpectedMargin_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOATickData_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOATickData_default_instance_;
-    new (ptr) ::ProtoOATickData();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOATickData::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOATickData_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOATickData_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOACtidProfile_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOACtidProfile_default_instance_;
-    new (ptr) ::ProtoOACtidProfile();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOACtidProfile::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOACtidProfile_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOACtidProfile_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOACtidTraderAccount_OpenApiModelMessages_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ProtoOACtidTraderAccount_default_instance_;
-    new (ptr) ::ProtoOACtidTraderAccount();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::ProtoOACtidTraderAccount::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOACtidTraderAccount_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOACtidTraderAccount_OpenApiModelMessages_2eproto}, {}};
-
-static void InitDefaultsProtoOAAssetClass_OpenApiModelMessages_2eproto() {
+static void InitDefaultsscc_info_ProtoOAAssetClass_OpenApiModelMessages_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -395,13 +146,91 @@ static void InitDefaultsProtoOAAssetClass_OpenApiModelMessages_2eproto() {
     new (ptr) ::ProtoOAAssetClass();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::ProtoOAAssetClass::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAAssetClass_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOAAssetClass_OpenApiModelMessages_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOAAssetClass_OpenApiModelMessages_2eproto}, {}};
 
-static void InitDefaultsProtoOADepthQuote_OpenApiModelMessages_2eproto() {
+static void InitDefaultsscc_info_ProtoOABonusDepositWithdraw_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOABonusDepositWithdraw_default_instance_;
+    new (ptr) ::ProtoOABonusDepositWithdraw();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOABonusDepositWithdraw_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOABonusDepositWithdraw_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOAClosePositionDetail_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOAClosePositionDetail_default_instance_;
+    new (ptr) ::ProtoOAClosePositionDetail();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAClosePositionDetail_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOAClosePositionDetail_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOACtidProfile_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOACtidProfile_default_instance_;
+    new (ptr) ::ProtoOACtidProfile();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOACtidProfile_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOACtidProfile_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOACtidTraderAccount_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOACtidTraderAccount_default_instance_;
+    new (ptr) ::ProtoOACtidTraderAccount();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOACtidTraderAccount_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOACtidTraderAccount_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOADeal_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOADeal_default_instance_;
+    new (ptr) ::ProtoOADeal();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ProtoOADeal_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ProtoOADeal_OpenApiModelMessages_2eproto}, {
+      &scc_info_ProtoOAClosePositionDetail_OpenApiModelMessages_2eproto.base,}};
+
+static void InitDefaultsscc_info_ProtoOADepositWithdraw_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOADepositWithdraw_default_instance_;
+    new (ptr) ::ProtoOADepositWithdraw();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOADepositWithdraw_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOADepositWithdraw_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOADepthQuote_OpenApiModelMessages_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -409,27 +238,25 @@ static void InitDefaultsProtoOADepthQuote_OpenApiModelMessages_2eproto() {
     new (ptr) ::ProtoOADepthQuote();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::ProtoOADepthQuote::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOADepthQuote_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOADepthQuote_OpenApiModelMessages_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOADepthQuote_OpenApiModelMessages_2eproto}, {}};
 
-static void InitDefaultsProtoOAMarginCall_OpenApiModelMessages_2eproto() {
+static void InitDefaultsscc_info_ProtoOAExpectedMargin_OpenApiModelMessages_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_ProtoOAMarginCall_default_instance_;
-    new (ptr) ::ProtoOAMarginCall();
+    void* ptr = &::_ProtoOAExpectedMargin_default_instance_;
+    new (ptr) ::ProtoOAExpectedMargin();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::ProtoOAMarginCall::InitAsDefaultInstance();
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAMarginCall_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOAMarginCall_OpenApiModelMessages_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAExpectedMargin_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOAExpectedMargin_OpenApiModelMessages_2eproto}, {}};
 
-static void InitDefaultsProtoOAHoliday_OpenApiModelMessages_2eproto() {
+static void InitDefaultsscc_info_ProtoOAHoliday_OpenApiModelMessages_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -437,37 +264,157 @@ static void InitDefaultsProtoOAHoliday_OpenApiModelMessages_2eproto() {
     new (ptr) ::ProtoOAHoliday();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::ProtoOAHoliday::InitAsDefaultInstance();
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAHoliday_OpenApiModelMessages_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtoOAHoliday_OpenApiModelMessages_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOAHoliday_OpenApiModelMessages_2eproto}, {}};
 
-void InitDefaults_OpenApiModelMessages_2eproto() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAAsset_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOASymbol_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOALightSymbol_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAArchivedSymbol_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOASymbolCategory_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAInterval_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOATrader_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAPosition_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOATradeData_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAOrder_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOABonusDepositWithdraw_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOADepositWithdraw_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOADeal_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAClosePositionDetail_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOATrendbar_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAExpectedMargin_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOATickData_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOACtidProfile_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOACtidTraderAccount_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAAssetClass_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOADepthQuote_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAMarginCall_OpenApiModelMessages_2eproto.base);
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAHoliday_OpenApiModelMessages_2eproto.base);
+static void InitDefaultsscc_info_ProtoOAInterval_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOAInterval_default_instance_;
+    new (ptr) ::ProtoOAInterval();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
 }
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAInterval_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOAInterval_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOALightSymbol_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOALightSymbol_default_instance_;
+    new (ptr) ::ProtoOALightSymbol();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOALightSymbol_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOALightSymbol_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOAMarginCall_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOAMarginCall_default_instance_;
+    new (ptr) ::ProtoOAMarginCall();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOAMarginCall_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOAMarginCall_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOAOrder_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOAOrder_default_instance_;
+    new (ptr) ::ProtoOAOrder();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ProtoOAOrder_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ProtoOAOrder_OpenApiModelMessages_2eproto}, {
+      &scc_info_ProtoOATradeData_OpenApiModelMessages_2eproto.base,}};
+
+static void InitDefaultsscc_info_ProtoOAPosition_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOAPosition_default_instance_;
+    new (ptr) ::ProtoOAPosition();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ProtoOAPosition_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ProtoOAPosition_OpenApiModelMessages_2eproto}, {
+      &scc_info_ProtoOATradeData_OpenApiModelMessages_2eproto.base,}};
+
+static void InitDefaultsscc_info_ProtoOASymbol_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOASymbol_default_instance_;
+    new (ptr) ::ProtoOASymbol();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ProtoOASymbol_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ProtoOASymbol_OpenApiModelMessages_2eproto}, {
+      &scc_info_ProtoOAInterval_OpenApiModelMessages_2eproto.base,
+      &scc_info_ProtoOAHoliday_OpenApiModelMessages_2eproto.base,}};
+
+static void InitDefaultsscc_info_ProtoOASymbolCategory_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOASymbolCategory_default_instance_;
+    new (ptr) ::ProtoOASymbolCategory();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOASymbolCategory_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOASymbolCategory_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOATickData_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOATickData_default_instance_;
+    new (ptr) ::ProtoOATickData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOATickData_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOATickData_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOATradeData_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOATradeData_default_instance_;
+    new (ptr) ::ProtoOATradeData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOATradeData_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOATradeData_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOATrader_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOATrader_default_instance_;
+    new (ptr) ::ProtoOATrader();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOATrader_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOATrader_OpenApiModelMessages_2eproto}, {}};
+
+static void InitDefaultsscc_info_ProtoOATrendbar_OpenApiModelMessages_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ProtoOATrendbar_default_instance_;
+    new (ptr) ::ProtoOATrendbar();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ProtoOATrendbar_OpenApiModelMessages_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ProtoOATrendbar_OpenApiModelMessages_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_OpenApiModelMessages_2eproto[23];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_OpenApiModelMessages_2eproto[26];
@@ -1034,13 +981,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_ProtoOAHoliday_default_instance_),
 };
 
-static ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptorsTable assign_descriptors_table_OpenApiModelMessages_2eproto = {
-  {}, AddDescriptors_OpenApiModelMessages_2eproto, "OpenApiModelMessages.proto", schemas,
-  file_default_instances, TableStruct_OpenApiModelMessages_2eproto::offsets,
-  file_level_metadata_OpenApiModelMessages_2eproto, 23, file_level_enum_descriptors_OpenApiModelMessages_2eproto, file_level_service_descriptors_OpenApiModelMessages_2eproto,
-};
-
-const char descriptor_table_protodef_OpenApiModelMessages_2eproto[] =
+const char descriptor_table_protodef_OpenApiModelMessages_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\032OpenApiModelMessages.proto\"R\n\014ProtoOAA"
   "sset\022\017\n\007assetId\030\001 \002(\003\022\014\n\004name\030\002 \002(\t\022\023\n\013d"
   "isplayName\030\003 \001(\t\022\016\n\006digits\030\004 \001(\005\"\271\010\n\rPro"
@@ -1374,23 +1315,45 @@ const char descriptor_table_protodef_OpenApiModelMessages_2eproto[] =
   "der.protocol.openapi.v2.modelB\037Container"
   "OpenApiV2ModelMessagesP\001\240\001\001"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_OpenApiModelMessages_2eproto = {
-  false, InitDefaults_OpenApiModelMessages_2eproto, 
-  descriptor_table_protodef_OpenApiModelMessages_2eproto,
-  "OpenApiModelMessages.proto", &assign_descriptors_table_OpenApiModelMessages_2eproto, 13267,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_OpenApiModelMessages_2eproto_deps[1] = {
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_OpenApiModelMessages_2eproto_sccs[23] = {
+  &scc_info_ProtoOAArchivedSymbol_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOAAsset_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOAAssetClass_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOABonusDepositWithdraw_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOAClosePositionDetail_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOACtidProfile_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOACtidTraderAccount_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOADeal_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOADepositWithdraw_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOADepthQuote_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOAExpectedMargin_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOAHoliday_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOAInterval_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOALightSymbol_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOAMarginCall_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOAOrder_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOAPosition_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOASymbol_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOASymbolCategory_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOATickData_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOATradeData_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOATrader_OpenApiModelMessages_2eproto.base,
+  &scc_info_ProtoOATrendbar_OpenApiModelMessages_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_OpenApiModelMessages_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_OpenApiModelMessages_2eproto = {
+  false, false, descriptor_table_protodef_OpenApiModelMessages_2eproto, "OpenApiModelMessages.proto", 13267,
+  &descriptor_table_OpenApiModelMessages_2eproto_once, descriptor_table_OpenApiModelMessages_2eproto_sccs, descriptor_table_OpenApiModelMessages_2eproto_deps, 23, 0,
+  schemas, file_default_instances, TableStruct_OpenApiModelMessages_2eproto::offsets,
+  file_level_metadata_OpenApiModelMessages_2eproto, 23, file_level_enum_descriptors_OpenApiModelMessages_2eproto, file_level_service_descriptors_OpenApiModelMessages_2eproto,
 };
 
-void AddDescriptors_OpenApiModelMessages_2eproto() {
-  static constexpr ::PROTOBUF_NAMESPACE_ID::internal::InitFunc deps[1] =
-  {
-  };
- ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_OpenApiModelMessages_2eproto, deps, 0);
-}
-
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_OpenApiModelMessages_2eproto = []() { AddDescriptors_OpenApiModelMessages_2eproto(); return true; }();
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_OpenApiModelMessages_2eproto(&descriptor_table_OpenApiModelMessages_2eproto);
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAPayloadType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[0];
 }
 bool ProtoOAPayloadType_IsValid(int value) {
@@ -1477,7 +1440,7 @@ bool ProtoOAPayloadType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOADayOfWeek_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[1];
 }
 bool ProtoOADayOfWeek_IsValid(int value) {
@@ -1497,7 +1460,7 @@ bool ProtoOADayOfWeek_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOACommissionType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[2];
 }
 bool ProtoOACommissionType_IsValid(int value) {
@@ -1513,7 +1476,7 @@ bool ProtoOACommissionType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOASymbolDistanceType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[3];
 }
 bool ProtoOASymbolDistanceType_IsValid(int value) {
@@ -1527,7 +1490,7 @@ bool ProtoOASymbolDistanceType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAMinCommissionType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[4];
 }
 bool ProtoOAMinCommissionType_IsValid(int value) {
@@ -1541,7 +1504,7 @@ bool ProtoOAMinCommissionType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOATradingMode_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[5];
 }
 bool ProtoOATradingMode_IsValid(int value) {
@@ -1557,7 +1520,7 @@ bool ProtoOATradingMode_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOASwapCalculationType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[6];
 }
 bool ProtoOASwapCalculationType_IsValid(int value) {
@@ -1571,7 +1534,7 @@ bool ProtoOASwapCalculationType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAAccessRights_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[7];
 }
 bool ProtoOAAccessRights_IsValid(int value) {
@@ -1587,7 +1550,7 @@ bool ProtoOAAccessRights_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOATotalMarginCalculationType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[8];
 }
 bool ProtoOATotalMarginCalculationType_IsValid(int value) {
@@ -1602,7 +1565,7 @@ bool ProtoOATotalMarginCalculationType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAAccountType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[9];
 }
 bool ProtoOAAccountType_IsValid(int value) {
@@ -1617,7 +1580,7 @@ bool ProtoOAAccountType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAPositionStatus_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[10];
 }
 bool ProtoOAPositionStatus_IsValid(int value) {
@@ -1633,7 +1596,7 @@ bool ProtoOAPositionStatus_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOATradeSide_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[11];
 }
 bool ProtoOATradeSide_IsValid(int value) {
@@ -1647,7 +1610,7 @@ bool ProtoOATradeSide_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAOrderType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[12];
 }
 bool ProtoOAOrderType_IsValid(int value) {
@@ -1665,7 +1628,7 @@ bool ProtoOAOrderType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOATimeInForce_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[13];
 }
 bool ProtoOATimeInForce_IsValid(int value) {
@@ -1682,7 +1645,7 @@ bool ProtoOATimeInForce_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAOrderStatus_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[14];
 }
 bool ProtoOAOrderStatus_IsValid(int value) {
@@ -1699,7 +1662,7 @@ bool ProtoOAOrderStatus_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAOrderTriggerMethod_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[15];
 }
 bool ProtoOAOrderTriggerMethod_IsValid(int value) {
@@ -1715,7 +1678,7 @@ bool ProtoOAOrderTriggerMethod_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAExecutionType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[16];
 }
 bool ProtoOAExecutionType_IsValid(int value) {
@@ -1738,7 +1701,7 @@ bool ProtoOAExecutionType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAChangeBonusType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[17];
 }
 bool ProtoOAChangeBonusType_IsValid(int value) {
@@ -1752,7 +1715,7 @@ bool ProtoOAChangeBonusType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAChangeBalanceType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[18];
 }
 bool ProtoOAChangeBalanceType_IsValid(int value) {
@@ -1798,7 +1761,7 @@ bool ProtoOAChangeBalanceType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOADealStatus_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[19];
 }
 bool ProtoOADealStatus_IsValid(int value) {
@@ -1816,7 +1779,7 @@ bool ProtoOADealStatus_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOATrendbarPeriod_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[20];
 }
 bool ProtoOATrendbarPeriod_IsValid(int value) {
@@ -1842,7 +1805,7 @@ bool ProtoOATrendbarPeriod_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAQuoteType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[21];
 }
 bool ProtoOAQuoteType_IsValid(int value) {
@@ -1856,7 +1819,7 @@ bool ProtoOAQuoteType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAClientPermissionScope_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[22];
 }
 bool ProtoOAClientPermissionScope_IsValid(int value) {
@@ -1870,7 +1833,7 @@ bool ProtoOAClientPermissionScope_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOANotificationType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[23];
 }
 bool ProtoOANotificationType_IsValid(int value) {
@@ -1885,7 +1848,7 @@ bool ProtoOANotificationType_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOAErrorCode_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[24];
 }
 bool ProtoOAErrorCode_IsValid(int value) {
@@ -1938,7 +1901,7 @@ bool ProtoOAErrorCode_IsValid(int value) {
 }
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ProtoOALimitedRiskMarginCalculationStrategy_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&assign_descriptors_table_OpenApiModelMessages_2eproto);
+  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_OpenApiModelMessages_2eproto);
   return file_level_enum_descriptors_OpenApiModelMessages_2eproto[25];
 }
 bool ProtoOALimitedRiskMarginCalculationStrategy_IsValid(int value) {
@@ -1955,48 +1918,45 @@ bool ProtoOALimitedRiskMarginCalculationStrategy_IsValid(int value) {
 
 // ===================================================================
 
-void ProtoOAAsset::InitAsDefaultInstance() {
-}
-class ProtoOAAsset::HasBitSetters {
+class ProtoOAAsset::_Internal {
  public:
-  static void set_has_assetid(ProtoOAAsset* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  using HasBits = decltype(std::declval<ProtoOAAsset>()._has_bits_);
+  static void set_has_assetid(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_name(ProtoOAAsset* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_name(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_displayname(ProtoOAAsset* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_displayname(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_digits(ProtoOAAsset* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_digits(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000005) ^ 0x00000005) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOAAsset::kAssetIdFieldNumber;
-const int ProtoOAAsset::kNameFieldNumber;
-const int ProtoOAAsset::kDisplayNameFieldNumber;
-const int ProtoOAAsset::kDigitsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOAAsset::ProtoOAAsset()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOAAsset::ProtoOAAsset(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOAAsset)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOAAsset)
 }
 ProtoOAAsset::ProtoOAAsset(const ProtoOAAsset& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_name()) {
-    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
+  if (from._internal_has_name()) {
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
+      GetArena());
   }
   displayname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_displayname()) {
-    displayname_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.displayname_);
+  if (from._internal_has_displayname()) {
+    displayname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_displayname(), 
+      GetArena());
   }
   ::memcpy(&assetid_, &from.assetid_,
     static_cast<size_t>(reinterpret_cast<char*>(&digits_) -
@@ -2005,25 +1965,33 @@ ProtoOAAsset::ProtoOAAsset(const ProtoOAAsset& from)
 }
 
 void ProtoOAAsset::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOAAsset_OpenApiModelMessages_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAAsset_OpenApiModelMessages_2eproto.base);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   displayname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&assetid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&digits_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&assetid_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&digits_) -
       reinterpret_cast<char*>(&assetid_)) + sizeof(digits_));
 }
 
 ProtoOAAsset::~ProtoOAAsset() {
   // @@protoc_insertion_point(destructor:ProtoOAAsset)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOAAsset::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   displayname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void ProtoOAAsset::ArenaDtor(void* object) {
+  ProtoOAAsset* _this = reinterpret_cast< ProtoOAAsset* >(object);
+  (void)_this;
+}
+void ProtoOAAsset::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOAAsset::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -2042,10 +2010,10 @@ void ProtoOAAsset::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      name_.ClearNonDefaultToEmptyNoArena();
+      name_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      displayname_.ClearNonDefaultToEmptyNoArena();
+      displayname_.ClearNonDefaultToEmpty();
     }
   }
   if (cached_has_bits & 0x0000000cu) {
@@ -2054,192 +2022,80 @@ void ProtoOAAsset::Clear() {
         reinterpret_cast<char*>(&assetid_)) + sizeof(digits_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOAAsset::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 assetId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_assetid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_assetid(&has_bits);
+          assetid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required string name = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_name(), ptr, ctx, "ProtoOAAsset.name");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOAAsset.name");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional string displayName = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 26) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_displayname(), ptr, ctx, "ProtoOAAsset.displayName");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          auto str = _internal_mutable_displayname();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOAAsset.displayName");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int32 digits = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_digits(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_digits(&has_bits);
+          digits_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOAAsset::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOAAsset)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 assetId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_assetid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &assetid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required string name = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_name()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->name().data(), static_cast<int>(this->name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOAAsset.name");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string displayName = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_displayname()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->displayname().data(), static_cast<int>(this->displayname().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOAAsset.displayName");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int32 digits = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_digits(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &digits_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOAAsset)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOAAsset)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOAAsset::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOAAsset)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 assetId = 1;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->assetid(), output);
-  }
-
-  // required string name = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->name().data(), static_cast<int>(this->name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOAAsset.name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->name(), output);
-  }
-
-  // optional string displayName = 3;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->displayname().data(), static_cast<int>(this->displayname().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOAAsset.displayName");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->displayname(), output);
-  }
-
-  // optional int32 digits = 4;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(4, this->digits(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOAAsset)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAAsset::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAAsset::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOAAsset)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2247,39 +2103,39 @@ void ProtoOAAsset::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 assetId = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->assetid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_assetid(), target);
   }
 
   // required string name = 2;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->name().data(), static_cast<int>(this->name().length()),
+      this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOAAsset.name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->name(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_name(), target);
   }
 
   // optional string displayName = 3;
   if (cached_has_bits & 0x00000002u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->displayname().data(), static_cast<int>(this->displayname().length()),
+      this->_internal_displayname().data(), static_cast<int>(this->_internal_displayname().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOAAsset.displayName");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        3, this->displayname(), target);
+    target = stream->WriteStringMaybeAliased(
+        3, this->_internal_displayname(), target);
   }
 
   // optional int32 digits = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->digits(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_digits(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOAAsset)
   return target;
@@ -2289,18 +2145,18 @@ size_t ProtoOAAsset::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOAAsset)
   size_t total_size = 0;
 
-  if (has_name()) {
+  if (_internal_has_name()) {
     // required string name = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->name());
+        this->_internal_name());
   }
 
-  if (has_assetid()) {
+  if (_internal_has_assetid()) {
     // required int64 assetId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->assetid());
+        this->_internal_assetid());
   }
 
   return total_size;
@@ -2309,21 +2165,16 @@ size_t ProtoOAAsset::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOAAsset)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000005) ^ 0x00000005) == 0) {  // All required fields are present.
     // required string name = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->name());
+        this->_internal_name());
 
     // required int64 assetId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->assetid());
+        this->_internal_assetid());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -2337,16 +2188,20 @@ size_t ProtoOAAsset::ByteSizeLong() const {
   if (cached_has_bits & 0x00000002u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->displayname());
+        this->_internal_displayname());
   }
 
   // optional int32 digits = 4;
   if (cached_has_bits & 0x00000008u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->digits());
+        this->_internal_digits());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2370,19 +2225,17 @@ void ProtoOAAsset::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ProtoOAAsset::MergeFrom(const ProtoOAAsset& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOAAsset)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
+      _internal_set_name(from._internal_name());
     }
     if (cached_has_bits & 0x00000002u) {
-      _has_bits_[0] |= 0x00000002u;
-      displayname_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.displayname_);
+      _internal_set_displayname(from._internal_displayname());
     }
     if (cached_has_bits & 0x00000004u) {
       assetid_ = from.assetid_;
@@ -2409,189 +2262,156 @@ void ProtoOAAsset::CopyFrom(const ProtoOAAsset& from) {
 }
 
 bool ProtoOAAsset::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000005) != 0x00000005) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOAAsset::Swap(ProtoOAAsset* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOAAsset::InternalSwap(ProtoOAAsset* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  displayname_.Swap(&other->displayname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(assetid_, other->assetid_);
-  swap(digits_, other->digits_);
+  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  displayname_.Swap(&other->displayname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOAAsset, digits_)
+      + sizeof(ProtoOAAsset::digits_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOAAsset, assetid_)>(
+          reinterpret_cast<char*>(&assetid_),
+          reinterpret_cast<char*>(&other->assetid_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOAAsset::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOASymbol::InitAsDefaultInstance() {
-}
-class ProtoOASymbol::HasBitSetters {
+class ProtoOASymbol::_Internal {
  public:
-  static void set_has_symbolid(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  using HasBits = decltype(std::declval<ProtoOASymbol>()._has_bits_);
+  static void set_has_symbolid(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_digits(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_digits(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_pipposition(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_pipposition(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_enableshortselling(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000080u;
+  static void set_has_enableshortselling(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
   }
-  static void set_has_guaranteedstoploss(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000100u;
+  static void set_has_guaranteedstoploss(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
   }
-  static void set_has_swaprollover3days(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x08000000u;
+  static void set_has_swaprollover3days(HasBits* has_bits) {
+    (*has_bits)[0] |= 134217728u;
   }
-  static void set_has_swaplong(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  static void set_has_swaplong(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  static void set_has_swapshort(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_swapshort(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
   }
-  static void set_has_maxvolume(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000400u;
+  static void set_has_maxvolume(HasBits* has_bits) {
+    (*has_bits)[0] |= 1024u;
   }
-  static void set_has_minvolume(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000800u;
+  static void set_has_minvolume(HasBits* has_bits) {
+    (*has_bits)[0] |= 2048u;
   }
-  static void set_has_stepvolume(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00001000u;
+  static void set_has_stepvolume(HasBits* has_bits) {
+    (*has_bits)[0] |= 4096u;
   }
-  static void set_has_maxexposure(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00002000u;
+  static void set_has_maxexposure(HasBits* has_bits) {
+    (*has_bits)[0] |= 8192u;
   }
-  static void set_has_commission(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00004000u;
+  static void set_has_commission(HasBits* has_bits) {
+    (*has_bits)[0] |= 16384u;
   }
-  static void set_has_commissiontype(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x10000000u;
+  static void set_has_commissiontype(HasBits* has_bits) {
+    (*has_bits)[0] |= 268435456u;
   }
-  static void set_has_sldistance(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000200u;
+  static void set_has_sldistance(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
   }
-  static void set_has_tpdistance(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00008000u;
+  static void set_has_tpdistance(HasBits* has_bits) {
+    (*has_bits)[0] |= 32768u;
   }
-  static void set_has_gsldistance(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00010000u;
+  static void set_has_gsldistance(HasBits* has_bits) {
+    (*has_bits)[0] |= 65536u;
   }
-  static void set_has_gslcharge(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00020000u;
+  static void set_has_gslcharge(HasBits* has_bits) {
+    (*has_bits)[0] |= 131072u;
   }
-  static void set_has_distancesetin(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x20000000u;
+  static void set_has_distancesetin(HasBits* has_bits) {
+    (*has_bits)[0] |= 536870912u;
   }
-  static void set_has_mincommission(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00040000u;
+  static void set_has_mincommission(HasBits* has_bits) {
+    (*has_bits)[0] |= 262144u;
   }
-  static void set_has_mincommissiontype(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x40000000u;
+  static void set_has_mincommissiontype(HasBits* has_bits) {
+    (*has_bits)[0] |= 1073741824u;
   }
-  static void set_has_mincommissionasset(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_mincommissionasset(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_rollovercommission(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00080000u;
+  static void set_has_rollovercommission(HasBits* has_bits) {
+    (*has_bits)[0] |= 524288u;
   }
-  static void set_has_skiprolloverdays(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00100000u;
+  static void set_has_skiprolloverdays(HasBits* has_bits) {
+    (*has_bits)[0] |= 1048576u;
   }
-  static void set_has_scheduletimezone(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_scheduletimezone(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_tradingmode(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00200000u;
+  static void set_has_tradingmode(HasBits* has_bits) {
+    (*has_bits)[0] |= 2097152u;
   }
-  static void set_has_rollovercommission3days(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x04000000u;
+  static void set_has_rollovercommission3days(HasBits* has_bits) {
+    (*has_bits)[0] |= 67108864u;
   }
-  static void set_has_swapcalculationtype(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x02000000u;
+  static void set_has_swapcalculationtype(HasBits* has_bits) {
+    (*has_bits)[0] |= 33554432u;
   }
-  static void set_has_lotsize(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00400000u;
+  static void set_has_lotsize(HasBits* has_bits) {
+    (*has_bits)[0] |= 4194304u;
   }
-  static void set_has_precisetradingcommissionrate(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x00800000u;
+  static void set_has_precisetradingcommissionrate(HasBits* has_bits) {
+    (*has_bits)[0] |= 8388608u;
   }
-  static void set_has_precisemincommission(ProtoOASymbol* msg) {
-    msg->_has_bits_[0] |= 0x01000000u;
+  static void set_has_precisemincommission(HasBits* has_bits) {
+    (*has_bits)[0] |= 16777216u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x0000001c) ^ 0x0000001c) != 0;
   }
 };
 
-::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<std::string> ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_;
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOASymbol::kSymbolIdFieldNumber;
-const int ProtoOASymbol::kDigitsFieldNumber;
-const int ProtoOASymbol::kPipPositionFieldNumber;
-const int ProtoOASymbol::kEnableShortSellingFieldNumber;
-const int ProtoOASymbol::kGuaranteedStopLossFieldNumber;
-const int ProtoOASymbol::kSwapRollover3DaysFieldNumber;
-const int ProtoOASymbol::kSwapLongFieldNumber;
-const int ProtoOASymbol::kSwapShortFieldNumber;
-const int ProtoOASymbol::kMaxVolumeFieldNumber;
-const int ProtoOASymbol::kMinVolumeFieldNumber;
-const int ProtoOASymbol::kStepVolumeFieldNumber;
-const int ProtoOASymbol::kMaxExposureFieldNumber;
-const int ProtoOASymbol::kScheduleFieldNumber;
-const int ProtoOASymbol::kCommissionFieldNumber;
-const int ProtoOASymbol::kCommissionTypeFieldNumber;
-const int ProtoOASymbol::kSlDistanceFieldNumber;
-const int ProtoOASymbol::kTpDistanceFieldNumber;
-const int ProtoOASymbol::kGslDistanceFieldNumber;
-const int ProtoOASymbol::kGslChargeFieldNumber;
-const int ProtoOASymbol::kDistanceSetInFieldNumber;
-const int ProtoOASymbol::kMinCommissionFieldNumber;
-const int ProtoOASymbol::kMinCommissionTypeFieldNumber;
-const int ProtoOASymbol::kMinCommissionAssetFieldNumber;
-const int ProtoOASymbol::kRolloverCommissionFieldNumber;
-const int ProtoOASymbol::kSkipRolloverDaysFieldNumber;
-const int ProtoOASymbol::kScheduleTimeZoneFieldNumber;
-const int ProtoOASymbol::kTradingModeFieldNumber;
-const int ProtoOASymbol::kRolloverCommission3DaysFieldNumber;
-const int ProtoOASymbol::kSwapCalculationTypeFieldNumber;
-const int ProtoOASymbol::kLotSizeFieldNumber;
-const int ProtoOASymbol::kPreciseTradingCommissionRateFieldNumber;
-const int ProtoOASymbol::kPreciseMinCommissionFieldNumber;
-const int ProtoOASymbol::kHolidayFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOASymbol::ProtoOASymbol()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+const ::PROTOBUF_NAMESPACE_ID::internal::LazyString ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_{{{"USD", 3}}, {nullptr}};
+ProtoOASymbol::ProtoOASymbol(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  schedule_(arena),
+  holiday_(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOASymbol)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOASymbol)
 }
 ProtoOASymbol::ProtoOASymbol(const ProtoOASymbol& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       schedule_(from.schedule_),
       holiday_(from.holiday_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  mincommissionasset_.UnsafeSetDefault(&::ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_.get());
-  if (from.has_mincommissionasset()) {
-    mincommissionasset_.AssignWithDefault(&::ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_.get(), from.mincommissionasset_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  mincommissionasset_.UnsafeSetDefault(nullptr);
+  if (from._internal_has_mincommissionasset()) {
+    mincommissionasset_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::NonEmptyDefault{}, from._internal_mincommissionasset(), 
+      GetArena());
   }
   scheduletimezone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_scheduletimezone()) {
-    scheduletimezone_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.scheduletimezone_);
+  if (from._internal_has_scheduletimezone()) {
+    scheduletimezone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_scheduletimezone(), 
+      GetArena());
   }
   ::memcpy(&symbolid_, &from.symbolid_,
     static_cast<size_t>(reinterpret_cast<char*>(&mincommissiontype_) -
@@ -2600,12 +2420,12 @@ ProtoOASymbol::ProtoOASymbol(const ProtoOASymbol& from)
 }
 
 void ProtoOASymbol::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOASymbol_OpenApiModelMessages_2eproto.base);
-  mincommissionasset_.UnsafeSetDefault(&::ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_.get());
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOASymbol_OpenApiModelMessages_2eproto.base);
+  mincommissionasset_.UnsafeSetDefault(nullptr);
   scheduletimezone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&symbolid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&swapcalculationtype_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&symbolid_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&swapcalculationtype_) -
       reinterpret_cast<char*>(&symbolid_)) + sizeof(swapcalculationtype_));
   rollovercommission3days_ = 1;
   swaprollover3days_ = 1;
@@ -2617,13 +2437,21 @@ void ProtoOASymbol::SharedCtor() {
 ProtoOASymbol::~ProtoOASymbol() {
   // @@protoc_insertion_point(destructor:ProtoOASymbol)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOASymbol::SharedDtor() {
-  mincommissionasset_.DestroyNoArena(&::ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_.get());
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  mincommissionasset_.DestroyNoArena(nullptr);
   scheduletimezone_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void ProtoOASymbol::ArenaDtor(void* object) {
+  ProtoOASymbol* _this = reinterpret_cast< ProtoOASymbol* >(object);
+  (void)_this;
+}
+void ProtoOASymbol::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOASymbol::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -2644,10 +2472,10 @@ void ProtoOASymbol::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      mincommissionasset_.UnsafeMutablePointer()->assign(*&::ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_.get());
-    }
+      mincommissionasset_.ClearToDefault(::ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_, GetArena());
+       }
     if (cached_has_bits & 0x00000002u) {
-      scheduletimezone_.ClearNonDefaultToEmptyNoArena();
+      scheduletimezone_.ClearNonDefaultToEmpty();
     }
   }
   if (cached_has_bits & 0x000000fcu) {
@@ -2676,1011 +2504,348 @@ void ProtoOASymbol::Clear() {
     mincommissiontype_ = 1;
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOASymbol::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 symbolId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_symbolid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_symbolid(&has_bits);
+          symbolid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int32 digits = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
-        set_digits(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_digits(&has_bits);
+          digits_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int32 pipPosition = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_pipposition(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_pipposition(&has_bits);
+          pipposition_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool enableShortSelling = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_enableshortselling(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_enableshortselling(&has_bits);
+          enableshortselling_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool guaranteedStopLoss = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 40) goto handle_unusual;
-        set_guaranteedstoploss(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_guaranteedstoploss(&has_bits);
+          guaranteedstoploss_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOADayOfWeek swapRollover3Days = 6 [default = MONDAY];
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 48) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOADayOfWeek_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(6, val, mutable_unknown_fields());
-          break;
-        }
-        set_swaprollover3days(static_cast<::ProtoOADayOfWeek>(val));
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOADayOfWeek_IsValid(val))) {
+            _internal_set_swaprollover3days(static_cast<::ProtoOADayOfWeek>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(6, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional double swapLong = 7;
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 57) goto handle_unusual;
-        set_swaplong(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+          _Internal::set_has_swaplong(&has_bits);
+          swaplong_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional double swapShort = 8;
-      case 8: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 65) goto handle_unusual;
-        set_swapshort(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 65)) {
+          _Internal::set_has_swapshort(&has_bits);
+          swapshort_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional int64 maxVolume = 9;
-      case 9: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 72) goto handle_unusual;
-        set_maxvolume(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          _Internal::set_has_maxvolume(&has_bits);
+          maxvolume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 minVolume = 10;
-      case 10: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 80) goto handle_unusual;
-        set_minvolume(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+          _Internal::set_has_minvolume(&has_bits);
+          minvolume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 stepVolume = 11;
-      case 11: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 88) goto handle_unusual;
-        set_stepvolume(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
+          _Internal::set_has_stepvolume(&has_bits);
+          stepvolume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint64 maxExposure = 12;
-      case 12: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 96) goto handle_unusual;
-        set_maxexposure(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
+          _Internal::set_has_maxexposure(&has_bits);
+          maxexposure_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // repeated .ProtoOAInterval schedule = 13;
-      case 13: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 106) goto handle_unusual;
-        do {
-          ptr = ctx->ParseMessage(add_schedule(), ptr);
-          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-          if (ctx->Done(&ptr)) return ptr;
-        } while ((::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint64>(ptr) & 255) == 106 && (ptr += 1));
-        break;
-      }
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_schedule(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<106>(ptr));
+        } else goto handle_unusual;
+        continue;
       // optional int64 commission = 14 [deprecated = true];
-      case 14: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 112) goto handle_unusual;
-        set_commission(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
+          _Internal::set_has_commission(&has_bits);
+          commission_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOACommissionType commissionType = 15 [default = USD_PER_MILLION_USD];
-      case 15: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 120) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOACommissionType_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(15, val, mutable_unknown_fields());
-          break;
-        }
-        set_commissiontype(static_cast<::ProtoOACommissionType>(val));
-        break;
-      }
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 120)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOACommissionType_IsValid(val))) {
+            _internal_set_commissiontype(static_cast<::ProtoOACommissionType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(15, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional uint32 slDistance = 16;
-      case 16: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 128) goto handle_unusual;
-        set_sldistance(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 16:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 128)) {
+          _Internal::set_has_sldistance(&has_bits);
+          sldistance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint32 tpDistance = 17;
-      case 17: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 136) goto handle_unusual;
-        set_tpdistance(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 17:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 136)) {
+          _Internal::set_has_tpdistance(&has_bits);
+          tpdistance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint32 gslDistance = 18;
-      case 18: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 144) goto handle_unusual;
-        set_gsldistance(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 18:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 144)) {
+          _Internal::set_has_gsldistance(&has_bits);
+          gsldistance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 gslCharge = 19;
-      case 19: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 152) goto handle_unusual;
-        set_gslcharge(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 19:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 152)) {
+          _Internal::set_has_gslcharge(&has_bits);
+          gslcharge_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOASymbolDistanceType distanceSetIn = 20 [default = SYMBOL_DISTANCE_IN_POINTS];
-      case 20: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 160) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOASymbolDistanceType_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(20, val, mutable_unknown_fields());
-          break;
-        }
-        set_distancesetin(static_cast<::ProtoOASymbolDistanceType>(val));
-        break;
-      }
+      case 20:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 160)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOASymbolDistanceType_IsValid(val))) {
+            _internal_set_distancesetin(static_cast<::ProtoOASymbolDistanceType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(20, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional int64 minCommission = 21 [deprecated = true];
-      case 21: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 168) goto handle_unusual;
-        set_mincommission(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 21:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 168)) {
+          _Internal::set_has_mincommission(&has_bits);
+          mincommission_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOAMinCommissionType minCommissionType = 22 [default = CURRENCY];
-      case 22: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 176) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOAMinCommissionType_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(22, val, mutable_unknown_fields());
-          break;
-        }
-        set_mincommissiontype(static_cast<::ProtoOAMinCommissionType>(val));
-        break;
-      }
+      case 22:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 176)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOAMinCommissionType_IsValid(val))) {
+            _internal_set_mincommissiontype(static_cast<::ProtoOAMinCommissionType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(22, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional string minCommissionAsset = 23 [default = "USD"];
-      case 23: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 186) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_mincommissionasset(), ptr, ctx, "ProtoOASymbol.minCommissionAsset");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 23:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 186)) {
+          auto str = _internal_mutable_mincommissionasset();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOASymbol.minCommissionAsset");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 rolloverCommission = 24;
-      case 24: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 192) goto handle_unusual;
-        set_rollovercommission(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 24:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 192)) {
+          _Internal::set_has_rollovercommission(&has_bits);
+          rollovercommission_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int32 skipRolloverDays = 25;
-      case 25: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 200) goto handle_unusual;
-        set_skiprolloverdays(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 25:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 200)) {
+          _Internal::set_has_skiprolloverdays(&has_bits);
+          skiprolloverdays_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional string scheduleTimeZone = 26;
-      case 26: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 210) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_scheduletimezone(), ptr, ctx, "ProtoOASymbol.scheduleTimeZone");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 26:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 210)) {
+          auto str = _internal_mutable_scheduletimezone();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOASymbol.scheduleTimeZone");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOATradingMode tradingMode = 27 [default = ENABLED];
-      case 27: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 216) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOATradingMode_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(27, val, mutable_unknown_fields());
-          break;
-        }
-        set_tradingmode(static_cast<::ProtoOATradingMode>(val));
-        break;
-      }
+      case 27:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 216)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOATradingMode_IsValid(val))) {
+            _internal_set_tradingmode(static_cast<::ProtoOATradingMode>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(27, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOADayOfWeek rolloverCommission3Days = 28 [default = MONDAY];
-      case 28: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 224) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOADayOfWeek_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(28, val, mutable_unknown_fields());
-          break;
-        }
-        set_rollovercommission3days(static_cast<::ProtoOADayOfWeek>(val));
-        break;
-      }
+      case 28:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 224)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOADayOfWeek_IsValid(val))) {
+            _internal_set_rollovercommission3days(static_cast<::ProtoOADayOfWeek>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(28, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOASwapCalculationType swapCalculationType = 29 [default = PIPS];
-      case 29: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 232) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOASwapCalculationType_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(29, val, mutable_unknown_fields());
-          break;
-        }
-        set_swapcalculationtype(static_cast<::ProtoOASwapCalculationType>(val));
-        break;
-      }
+      case 29:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 232)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOASwapCalculationType_IsValid(val))) {
+            _internal_set_swapcalculationtype(static_cast<::ProtoOASwapCalculationType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(29, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional int64 lotSize = 30;
-      case 30: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 240) goto handle_unusual;
-        set_lotsize(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 30:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 240)) {
+          _Internal::set_has_lotsize(&has_bits);
+          lotsize_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 preciseTradingCommissionRate = 31;
-      case 31: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 248) goto handle_unusual;
-        set_precisetradingcommissionrate(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 31:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 248)) {
+          _Internal::set_has_precisetradingcommissionrate(&has_bits);
+          precisetradingcommissionrate_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 preciseMinCommission = 32;
-      case 32: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 0) goto handle_unusual;
-        set_precisemincommission(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 32:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 0)) {
+          _Internal::set_has_precisemincommission(&has_bits);
+          precisemincommission_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // repeated .ProtoOAHoliday holiday = 33;
-      case 33: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 10) goto handle_unusual;
-        do {
-          ptr = ctx->ParseMessage(add_holiday(), ptr);
-          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-          if (ctx->Done(&ptr)) return ptr;
-        } while ((::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint64>(ptr) & 65535) == 650 && (ptr += 2));
-        break;
-      }
+      case 33:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 2;
+          do {
+            ptr += 2;
+            ptr = ctx->ParseMessage(_internal_add_holiday(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<266>(ptr));
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOASymbol::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOASymbol)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 symbolId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_symbolid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &symbolid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int32 digits = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_digits(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &digits_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int32 pipPosition = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_pipposition(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &pipposition_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool enableShortSelling = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_enableshortselling(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &enableshortselling_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool guaranteedStopLoss = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-          HasBitSetters::set_has_guaranteedstoploss(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &guaranteedstoploss_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOADayOfWeek swapRollover3Days = 6 [default = MONDAY];
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOADayOfWeek_IsValid(value)) {
-            set_swaprollover3days(static_cast< ::ProtoOADayOfWeek >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                6, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double swapLong = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (57 & 0xFF)) {
-          HasBitSetters::set_has_swaplong(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &swaplong_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double swapShort = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (65 & 0xFF)) {
-          HasBitSetters::set_has_swapshort(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &swapshort_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 maxVolume = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
-          HasBitSetters::set_has_maxvolume(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &maxvolume_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 minVolume = 10;
-      case 10: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (80 & 0xFF)) {
-          HasBitSetters::set_has_minvolume(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &minvolume_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 stepVolume = 11;
-      case 11: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (88 & 0xFF)) {
-          HasBitSetters::set_has_stepvolume(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &stepvolume_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint64 maxExposure = 12;
-      case 12: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (96 & 0xFF)) {
-          HasBitSetters::set_has_maxexposure(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &maxexposure_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .ProtoOAInterval schedule = 13;
-      case 13: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (106 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_schedule()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 commission = 14 [deprecated = true];
-      case 14: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (112 & 0xFF)) {
-          HasBitSetters::set_has_commission(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &commission_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOACommissionType commissionType = 15 [default = USD_PER_MILLION_USD];
-      case 15: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (120 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOACommissionType_IsValid(value)) {
-            set_commissiontype(static_cast< ::ProtoOACommissionType >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                15, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 slDistance = 16;
-      case 16: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (128 & 0xFF)) {
-          HasBitSetters::set_has_sldistance(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sldistance_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 tpDistance = 17;
-      case 17: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (136 & 0xFF)) {
-          HasBitSetters::set_has_tpdistance(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &tpdistance_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 gslDistance = 18;
-      case 18: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (144 & 0xFF)) {
-          HasBitSetters::set_has_gsldistance(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &gsldistance_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 gslCharge = 19;
-      case 19: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (152 & 0xFF)) {
-          HasBitSetters::set_has_gslcharge(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &gslcharge_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOASymbolDistanceType distanceSetIn = 20 [default = SYMBOL_DISTANCE_IN_POINTS];
-      case 20: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (160 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOASymbolDistanceType_IsValid(value)) {
-            set_distancesetin(static_cast< ::ProtoOASymbolDistanceType >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                20, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 minCommission = 21 [deprecated = true];
-      case 21: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (168 & 0xFF)) {
-          HasBitSetters::set_has_mincommission(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &mincommission_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOAMinCommissionType minCommissionType = 22 [default = CURRENCY];
-      case 22: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (176 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOAMinCommissionType_IsValid(value)) {
-            set_mincommissiontype(static_cast< ::ProtoOAMinCommissionType >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                22, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string minCommissionAsset = 23 [default = "USD"];
-      case 23: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (186 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_mincommissionasset()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->mincommissionasset().data(), static_cast<int>(this->mincommissionasset().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOASymbol.minCommissionAsset");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 rolloverCommission = 24;
-      case 24: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (192 & 0xFF)) {
-          HasBitSetters::set_has_rollovercommission(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &rollovercommission_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int32 skipRolloverDays = 25;
-      case 25: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (200 & 0xFF)) {
-          HasBitSetters::set_has_skiprolloverdays(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &skiprolloverdays_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string scheduleTimeZone = 26;
-      case 26: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (210 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_scheduletimezone()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->scheduletimezone().data(), static_cast<int>(this->scheduletimezone().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOASymbol.scheduleTimeZone");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOATradingMode tradingMode = 27 [default = ENABLED];
-      case 27: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (216 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOATradingMode_IsValid(value)) {
-            set_tradingmode(static_cast< ::ProtoOATradingMode >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                27, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOADayOfWeek rolloverCommission3Days = 28 [default = MONDAY];
-      case 28: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (224 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOADayOfWeek_IsValid(value)) {
-            set_rollovercommission3days(static_cast< ::ProtoOADayOfWeek >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                28, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOASwapCalculationType swapCalculationType = 29 [default = PIPS];
-      case 29: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (232 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOASwapCalculationType_IsValid(value)) {
-            set_swapcalculationtype(static_cast< ::ProtoOASwapCalculationType >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                29, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 lotSize = 30;
-      case 30: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (240 & 0xFF)) {
-          HasBitSetters::set_has_lotsize(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &lotsize_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 preciseTradingCommissionRate = 31;
-      case 31: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (248 & 0xFF)) {
-          HasBitSetters::set_has_precisetradingcommissionrate(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &precisetradingcommissionrate_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 preciseMinCommission = 32;
-      case 32: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (256 & 0xFF)) {
-          HasBitSetters::set_has_precisemincommission(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &precisemincommission_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .ProtoOAHoliday holiday = 33;
-      case 33: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (266 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_holiday()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOASymbol)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOASymbol)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOASymbol::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOASymbol)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 symbolId = 1;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->symbolid(), output);
-  }
-
-  // required int32 digits = 2;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(2, this->digits(), output);
-  }
-
-  // required int32 pipPosition = 3;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(3, this->pipposition(), output);
-  }
-
-  // optional bool enableShortSelling = 4;
-  if (cached_has_bits & 0x00000080u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(4, this->enableshortselling(), output);
-  }
-
-  // optional bool guaranteedStopLoss = 5;
-  if (cached_has_bits & 0x00000100u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(5, this->guaranteedstoploss(), output);
-  }
-
-  // optional .ProtoOADayOfWeek swapRollover3Days = 6 [default = MONDAY];
-  if (cached_has_bits & 0x08000000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      6, this->swaprollover3days(), output);
-  }
-
-  // optional double swapLong = 7;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(7, this->swaplong(), output);
-  }
-
-  // optional double swapShort = 8;
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(8, this->swapshort(), output);
-  }
-
-  // optional int64 maxVolume = 9;
-  if (cached_has_bits & 0x00000400u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(9, this->maxvolume(), output);
-  }
-
-  // optional int64 minVolume = 10;
-  if (cached_has_bits & 0x00000800u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(10, this->minvolume(), output);
-  }
-
-  // optional int64 stepVolume = 11;
-  if (cached_has_bits & 0x00001000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(11, this->stepvolume(), output);
-  }
-
-  // optional uint64 maxExposure = 12;
-  if (cached_has_bits & 0x00002000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(12, this->maxexposure(), output);
-  }
-
-  // repeated .ProtoOAInterval schedule = 13;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->schedule_size()); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      13,
-      this->schedule(static_cast<int>(i)),
-      output);
-  }
-
-  // optional int64 commission = 14 [deprecated = true];
-  if (cached_has_bits & 0x00004000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(14, this->commission(), output);
-  }
-
-  // optional .ProtoOACommissionType commissionType = 15 [default = USD_PER_MILLION_USD];
-  if (cached_has_bits & 0x10000000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      15, this->commissiontype(), output);
-  }
-
-  // optional uint32 slDistance = 16;
-  if (cached_has_bits & 0x00000200u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(16, this->sldistance(), output);
-  }
-
-  // optional uint32 tpDistance = 17;
-  if (cached_has_bits & 0x00008000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(17, this->tpdistance(), output);
-  }
-
-  // optional uint32 gslDistance = 18;
-  if (cached_has_bits & 0x00010000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(18, this->gsldistance(), output);
-  }
-
-  // optional int64 gslCharge = 19;
-  if (cached_has_bits & 0x00020000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(19, this->gslcharge(), output);
-  }
-
-  // optional .ProtoOASymbolDistanceType distanceSetIn = 20 [default = SYMBOL_DISTANCE_IN_POINTS];
-  if (cached_has_bits & 0x20000000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      20, this->distancesetin(), output);
-  }
-
-  // optional int64 minCommission = 21 [deprecated = true];
-  if (cached_has_bits & 0x00040000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(21, this->mincommission(), output);
-  }
-
-  // optional .ProtoOAMinCommissionType minCommissionType = 22 [default = CURRENCY];
-  if (cached_has_bits & 0x40000000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      22, this->mincommissiontype(), output);
-  }
-
-  // optional string minCommissionAsset = 23 [default = "USD"];
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->mincommissionasset().data(), static_cast<int>(this->mincommissionasset().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOASymbol.minCommissionAsset");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      23, this->mincommissionasset(), output);
-  }
-
-  // optional int64 rolloverCommission = 24;
-  if (cached_has_bits & 0x00080000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(24, this->rollovercommission(), output);
-  }
-
-  // optional int32 skipRolloverDays = 25;
-  if (cached_has_bits & 0x00100000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(25, this->skiprolloverdays(), output);
-  }
-
-  // optional string scheduleTimeZone = 26;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->scheduletimezone().data(), static_cast<int>(this->scheduletimezone().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOASymbol.scheduleTimeZone");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      26, this->scheduletimezone(), output);
-  }
-
-  // optional .ProtoOATradingMode tradingMode = 27 [default = ENABLED];
-  if (cached_has_bits & 0x00200000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      27, this->tradingmode(), output);
-  }
-
-  // optional .ProtoOADayOfWeek rolloverCommission3Days = 28 [default = MONDAY];
-  if (cached_has_bits & 0x04000000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      28, this->rollovercommission3days(), output);
-  }
-
-  // optional .ProtoOASwapCalculationType swapCalculationType = 29 [default = PIPS];
-  if (cached_has_bits & 0x02000000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      29, this->swapcalculationtype(), output);
-  }
-
-  // optional int64 lotSize = 30;
-  if (cached_has_bits & 0x00400000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(30, this->lotsize(), output);
-  }
-
-  // optional int64 preciseTradingCommissionRate = 31;
-  if (cached_has_bits & 0x00800000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(31, this->precisetradingcommissionrate(), output);
-  }
-
-  // optional int64 preciseMinCommission = 32;
-  if (cached_has_bits & 0x01000000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(32, this->precisemincommission(), output);
-  }
-
-  // repeated .ProtoOAHoliday holiday = 33;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->holiday_size()); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      33,
-      this->holiday(static_cast<int>(i)),
-      output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOASymbol)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOASymbol::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOASymbol::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOASymbol)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3688,197 +2853,224 @@ void ProtoOASymbol::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 symbolId = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->symbolid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_symbolid(), target);
   }
 
   // required int32 digits = 2;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->digits(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_digits(), target);
   }
 
   // required int32 pipPosition = 3;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->pipposition(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_pipposition(), target);
   }
 
   // optional bool enableShortSelling = 4;
   if (cached_has_bits & 0x00000080u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->enableshortselling(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_enableshortselling(), target);
   }
 
   // optional bool guaranteedStopLoss = 5;
   if (cached_has_bits & 0x00000100u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->guaranteedstoploss(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_guaranteedstoploss(), target);
   }
 
   // optional .ProtoOADayOfWeek swapRollover3Days = 6 [default = MONDAY];
   if (cached_has_bits & 0x08000000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      6, this->swaprollover3days(), target);
+      6, this->_internal_swaprollover3days(), target);
   }
 
   // optional double swapLong = 7;
   if (cached_has_bits & 0x00000020u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->swaplong(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_swaplong(), target);
   }
 
   // optional double swapShort = 8;
   if (cached_has_bits & 0x00000040u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(8, this->swapshort(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(8, this->_internal_swapshort(), target);
   }
 
   // optional int64 maxVolume = 9;
   if (cached_has_bits & 0x00000400u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->maxvolume(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->_internal_maxvolume(), target);
   }
 
   // optional int64 minVolume = 10;
   if (cached_has_bits & 0x00000800u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(10, this->minvolume(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(10, this->_internal_minvolume(), target);
   }
 
   // optional int64 stepVolume = 11;
   if (cached_has_bits & 0x00001000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(11, this->stepvolume(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(11, this->_internal_stepvolume(), target);
   }
 
   // optional uint64 maxExposure = 12;
   if (cached_has_bits & 0x00002000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(12, this->maxexposure(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(12, this->_internal_maxexposure(), target);
   }
 
   // repeated .ProtoOAInterval schedule = 13;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->schedule_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_schedule_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        13, this->schedule(static_cast<int>(i)), target);
+      InternalWriteMessage(13, this->_internal_schedule(i), target, stream);
   }
 
   // optional int64 commission = 14 [deprecated = true];
   if (cached_has_bits & 0x00004000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(14, this->commission(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(14, this->_internal_commission(), target);
   }
 
   // optional .ProtoOACommissionType commissionType = 15 [default = USD_PER_MILLION_USD];
   if (cached_has_bits & 0x10000000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      15, this->commissiontype(), target);
+      15, this->_internal_commissiontype(), target);
   }
 
   // optional uint32 slDistance = 16;
   if (cached_has_bits & 0x00000200u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(16, this->sldistance(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(16, this->_internal_sldistance(), target);
   }
 
   // optional uint32 tpDistance = 17;
   if (cached_has_bits & 0x00008000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(17, this->tpdistance(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(17, this->_internal_tpdistance(), target);
   }
 
   // optional uint32 gslDistance = 18;
   if (cached_has_bits & 0x00010000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(18, this->gsldistance(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(18, this->_internal_gsldistance(), target);
   }
 
   // optional int64 gslCharge = 19;
   if (cached_has_bits & 0x00020000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(19, this->gslcharge(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(19, this->_internal_gslcharge(), target);
   }
 
   // optional .ProtoOASymbolDistanceType distanceSetIn = 20 [default = SYMBOL_DISTANCE_IN_POINTS];
   if (cached_has_bits & 0x20000000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      20, this->distancesetin(), target);
+      20, this->_internal_distancesetin(), target);
   }
 
   // optional int64 minCommission = 21 [deprecated = true];
   if (cached_has_bits & 0x00040000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(21, this->mincommission(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(21, this->_internal_mincommission(), target);
   }
 
   // optional .ProtoOAMinCommissionType minCommissionType = 22 [default = CURRENCY];
   if (cached_has_bits & 0x40000000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      22, this->mincommissiontype(), target);
+      22, this->_internal_mincommissiontype(), target);
   }
 
   // optional string minCommissionAsset = 23 [default = "USD"];
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->mincommissionasset().data(), static_cast<int>(this->mincommissionasset().length()),
+      this->_internal_mincommissionasset().data(), static_cast<int>(this->_internal_mincommissionasset().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOASymbol.minCommissionAsset");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        23, this->mincommissionasset(), target);
+    target = stream->WriteStringMaybeAliased(
+        23, this->_internal_mincommissionasset(), target);
   }
 
   // optional int64 rolloverCommission = 24;
   if (cached_has_bits & 0x00080000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(24, this->rollovercommission(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(24, this->_internal_rollovercommission(), target);
   }
 
   // optional int32 skipRolloverDays = 25;
   if (cached_has_bits & 0x00100000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(25, this->skiprolloverdays(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(25, this->_internal_skiprolloverdays(), target);
   }
 
   // optional string scheduleTimeZone = 26;
   if (cached_has_bits & 0x00000002u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->scheduletimezone().data(), static_cast<int>(this->scheduletimezone().length()),
+      this->_internal_scheduletimezone().data(), static_cast<int>(this->_internal_scheduletimezone().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOASymbol.scheduleTimeZone");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        26, this->scheduletimezone(), target);
+    target = stream->WriteStringMaybeAliased(
+        26, this->_internal_scheduletimezone(), target);
   }
 
   // optional .ProtoOATradingMode tradingMode = 27 [default = ENABLED];
   if (cached_has_bits & 0x00200000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      27, this->tradingmode(), target);
+      27, this->_internal_tradingmode(), target);
   }
 
   // optional .ProtoOADayOfWeek rolloverCommission3Days = 28 [default = MONDAY];
   if (cached_has_bits & 0x04000000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      28, this->rollovercommission3days(), target);
+      28, this->_internal_rollovercommission3days(), target);
   }
 
   // optional .ProtoOASwapCalculationType swapCalculationType = 29 [default = PIPS];
   if (cached_has_bits & 0x02000000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      29, this->swapcalculationtype(), target);
+      29, this->_internal_swapcalculationtype(), target);
   }
 
   // optional int64 lotSize = 30;
   if (cached_has_bits & 0x00400000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(30, this->lotsize(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(30, this->_internal_lotsize(), target);
   }
 
   // optional int64 preciseTradingCommissionRate = 31;
   if (cached_has_bits & 0x00800000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(31, this->precisetradingcommissionrate(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(31, this->_internal_precisetradingcommissionrate(), target);
   }
 
   // optional int64 preciseMinCommission = 32;
   if (cached_has_bits & 0x01000000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(32, this->precisemincommission(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(32, this->_internal_precisemincommission(), target);
   }
 
   // repeated .ProtoOAHoliday holiday = 33;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->holiday_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_holiday_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        33, this->holiday(static_cast<int>(i)), target);
+      InternalWriteMessage(33, this->_internal_holiday(i), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOASymbol)
   return target;
@@ -3888,25 +3080,25 @@ size_t ProtoOASymbol::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOASymbol)
   size_t total_size = 0;
 
-  if (has_symbolid()) {
+  if (_internal_has_symbolid()) {
     // required int64 symbolId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->symbolid());
+        this->_internal_symbolid());
   }
 
-  if (has_digits()) {
+  if (_internal_has_digits()) {
     // required int32 digits = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->digits());
+        this->_internal_digits());
   }
 
-  if (has_pipposition()) {
+  if (_internal_has_pipposition()) {
     // required int32 pipPosition = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->pipposition());
+        this->_internal_pipposition());
   }
 
   return total_size;
@@ -3915,26 +3107,21 @@ size_t ProtoOASymbol::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOASymbol)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x0000001c) ^ 0x0000001c) == 0) {  // All required fields are present.
     // required int64 symbolId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->symbolid());
+        this->_internal_symbolid());
 
     // required int32 digits = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->digits());
+        this->_internal_digits());
 
     // required int32 pipPosition = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->pipposition());
+        this->_internal_pipposition());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -3944,25 +3131,17 @@ size_t ProtoOASymbol::ByteSizeLong() const {
   (void) cached_has_bits;
 
   // repeated .ProtoOAInterval schedule = 13;
-  {
-    unsigned int count = static_cast<unsigned int>(this->schedule_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->schedule(static_cast<int>(i)));
-    }
+  total_size += 1UL * this->_internal_schedule_size();
+  for (const auto& msg : this->schedule_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .ProtoOAHoliday holiday = 33;
-  {
-    unsigned int count = static_cast<unsigned int>(this->holiday_size());
-    total_size += 2UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->holiday(static_cast<int>(i)));
-    }
+  total_size += 2UL * this->_internal_holiday_size();
+  for (const auto& msg : this->holiday_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   cached_has_bits = _has_bits_[0];
@@ -3971,14 +3150,14 @@ size_t ProtoOASymbol::ByteSizeLong() const {
     if (cached_has_bits & 0x00000001u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-          this->mincommissionasset());
+          this->_internal_mincommissionasset());
     }
 
     // optional string scheduleTimeZone = 26;
     if (cached_has_bits & 0x00000002u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-          this->scheduletimezone());
+          this->_internal_scheduletimezone());
     }
 
   }
@@ -4009,49 +3188,49 @@ size_t ProtoOASymbol::ByteSizeLong() const {
     if (cached_has_bits & 0x00000200u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->sldistance());
+          this->_internal_sldistance());
     }
 
     // optional int64 maxVolume = 9;
     if (cached_has_bits & 0x00000400u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->maxvolume());
+          this->_internal_maxvolume());
     }
 
     // optional int64 minVolume = 10;
     if (cached_has_bits & 0x00000800u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->minvolume());
+          this->_internal_minvolume());
     }
 
     // optional int64 stepVolume = 11;
     if (cached_has_bits & 0x00001000u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->stepvolume());
+          this->_internal_stepvolume());
     }
 
     // optional uint64 maxExposure = 12;
     if (cached_has_bits & 0x00002000u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-          this->maxexposure());
+          this->_internal_maxexposure());
     }
 
     // optional int64 commission = 14 [deprecated = true];
     if (cached_has_bits & 0x00004000u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->commission());
+          this->_internal_commission());
     }
 
     // optional uint32 tpDistance = 17;
     if (cached_has_bits & 0x00008000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->tpdistance());
+          this->_internal_tpdistance());
     }
 
   }
@@ -4060,55 +3239,55 @@ size_t ProtoOASymbol::ByteSizeLong() const {
     if (cached_has_bits & 0x00010000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->gsldistance());
+          this->_internal_gsldistance());
     }
 
     // optional int64 gslCharge = 19;
     if (cached_has_bits & 0x00020000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->gslcharge());
+          this->_internal_gslcharge());
     }
 
     // optional int64 minCommission = 21 [deprecated = true];
     if (cached_has_bits & 0x00040000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->mincommission());
+          this->_internal_mincommission());
     }
 
     // optional int64 rolloverCommission = 24;
     if (cached_has_bits & 0x00080000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->rollovercommission());
+          this->_internal_rollovercommission());
     }
 
     // optional int32 skipRolloverDays = 25;
     if (cached_has_bits & 0x00100000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->skiprolloverdays());
+          this->_internal_skiprolloverdays());
     }
 
     // optional .ProtoOATradingMode tradingMode = 27 [default = ENABLED];
     if (cached_has_bits & 0x00200000u) {
       total_size += 2 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->tradingmode());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_tradingmode());
     }
 
     // optional int64 lotSize = 30;
     if (cached_has_bits & 0x00400000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->lotsize());
+          this->_internal_lotsize());
     }
 
     // optional int64 preciseTradingCommissionRate = 31;
     if (cached_has_bits & 0x00800000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->precisetradingcommissionrate());
+          this->_internal_precisetradingcommissionrate());
     }
 
   }
@@ -4117,45 +3296,49 @@ size_t ProtoOASymbol::ByteSizeLong() const {
     if (cached_has_bits & 0x01000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->precisemincommission());
+          this->_internal_precisemincommission());
     }
 
     // optional .ProtoOASwapCalculationType swapCalculationType = 29 [default = PIPS];
     if (cached_has_bits & 0x02000000u) {
       total_size += 2 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->swapcalculationtype());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_swapcalculationtype());
     }
 
     // optional .ProtoOADayOfWeek rolloverCommission3Days = 28 [default = MONDAY];
     if (cached_has_bits & 0x04000000u) {
       total_size += 2 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->rollovercommission3days());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_rollovercommission3days());
     }
 
     // optional .ProtoOADayOfWeek swapRollover3Days = 6 [default = MONDAY];
     if (cached_has_bits & 0x08000000u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->swaprollover3days());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_swaprollover3days());
     }
 
     // optional .ProtoOACommissionType commissionType = 15 [default = USD_PER_MILLION_USD];
     if (cached_has_bits & 0x10000000u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->commissiontype());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_commissiontype());
     }
 
     // optional .ProtoOASymbolDistanceType distanceSetIn = 20 [default = SYMBOL_DISTANCE_IN_POINTS];
     if (cached_has_bits & 0x20000000u) {
       total_size += 2 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->distancesetin());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_distancesetin());
     }
 
     // optional .ProtoOAMinCommissionType minCommissionType = 22 [default = CURRENCY];
     if (cached_has_bits & 0x40000000u) {
       total_size += 2 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->mincommissiontype());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_mincommissiontype());
     }
 
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -4180,7 +3363,7 @@ void ProtoOASymbol::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ProtoOASymbol::MergeFrom(const ProtoOASymbol& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOASymbol)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4189,12 +3372,10 @@ void ProtoOASymbol::MergeFrom(const ProtoOASymbol& from) {
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      mincommissionasset_.AssignWithDefault(&::ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_.get(), from.mincommissionasset_);
+      _internal_set_mincommissionasset(from._internal_mincommissionasset());
     }
     if (cached_has_bits & 0x00000002u) {
-      _has_bits_[0] |= 0x00000002u;
-      scheduletimezone_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.scheduletimezone_);
+      _internal_set_scheduletimezone(from._internal_scheduletimezone());
     }
     if (cached_has_bits & 0x00000004u) {
       symbolid_ = from.symbolid_;
@@ -4311,50 +3492,26 @@ void ProtoOASymbol::CopyFrom(const ProtoOASymbol& from) {
 }
 
 bool ProtoOASymbol::IsInitialized() const {
-  if ((_has_bits_[0] & 0x0000001c) != 0x0000001c) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->schedule())) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->holiday())) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(schedule_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(holiday_)) return false;
   return true;
 }
 
-void ProtoOASymbol::Swap(ProtoOASymbol* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOASymbol::InternalSwap(ProtoOASymbol* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  CastToBase(&schedule_)->InternalSwap(CastToBase(&other->schedule_));
-  CastToBase(&holiday_)->InternalSwap(CastToBase(&other->holiday_));
-  mincommissionasset_.Swap(&other->mincommissionasset_, &::ProtoOASymbol::_i_give_permission_to_break_this_code_default_mincommissionasset_.get(),
-    GetArenaNoVirtual());
-  scheduletimezone_.Swap(&other->scheduletimezone_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(symbolid_, other->symbolid_);
-  swap(digits_, other->digits_);
-  swap(pipposition_, other->pipposition_);
-  swap(swaplong_, other->swaplong_);
-  swap(swapshort_, other->swapshort_);
-  swap(enableshortselling_, other->enableshortselling_);
-  swap(guaranteedstoploss_, other->guaranteedstoploss_);
-  swap(sldistance_, other->sldistance_);
-  swap(maxvolume_, other->maxvolume_);
-  swap(minvolume_, other->minvolume_);
-  swap(stepvolume_, other->stepvolume_);
-  swap(maxexposure_, other->maxexposure_);
-  swap(commission_, other->commission_);
-  swap(tpdistance_, other->tpdistance_);
-  swap(gsldistance_, other->gsldistance_);
-  swap(gslcharge_, other->gslcharge_);
-  swap(mincommission_, other->mincommission_);
-  swap(rollovercommission_, other->rollovercommission_);
-  swap(skiprolloverdays_, other->skiprolloverdays_);
-  swap(tradingmode_, other->tradingmode_);
-  swap(lotsize_, other->lotsize_);
-  swap(precisetradingcommissionrate_, other->precisetradingcommissionrate_);
-  swap(precisemincommission_, other->precisemincommission_);
-  swap(swapcalculationtype_, other->swapcalculationtype_);
+  schedule_.InternalSwap(&other->schedule_);
+  holiday_.InternalSwap(&other->holiday_);
+  mincommissionasset_.Swap(&other->mincommissionasset_, nullptr, GetArena());
+  scheduletimezone_.Swap(&other->scheduletimezone_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOASymbol, swapcalculationtype_)
+      + sizeof(ProtoOASymbol::swapcalculationtype_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOASymbol, symbolid_)>(
+          reinterpret_cast<char*>(&symbolid_),
+          reinterpret_cast<char*>(&other->symbolid_));
   swap(rollovercommission3days_, other->rollovercommission3days_);
   swap(swaprollover3days_, other->swaprollover3days_);
   swap(commissiontype_, other->commissiontype_);
@@ -4363,67 +3520,60 @@ void ProtoOASymbol::InternalSwap(ProtoOASymbol* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOASymbol::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOALightSymbol::InitAsDefaultInstance() {
-}
-class ProtoOALightSymbol::HasBitSetters {
+class ProtoOALightSymbol::_Internal {
  public:
-  static void set_has_symbolid(ProtoOALightSymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  using HasBits = decltype(std::declval<ProtoOALightSymbol>()._has_bits_);
+  static void set_has_symbolid(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_symbolname(ProtoOALightSymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_symbolname(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_enabled(ProtoOALightSymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_enabled(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
   }
-  static void set_has_baseassetid(ProtoOALightSymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_baseassetid(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_quoteassetid(ProtoOALightSymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_quoteassetid(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_symbolcategoryid(ProtoOALightSymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  static void set_has_symbolcategoryid(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  static void set_has_description(ProtoOALightSymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_description(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000004) ^ 0x00000004) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOALightSymbol::kSymbolIdFieldNumber;
-const int ProtoOALightSymbol::kSymbolNameFieldNumber;
-const int ProtoOALightSymbol::kEnabledFieldNumber;
-const int ProtoOALightSymbol::kBaseAssetIdFieldNumber;
-const int ProtoOALightSymbol::kQuoteAssetIdFieldNumber;
-const int ProtoOALightSymbol::kSymbolCategoryIdFieldNumber;
-const int ProtoOALightSymbol::kDescriptionFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOALightSymbol::ProtoOALightSymbol()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOALightSymbol::ProtoOALightSymbol(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOALightSymbol)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOALightSymbol)
 }
 ProtoOALightSymbol::ProtoOALightSymbol(const ProtoOALightSymbol& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   symbolname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_symbolname()) {
-    symbolname_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.symbolname_);
+  if (from._internal_has_symbolname()) {
+    symbolname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_symbolname(), 
+      GetArena());
   }
   description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_description()) {
-    description_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.description_);
+  if (from._internal_has_description()) {
+    description_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_description(), 
+      GetArena());
   }
   ::memcpy(&symbolid_, &from.symbolid_,
     static_cast<size_t>(reinterpret_cast<char*>(&enabled_) -
@@ -4432,25 +3582,33 @@ ProtoOALightSymbol::ProtoOALightSymbol(const ProtoOALightSymbol& from)
 }
 
 void ProtoOALightSymbol::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOALightSymbol_OpenApiModelMessages_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOALightSymbol_OpenApiModelMessages_2eproto.base);
   symbolname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&symbolid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&enabled_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&symbolid_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&enabled_) -
       reinterpret_cast<char*>(&symbolid_)) + sizeof(enabled_));
 }
 
 ProtoOALightSymbol::~ProtoOALightSymbol() {
   // @@protoc_insertion_point(destructor:ProtoOALightSymbol)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOALightSymbol::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   symbolname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   description_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void ProtoOALightSymbol::ArenaDtor(void* object) {
+  ProtoOALightSymbol* _this = reinterpret_cast< ProtoOALightSymbol* >(object);
+  (void)_this;
+}
+void ProtoOALightSymbol::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOALightSymbol::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -4469,10 +3627,10 @@ void ProtoOALightSymbol::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      symbolname_.ClearNonDefaultToEmptyNoArena();
+      symbolname_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      description_.ClearNonDefaultToEmptyNoArena();
+      description_.ClearNonDefaultToEmpty();
     }
   }
   if (cached_has_bits & 0x0000007cu) {
@@ -4481,267 +3639,104 @@ void ProtoOALightSymbol::Clear() {
         reinterpret_cast<char*>(&symbolid_)) + sizeof(enabled_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOALightSymbol::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 symbolId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_symbolid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_symbolid(&has_bits);
+          symbolid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional string symbolName = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_symbolname(), ptr, ctx, "ProtoOALightSymbol.symbolName");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_symbolname();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOALightSymbol.symbolName");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool enabled = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_enabled(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_enabled(&has_bits);
+          enabled_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 baseAssetId = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_baseassetid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_baseassetid(&has_bits);
+          baseassetid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 quoteAssetId = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 40) goto handle_unusual;
-        set_quoteassetid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_quoteassetid(&has_bits);
+          quoteassetid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 symbolCategoryId = 6;
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 48) goto handle_unusual;
-        set_symbolcategoryid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          _Internal::set_has_symbolcategoryid(&has_bits);
+          symbolcategoryid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional string description = 7;
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 58) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_description(), ptr, ctx, "ProtoOALightSymbol.description");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          auto str = _internal_mutable_description();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOALightSymbol.description");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOALightSymbol::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOALightSymbol)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 symbolId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_symbolid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &symbolid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string symbolName = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_symbolname()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->symbolname().data(), static_cast<int>(this->symbolname().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOALightSymbol.symbolName");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool enabled = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_enabled(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &enabled_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 baseAssetId = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_baseassetid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &baseassetid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 quoteAssetId = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-          HasBitSetters::set_has_quoteassetid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &quoteassetid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 symbolCategoryId = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-          HasBitSetters::set_has_symbolcategoryid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &symbolcategoryid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string description = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_description()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->description().data(), static_cast<int>(this->description().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOALightSymbol.description");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOALightSymbol)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOALightSymbol)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOALightSymbol::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOALightSymbol)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 symbolId = 1;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->symbolid(), output);
-  }
-
-  // optional string symbolName = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->symbolname().data(), static_cast<int>(this->symbolname().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOALightSymbol.symbolName");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->symbolname(), output);
-  }
-
-  // optional bool enabled = 3;
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(3, this->enabled(), output);
-  }
-
-  // optional int64 baseAssetId = 4;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->baseassetid(), output);
-  }
-
-  // optional int64 quoteAssetId = 5;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->quoteassetid(), output);
-  }
-
-  // optional int64 symbolCategoryId = 6;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(6, this->symbolcategoryid(), output);
-  }
-
-  // optional string description = 7;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->description().data(), static_cast<int>(this->description().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOALightSymbol.description");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      7, this->description(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOALightSymbol)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOALightSymbol::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOALightSymbol::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOALightSymbol)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4749,54 +3744,57 @@ void ProtoOALightSymbol::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 symbolId = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->symbolid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_symbolid(), target);
   }
 
   // optional string symbolName = 2;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->symbolname().data(), static_cast<int>(this->symbolname().length()),
+      this->_internal_symbolname().data(), static_cast<int>(this->_internal_symbolname().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOALightSymbol.symbolName");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->symbolname(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_symbolname(), target);
   }
 
   // optional bool enabled = 3;
   if (cached_has_bits & 0x00000040u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->enabled(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_enabled(), target);
   }
 
   // optional int64 baseAssetId = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->baseassetid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_baseassetid(), target);
   }
 
   // optional int64 quoteAssetId = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->quoteassetid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_quoteassetid(), target);
   }
 
   // optional int64 symbolCategoryId = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->symbolcategoryid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_symbolcategoryid(), target);
   }
 
   // optional string description = 7;
   if (cached_has_bits & 0x00000002u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->description().data(), static_cast<int>(this->description().length()),
+      this->_internal_description().data(), static_cast<int>(this->_internal_description().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOALightSymbol.description");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        7, this->description(), target);
+    target = stream->WriteStringMaybeAliased(
+        7, this->_internal_description(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOALightSymbol)
   return target;
@@ -4806,16 +3804,11 @@ size_t ProtoOALightSymbol::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOALightSymbol)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   // required int64 symbolId = 1;
-  if (has_symbolid()) {
+  if (_internal_has_symbolid()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->symbolid());
+        this->_internal_symbolid());
   }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -4827,14 +3820,14 @@ size_t ProtoOALightSymbol::ByteSizeLong() const {
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-          this->symbolname());
+          this->_internal_symbolname());
     }
 
     // optional string description = 7;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-          this->description());
+          this->_internal_description());
     }
 
   }
@@ -4843,21 +3836,21 @@ size_t ProtoOALightSymbol::ByteSizeLong() const {
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->baseassetid());
+          this->_internal_baseassetid());
     }
 
     // optional int64 quoteAssetId = 5;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->quoteassetid());
+          this->_internal_quoteassetid());
     }
 
     // optional int64 symbolCategoryId = 6;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->symbolcategoryid());
+          this->_internal_symbolcategoryid());
     }
 
     // optional bool enabled = 3;
@@ -4865,6 +3858,10 @@ size_t ProtoOALightSymbol::ByteSizeLong() const {
       total_size += 1 + 1;
     }
 
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -4889,19 +3886,17 @@ void ProtoOALightSymbol::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from)
 void ProtoOALightSymbol::MergeFrom(const ProtoOALightSymbol& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOALightSymbol)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x0000007fu) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      symbolname_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.symbolname_);
+      _internal_set_symbolname(from._internal_symbolname());
     }
     if (cached_has_bits & 0x00000002u) {
-      _has_bits_[0] |= 0x00000002u;
-      description_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.description_);
+      _internal_set_description(from._internal_description());
     }
     if (cached_has_bits & 0x00000004u) {
       symbolid_ = from.symbolid_;
@@ -4937,79 +3932,70 @@ void ProtoOALightSymbol::CopyFrom(const ProtoOALightSymbol& from) {
 }
 
 bool ProtoOALightSymbol::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000004) != 0x00000004) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOALightSymbol::Swap(ProtoOALightSymbol* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOALightSymbol::InternalSwap(ProtoOALightSymbol* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  symbolname_.Swap(&other->symbolname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  description_.Swap(&other->description_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(symbolid_, other->symbolid_);
-  swap(baseassetid_, other->baseassetid_);
-  swap(quoteassetid_, other->quoteassetid_);
-  swap(symbolcategoryid_, other->symbolcategoryid_);
-  swap(enabled_, other->enabled_);
+  symbolname_.Swap(&other->symbolname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  description_.Swap(&other->description_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOALightSymbol, enabled_)
+      + sizeof(ProtoOALightSymbol::enabled_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOALightSymbol, symbolid_)>(
+          reinterpret_cast<char*>(&symbolid_),
+          reinterpret_cast<char*>(&other->symbolid_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOALightSymbol::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOAArchivedSymbol::InitAsDefaultInstance() {
-}
-class ProtoOAArchivedSymbol::HasBitSetters {
+class ProtoOAArchivedSymbol::_Internal {
  public:
-  static void set_has_symbolid(ProtoOAArchivedSymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  using HasBits = decltype(std::declval<ProtoOAArchivedSymbol>()._has_bits_);
+  static void set_has_symbolid(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_name(ProtoOAArchivedSymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_name(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_utclastupdatetimestamp(ProtoOAArchivedSymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_utclastupdatetimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_description(ProtoOAArchivedSymbol* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_description(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x0000000d) ^ 0x0000000d) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOAArchivedSymbol::kSymbolIdFieldNumber;
-const int ProtoOAArchivedSymbol::kNameFieldNumber;
-const int ProtoOAArchivedSymbol::kUtcLastUpdateTimestampFieldNumber;
-const int ProtoOAArchivedSymbol::kDescriptionFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOAArchivedSymbol::ProtoOAArchivedSymbol()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOAArchivedSymbol::ProtoOAArchivedSymbol(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOAArchivedSymbol)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOAArchivedSymbol)
 }
 ProtoOAArchivedSymbol::ProtoOAArchivedSymbol(const ProtoOAArchivedSymbol& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_name()) {
-    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
+  if (from._internal_has_name()) {
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
+      GetArena());
   }
   description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_description()) {
-    description_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.description_);
+  if (from._internal_has_description()) {
+    description_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_description(), 
+      GetArena());
   }
   ::memcpy(&symbolid_, &from.symbolid_,
     static_cast<size_t>(reinterpret_cast<char*>(&utclastupdatetimestamp_) -
@@ -5018,25 +4004,33 @@ ProtoOAArchivedSymbol::ProtoOAArchivedSymbol(const ProtoOAArchivedSymbol& from)
 }
 
 void ProtoOAArchivedSymbol::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOAArchivedSymbol_OpenApiModelMessages_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAArchivedSymbol_OpenApiModelMessages_2eproto.base);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&symbolid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&utclastupdatetimestamp_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&symbolid_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&utclastupdatetimestamp_) -
       reinterpret_cast<char*>(&symbolid_)) + sizeof(utclastupdatetimestamp_));
 }
 
 ProtoOAArchivedSymbol::~ProtoOAArchivedSymbol() {
   // @@protoc_insertion_point(destructor:ProtoOAArchivedSymbol)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOAArchivedSymbol::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   description_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void ProtoOAArchivedSymbol::ArenaDtor(void* object) {
+  ProtoOAArchivedSymbol* _this = reinterpret_cast< ProtoOAArchivedSymbol* >(object);
+  (void)_this;
+}
+void ProtoOAArchivedSymbol::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOAArchivedSymbol::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -5055,10 +4049,10 @@ void ProtoOAArchivedSymbol::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      name_.ClearNonDefaultToEmptyNoArena();
+      name_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      description_.ClearNonDefaultToEmptyNoArena();
+      description_.ClearNonDefaultToEmpty();
     }
   }
   if (cached_has_bits & 0x0000000cu) {
@@ -5067,192 +4061,80 @@ void ProtoOAArchivedSymbol::Clear() {
         reinterpret_cast<char*>(&symbolid_)) + sizeof(utclastupdatetimestamp_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOAArchivedSymbol::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 symbolId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_symbolid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_symbolid(&has_bits);
+          symbolid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required string name = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_name(), ptr, ctx, "ProtoOAArchivedSymbol.name");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOAArchivedSymbol.name");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 utcLastUpdateTimestamp = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_utclastupdatetimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_utclastupdatetimestamp(&has_bits);
+          utclastupdatetimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional string description = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 34) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_description(), ptr, ctx, "ProtoOAArchivedSymbol.description");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          auto str = _internal_mutable_description();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOAArchivedSymbol.description");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOAArchivedSymbol::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOAArchivedSymbol)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 symbolId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_symbolid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &symbolid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required string name = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_name()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->name().data(), static_cast<int>(this->name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOAArchivedSymbol.name");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 utcLastUpdateTimestamp = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_utclastupdatetimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &utclastupdatetimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string description = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_description()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->description().data(), static_cast<int>(this->description().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOAArchivedSymbol.description");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOAArchivedSymbol)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOAArchivedSymbol)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOAArchivedSymbol::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOAArchivedSymbol)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 symbolId = 1;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->symbolid(), output);
-  }
-
-  // required string name = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->name().data(), static_cast<int>(this->name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOAArchivedSymbol.name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->name(), output);
-  }
-
-  // required int64 utcLastUpdateTimestamp = 3;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->utclastupdatetimestamp(), output);
-  }
-
-  // optional string description = 4;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->description().data(), static_cast<int>(this->description().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOAArchivedSymbol.description");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      4, this->description(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOAArchivedSymbol)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAArchivedSymbol::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAArchivedSymbol::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOAArchivedSymbol)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5260,39 +4142,39 @@ void ProtoOAArchivedSymbol::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 symbolId = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->symbolid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_symbolid(), target);
   }
 
   // required string name = 2;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->name().data(), static_cast<int>(this->name().length()),
+      this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOAArchivedSymbol.name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->name(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_name(), target);
   }
 
   // required int64 utcLastUpdateTimestamp = 3;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->utclastupdatetimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_utclastupdatetimestamp(), target);
   }
 
   // optional string description = 4;
   if (cached_has_bits & 0x00000002u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->description().data(), static_cast<int>(this->description().length()),
+      this->_internal_description().data(), static_cast<int>(this->_internal_description().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOAArchivedSymbol.description");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        4, this->description(), target);
+    target = stream->WriteStringMaybeAliased(
+        4, this->_internal_description(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOAArchivedSymbol)
   return target;
@@ -5302,25 +4184,25 @@ size_t ProtoOAArchivedSymbol::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOAArchivedSymbol)
   size_t total_size = 0;
 
-  if (has_name()) {
+  if (_internal_has_name()) {
     // required string name = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->name());
+        this->_internal_name());
   }
 
-  if (has_symbolid()) {
+  if (_internal_has_symbolid()) {
     // required int64 symbolId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->symbolid());
+        this->_internal_symbolid());
   }
 
-  if (has_utclastupdatetimestamp()) {
+  if (_internal_has_utclastupdatetimestamp()) {
     // required int64 utcLastUpdateTimestamp = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->utclastupdatetimestamp());
+        this->_internal_utclastupdatetimestamp());
   }
 
   return total_size;
@@ -5329,26 +4211,21 @@ size_t ProtoOAArchivedSymbol::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOAArchivedSymbol)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x0000000d) ^ 0x0000000d) == 0) {  // All required fields are present.
     // required string name = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->name());
+        this->_internal_name());
 
     // required int64 symbolId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->symbolid());
+        this->_internal_symbolid());
 
     // required int64 utcLastUpdateTimestamp = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->utclastupdatetimestamp());
+        this->_internal_utclastupdatetimestamp());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -5362,9 +4239,13 @@ size_t ProtoOAArchivedSymbol::ByteSizeLong() const {
   if (cached_has_bits & 0x00000002u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->description());
+        this->_internal_description());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -5388,19 +4269,17 @@ void ProtoOAArchivedSymbol::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void ProtoOAArchivedSymbol::MergeFrom(const ProtoOAArchivedSymbol& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOAArchivedSymbol)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
+      _internal_set_name(from._internal_name());
     }
     if (cached_has_bits & 0x00000002u) {
-      _has_bits_[0] |= 0x00000002u;
-      description_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.description_);
+      _internal_set_description(from._internal_description());
     }
     if (cached_has_bits & 0x00000004u) {
       symbolid_ = from.symbolid_;
@@ -5427,68 +4306,62 @@ void ProtoOAArchivedSymbol::CopyFrom(const ProtoOAArchivedSymbol& from) {
 }
 
 bool ProtoOAArchivedSymbol::IsInitialized() const {
-  if ((_has_bits_[0] & 0x0000000d) != 0x0000000d) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOAArchivedSymbol::Swap(ProtoOAArchivedSymbol* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOAArchivedSymbol::InternalSwap(ProtoOAArchivedSymbol* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  description_.Swap(&other->description_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(symbolid_, other->symbolid_);
-  swap(utclastupdatetimestamp_, other->utclastupdatetimestamp_);
+  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  description_.Swap(&other->description_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOAArchivedSymbol, utclastupdatetimestamp_)
+      + sizeof(ProtoOAArchivedSymbol::utclastupdatetimestamp_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOAArchivedSymbol, symbolid_)>(
+          reinterpret_cast<char*>(&symbolid_),
+          reinterpret_cast<char*>(&other->symbolid_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOAArchivedSymbol::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOASymbolCategory::InitAsDefaultInstance() {
-}
-class ProtoOASymbolCategory::HasBitSetters {
+class ProtoOASymbolCategory::_Internal {
  public:
-  static void set_has_id(ProtoOASymbolCategory* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  using HasBits = decltype(std::declval<ProtoOASymbolCategory>()._has_bits_);
+  static void set_has_id(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_assetclassid(ProtoOASymbolCategory* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_assetclassid(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_name(ProtoOASymbolCategory* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_name(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000007) ^ 0x00000007) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOASymbolCategory::kIdFieldNumber;
-const int ProtoOASymbolCategory::kAssetClassIdFieldNumber;
-const int ProtoOASymbolCategory::kNameFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOASymbolCategory::ProtoOASymbolCategory()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOASymbolCategory::ProtoOASymbolCategory(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOASymbolCategory)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOASymbolCategory)
 }
 ProtoOASymbolCategory::ProtoOASymbolCategory(const ProtoOASymbolCategory& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_name()) {
-    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
+  if (from._internal_has_name()) {
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
+      GetArena());
   }
   ::memcpy(&id_, &from.id_,
     static_cast<size_t>(reinterpret_cast<char*>(&assetclassid_) -
@@ -5497,23 +4370,31 @@ ProtoOASymbolCategory::ProtoOASymbolCategory(const ProtoOASymbolCategory& from)
 }
 
 void ProtoOASymbolCategory::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOASymbolCategory_OpenApiModelMessages_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOASymbolCategory_OpenApiModelMessages_2eproto.base);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&assetclassid_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&id_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&assetclassid_) -
       reinterpret_cast<char*>(&id_)) + sizeof(assetclassid_));
 }
 
 ProtoOASymbolCategory::~ProtoOASymbolCategory() {
   // @@protoc_insertion_point(destructor:ProtoOASymbolCategory)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOASymbolCategory::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void ProtoOASymbolCategory::ArenaDtor(void* object) {
+  ProtoOASymbolCategory* _this = reinterpret_cast< ProtoOASymbolCategory* >(object);
+  (void)_this;
+}
+void ProtoOASymbolCategory::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOASymbolCategory::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -5531,7 +4412,7 @@ void ProtoOASymbolCategory::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    name_.ClearNonDefaultToEmptyNoArena();
+    name_.ClearNonDefaultToEmpty();
   }
   if (cached_has_bits & 0x00000006u) {
     ::memset(&id_, 0, static_cast<size_t>(
@@ -5539,160 +4420,69 @@ void ProtoOASymbolCategory::Clear() {
         reinterpret_cast<char*>(&id_)) + sizeof(assetclassid_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOASymbolCategory::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 id = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_id(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_id(&has_bits);
+          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 assetClassId = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
-        set_assetclassid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_assetclassid(&has_bits);
+          assetclassid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required string name = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 26) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_name(), ptr, ctx, "ProtoOASymbolCategory.name");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          auto str = _internal_mutable_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOASymbolCategory.name");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOASymbolCategory::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOASymbolCategory)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 id = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_id(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 assetClassId = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_assetclassid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &assetclassid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required string name = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_name()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->name().data(), static_cast<int>(this->name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOASymbolCategory.name");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOASymbolCategory)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOASymbolCategory)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOASymbolCategory::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOASymbolCategory)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 id = 1;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->id(), output);
-  }
-
-  // required int64 assetClassId = 2;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->assetclassid(), output);
-  }
-
-  // required string name = 3;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->name().data(), static_cast<int>(this->name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOASymbolCategory.name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->name(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOASymbolCategory)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOASymbolCategory::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOASymbolCategory::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOASymbolCategory)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5700,28 +4490,29 @@ void ProtoOASymbolCategory::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 id = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_id(), target);
   }
 
   // required int64 assetClassId = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->assetclassid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_assetclassid(), target);
   }
 
   // required string name = 3;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->name().data(), static_cast<int>(this->name().length()),
+      this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOASymbolCategory.name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        3, this->name(), target);
+    target = stream->WriteStringMaybeAliased(
+        3, this->_internal_name(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOASymbolCategory)
   return target;
@@ -5731,25 +4522,25 @@ size_t ProtoOASymbolCategory::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOASymbolCategory)
   size_t total_size = 0;
 
-  if (has_name()) {
+  if (_internal_has_name()) {
     // required string name = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->name());
+        this->_internal_name());
   }
 
-  if (has_id()) {
+  if (_internal_has_id()) {
     // required int64 id = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->id());
+        this->_internal_id());
   }
 
-  if (has_assetclassid()) {
+  if (_internal_has_assetclassid()) {
     // required int64 assetClassId = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->assetclassid());
+        this->_internal_assetclassid());
   }
 
   return total_size;
@@ -5758,26 +4549,21 @@ size_t ProtoOASymbolCategory::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOASymbolCategory)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required string name = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->name());
+        this->_internal_name());
 
     // required int64 id = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->id());
+        this->_internal_id());
 
     // required int64 assetClassId = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->assetclassid());
+        this->_internal_assetclassid());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -5786,6 +4572,10 @@ size_t ProtoOASymbolCategory::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -5809,15 +4599,14 @@ void ProtoOASymbolCategory::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void ProtoOASymbolCategory::MergeFrom(const ProtoOASymbolCategory& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOASymbolCategory)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
+      _internal_set_name(from._internal_name());
     }
     if (cached_has_bits & 0x00000002u) {
       id_ = from.id_;
@@ -5844,59 +4633,54 @@ void ProtoOASymbolCategory::CopyFrom(const ProtoOASymbolCategory& from) {
 }
 
 bool ProtoOASymbolCategory::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOASymbolCategory::Swap(ProtoOASymbolCategory* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOASymbolCategory::InternalSwap(ProtoOASymbolCategory* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(id_, other->id_);
-  swap(assetclassid_, other->assetclassid_);
+  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOASymbolCategory, assetclassid_)
+      + sizeof(ProtoOASymbolCategory::assetclassid_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOASymbolCategory, id_)>(
+          reinterpret_cast<char*>(&id_),
+          reinterpret_cast<char*>(&other->id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOASymbolCategory::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOAInterval::InitAsDefaultInstance() {
-}
-class ProtoOAInterval::HasBitSetters {
+class ProtoOAInterval::_Internal {
  public:
-  static void set_has_startsecond(ProtoOAInterval* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  using HasBits = decltype(std::declval<ProtoOAInterval>()._has_bits_);
+  static void set_has_startsecond(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_endsecond(ProtoOAInterval* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_endsecond(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOAInterval::kStartSecondFieldNumber;
-const int ProtoOAInterval::kEndSecondFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOAInterval::ProtoOAInterval()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOAInterval::ProtoOAInterval(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOAInterval)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOAInterval)
 }
 ProtoOAInterval::ProtoOAInterval(const ProtoOAInterval& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&startsecond_, &from.startsecond_,
     static_cast<size_t>(reinterpret_cast<char*>(&endsecond_) -
     reinterpret_cast<char*>(&startsecond_)) + sizeof(endsecond_));
@@ -5904,19 +4688,28 @@ ProtoOAInterval::ProtoOAInterval(const ProtoOAInterval& from)
 }
 
 void ProtoOAInterval::SharedCtor() {
-  ::memset(&startsecond_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&endsecond_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&startsecond_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&endsecond_) -
       reinterpret_cast<char*>(&startsecond_)) + sizeof(endsecond_));
 }
 
 ProtoOAInterval::~ProtoOAInterval() {
   // @@protoc_insertion_point(destructor:ProtoOAInterval)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOAInterval::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ProtoOAInterval::ArenaDtor(void* object) {
+  ProtoOAInterval* _this = reinterpret_cast< ProtoOAInterval* >(object);
+  (void)_this;
+}
+void ProtoOAInterval::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOAInterval::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -5939,128 +4732,58 @@ void ProtoOAInterval::Clear() {
         reinterpret_cast<char*>(&startsecond_)) + sizeof(endsecond_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOAInterval::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required uint32 startSecond = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_startsecond(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_startsecond(&has_bits);
+          startsecond_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 endSecond = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_endsecond(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_endsecond(&has_bits);
+          endsecond_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOAInterval::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOAInterval)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required uint32 startSecond = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_startsecond(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &startsecond_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required uint32 endSecond = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_endsecond(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &endsecond_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOAInterval)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOAInterval)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOAInterval::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOAInterval)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required uint32 startSecond = 3;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(3, this->startsecond(), output);
-  }
-
-  // required uint32 endSecond = 4;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(4, this->endsecond(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOAInterval)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAInterval::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAInterval::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOAInterval)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6068,17 +4791,19 @@ void ProtoOAInterval::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required uint32 startSecond = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->startsecond(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_startsecond(), target);
   }
 
   // required uint32 endSecond = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->endsecond(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_endsecond(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOAInterval)
   return target;
@@ -6088,18 +4813,18 @@ size_t ProtoOAInterval::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOAInterval)
   size_t total_size = 0;
 
-  if (has_startsecond()) {
+  if (_internal_has_startsecond()) {
     // required uint32 startSecond = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->startsecond());
+        this->_internal_startsecond());
   }
 
-  if (has_endsecond()) {
+  if (_internal_has_endsecond()) {
     // required uint32 endSecond = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->endsecond());
+        this->_internal_endsecond());
   }
 
   return total_size;
@@ -6108,21 +4833,16 @@ size_t ProtoOAInterval::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOAInterval)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required uint32 startSecond = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->startsecond());
+        this->_internal_startsecond());
 
     // required uint32 endSecond = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->endsecond());
+        this->_internal_endsecond());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -6131,6 +4851,10 @@ size_t ProtoOAInterval::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -6154,7 +4878,7 @@ void ProtoOAInterval::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ProtoOAInterval::MergeFrom(const ProtoOAInterval& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOAInterval)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -6185,132 +4909,111 @@ void ProtoOAInterval::CopyFrom(const ProtoOAInterval& from) {
 }
 
 bool ProtoOAInterval::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOAInterval::Swap(ProtoOAInterval* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOAInterval::InternalSwap(ProtoOAInterval* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(startsecond_, other->startsecond_);
-  swap(endsecond_, other->endsecond_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOAInterval, endsecond_)
+      + sizeof(ProtoOAInterval::endsecond_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOAInterval, startsecond_)>(
+          reinterpret_cast<char*>(&startsecond_),
+          reinterpret_cast<char*>(&other->startsecond_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOAInterval::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOATrader::InitAsDefaultInstance() {
-}
-class ProtoOATrader::HasBitSetters {
+class ProtoOATrader::_Internal {
  public:
-  static void set_has_ctidtraderaccountid(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  using HasBits = decltype(std::declval<ProtoOATrader>()._has_bits_);
+  static void set_has_ctidtraderaccountid(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_balance(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_balance(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_balanceversion(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_balanceversion(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_managerbonus(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_managerbonus(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_ibbonus(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  static void set_has_ibbonus(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  static void set_has_nonwithdrawablebonus(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_nonwithdrawablebonus(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
   }
-  static void set_has_accessrights(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000100u;
+  static void set_has_accessrights(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
   }
-  static void set_has_depositassetid(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000080u;
+  static void set_has_depositassetid(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
   }
-  static void set_has_swapfree(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00001000u;
+  static void set_has_swapfree(HasBits* has_bits) {
+    (*has_bits)[0] |= 4096u;
   }
-  static void set_has_leverageincents(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000200u;
+  static void set_has_leverageincents(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
   }
-  static void set_has_totalmargincalculationtype(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000400u;
+  static void set_has_totalmargincalculationtype(HasBits* has_bits) {
+    (*has_bits)[0] |= 1024u;
   }
-  static void set_has_maxleverage(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000800u;
+  static void set_has_maxleverage(HasBits* has_bits) {
+    (*has_bits)[0] |= 2048u;
   }
-  static void set_has_frenchrisk(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00002000u;
+  static void set_has_frenchrisk(HasBits* has_bits) {
+    (*has_bits)[0] |= 8192u;
   }
-  static void set_has_traderlogin(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00010000u;
+  static void set_has_traderlogin(HasBits* has_bits) {
+    (*has_bits)[0] |= 65536u;
   }
-  static void set_has_accounttype(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00008000u;
+  static void set_has_accounttype(HasBits* has_bits) {
+    (*has_bits)[0] |= 32768u;
   }
-  static void set_has_brokername(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_brokername(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_registrationtimestamp(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00020000u;
+  static void set_has_registrationtimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 131072u;
   }
-  static void set_has_islimitedrisk(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00004000u;
+  static void set_has_islimitedrisk(HasBits* has_bits) {
+    (*has_bits)[0] |= 16384u;
   }
-  static void set_has_limitedriskmargincalculationstrategy(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00040000u;
+  static void set_has_limitedriskmargincalculationstrategy(HasBits* has_bits) {
+    (*has_bits)[0] |= 262144u;
   }
-  static void set_has_moneydigits(ProtoOATrader* msg) {
-    msg->_has_bits_[0] |= 0x00080000u;
+  static void set_has_moneydigits(HasBits* has_bits) {
+    (*has_bits)[0] |= 524288u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000086) ^ 0x00000086) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOATrader::kCtidTraderAccountIdFieldNumber;
-const int ProtoOATrader::kBalanceFieldNumber;
-const int ProtoOATrader::kBalanceVersionFieldNumber;
-const int ProtoOATrader::kManagerBonusFieldNumber;
-const int ProtoOATrader::kIbBonusFieldNumber;
-const int ProtoOATrader::kNonWithdrawableBonusFieldNumber;
-const int ProtoOATrader::kAccessRightsFieldNumber;
-const int ProtoOATrader::kDepositAssetIdFieldNumber;
-const int ProtoOATrader::kSwapFreeFieldNumber;
-const int ProtoOATrader::kLeverageInCentsFieldNumber;
-const int ProtoOATrader::kTotalMarginCalculationTypeFieldNumber;
-const int ProtoOATrader::kMaxLeverageFieldNumber;
-const int ProtoOATrader::kFrenchRiskFieldNumber;
-const int ProtoOATrader::kTraderLoginFieldNumber;
-const int ProtoOATrader::kAccountTypeFieldNumber;
-const int ProtoOATrader::kBrokerNameFieldNumber;
-const int ProtoOATrader::kRegistrationTimestampFieldNumber;
-const int ProtoOATrader::kIsLimitedRiskFieldNumber;
-const int ProtoOATrader::kLimitedRiskMarginCalculationStrategyFieldNumber;
-const int ProtoOATrader::kMoneyDigitsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOATrader::ProtoOATrader()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOATrader::ProtoOATrader(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOATrader)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOATrader)
 }
 ProtoOATrader::ProtoOATrader(const ProtoOATrader& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   brokername_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_brokername()) {
-    brokername_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.brokername_);
+  if (from._internal_has_brokername()) {
+    brokername_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_brokername(), 
+      GetArena());
   }
   ::memcpy(&ctidtraderaccountid_, &from.ctidtraderaccountid_,
     static_cast<size_t>(reinterpret_cast<char*>(&moneydigits_) -
@@ -6319,23 +5022,31 @@ ProtoOATrader::ProtoOATrader(const ProtoOATrader& from)
 }
 
 void ProtoOATrader::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOATrader_OpenApiModelMessages_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOATrader_OpenApiModelMessages_2eproto.base);
   brokername_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&ctidtraderaccountid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&moneydigits_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&ctidtraderaccountid_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&moneydigits_) -
       reinterpret_cast<char*>(&ctidtraderaccountid_)) + sizeof(moneydigits_));
 }
 
 ProtoOATrader::~ProtoOATrader() {
   // @@protoc_insertion_point(destructor:ProtoOATrader)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOATrader::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   brokername_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void ProtoOATrader::ArenaDtor(void* object) {
+  ProtoOATrader* _this = reinterpret_cast< ProtoOATrader* >(object);
+  (void)_this;
+}
+void ProtoOATrader::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOATrader::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -6353,7 +5064,7 @@ void ProtoOATrader::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    brokername_.ClearNonDefaultToEmptyNoArena();
+    brokername_.ClearNonDefaultToEmpty();
   }
   if (cached_has_bits & 0x000000feu) {
     ::memset(&ctidtraderaccountid_, 0, static_cast<size_t>(
@@ -6371,633 +5082,221 @@ void ProtoOATrader::Clear() {
         reinterpret_cast<char*>(&traderlogin_)) + sizeof(moneydigits_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOATrader::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 ctidTraderAccountId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_ctidtraderaccountid(&has_bits);
+          ctidtraderaccountid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 balance = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
-        set_balance(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_balance(&has_bits);
+          balance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 balanceVersion = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_balanceversion(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_balanceversion(&has_bits);
+          balanceversion_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 managerBonus = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_managerbonus(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_managerbonus(&has_bits);
+          managerbonus_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 ibBonus = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 40) goto handle_unusual;
-        set_ibbonus(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_ibbonus(&has_bits);
+          ibbonus_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 nonWithdrawableBonus = 6;
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 48) goto handle_unusual;
-        set_nonwithdrawablebonus(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          _Internal::set_has_nonwithdrawablebonus(&has_bits);
+          nonwithdrawablebonus_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOAAccessRights accessRights = 7 [default = FULL_ACCESS];
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 56) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOAAccessRights_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(7, val, mutable_unknown_fields());
-          break;
-        }
-        set_accessrights(static_cast<::ProtoOAAccessRights>(val));
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOAAccessRights_IsValid(val))) {
+            _internal_set_accessrights(static_cast<::ProtoOAAccessRights>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(7, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // required int64 depositAssetId = 8;
-      case 8: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 64) goto handle_unusual;
-        set_depositassetid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          _Internal::set_has_depositassetid(&has_bits);
+          depositassetid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool swapFree = 9;
-      case 9: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 72) goto handle_unusual;
-        set_swapfree(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          _Internal::set_has_swapfree(&has_bits);
+          swapfree_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint32 leverageInCents = 10;
-      case 10: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 80) goto handle_unusual;
-        set_leverageincents(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+          _Internal::set_has_leverageincents(&has_bits);
+          leverageincents_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOATotalMarginCalculationType totalMarginCalculationType = 11;
-      case 11: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 88) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOATotalMarginCalculationType_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(11, val, mutable_unknown_fields());
-          break;
-        }
-        set_totalmargincalculationtype(static_cast<::ProtoOATotalMarginCalculationType>(val));
-        break;
-      }
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOATotalMarginCalculationType_IsValid(val))) {
+            _internal_set_totalmargincalculationtype(static_cast<::ProtoOATotalMarginCalculationType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(11, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional uint32 maxLeverage = 12;
-      case 12: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 96) goto handle_unusual;
-        set_maxleverage(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
+          _Internal::set_has_maxleverage(&has_bits);
+          maxleverage_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool frenchRisk = 13 [deprecated = true];
-      case 13: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 104) goto handle_unusual;
-        set_frenchrisk(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
+          _Internal::set_has_frenchrisk(&has_bits);
+          frenchrisk_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 traderLogin = 14;
-      case 14: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 112) goto handle_unusual;
-        set_traderlogin(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
+          _Internal::set_has_traderlogin(&has_bits);
+          traderlogin_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOAAccountType accountType = 15 [default = HEDGED];
-      case 15: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 120) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOAAccountType_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(15, val, mutable_unknown_fields());
-          break;
-        }
-        set_accounttype(static_cast<::ProtoOAAccountType>(val));
-        break;
-      }
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 120)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOAAccountType_IsValid(val))) {
+            _internal_set_accounttype(static_cast<::ProtoOAAccountType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(15, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional string brokerName = 16;
-      case 16: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 130) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_brokername(), ptr, ctx, "ProtoOATrader.brokerName");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 16:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 130)) {
+          auto str = _internal_mutable_brokername();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOATrader.brokerName");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 registrationTimestamp = 17;
-      case 17: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 136) goto handle_unusual;
-        set_registrationtimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 17:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 136)) {
+          _Internal::set_has_registrationtimestamp(&has_bits);
+          registrationtimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool isLimitedRisk = 18;
-      case 18: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 144) goto handle_unusual;
-        set_islimitedrisk(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 18:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 144)) {
+          _Internal::set_has_islimitedrisk(&has_bits);
+          islimitedrisk_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOALimitedRiskMarginCalculationStrategy limitedRiskMarginCalculationStrategy = 19 [default = ACCORDING_TO_LEVERAGE];
-      case 19: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 152) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOALimitedRiskMarginCalculationStrategy_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(19, val, mutable_unknown_fields());
-          break;
-        }
-        set_limitedriskmargincalculationstrategy(static_cast<::ProtoOALimitedRiskMarginCalculationStrategy>(val));
-        break;
-      }
+      case 19:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 152)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOALimitedRiskMarginCalculationStrategy_IsValid(val))) {
+            _internal_set_limitedriskmargincalculationstrategy(static_cast<::ProtoOALimitedRiskMarginCalculationStrategy>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(19, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional uint32 moneyDigits = 20;
-      case 20: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 160) goto handle_unusual;
-        set_moneydigits(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 20:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 160)) {
+          _Internal::set_has_moneydigits(&has_bits);
+          moneydigits_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOATrader::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOATrader)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 ctidTraderAccountId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_ctidtraderaccountid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &ctidtraderaccountid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 balance = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_balance(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &balance_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 balanceVersion = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_balanceversion(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &balanceversion_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 managerBonus = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_managerbonus(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &managerbonus_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 ibBonus = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-          HasBitSetters::set_has_ibbonus(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &ibbonus_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 nonWithdrawableBonus = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-          HasBitSetters::set_has_nonwithdrawablebonus(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &nonwithdrawablebonus_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOAAccessRights accessRights = 7 [default = FULL_ACCESS];
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOAAccessRights_IsValid(value)) {
-            set_accessrights(static_cast< ::ProtoOAAccessRights >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                7, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 depositAssetId = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
-          HasBitSetters::set_has_depositassetid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &depositassetid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool swapFree = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
-          HasBitSetters::set_has_swapfree(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &swapfree_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 leverageInCents = 10;
-      case 10: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (80 & 0xFF)) {
-          HasBitSetters::set_has_leverageincents(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &leverageincents_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOATotalMarginCalculationType totalMarginCalculationType = 11;
-      case 11: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (88 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOATotalMarginCalculationType_IsValid(value)) {
-            set_totalmargincalculationtype(static_cast< ::ProtoOATotalMarginCalculationType >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                11, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 maxLeverage = 12;
-      case 12: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (96 & 0xFF)) {
-          HasBitSetters::set_has_maxleverage(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &maxleverage_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool frenchRisk = 13 [deprecated = true];
-      case 13: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (104 & 0xFF)) {
-          HasBitSetters::set_has_frenchrisk(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &frenchrisk_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 traderLogin = 14;
-      case 14: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (112 & 0xFF)) {
-          HasBitSetters::set_has_traderlogin(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &traderlogin_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOAAccountType accountType = 15 [default = HEDGED];
-      case 15: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (120 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOAAccountType_IsValid(value)) {
-            set_accounttype(static_cast< ::ProtoOAAccountType >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                15, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string brokerName = 16;
-      case 16: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (130 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_brokername()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->brokername().data(), static_cast<int>(this->brokername().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOATrader.brokerName");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 registrationTimestamp = 17;
-      case 17: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (136 & 0xFF)) {
-          HasBitSetters::set_has_registrationtimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &registrationtimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool isLimitedRisk = 18;
-      case 18: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (144 & 0xFF)) {
-          HasBitSetters::set_has_islimitedrisk(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &islimitedrisk_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOALimitedRiskMarginCalculationStrategy limitedRiskMarginCalculationStrategy = 19 [default = ACCORDING_TO_LEVERAGE];
-      case 19: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (152 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOALimitedRiskMarginCalculationStrategy_IsValid(value)) {
-            set_limitedriskmargincalculationstrategy(static_cast< ::ProtoOALimitedRiskMarginCalculationStrategy >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                19, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 moneyDigits = 20;
-      case 20: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (160 & 0xFF)) {
-          HasBitSetters::set_has_moneydigits(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &moneydigits_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOATrader)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOATrader)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOATrader::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOATrader)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 ctidTraderAccountId = 1;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->ctidtraderaccountid(), output);
-  }
-
-  // required int64 balance = 2;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->balance(), output);
-  }
-
-  // optional int64 balanceVersion = 3;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->balanceversion(), output);
-  }
-
-  // optional int64 managerBonus = 4;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->managerbonus(), output);
-  }
-
-  // optional int64 ibBonus = 5;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->ibbonus(), output);
-  }
-
-  // optional int64 nonWithdrawableBonus = 6;
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(6, this->nonwithdrawablebonus(), output);
-  }
-
-  // optional .ProtoOAAccessRights accessRights = 7 [default = FULL_ACCESS];
-  if (cached_has_bits & 0x00000100u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      7, this->accessrights(), output);
-  }
-
-  // required int64 depositAssetId = 8;
-  if (cached_has_bits & 0x00000080u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(8, this->depositassetid(), output);
-  }
-
-  // optional bool swapFree = 9;
-  if (cached_has_bits & 0x00001000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(9, this->swapfree(), output);
-  }
-
-  // optional uint32 leverageInCents = 10;
-  if (cached_has_bits & 0x00000200u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(10, this->leverageincents(), output);
-  }
-
-  // optional .ProtoOATotalMarginCalculationType totalMarginCalculationType = 11;
-  if (cached_has_bits & 0x00000400u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      11, this->totalmargincalculationtype(), output);
-  }
-
-  // optional uint32 maxLeverage = 12;
-  if (cached_has_bits & 0x00000800u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(12, this->maxleverage(), output);
-  }
-
-  // optional bool frenchRisk = 13 [deprecated = true];
-  if (cached_has_bits & 0x00002000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(13, this->frenchrisk(), output);
-  }
-
-  // optional int64 traderLogin = 14;
-  if (cached_has_bits & 0x00010000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(14, this->traderlogin(), output);
-  }
-
-  // optional .ProtoOAAccountType accountType = 15 [default = HEDGED];
-  if (cached_has_bits & 0x00008000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      15, this->accounttype(), output);
-  }
-
-  // optional string brokerName = 16;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->brokername().data(), static_cast<int>(this->brokername().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOATrader.brokerName");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      16, this->brokername(), output);
-  }
-
-  // optional int64 registrationTimestamp = 17;
-  if (cached_has_bits & 0x00020000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(17, this->registrationtimestamp(), output);
-  }
-
-  // optional bool isLimitedRisk = 18;
-  if (cached_has_bits & 0x00004000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(18, this->islimitedrisk(), output);
-  }
-
-  // optional .ProtoOALimitedRiskMarginCalculationStrategy limitedRiskMarginCalculationStrategy = 19 [default = ACCORDING_TO_LEVERAGE];
-  if (cached_has_bits & 0x00040000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      19, this->limitedriskmargincalculationstrategy(), output);
-  }
-
-  // optional uint32 moneyDigits = 20;
-  if (cached_has_bits & 0x00080000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(20, this->moneydigits(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOATrader)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOATrader::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOATrader::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOATrader)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7005,117 +5304,135 @@ void ProtoOATrader::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 ctidTraderAccountId = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->ctidtraderaccountid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_ctidtraderaccountid(), target);
   }
 
   // required int64 balance = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->balance(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_balance(), target);
   }
 
   // optional int64 balanceVersion = 3;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->balanceversion(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_balanceversion(), target);
   }
 
   // optional int64 managerBonus = 4;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->managerbonus(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_managerbonus(), target);
   }
 
   // optional int64 ibBonus = 5;
   if (cached_has_bits & 0x00000020u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->ibbonus(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_ibbonus(), target);
   }
 
   // optional int64 nonWithdrawableBonus = 6;
   if (cached_has_bits & 0x00000040u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->nonwithdrawablebonus(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_nonwithdrawablebonus(), target);
   }
 
   // optional .ProtoOAAccessRights accessRights = 7 [default = FULL_ACCESS];
   if (cached_has_bits & 0x00000100u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      7, this->accessrights(), target);
+      7, this->_internal_accessrights(), target);
   }
 
   // required int64 depositAssetId = 8;
   if (cached_has_bits & 0x00000080u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->depositassetid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_depositassetid(), target);
   }
 
   // optional bool swapFree = 9;
   if (cached_has_bits & 0x00001000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(9, this->swapfree(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(9, this->_internal_swapfree(), target);
   }
 
   // optional uint32 leverageInCents = 10;
   if (cached_has_bits & 0x00000200u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(10, this->leverageincents(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(10, this->_internal_leverageincents(), target);
   }
 
   // optional .ProtoOATotalMarginCalculationType totalMarginCalculationType = 11;
   if (cached_has_bits & 0x00000400u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      11, this->totalmargincalculationtype(), target);
+      11, this->_internal_totalmargincalculationtype(), target);
   }
 
   // optional uint32 maxLeverage = 12;
   if (cached_has_bits & 0x00000800u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(12, this->maxleverage(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(12, this->_internal_maxleverage(), target);
   }
 
   // optional bool frenchRisk = 13 [deprecated = true];
   if (cached_has_bits & 0x00002000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(13, this->frenchrisk(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(13, this->_internal_frenchrisk(), target);
   }
 
   // optional int64 traderLogin = 14;
   if (cached_has_bits & 0x00010000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(14, this->traderlogin(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(14, this->_internal_traderlogin(), target);
   }
 
   // optional .ProtoOAAccountType accountType = 15 [default = HEDGED];
   if (cached_has_bits & 0x00008000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      15, this->accounttype(), target);
+      15, this->_internal_accounttype(), target);
   }
 
   // optional string brokerName = 16;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->brokername().data(), static_cast<int>(this->brokername().length()),
+      this->_internal_brokername().data(), static_cast<int>(this->_internal_brokername().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOATrader.brokerName");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        16, this->brokername(), target);
+    target = stream->WriteStringMaybeAliased(
+        16, this->_internal_brokername(), target);
   }
 
   // optional int64 registrationTimestamp = 17;
   if (cached_has_bits & 0x00020000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(17, this->registrationtimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(17, this->_internal_registrationtimestamp(), target);
   }
 
   // optional bool isLimitedRisk = 18;
   if (cached_has_bits & 0x00004000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(18, this->islimitedrisk(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(18, this->_internal_islimitedrisk(), target);
   }
 
   // optional .ProtoOALimitedRiskMarginCalculationStrategy limitedRiskMarginCalculationStrategy = 19 [default = ACCORDING_TO_LEVERAGE];
   if (cached_has_bits & 0x00040000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      19, this->limitedriskmargincalculationstrategy(), target);
+      19, this->_internal_limitedriskmargincalculationstrategy(), target);
   }
 
   // optional uint32 moneyDigits = 20;
   if (cached_has_bits & 0x00080000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(20, this->moneydigits(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(20, this->_internal_moneydigits(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOATrader)
   return target;
@@ -7125,25 +5442,25 @@ size_t ProtoOATrader::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOATrader)
   size_t total_size = 0;
 
-  if (has_ctidtraderaccountid()) {
+  if (_internal_has_ctidtraderaccountid()) {
     // required int64 ctidTraderAccountId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->ctidtraderaccountid());
+        this->_internal_ctidtraderaccountid());
   }
 
-  if (has_balance()) {
+  if (_internal_has_balance()) {
     // required int64 balance = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->balance());
+        this->_internal_balance());
   }
 
-  if (has_depositassetid()) {
+  if (_internal_has_depositassetid()) {
     // required int64 depositAssetId = 8;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->depositassetid());
+        this->_internal_depositassetid());
   }
 
   return total_size;
@@ -7152,26 +5469,21 @@ size_t ProtoOATrader::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOATrader)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000086) ^ 0x00000086) == 0) {  // All required fields are present.
     // required int64 ctidTraderAccountId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->ctidtraderaccountid());
+        this->_internal_ctidtraderaccountid());
 
     // required int64 balance = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->balance());
+        this->_internal_balance());
 
     // required int64 depositAssetId = 8;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->depositassetid());
+        this->_internal_depositassetid());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -7185,7 +5497,7 @@ size_t ProtoOATrader::ByteSizeLong() const {
   if (cached_has_bits & 0x00000001u) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->brokername());
+        this->_internal_brokername());
   }
 
   if (cached_has_bits & 0x00000078u) {
@@ -7193,28 +5505,28 @@ size_t ProtoOATrader::ByteSizeLong() const {
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->balanceversion());
+          this->_internal_balanceversion());
     }
 
     // optional int64 managerBonus = 4;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->managerbonus());
+          this->_internal_managerbonus());
     }
 
     // optional int64 ibBonus = 5;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->ibbonus());
+          this->_internal_ibbonus());
     }
 
     // optional int64 nonWithdrawableBonus = 6;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->nonwithdrawablebonus());
+          this->_internal_nonwithdrawablebonus());
     }
 
   }
@@ -7222,27 +5534,27 @@ size_t ProtoOATrader::ByteSizeLong() const {
     // optional .ProtoOAAccessRights accessRights = 7 [default = FULL_ACCESS];
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->accessrights());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_accessrights());
     }
 
     // optional uint32 leverageInCents = 10;
     if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->leverageincents());
+          this->_internal_leverageincents());
     }
 
     // optional .ProtoOATotalMarginCalculationType totalMarginCalculationType = 11;
     if (cached_has_bits & 0x00000400u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->totalmargincalculationtype());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_totalmargincalculationtype());
     }
 
     // optional uint32 maxLeverage = 12;
     if (cached_has_bits & 0x00000800u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->maxleverage());
+          this->_internal_maxleverage());
     }
 
     // optional bool swapFree = 9;
@@ -7263,7 +5575,7 @@ size_t ProtoOATrader::ByteSizeLong() const {
     // optional .ProtoOAAccountType accountType = 15 [default = HEDGED];
     if (cached_has_bits & 0x00008000u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->accounttype());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_accounttype());
     }
 
   }
@@ -7272,29 +5584,33 @@ size_t ProtoOATrader::ByteSizeLong() const {
     if (cached_has_bits & 0x00010000u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->traderlogin());
+          this->_internal_traderlogin());
     }
 
     // optional int64 registrationTimestamp = 17;
     if (cached_has_bits & 0x00020000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->registrationtimestamp());
+          this->_internal_registrationtimestamp());
     }
 
     // optional .ProtoOALimitedRiskMarginCalculationStrategy limitedRiskMarginCalculationStrategy = 19 [default = ACCORDING_TO_LEVERAGE];
     if (cached_has_bits & 0x00040000u) {
       total_size += 2 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->limitedriskmargincalculationstrategy());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_limitedriskmargincalculationstrategy());
     }
 
     // optional uint32 moneyDigits = 20;
     if (cached_has_bits & 0x00080000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->moneydigits());
+          this->_internal_moneydigits());
     }
 
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -7319,15 +5635,14 @@ void ProtoOATrader::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ProtoOATrader::MergeFrom(const ProtoOATrader& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOATrader)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      brokername_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.brokername_);
+      _internal_set_brokername(from._internal_brokername());
     }
     if (cached_has_bits & 0x00000002u) {
       ctidtraderaccountid_ = from.ctidtraderaccountid_;
@@ -7411,136 +5726,99 @@ void ProtoOATrader::CopyFrom(const ProtoOATrader& from) {
 }
 
 bool ProtoOATrader::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000086) != 0x00000086) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOATrader::Swap(ProtoOATrader* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOATrader::InternalSwap(ProtoOATrader* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  brokername_.Swap(&other->brokername_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(ctidtraderaccountid_, other->ctidtraderaccountid_);
-  swap(balance_, other->balance_);
-  swap(balanceversion_, other->balanceversion_);
-  swap(managerbonus_, other->managerbonus_);
-  swap(ibbonus_, other->ibbonus_);
-  swap(nonwithdrawablebonus_, other->nonwithdrawablebonus_);
-  swap(depositassetid_, other->depositassetid_);
-  swap(accessrights_, other->accessrights_);
-  swap(leverageincents_, other->leverageincents_);
-  swap(totalmargincalculationtype_, other->totalmargincalculationtype_);
-  swap(maxleverage_, other->maxleverage_);
-  swap(swapfree_, other->swapfree_);
-  swap(frenchrisk_, other->frenchrisk_);
-  swap(islimitedrisk_, other->islimitedrisk_);
-  swap(accounttype_, other->accounttype_);
-  swap(traderlogin_, other->traderlogin_);
-  swap(registrationtimestamp_, other->registrationtimestamp_);
-  swap(limitedriskmargincalculationstrategy_, other->limitedriskmargincalculationstrategy_);
-  swap(moneydigits_, other->moneydigits_);
+  brokername_.Swap(&other->brokername_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOATrader, moneydigits_)
+      + sizeof(ProtoOATrader::moneydigits_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOATrader, ctidtraderaccountid_)>(
+          reinterpret_cast<char*>(&ctidtraderaccountid_),
+          reinterpret_cast<char*>(&other->ctidtraderaccountid_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOATrader::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOAPosition::InitAsDefaultInstance() {
-  ::_ProtoOAPosition_default_instance_._instance.get_mutable()->tradedata_ = const_cast< ::ProtoOATradeData*>(
-      ::ProtoOATradeData::internal_default_instance());
-}
-class ProtoOAPosition::HasBitSetters {
+class ProtoOAPosition::_Internal {
  public:
-  static void set_has_positionid(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  using HasBits = decltype(std::declval<ProtoOAPosition>()._has_bits_);
+  static void set_has_positionid(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
   static const ::ProtoOATradeData& tradedata(const ProtoOAPosition* msg);
-  static void set_has_tradedata(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_tradedata(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_positionstatus(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00002000u;
+  static void set_has_positionstatus(HasBits* has_bits) {
+    (*has_bits)[0] |= 8192u;
   }
-  static void set_has_swap(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_swap(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_price(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_price(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_stoploss(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_stoploss(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_takeprofit(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  static void set_has_takeprofit(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  static void set_has_utclastupdatetimestamp(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_utclastupdatetimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
   }
-  static void set_has_commission(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000080u;
+  static void set_has_commission(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
   }
-  static void set_has_marginrate(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000100u;
+  static void set_has_marginrate(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
   }
-  static void set_has_mirroringcommission(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000200u;
+  static void set_has_mirroringcommission(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
   }
-  static void set_has_guaranteedstoploss(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000800u;
+  static void set_has_guaranteedstoploss(HasBits* has_bits) {
+    (*has_bits)[0] |= 2048u;
   }
-  static void set_has_usedmargin(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00000400u;
+  static void set_has_usedmargin(HasBits* has_bits) {
+    (*has_bits)[0] |= 1024u;
   }
-  static void set_has_stoplosstriggermethod(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00004000u;
+  static void set_has_stoplosstriggermethod(HasBits* has_bits) {
+    (*has_bits)[0] |= 16384u;
   }
-  static void set_has_moneydigits(ProtoOAPosition* msg) {
-    msg->_has_bits_[0] |= 0x00001000u;
+  static void set_has_moneydigits(HasBits* has_bits) {
+    (*has_bits)[0] |= 4096u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00002007) ^ 0x00002007) != 0;
   }
 };
 
 const ::ProtoOATradeData&
-ProtoOAPosition::HasBitSetters::tradedata(const ProtoOAPosition* msg) {
+ProtoOAPosition::_Internal::tradedata(const ProtoOAPosition* msg) {
   return *msg->tradedata_;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOAPosition::kPositionIdFieldNumber;
-const int ProtoOAPosition::kTradeDataFieldNumber;
-const int ProtoOAPosition::kPositionStatusFieldNumber;
-const int ProtoOAPosition::kSwapFieldNumber;
-const int ProtoOAPosition::kPriceFieldNumber;
-const int ProtoOAPosition::kStopLossFieldNumber;
-const int ProtoOAPosition::kTakeProfitFieldNumber;
-const int ProtoOAPosition::kUtcLastUpdateTimestampFieldNumber;
-const int ProtoOAPosition::kCommissionFieldNumber;
-const int ProtoOAPosition::kMarginRateFieldNumber;
-const int ProtoOAPosition::kMirroringCommissionFieldNumber;
-const int ProtoOAPosition::kGuaranteedStopLossFieldNumber;
-const int ProtoOAPosition::kUsedMarginFieldNumber;
-const int ProtoOAPosition::kStopLossTriggerMethodFieldNumber;
-const int ProtoOAPosition::kMoneyDigitsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOAPosition::ProtoOAPosition()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOAPosition::ProtoOAPosition(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOAPosition)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOAPosition)
 }
 ProtoOAPosition::ProtoOAPosition(const ProtoOAPosition& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_tradedata()) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_tradedata()) {
     tradedata_ = new ::ProtoOATradeData(*from.tradedata_);
   } else {
     tradedata_ = nullptr;
@@ -7552,10 +5830,10 @@ ProtoOAPosition::ProtoOAPosition(const ProtoOAPosition& from)
 }
 
 void ProtoOAPosition::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOAPosition_OpenApiModelMessages_2eproto.base);
-  ::memset(&tradedata_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&moneydigits_) -
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAPosition_OpenApiModelMessages_2eproto.base);
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&tradedata_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&moneydigits_) -
       reinterpret_cast<char*>(&tradedata_)) + sizeof(moneydigits_));
   positionstatus_ = 1;
   stoplosstriggermethod_ = 1;
@@ -7564,12 +5842,20 @@ void ProtoOAPosition::SharedCtor() {
 ProtoOAPosition::~ProtoOAPosition() {
   // @@protoc_insertion_point(destructor:ProtoOAPosition)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOAPosition::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete tradedata_;
 }
 
+void ProtoOAPosition::ArenaDtor(void* object) {
+  ProtoOAPosition* _this = reinterpret_cast< ProtoOAPosition* >(object);
+  (void)_this;
+}
+void ProtoOAPosition::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOAPosition::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -7603,476 +5889,169 @@ void ProtoOAPosition::Clear() {
     stoplosstriggermethod_ = 1;
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOAPosition::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 positionId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_positionid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_positionid(&has_bits);
+          positionid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .ProtoOATradeData tradeData = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ctx->ParseMessage(mutable_tradedata(), ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_tradedata(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .ProtoOAPositionStatus positionStatus = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOAPositionStatus_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
-          break;
-        }
-        set_positionstatus(static_cast<::ProtoOAPositionStatus>(val));
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOAPositionStatus_IsValid(val))) {
+            _internal_set_positionstatus(static_cast<::ProtoOAPositionStatus>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // required int64 swap = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_swap(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_swap(&has_bits);
+          swap_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional double price = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 41) goto handle_unusual;
-        set_price(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 41)) {
+          _Internal::set_has_price(&has_bits);
+          price_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional double stopLoss = 6;
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 49) goto handle_unusual;
-        set_stoploss(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 49)) {
+          _Internal::set_has_stoploss(&has_bits);
+          stoploss_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional double takeProfit = 7;
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 57) goto handle_unusual;
-        set_takeprofit(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+          _Internal::set_has_takeprofit(&has_bits);
+          takeprofit_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional int64 utcLastUpdateTimestamp = 8;
-      case 8: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 64) goto handle_unusual;
-        set_utclastupdatetimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          _Internal::set_has_utclastupdatetimestamp(&has_bits);
+          utclastupdatetimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 commission = 9;
-      case 9: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 72) goto handle_unusual;
-        set_commission(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          _Internal::set_has_commission(&has_bits);
+          commission_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional double marginRate = 10;
-      case 10: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 81) goto handle_unusual;
-        set_marginrate(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 81)) {
+          _Internal::set_has_marginrate(&has_bits);
+          marginrate_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional int64 mirroringCommission = 11;
-      case 11: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 88) goto handle_unusual;
-        set_mirroringcommission(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
+          _Internal::set_has_mirroringcommission(&has_bits);
+          mirroringcommission_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool guaranteedStopLoss = 12;
-      case 12: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 96) goto handle_unusual;
-        set_guaranteedstoploss(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
+          _Internal::set_has_guaranteedstoploss(&has_bits);
+          guaranteedstoploss_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint64 usedMargin = 13;
-      case 13: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 104) goto handle_unusual;
-        set_usedmargin(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
+          _Internal::set_has_usedmargin(&has_bits);
+          usedmargin_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOAOrderTriggerMethod stopLossTriggerMethod = 14 [default = TRADE];
-      case 14: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 112) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOAOrderTriggerMethod_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(14, val, mutable_unknown_fields());
-          break;
-        }
-        set_stoplosstriggermethod(static_cast<::ProtoOAOrderTriggerMethod>(val));
-        break;
-      }
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOAOrderTriggerMethod_IsValid(val))) {
+            _internal_set_stoplosstriggermethod(static_cast<::ProtoOAOrderTriggerMethod>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(14, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional uint32 moneyDigits = 15;
-      case 15: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 120) goto handle_unusual;
-        set_moneydigits(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 120)) {
+          _Internal::set_has_moneydigits(&has_bits);
+          moneydigits_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOAPosition::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOAPosition)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 positionId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_positionid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &positionid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required .ProtoOATradeData tradeData = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_tradedata()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required .ProtoOAPositionStatus positionStatus = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOAPositionStatus_IsValid(value)) {
-            set_positionstatus(static_cast< ::ProtoOAPositionStatus >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                3, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 swap = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_swap(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &swap_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double price = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (41 & 0xFF)) {
-          HasBitSetters::set_has_price(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &price_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double stopLoss = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (49 & 0xFF)) {
-          HasBitSetters::set_has_stoploss(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &stoploss_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double takeProfit = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (57 & 0xFF)) {
-          HasBitSetters::set_has_takeprofit(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &takeprofit_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 utcLastUpdateTimestamp = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
-          HasBitSetters::set_has_utclastupdatetimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &utclastupdatetimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 commission = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
-          HasBitSetters::set_has_commission(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &commission_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double marginRate = 10;
-      case 10: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (81 & 0xFF)) {
-          HasBitSetters::set_has_marginrate(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &marginrate_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 mirroringCommission = 11;
-      case 11: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (88 & 0xFF)) {
-          HasBitSetters::set_has_mirroringcommission(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &mirroringcommission_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool guaranteedStopLoss = 12;
-      case 12: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (96 & 0xFF)) {
-          HasBitSetters::set_has_guaranteedstoploss(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &guaranteedstoploss_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint64 usedMargin = 13;
-      case 13: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (104 & 0xFF)) {
-          HasBitSetters::set_has_usedmargin(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &usedmargin_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOAOrderTriggerMethod stopLossTriggerMethod = 14 [default = TRADE];
-      case 14: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (112 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOAOrderTriggerMethod_IsValid(value)) {
-            set_stoplosstriggermethod(static_cast< ::ProtoOAOrderTriggerMethod >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                14, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 moneyDigits = 15;
-      case 15: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (120 & 0xFF)) {
-          HasBitSetters::set_has_moneydigits(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &moneydigits_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOAPosition)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOAPosition)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOAPosition::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOAPosition)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 positionId = 1;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->positionid(), output);
-  }
-
-  // required .ProtoOATradeData tradeData = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::tradedata(this), output);
-  }
-
-  // required .ProtoOAPositionStatus positionStatus = 3;
-  if (cached_has_bits & 0x00002000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      3, this->positionstatus(), output);
-  }
-
-  // required int64 swap = 4;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->swap(), output);
-  }
-
-  // optional double price = 5;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(5, this->price(), output);
-  }
-
-  // optional double stopLoss = 6;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(6, this->stoploss(), output);
-  }
-
-  // optional double takeProfit = 7;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(7, this->takeprofit(), output);
-  }
-
-  // optional int64 utcLastUpdateTimestamp = 8;
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(8, this->utclastupdatetimestamp(), output);
-  }
-
-  // optional int64 commission = 9;
-  if (cached_has_bits & 0x00000080u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(9, this->commission(), output);
-  }
-
-  // optional double marginRate = 10;
-  if (cached_has_bits & 0x00000100u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(10, this->marginrate(), output);
-  }
-
-  // optional int64 mirroringCommission = 11;
-  if (cached_has_bits & 0x00000200u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(11, this->mirroringcommission(), output);
-  }
-
-  // optional bool guaranteedStopLoss = 12;
-  if (cached_has_bits & 0x00000800u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(12, this->guaranteedstoploss(), output);
-  }
-
-  // optional uint64 usedMargin = 13;
-  if (cached_has_bits & 0x00000400u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(13, this->usedmargin(), output);
-  }
-
-  // optional .ProtoOAOrderTriggerMethod stopLossTriggerMethod = 14 [default = TRADE];
-  if (cached_has_bits & 0x00004000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      14, this->stoplosstriggermethod(), output);
-  }
-
-  // optional uint32 moneyDigits = 15;
-  if (cached_has_bits & 0x00001000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(15, this->moneydigits(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOAPosition)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAPosition::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAPosition::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOAPosition)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8080,86 +6059,101 @@ void ProtoOAPosition::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 positionId = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->positionid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_positionid(), target);
   }
 
   // required .ProtoOATradeData tradeData = 2;
   if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::tradedata(this), target);
+      InternalWriteMessage(
+        2, _Internal::tradedata(this), target, stream);
   }
 
   // required .ProtoOAPositionStatus positionStatus = 3;
   if (cached_has_bits & 0x00002000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      3, this->positionstatus(), target);
+      3, this->_internal_positionstatus(), target);
   }
 
   // required int64 swap = 4;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->swap(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_swap(), target);
   }
 
   // optional double price = 5;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->price(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_price(), target);
   }
 
   // optional double stopLoss = 6;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->stoploss(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->_internal_stoploss(), target);
   }
 
   // optional double takeProfit = 7;
   if (cached_has_bits & 0x00000020u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->takeprofit(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_takeprofit(), target);
   }
 
   // optional int64 utcLastUpdateTimestamp = 8;
   if (cached_has_bits & 0x00000040u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->utclastupdatetimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_utclastupdatetimestamp(), target);
   }
 
   // optional int64 commission = 9;
   if (cached_has_bits & 0x00000080u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->commission(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->_internal_commission(), target);
   }
 
   // optional double marginRate = 10;
   if (cached_has_bits & 0x00000100u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(10, this->marginrate(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(10, this->_internal_marginrate(), target);
   }
 
   // optional int64 mirroringCommission = 11;
   if (cached_has_bits & 0x00000200u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(11, this->mirroringcommission(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(11, this->_internal_mirroringcommission(), target);
   }
 
   // optional bool guaranteedStopLoss = 12;
   if (cached_has_bits & 0x00000800u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(12, this->guaranteedstoploss(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(12, this->_internal_guaranteedstoploss(), target);
   }
 
   // optional uint64 usedMargin = 13;
   if (cached_has_bits & 0x00000400u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(13, this->usedmargin(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(13, this->_internal_usedmargin(), target);
   }
 
   // optional .ProtoOAOrderTriggerMethod stopLossTriggerMethod = 14 [default = TRADE];
   if (cached_has_bits & 0x00004000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      14, this->stoplosstriggermethod(), target);
+      14, this->_internal_stoplosstriggermethod(), target);
   }
 
   // optional uint32 moneyDigits = 15;
   if (cached_has_bits & 0x00001000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(15, this->moneydigits(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(15, this->_internal_moneydigits(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOAPosition)
   return target;
@@ -8169,31 +6163,31 @@ size_t ProtoOAPosition::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOAPosition)
   size_t total_size = 0;
 
-  if (has_tradedata()) {
+  if (_internal_has_tradedata()) {
     // required .ProtoOATradeData tradeData = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *tradedata_);
   }
 
-  if (has_positionid()) {
+  if (_internal_has_positionid()) {
     // required int64 positionId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->positionid());
+        this->_internal_positionid());
   }
 
-  if (has_swap()) {
+  if (_internal_has_swap()) {
     // required int64 swap = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->swap());
+        this->_internal_swap());
   }
 
-  if (has_positionstatus()) {
+  if (_internal_has_positionstatus()) {
     // required .ProtoOAPositionStatus positionStatus = 3;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->positionstatus());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_positionstatus());
   }
 
   return total_size;
@@ -8202,11 +6196,6 @@ size_t ProtoOAPosition::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOAPosition)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00002007) ^ 0x00002007) == 0) {  // All required fields are present.
     // required .ProtoOATradeData tradeData = 2;
     total_size += 1 +
@@ -8216,16 +6205,16 @@ size_t ProtoOAPosition::ByteSizeLong() const {
     // required int64 positionId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->positionid());
+        this->_internal_positionid());
 
     // required int64 swap = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->swap());
+        this->_internal_swap());
 
     // required .ProtoOAPositionStatus positionStatus = 3;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->positionstatus());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_positionstatus());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -8255,14 +6244,14 @@ size_t ProtoOAPosition::ByteSizeLong() const {
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->utclastupdatetimestamp());
+          this->_internal_utclastupdatetimestamp());
     }
 
     // optional int64 commission = 9;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->commission());
+          this->_internal_commission());
     }
 
   }
@@ -8276,14 +6265,14 @@ size_t ProtoOAPosition::ByteSizeLong() const {
     if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->mirroringcommission());
+          this->_internal_mirroringcommission());
     }
 
     // optional uint64 usedMargin = 13;
     if (cached_has_bits & 0x00000400u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-          this->usedmargin());
+          this->_internal_usedmargin());
     }
 
     // optional bool guaranteedStopLoss = 12;
@@ -8295,16 +6284,20 @@ size_t ProtoOAPosition::ByteSizeLong() const {
     if (cached_has_bits & 0x00001000u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->moneydigits());
+          this->_internal_moneydigits());
     }
 
   }
   // optional .ProtoOAOrderTriggerMethod stopLossTriggerMethod = 14 [default = TRADE];
   if (cached_has_bits & 0x00004000u) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->stoplosstriggermethod());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_stoplosstriggermethod());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -8328,14 +6321,14 @@ void ProtoOAPosition::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ProtoOAPosition::MergeFrom(const ProtoOAPosition& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOAPosition)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      mutable_tradedata()->::ProtoOATradeData::MergeFrom(from.tradedata());
+      _internal_mutable_tradedata()->::ProtoOATradeData::MergeFrom(from._internal_tradedata());
     }
     if (cached_has_bits & 0x00000002u) {
       positionid_ = from.positionid_;
@@ -8401,100 +6394,82 @@ void ProtoOAPosition::CopyFrom(const ProtoOAPosition& from) {
 }
 
 bool ProtoOAPosition::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00002007) != 0x00002007) return false;
-  if (has_tradedata()) {
-    if (!this->tradedata_->IsInitialized()) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_internal_has_tradedata()) {
+    if (!tradedata_->IsInitialized()) return false;
   }
   return true;
 }
 
-void ProtoOAPosition::Swap(ProtoOAPosition* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOAPosition::InternalSwap(ProtoOAPosition* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(tradedata_, other->tradedata_);
-  swap(positionid_, other->positionid_);
-  swap(swap_, other->swap_);
-  swap(price_, other->price_);
-  swap(stoploss_, other->stoploss_);
-  swap(takeprofit_, other->takeprofit_);
-  swap(utclastupdatetimestamp_, other->utclastupdatetimestamp_);
-  swap(commission_, other->commission_);
-  swap(marginrate_, other->marginrate_);
-  swap(mirroringcommission_, other->mirroringcommission_);
-  swap(usedmargin_, other->usedmargin_);
-  swap(guaranteedstoploss_, other->guaranteedstoploss_);
-  swap(moneydigits_, other->moneydigits_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOAPosition, moneydigits_)
+      + sizeof(ProtoOAPosition::moneydigits_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOAPosition, tradedata_)>(
+          reinterpret_cast<char*>(&tradedata_),
+          reinterpret_cast<char*>(&other->tradedata_));
   swap(positionstatus_, other->positionstatus_);
   swap(stoplosstriggermethod_, other->stoplosstriggermethod_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOAPosition::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOATradeData::InitAsDefaultInstance() {
-}
-class ProtoOATradeData::HasBitSetters {
+class ProtoOATradeData::_Internal {
  public:
-  static void set_has_symbolid(ProtoOATradeData* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  using HasBits = decltype(std::declval<ProtoOATradeData>()._has_bits_);
+  static void set_has_symbolid(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_volume(ProtoOATradeData* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_volume(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_tradeside(ProtoOATradeData* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_tradeside(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
   }
-  static void set_has_opentimestamp(ProtoOATradeData* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_opentimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_label(ProtoOATradeData* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_label(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_guaranteedstoploss(ProtoOATradeData* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  static void set_has_guaranteedstoploss(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  static void set_has_comment(ProtoOATradeData* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_comment(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x0000004c) ^ 0x0000004c) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOATradeData::kSymbolIdFieldNumber;
-const int ProtoOATradeData::kVolumeFieldNumber;
-const int ProtoOATradeData::kTradeSideFieldNumber;
-const int ProtoOATradeData::kOpenTimestampFieldNumber;
-const int ProtoOATradeData::kLabelFieldNumber;
-const int ProtoOATradeData::kGuaranteedStopLossFieldNumber;
-const int ProtoOATradeData::kCommentFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOATradeData::ProtoOATradeData()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOATradeData::ProtoOATradeData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOATradeData)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOATradeData)
 }
 ProtoOATradeData::ProtoOATradeData(const ProtoOATradeData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   label_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_label()) {
-    label_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.label_);
+  if (from._internal_has_label()) {
+    label_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_label(), 
+      GetArena());
   }
   comment_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_comment()) {
-    comment_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.comment_);
+  if (from._internal_has_comment()) {
+    comment_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_comment(), 
+      GetArena());
   }
   ::memcpy(&symbolid_, &from.symbolid_,
     static_cast<size_t>(reinterpret_cast<char*>(&tradeside_) -
@@ -8503,12 +6478,12 @@ ProtoOATradeData::ProtoOATradeData(const ProtoOATradeData& from)
 }
 
 void ProtoOATradeData::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOATradeData_OpenApiModelMessages_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOATradeData_OpenApiModelMessages_2eproto.base);
   label_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   comment_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&symbolid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&guaranteedstoploss_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&symbolid_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&guaranteedstoploss_) -
       reinterpret_cast<char*>(&symbolid_)) + sizeof(guaranteedstoploss_));
   tradeside_ = 1;
 }
@@ -8516,13 +6491,21 @@ void ProtoOATradeData::SharedCtor() {
 ProtoOATradeData::~ProtoOATradeData() {
   // @@protoc_insertion_point(destructor:ProtoOATradeData)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOATradeData::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   label_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   comment_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void ProtoOATradeData::ArenaDtor(void* object) {
+  ProtoOATradeData* _this = reinterpret_cast< ProtoOATradeData* >(object);
+  (void)_this;
+}
+void ProtoOATradeData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOATradeData::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -8541,10 +6524,10 @@ void ProtoOATradeData::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      label_.ClearNonDefaultToEmptyNoArena();
+      label_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      comment_.ClearNonDefaultToEmptyNoArena();
+      comment_.ClearNonDefaultToEmpty();
     }
   }
   if (cached_has_bits & 0x0000007cu) {
@@ -8554,279 +6537,108 @@ void ProtoOATradeData::Clear() {
     tradeside_ = 1;
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOATradeData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 symbolId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_symbolid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_symbolid(&has_bits);
+          symbolid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 volume = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
-        set_volume(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_volume(&has_bits);
+          volume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .ProtoOATradeSide tradeSide = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOATradeSide_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
-          break;
-        }
-        set_tradeside(static_cast<::ProtoOATradeSide>(val));
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOATradeSide_IsValid(val))) {
+            _internal_set_tradeside(static_cast<::ProtoOATradeSide>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional int64 openTimestamp = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_opentimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_opentimestamp(&has_bits);
+          opentimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional string label = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 42) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_label(), ptr, ctx, "ProtoOATradeData.label");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          auto str = _internal_mutable_label();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOATradeData.label");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool guaranteedStopLoss = 6;
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 48) goto handle_unusual;
-        set_guaranteedstoploss(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          _Internal::set_has_guaranteedstoploss(&has_bits);
+          guaranteedstoploss_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional string comment = 7;
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 58) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_comment(), ptr, ctx, "ProtoOATradeData.comment");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          auto str = _internal_mutable_comment();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOATradeData.comment");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOATradeData::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOATradeData)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 symbolId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_symbolid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &symbolid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 volume = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_volume(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &volume_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required .ProtoOATradeSide tradeSide = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOATradeSide_IsValid(value)) {
-            set_tradeside(static_cast< ::ProtoOATradeSide >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                3, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 openTimestamp = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_opentimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &opentimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string label = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_label()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->label().data(), static_cast<int>(this->label().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOATradeData.label");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool guaranteedStopLoss = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-          HasBitSetters::set_has_guaranteedstoploss(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &guaranteedstoploss_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string comment = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_comment()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->comment().data(), static_cast<int>(this->comment().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOATradeData.comment");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOATradeData)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOATradeData)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOATradeData::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOATradeData)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 symbolId = 1;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->symbolid(), output);
-  }
-
-  // required int64 volume = 2;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->volume(), output);
-  }
-
-  // required .ProtoOATradeSide tradeSide = 3;
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      3, this->tradeside(), output);
-  }
-
-  // optional int64 openTimestamp = 4;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->opentimestamp(), output);
-  }
-
-  // optional string label = 5;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->label().data(), static_cast<int>(this->label().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOATradeData.label");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      5, this->label(), output);
-  }
-
-  // optional bool guaranteedStopLoss = 6;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(6, this->guaranteedstoploss(), output);
-  }
-
-  // optional string comment = 7;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->comment().data(), static_cast<int>(this->comment().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOATradeData.comment");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      7, this->comment(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOATradeData)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOATradeData::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOATradeData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOATradeData)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8834,55 +6646,58 @@ void ProtoOATradeData::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 symbolId = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->symbolid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_symbolid(), target);
   }
 
   // required int64 volume = 2;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->volume(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_volume(), target);
   }
 
   // required .ProtoOATradeSide tradeSide = 3;
   if (cached_has_bits & 0x00000040u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      3, this->tradeside(), target);
+      3, this->_internal_tradeside(), target);
   }
 
   // optional int64 openTimestamp = 4;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->opentimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_opentimestamp(), target);
   }
 
   // optional string label = 5;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->label().data(), static_cast<int>(this->label().length()),
+      this->_internal_label().data(), static_cast<int>(this->_internal_label().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOATradeData.label");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        5, this->label(), target);
+    target = stream->WriteStringMaybeAliased(
+        5, this->_internal_label(), target);
   }
 
   // optional bool guaranteedStopLoss = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->guaranteedstoploss(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_guaranteedstoploss(), target);
   }
 
   // optional string comment = 7;
   if (cached_has_bits & 0x00000002u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->comment().data(), static_cast<int>(this->comment().length()),
+      this->_internal_comment().data(), static_cast<int>(this->_internal_comment().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOATradeData.comment");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        7, this->comment(), target);
+    target = stream->WriteStringMaybeAliased(
+        7, this->_internal_comment(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOATradeData)
   return target;
@@ -8892,24 +6707,24 @@ size_t ProtoOATradeData::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOATradeData)
   size_t total_size = 0;
 
-  if (has_symbolid()) {
+  if (_internal_has_symbolid()) {
     // required int64 symbolId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->symbolid());
+        this->_internal_symbolid());
   }
 
-  if (has_volume()) {
+  if (_internal_has_volume()) {
     // required int64 volume = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->volume());
+        this->_internal_volume());
   }
 
-  if (has_tradeside()) {
+  if (_internal_has_tradeside()) {
     // required .ProtoOATradeSide tradeSide = 3;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->tradeside());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_tradeside());
   }
 
   return total_size;
@@ -8918,25 +6733,20 @@ size_t ProtoOATradeData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOATradeData)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x0000004c) ^ 0x0000004c) == 0) {  // All required fields are present.
     // required int64 symbolId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->symbolid());
+        this->_internal_symbolid());
 
     // required int64 volume = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->volume());
+        this->_internal_volume());
 
     // required .ProtoOATradeSide tradeSide = 3;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->tradeside());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_tradeside());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -8951,14 +6761,14 @@ size_t ProtoOATradeData::ByteSizeLong() const {
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-          this->label());
+          this->_internal_label());
     }
 
     // optional string comment = 7;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-          this->comment());
+          this->_internal_comment());
     }
 
   }
@@ -8967,7 +6777,7 @@ size_t ProtoOATradeData::ByteSizeLong() const {
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->opentimestamp());
+          this->_internal_opentimestamp());
     }
 
     // optional bool guaranteedStopLoss = 6;
@@ -8975,6 +6785,10 @@ size_t ProtoOATradeData::ByteSizeLong() const {
       total_size += 1 + 1;
     }
 
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -8999,19 +6813,17 @@ void ProtoOATradeData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ProtoOATradeData::MergeFrom(const ProtoOATradeData& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOATradeData)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x0000007fu) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      label_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.label_);
+      _internal_set_label(from._internal_label());
     }
     if (cached_has_bits & 0x00000002u) {
-      _has_bits_[0] |= 0x00000002u;
-      comment_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.comment_);
+      _internal_set_comment(from._internal_comment());
     }
     if (cached_has_bits & 0x00000004u) {
       symbolid_ = from.symbolid_;
@@ -9047,160 +6859,130 @@ void ProtoOATradeData::CopyFrom(const ProtoOATradeData& from) {
 }
 
 bool ProtoOATradeData::IsInitialized() const {
-  if ((_has_bits_[0] & 0x0000004c) != 0x0000004c) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOATradeData::Swap(ProtoOATradeData* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOATradeData::InternalSwap(ProtoOATradeData* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  label_.Swap(&other->label_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  comment_.Swap(&other->comment_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(symbolid_, other->symbolid_);
-  swap(volume_, other->volume_);
-  swap(opentimestamp_, other->opentimestamp_);
-  swap(guaranteedstoploss_, other->guaranteedstoploss_);
+  label_.Swap(&other->label_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  comment_.Swap(&other->comment_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOATradeData, guaranteedstoploss_)
+      + sizeof(ProtoOATradeData::guaranteedstoploss_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOATradeData, symbolid_)>(
+          reinterpret_cast<char*>(&symbolid_),
+          reinterpret_cast<char*>(&other->symbolid_));
   swap(tradeside_, other->tradeside_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOATradeData::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOAOrder::InitAsDefaultInstance() {
-  ::_ProtoOAOrder_default_instance_._instance.get_mutable()->tradedata_ = const_cast< ::ProtoOATradeData*>(
-      ::ProtoOATradeData::internal_default_instance());
-}
-class ProtoOAOrder::HasBitSetters {
+class ProtoOAOrder::_Internal {
  public:
-  static void set_has_orderid(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  using HasBits = decltype(std::declval<ProtoOAOrder>()._has_bits_);
+  static void set_has_orderid(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
   static const ::ProtoOATradeData& tradedata(const ProtoOAOrder* msg);
-  static void set_has_tradedata(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_tradedata(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_ordertype(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00080000u;
+  static void set_has_ordertype(HasBits* has_bits) {
+    (*has_bits)[0] |= 524288u;
   }
-  static void set_has_orderstatus(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00100000u;
+  static void set_has_orderstatus(HasBits* has_bits) {
+    (*has_bits)[0] |= 1048576u;
   }
-  static void set_has_expirationtimestamp(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_expirationtimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_executionprice(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_executionprice(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_executedvolume(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  static void set_has_executedvolume(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  static void set_has_utclastupdatetimestamp(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_utclastupdatetimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
   }
-  static void set_has_baseslippageprice(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000080u;
+  static void set_has_baseslippageprice(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
   }
-  static void set_has_slippageinpoints(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000100u;
+  static void set_has_slippageinpoints(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
   }
-  static void set_has_closingorder(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00010000u;
+  static void set_has_closingorder(HasBits* has_bits) {
+    (*has_bits)[0] |= 65536u;
   }
-  static void set_has_limitprice(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000200u;
+  static void set_has_limitprice(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
   }
-  static void set_has_stopprice(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000400u;
+  static void set_has_stopprice(HasBits* has_bits) {
+    (*has_bits)[0] |= 1024u;
   }
-  static void set_has_stoploss(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000800u;
+  static void set_has_stoploss(HasBits* has_bits) {
+    (*has_bits)[0] |= 2048u;
   }
-  static void set_has_takeprofit(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00001000u;
+  static void set_has_takeprofit(HasBits* has_bits) {
+    (*has_bits)[0] |= 4096u;
   }
-  static void set_has_clientorderid(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_clientorderid(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_timeinforce(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00200000u;
+  static void set_has_timeinforce(HasBits* has_bits) {
+    (*has_bits)[0] |= 2097152u;
   }
-  static void set_has_positionid(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00002000u;
+  static void set_has_positionid(HasBits* has_bits) {
+    (*has_bits)[0] |= 8192u;
   }
-  static void set_has_relativestoploss(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00004000u;
+  static void set_has_relativestoploss(HasBits* has_bits) {
+    (*has_bits)[0] |= 16384u;
   }
-  static void set_has_relativetakeprofit(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00008000u;
+  static void set_has_relativetakeprofit(HasBits* has_bits) {
+    (*has_bits)[0] |= 32768u;
   }
-  static void set_has_isstopout(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00020000u;
+  static void set_has_isstopout(HasBits* has_bits) {
+    (*has_bits)[0] |= 131072u;
   }
-  static void set_has_trailingstoploss(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00040000u;
+  static void set_has_trailingstoploss(HasBits* has_bits) {
+    (*has_bits)[0] |= 262144u;
   }
-  static void set_has_stoptriggermethod(ProtoOAOrder* msg) {
-    msg->_has_bits_[0] |= 0x00400000u;
+  static void set_has_stoptriggermethod(HasBits* has_bits) {
+    (*has_bits)[0] |= 4194304u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00180006) ^ 0x00180006) != 0;
   }
 };
 
 const ::ProtoOATradeData&
-ProtoOAOrder::HasBitSetters::tradedata(const ProtoOAOrder* msg) {
+ProtoOAOrder::_Internal::tradedata(const ProtoOAOrder* msg) {
   return *msg->tradedata_;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOAOrder::kOrderIdFieldNumber;
-const int ProtoOAOrder::kTradeDataFieldNumber;
-const int ProtoOAOrder::kOrderTypeFieldNumber;
-const int ProtoOAOrder::kOrderStatusFieldNumber;
-const int ProtoOAOrder::kExpirationTimestampFieldNumber;
-const int ProtoOAOrder::kExecutionPriceFieldNumber;
-const int ProtoOAOrder::kExecutedVolumeFieldNumber;
-const int ProtoOAOrder::kUtcLastUpdateTimestampFieldNumber;
-const int ProtoOAOrder::kBaseSlippagePriceFieldNumber;
-const int ProtoOAOrder::kSlippageInPointsFieldNumber;
-const int ProtoOAOrder::kClosingOrderFieldNumber;
-const int ProtoOAOrder::kLimitPriceFieldNumber;
-const int ProtoOAOrder::kStopPriceFieldNumber;
-const int ProtoOAOrder::kStopLossFieldNumber;
-const int ProtoOAOrder::kTakeProfitFieldNumber;
-const int ProtoOAOrder::kClientOrderIdFieldNumber;
-const int ProtoOAOrder::kTimeInForceFieldNumber;
-const int ProtoOAOrder::kPositionIdFieldNumber;
-const int ProtoOAOrder::kRelativeStopLossFieldNumber;
-const int ProtoOAOrder::kRelativeTakeProfitFieldNumber;
-const int ProtoOAOrder::kIsStopOutFieldNumber;
-const int ProtoOAOrder::kTrailingStopLossFieldNumber;
-const int ProtoOAOrder::kStopTriggerMethodFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOAOrder::ProtoOAOrder()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOAOrder::ProtoOAOrder(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOAOrder)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOAOrder)
 }
 ProtoOAOrder::ProtoOAOrder(const ProtoOAOrder& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   clientorderid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_clientorderid()) {
-    clientorderid_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.clientorderid_);
+  if (from._internal_has_clientorderid()) {
+    clientorderid_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_clientorderid(), 
+      GetArena());
   }
-  if (from.has_tradedata()) {
+  if (from._internal_has_tradedata()) {
     tradedata_ = new ::ProtoOATradeData(*from.tradedata_);
   } else {
     tradedata_ = nullptr;
@@ -9212,11 +6994,11 @@ ProtoOAOrder::ProtoOAOrder(const ProtoOAOrder& from)
 }
 
 void ProtoOAOrder::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOAOrder_OpenApiModelMessages_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAOrder_OpenApiModelMessages_2eproto.base);
   clientorderid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&tradedata_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&trailingstoploss_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&tradedata_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&trailingstoploss_) -
       reinterpret_cast<char*>(&tradedata_)) + sizeof(trailingstoploss_));
   ordertype_ = 1;
   orderstatus_ = 1;
@@ -9227,13 +7009,21 @@ void ProtoOAOrder::SharedCtor() {
 ProtoOAOrder::~ProtoOAOrder() {
   // @@protoc_insertion_point(destructor:ProtoOAOrder)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOAOrder::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   clientorderid_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete tradedata_;
 }
 
+void ProtoOAOrder::ArenaDtor(void* object) {
+  ProtoOAOrder* _this = reinterpret_cast< ProtoOAOrder* >(object);
+  (void)_this;
+}
+void ProtoOAOrder::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOAOrder::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -9252,7 +7042,7 @@ void ProtoOAOrder::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      clientorderid_.ClearNonDefaultToEmptyNoArena();
+      clientorderid_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
       GOOGLE_DCHECK(tradedata_ != nullptr);
@@ -9279,707 +7069,244 @@ void ProtoOAOrder::Clear() {
     stoptriggermethod_ = 1;
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOAOrder::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 orderId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_orderid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_orderid(&has_bits);
+          orderid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .ProtoOATradeData tradeData = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ctx->ParseMessage(mutable_tradedata(), ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_tradedata(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .ProtoOAOrderType orderType = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOAOrderType_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
-          break;
-        }
-        set_ordertype(static_cast<::ProtoOAOrderType>(val));
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOAOrderType_IsValid(val))) {
+            _internal_set_ordertype(static_cast<::ProtoOAOrderType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // required .ProtoOAOrderStatus orderStatus = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOAOrderStatus_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(4, val, mutable_unknown_fields());
-          break;
-        }
-        set_orderstatus(static_cast<::ProtoOAOrderStatus>(val));
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOAOrderStatus_IsValid(val))) {
+            _internal_set_orderstatus(static_cast<::ProtoOAOrderStatus>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(4, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional int64 expirationTimestamp = 6;
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 48) goto handle_unusual;
-        set_expirationtimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          _Internal::set_has_expirationtimestamp(&has_bits);
+          expirationtimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional double executionPrice = 7;
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 57) goto handle_unusual;
-        set_executionprice(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+          _Internal::set_has_executionprice(&has_bits);
+          executionprice_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional int64 executedVolume = 8;
-      case 8: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 64) goto handle_unusual;
-        set_executedvolume(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          _Internal::set_has_executedvolume(&has_bits);
+          executedvolume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 utcLastUpdateTimestamp = 9;
-      case 9: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 72) goto handle_unusual;
-        set_utclastupdatetimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          _Internal::set_has_utclastupdatetimestamp(&has_bits);
+          utclastupdatetimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional double baseSlippagePrice = 10;
-      case 10: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 81) goto handle_unusual;
-        set_baseslippageprice(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 81)) {
+          _Internal::set_has_baseslippageprice(&has_bits);
+          baseslippageprice_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional int64 slippageInPoints = 11;
-      case 11: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 88) goto handle_unusual;
-        set_slippageinpoints(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
+          _Internal::set_has_slippageinpoints(&has_bits);
+          slippageinpoints_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool closingOrder = 12;
-      case 12: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 96) goto handle_unusual;
-        set_closingorder(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
+          _Internal::set_has_closingorder(&has_bits);
+          closingorder_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional double limitPrice = 13;
-      case 13: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 105) goto handle_unusual;
-        set_limitprice(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 105)) {
+          _Internal::set_has_limitprice(&has_bits);
+          limitprice_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional double stopPrice = 14;
-      case 14: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 113) goto handle_unusual;
-        set_stopprice(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 113)) {
+          _Internal::set_has_stopprice(&has_bits);
+          stopprice_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional double stopLoss = 15;
-      case 15: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 121) goto handle_unusual;
-        set_stoploss(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 121)) {
+          _Internal::set_has_stoploss(&has_bits);
+          stoploss_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional double takeProfit = 16;
-      case 16: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 129) goto handle_unusual;
-        set_takeprofit(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 16:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 129)) {
+          _Internal::set_has_takeprofit(&has_bits);
+          takeprofit_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional string clientOrderId = 17;
-      case 17: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 138) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_clientorderid(), ptr, ctx, "ProtoOAOrder.clientOrderId");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 17:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 138)) {
+          auto str = _internal_mutable_clientorderid();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOAOrder.clientOrderId");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOATimeInForce timeInForce = 18 [default = IMMEDIATE_OR_CANCEL];
-      case 18: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 144) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOATimeInForce_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(18, val, mutable_unknown_fields());
-          break;
-        }
-        set_timeinforce(static_cast<::ProtoOATimeInForce>(val));
-        break;
-      }
+      case 18:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 144)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOATimeInForce_IsValid(val))) {
+            _internal_set_timeinforce(static_cast<::ProtoOATimeInForce>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(18, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional int64 positionId = 19;
-      case 19: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 152) goto handle_unusual;
-        set_positionid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 19:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 152)) {
+          _Internal::set_has_positionid(&has_bits);
+          positionid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 relativeStopLoss = 20;
-      case 20: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 160) goto handle_unusual;
-        set_relativestoploss(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 20:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 160)) {
+          _Internal::set_has_relativestoploss(&has_bits);
+          relativestoploss_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 relativeTakeProfit = 21;
-      case 21: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 168) goto handle_unusual;
-        set_relativetakeprofit(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 21:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 168)) {
+          _Internal::set_has_relativetakeprofit(&has_bits);
+          relativetakeprofit_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool isStopOut = 22;
-      case 22: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 176) goto handle_unusual;
-        set_isstopout(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 22:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 176)) {
+          _Internal::set_has_isstopout(&has_bits);
+          isstopout_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool trailingStopLoss = 23;
-      case 23: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 184) goto handle_unusual;
-        set_trailingstoploss(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 23:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 184)) {
+          _Internal::set_has_trailingstoploss(&has_bits);
+          trailingstoploss_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOAOrderTriggerMethod stopTriggerMethod = 24 [default = TRADE];
-      case 24: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 192) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOAOrderTriggerMethod_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(24, val, mutable_unknown_fields());
-          break;
-        }
-        set_stoptriggermethod(static_cast<::ProtoOAOrderTriggerMethod>(val));
-        break;
-      }
+      case 24:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 192)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOAOrderTriggerMethod_IsValid(val))) {
+            _internal_set_stoptriggermethod(static_cast<::ProtoOAOrderTriggerMethod>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(24, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOAOrder::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOAOrder)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 orderId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_orderid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &orderid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required .ProtoOATradeData tradeData = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_tradedata()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required .ProtoOAOrderType orderType = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOAOrderType_IsValid(value)) {
-            set_ordertype(static_cast< ::ProtoOAOrderType >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                3, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required .ProtoOAOrderStatus orderStatus = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOAOrderStatus_IsValid(value)) {
-            set_orderstatus(static_cast< ::ProtoOAOrderStatus >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                4, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 expirationTimestamp = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-          HasBitSetters::set_has_expirationtimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &expirationtimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double executionPrice = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (57 & 0xFF)) {
-          HasBitSetters::set_has_executionprice(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &executionprice_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 executedVolume = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
-          HasBitSetters::set_has_executedvolume(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &executedvolume_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 utcLastUpdateTimestamp = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
-          HasBitSetters::set_has_utclastupdatetimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &utclastupdatetimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double baseSlippagePrice = 10;
-      case 10: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (81 & 0xFF)) {
-          HasBitSetters::set_has_baseslippageprice(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &baseslippageprice_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 slippageInPoints = 11;
-      case 11: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (88 & 0xFF)) {
-          HasBitSetters::set_has_slippageinpoints(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &slippageinpoints_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool closingOrder = 12;
-      case 12: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (96 & 0xFF)) {
-          HasBitSetters::set_has_closingorder(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &closingorder_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double limitPrice = 13;
-      case 13: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (105 & 0xFF)) {
-          HasBitSetters::set_has_limitprice(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &limitprice_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double stopPrice = 14;
-      case 14: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (113 & 0xFF)) {
-          HasBitSetters::set_has_stopprice(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &stopprice_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double stopLoss = 15;
-      case 15: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (121 & 0xFF)) {
-          HasBitSetters::set_has_stoploss(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &stoploss_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double takeProfit = 16;
-      case 16: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (129 & 0xFF)) {
-          HasBitSetters::set_has_takeprofit(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &takeprofit_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string clientOrderId = 17;
-      case 17: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (138 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_clientorderid()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->clientorderid().data(), static_cast<int>(this->clientorderid().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOAOrder.clientOrderId");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOATimeInForce timeInForce = 18 [default = IMMEDIATE_OR_CANCEL];
-      case 18: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (144 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOATimeInForce_IsValid(value)) {
-            set_timeinforce(static_cast< ::ProtoOATimeInForce >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                18, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 positionId = 19;
-      case 19: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (152 & 0xFF)) {
-          HasBitSetters::set_has_positionid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &positionid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 relativeStopLoss = 20;
-      case 20: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (160 & 0xFF)) {
-          HasBitSetters::set_has_relativestoploss(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &relativestoploss_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 relativeTakeProfit = 21;
-      case 21: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (168 & 0xFF)) {
-          HasBitSetters::set_has_relativetakeprofit(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &relativetakeprofit_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool isStopOut = 22;
-      case 22: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (176 & 0xFF)) {
-          HasBitSetters::set_has_isstopout(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &isstopout_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool trailingStopLoss = 23;
-      case 23: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (184 & 0xFF)) {
-          HasBitSetters::set_has_trailingstoploss(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &trailingstoploss_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOAOrderTriggerMethod stopTriggerMethod = 24 [default = TRADE];
-      case 24: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (192 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOAOrderTriggerMethod_IsValid(value)) {
-            set_stoptriggermethod(static_cast< ::ProtoOAOrderTriggerMethod >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                24, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOAOrder)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOAOrder)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOAOrder::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOAOrder)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 orderId = 1;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->orderid(), output);
-  }
-
-  // required .ProtoOATradeData tradeData = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::tradedata(this), output);
-  }
-
-  // required .ProtoOAOrderType orderType = 3;
-  if (cached_has_bits & 0x00080000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      3, this->ordertype(), output);
-  }
-
-  // required .ProtoOAOrderStatus orderStatus = 4;
-  if (cached_has_bits & 0x00100000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      4, this->orderstatus(), output);
-  }
-
-  // optional int64 expirationTimestamp = 6;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(6, this->expirationtimestamp(), output);
-  }
-
-  // optional double executionPrice = 7;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(7, this->executionprice(), output);
-  }
-
-  // optional int64 executedVolume = 8;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(8, this->executedvolume(), output);
-  }
-
-  // optional int64 utcLastUpdateTimestamp = 9;
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(9, this->utclastupdatetimestamp(), output);
-  }
-
-  // optional double baseSlippagePrice = 10;
-  if (cached_has_bits & 0x00000080u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(10, this->baseslippageprice(), output);
-  }
-
-  // optional int64 slippageInPoints = 11;
-  if (cached_has_bits & 0x00000100u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(11, this->slippageinpoints(), output);
-  }
-
-  // optional bool closingOrder = 12;
-  if (cached_has_bits & 0x00010000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(12, this->closingorder(), output);
-  }
-
-  // optional double limitPrice = 13;
-  if (cached_has_bits & 0x00000200u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(13, this->limitprice(), output);
-  }
-
-  // optional double stopPrice = 14;
-  if (cached_has_bits & 0x00000400u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(14, this->stopprice(), output);
-  }
-
-  // optional double stopLoss = 15;
-  if (cached_has_bits & 0x00000800u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(15, this->stoploss(), output);
-  }
-
-  // optional double takeProfit = 16;
-  if (cached_has_bits & 0x00001000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(16, this->takeprofit(), output);
-  }
-
-  // optional string clientOrderId = 17;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->clientorderid().data(), static_cast<int>(this->clientorderid().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOAOrder.clientOrderId");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      17, this->clientorderid(), output);
-  }
-
-  // optional .ProtoOATimeInForce timeInForce = 18 [default = IMMEDIATE_OR_CANCEL];
-  if (cached_has_bits & 0x00200000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      18, this->timeinforce(), output);
-  }
-
-  // optional int64 positionId = 19;
-  if (cached_has_bits & 0x00002000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(19, this->positionid(), output);
-  }
-
-  // optional int64 relativeStopLoss = 20;
-  if (cached_has_bits & 0x00004000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(20, this->relativestoploss(), output);
-  }
-
-  // optional int64 relativeTakeProfit = 21;
-  if (cached_has_bits & 0x00008000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(21, this->relativetakeprofit(), output);
-  }
-
-  // optional bool isStopOut = 22;
-  if (cached_has_bits & 0x00020000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(22, this->isstopout(), output);
-  }
-
-  // optional bool trailingStopLoss = 23;
-  if (cached_has_bits & 0x00040000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(23, this->trailingstoploss(), output);
-  }
-
-  // optional .ProtoOAOrderTriggerMethod stopTriggerMethod = 24 [default = TRADE];
-  if (cached_has_bits & 0x00400000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      24, this->stoptriggermethod(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOAOrder)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAOrder::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAOrder::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOAOrder)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -9987,134 +7314,155 @@ void ProtoOAOrder::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 orderId = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->orderid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_orderid(), target);
   }
 
   // required .ProtoOATradeData tradeData = 2;
   if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::tradedata(this), target);
+      InternalWriteMessage(
+        2, _Internal::tradedata(this), target, stream);
   }
 
   // required .ProtoOAOrderType orderType = 3;
   if (cached_has_bits & 0x00080000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      3, this->ordertype(), target);
+      3, this->_internal_ordertype(), target);
   }
 
   // required .ProtoOAOrderStatus orderStatus = 4;
   if (cached_has_bits & 0x00100000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      4, this->orderstatus(), target);
+      4, this->_internal_orderstatus(), target);
   }
 
   // optional int64 expirationTimestamp = 6;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->expirationtimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_expirationtimestamp(), target);
   }
 
   // optional double executionPrice = 7;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->executionprice(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_executionprice(), target);
   }
 
   // optional int64 executedVolume = 8;
   if (cached_has_bits & 0x00000020u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->executedvolume(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_executedvolume(), target);
   }
 
   // optional int64 utcLastUpdateTimestamp = 9;
   if (cached_has_bits & 0x00000040u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->utclastupdatetimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->_internal_utclastupdatetimestamp(), target);
   }
 
   // optional double baseSlippagePrice = 10;
   if (cached_has_bits & 0x00000080u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(10, this->baseslippageprice(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(10, this->_internal_baseslippageprice(), target);
   }
 
   // optional int64 slippageInPoints = 11;
   if (cached_has_bits & 0x00000100u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(11, this->slippageinpoints(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(11, this->_internal_slippageinpoints(), target);
   }
 
   // optional bool closingOrder = 12;
   if (cached_has_bits & 0x00010000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(12, this->closingorder(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(12, this->_internal_closingorder(), target);
   }
 
   // optional double limitPrice = 13;
   if (cached_has_bits & 0x00000200u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(13, this->limitprice(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(13, this->_internal_limitprice(), target);
   }
 
   // optional double stopPrice = 14;
   if (cached_has_bits & 0x00000400u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(14, this->stopprice(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(14, this->_internal_stopprice(), target);
   }
 
   // optional double stopLoss = 15;
   if (cached_has_bits & 0x00000800u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(15, this->stoploss(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(15, this->_internal_stoploss(), target);
   }
 
   // optional double takeProfit = 16;
   if (cached_has_bits & 0x00001000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(16, this->takeprofit(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(16, this->_internal_takeprofit(), target);
   }
 
   // optional string clientOrderId = 17;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->clientorderid().data(), static_cast<int>(this->clientorderid().length()),
+      this->_internal_clientorderid().data(), static_cast<int>(this->_internal_clientorderid().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOAOrder.clientOrderId");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        17, this->clientorderid(), target);
+    target = stream->WriteStringMaybeAliased(
+        17, this->_internal_clientorderid(), target);
   }
 
   // optional .ProtoOATimeInForce timeInForce = 18 [default = IMMEDIATE_OR_CANCEL];
   if (cached_has_bits & 0x00200000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      18, this->timeinforce(), target);
+      18, this->_internal_timeinforce(), target);
   }
 
   // optional int64 positionId = 19;
   if (cached_has_bits & 0x00002000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(19, this->positionid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(19, this->_internal_positionid(), target);
   }
 
   // optional int64 relativeStopLoss = 20;
   if (cached_has_bits & 0x00004000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(20, this->relativestoploss(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(20, this->_internal_relativestoploss(), target);
   }
 
   // optional int64 relativeTakeProfit = 21;
   if (cached_has_bits & 0x00008000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(21, this->relativetakeprofit(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(21, this->_internal_relativetakeprofit(), target);
   }
 
   // optional bool isStopOut = 22;
   if (cached_has_bits & 0x00020000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(22, this->isstopout(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(22, this->_internal_isstopout(), target);
   }
 
   // optional bool trailingStopLoss = 23;
   if (cached_has_bits & 0x00040000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(23, this->trailingstoploss(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(23, this->_internal_trailingstoploss(), target);
   }
 
   // optional .ProtoOAOrderTriggerMethod stopTriggerMethod = 24 [default = TRADE];
   if (cached_has_bits & 0x00400000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      24, this->stoptriggermethod(), target);
+      24, this->_internal_stoptriggermethod(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOAOrder)
   return target;
@@ -10124,30 +7472,30 @@ size_t ProtoOAOrder::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOAOrder)
   size_t total_size = 0;
 
-  if (has_tradedata()) {
+  if (_internal_has_tradedata()) {
     // required .ProtoOATradeData tradeData = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *tradedata_);
   }
 
-  if (has_orderid()) {
+  if (_internal_has_orderid()) {
     // required int64 orderId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->orderid());
+        this->_internal_orderid());
   }
 
-  if (has_ordertype()) {
+  if (_internal_has_ordertype()) {
     // required .ProtoOAOrderType orderType = 3;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->ordertype());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_ordertype());
   }
 
-  if (has_orderstatus()) {
+  if (_internal_has_orderstatus()) {
     // required .ProtoOAOrderStatus orderStatus = 4;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->orderstatus());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_orderstatus());
   }
 
   return total_size;
@@ -10156,11 +7504,6 @@ size_t ProtoOAOrder::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOAOrder)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00180006) ^ 0x00180006) == 0) {  // All required fields are present.
     // required .ProtoOATradeData tradeData = 2;
     total_size += 1 +
@@ -10170,15 +7513,15 @@ size_t ProtoOAOrder::ByteSizeLong() const {
     // required int64 orderId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->orderid());
+        this->_internal_orderid());
 
     // required .ProtoOAOrderType orderType = 3;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->ordertype());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_ordertype());
 
     // required .ProtoOAOrderStatus orderStatus = 4;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->orderstatus());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_orderstatus());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -10192,7 +7535,7 @@ size_t ProtoOAOrder::ByteSizeLong() const {
   if (cached_has_bits & 0x00000001u) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->clientorderid());
+        this->_internal_clientorderid());
   }
 
   if (cached_has_bits & 0x000000f8u) {
@@ -10200,7 +7543,7 @@ size_t ProtoOAOrder::ByteSizeLong() const {
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->expirationtimestamp());
+          this->_internal_expirationtimestamp());
     }
 
     // optional double executionPrice = 7;
@@ -10212,14 +7555,14 @@ size_t ProtoOAOrder::ByteSizeLong() const {
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->executedvolume());
+          this->_internal_executedvolume());
     }
 
     // optional int64 utcLastUpdateTimestamp = 9;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->utclastupdatetimestamp());
+          this->_internal_utclastupdatetimestamp());
     }
 
     // optional double baseSlippagePrice = 10;
@@ -10233,7 +7576,7 @@ size_t ProtoOAOrder::ByteSizeLong() const {
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->slippageinpoints());
+          this->_internal_slippageinpoints());
     }
 
     // optional double limitPrice = 13;
@@ -10260,21 +7603,21 @@ size_t ProtoOAOrder::ByteSizeLong() const {
     if (cached_has_bits & 0x00002000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->positionid());
+          this->_internal_positionid());
     }
 
     // optional int64 relativeStopLoss = 20;
     if (cached_has_bits & 0x00004000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->relativestoploss());
+          this->_internal_relativestoploss());
     }
 
     // optional int64 relativeTakeProfit = 21;
     if (cached_has_bits & 0x00008000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->relativetakeprofit());
+          this->_internal_relativetakeprofit());
     }
 
   }
@@ -10299,15 +7642,19 @@ size_t ProtoOAOrder::ByteSizeLong() const {
     // optional .ProtoOATimeInForce timeInForce = 18 [default = IMMEDIATE_OR_CANCEL];
     if (cached_has_bits & 0x00200000u) {
       total_size += 2 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->timeinforce());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_timeinforce());
     }
 
     // optional .ProtoOAOrderTriggerMethod stopTriggerMethod = 24 [default = TRADE];
     if (cached_has_bits & 0x00400000u) {
       total_size += 2 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->stoptriggermethod());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_stoptriggermethod());
     }
 
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -10332,18 +7679,17 @@ void ProtoOAOrder::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ProtoOAOrder::MergeFrom(const ProtoOAOrder& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOAOrder)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      clientorderid_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.clientorderid_);
+      _internal_set_clientorderid(from._internal_clientorderid());
     }
     if (cached_has_bits & 0x00000002u) {
-      mutable_tradedata()->::ProtoOATradeData::MergeFrom(from.tradedata());
+      _internal_mutable_tradedata()->::ProtoOATradeData::MergeFrom(from._internal_tradedata());
     }
     if (cached_has_bits & 0x00000004u) {
       orderid_ = from.orderid_;
@@ -10433,41 +7779,24 @@ void ProtoOAOrder::CopyFrom(const ProtoOAOrder& from) {
 }
 
 bool ProtoOAOrder::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00180006) != 0x00180006) return false;
-  if (has_tradedata()) {
-    if (!this->tradedata_->IsInitialized()) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_internal_has_tradedata()) {
+    if (!tradedata_->IsInitialized()) return false;
   }
   return true;
 }
 
-void ProtoOAOrder::Swap(ProtoOAOrder* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOAOrder::InternalSwap(ProtoOAOrder* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  clientorderid_.Swap(&other->clientorderid_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(tradedata_, other->tradedata_);
-  swap(orderid_, other->orderid_);
-  swap(expirationtimestamp_, other->expirationtimestamp_);
-  swap(executionprice_, other->executionprice_);
-  swap(executedvolume_, other->executedvolume_);
-  swap(utclastupdatetimestamp_, other->utclastupdatetimestamp_);
-  swap(baseslippageprice_, other->baseslippageprice_);
-  swap(slippageinpoints_, other->slippageinpoints_);
-  swap(limitprice_, other->limitprice_);
-  swap(stopprice_, other->stopprice_);
-  swap(stoploss_, other->stoploss_);
-  swap(takeprofit_, other->takeprofit_);
-  swap(positionid_, other->positionid_);
-  swap(relativestoploss_, other->relativestoploss_);
-  swap(relativetakeprofit_, other->relativetakeprofit_);
-  swap(closingorder_, other->closingorder_);
-  swap(isstopout_, other->isstopout_);
-  swap(trailingstoploss_, other->trailingstoploss_);
+  clientorderid_.Swap(&other->clientorderid_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOAOrder, trailingstoploss_)
+      + sizeof(ProtoOAOrder::trailingstoploss_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOAOrder, tradedata_)>(
+          reinterpret_cast<char*>(&tradedata_),
+          reinterpret_cast<char*>(&other->tradedata_));
   swap(ordertype_, other->ordertype_);
   swap(orderstatus_, other->orderstatus_);
   swap(timeinforce_, other->timeinforce_);
@@ -10475,75 +7804,64 @@ void ProtoOAOrder::InternalSwap(ProtoOAOrder* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOAOrder::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOABonusDepositWithdraw::InitAsDefaultInstance() {
-}
-class ProtoOABonusDepositWithdraw::HasBitSetters {
+class ProtoOABonusDepositWithdraw::_Internal {
  public:
-  static void set_has_operationtype(ProtoOABonusDepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  using HasBits = decltype(std::declval<ProtoOABonusDepositWithdraw>()._has_bits_);
+  static void set_has_operationtype(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  static void set_has_bonushistoryid(ProtoOABonusDepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_bonushistoryid(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_managerbonus(ProtoOABonusDepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_managerbonus(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_managerdelta(ProtoOABonusDepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_managerdelta(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_ibbonus(ProtoOABonusDepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_ibbonus(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_ibdelta(ProtoOABonusDepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000080u;
+  static void set_has_ibdelta(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
   }
-  static void set_has_changebonustimestamp(ProtoOABonusDepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000100u;
+  static void set_has_changebonustimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
   }
-  static void set_has_externalnote(ProtoOABonusDepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_externalnote(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_introducingbrokerid(ProtoOABonusDepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000200u;
+  static void set_has_introducingbrokerid(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
   }
-  static void set_has_moneydigits(ProtoOABonusDepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_moneydigits(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x000001be) ^ 0x000001be) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOABonusDepositWithdraw::kOperationTypeFieldNumber;
-const int ProtoOABonusDepositWithdraw::kBonusHistoryIdFieldNumber;
-const int ProtoOABonusDepositWithdraw::kManagerBonusFieldNumber;
-const int ProtoOABonusDepositWithdraw::kManagerDeltaFieldNumber;
-const int ProtoOABonusDepositWithdraw::kIbBonusFieldNumber;
-const int ProtoOABonusDepositWithdraw::kIbDeltaFieldNumber;
-const int ProtoOABonusDepositWithdraw::kChangeBonusTimestampFieldNumber;
-const int ProtoOABonusDepositWithdraw::kExternalNoteFieldNumber;
-const int ProtoOABonusDepositWithdraw::kIntroducingBrokerIdFieldNumber;
-const int ProtoOABonusDepositWithdraw::kMoneyDigitsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOABonusDepositWithdraw::ProtoOABonusDepositWithdraw()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOABonusDepositWithdraw::ProtoOABonusDepositWithdraw(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOABonusDepositWithdraw)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOABonusDepositWithdraw)
 }
 ProtoOABonusDepositWithdraw::ProtoOABonusDepositWithdraw(const ProtoOABonusDepositWithdraw& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   externalnote_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_externalnote()) {
-    externalnote_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.externalnote_);
+  if (from._internal_has_externalnote()) {
+    externalnote_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_externalnote(), 
+      GetArena());
   }
   ::memcpy(&bonushistoryid_, &from.bonushistoryid_,
     static_cast<size_t>(reinterpret_cast<char*>(&introducingbrokerid_) -
@@ -10552,23 +7870,31 @@ ProtoOABonusDepositWithdraw::ProtoOABonusDepositWithdraw(const ProtoOABonusDepos
 }
 
 void ProtoOABonusDepositWithdraw::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOABonusDepositWithdraw_OpenApiModelMessages_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOABonusDepositWithdraw_OpenApiModelMessages_2eproto.base);
   externalnote_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&bonushistoryid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&introducingbrokerid_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&bonushistoryid_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&introducingbrokerid_) -
       reinterpret_cast<char*>(&bonushistoryid_)) + sizeof(introducingbrokerid_));
 }
 
 ProtoOABonusDepositWithdraw::~ProtoOABonusDepositWithdraw() {
   // @@protoc_insertion_point(destructor:ProtoOABonusDepositWithdraw)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOABonusDepositWithdraw::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   externalnote_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void ProtoOABonusDepositWithdraw::ArenaDtor(void* object) {
+  ProtoOABonusDepositWithdraw* _this = reinterpret_cast< ProtoOABonusDepositWithdraw* >(object);
+  (void)_this;
+}
+void ProtoOABonusDepositWithdraw::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOABonusDepositWithdraw::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -10586,7 +7912,7 @@ void ProtoOABonusDepositWithdraw::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    externalnote_.ClearNonDefaultToEmptyNoArena();
+    externalnote_.ClearNonDefaultToEmpty();
   }
   if (cached_has_bits & 0x000000feu) {
     ::memset(&bonushistoryid_, 0, static_cast<size_t>(
@@ -10599,347 +7925,129 @@ void ProtoOABonusDepositWithdraw::Clear() {
         reinterpret_cast<char*>(&changebonustimestamp_)) + sizeof(introducingbrokerid_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOABonusDepositWithdraw::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required .ProtoOAChangeBonusType operationType = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOAChangeBonusType_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(1, val, mutable_unknown_fields());
-          break;
-        }
-        set_operationtype(static_cast<::ProtoOAChangeBonusType>(val));
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOAChangeBonusType_IsValid(val))) {
+            _internal_set_operationtype(static_cast<::ProtoOAChangeBonusType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(1, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // required int64 bonusHistoryId = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
-        set_bonushistoryid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_bonushistoryid(&has_bits);
+          bonushistoryid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 managerBonus = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_managerbonus(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_managerbonus(&has_bits);
+          managerbonus_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 managerDelta = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_managerdelta(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_managerdelta(&has_bits);
+          managerdelta_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 ibBonus = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 40) goto handle_unusual;
-        set_ibbonus(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_ibbonus(&has_bits);
+          ibbonus_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 ibDelta = 6;
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 48) goto handle_unusual;
-        set_ibdelta(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          _Internal::set_has_ibdelta(&has_bits);
+          ibdelta_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 changeBonusTimestamp = 7;
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 56) goto handle_unusual;
-        set_changebonustimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          _Internal::set_has_changebonustimestamp(&has_bits);
+          changebonustimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional string externalNote = 8;
-      case 8: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 66) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_externalnote(), ptr, ctx, "ProtoOABonusDepositWithdraw.externalNote");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+          auto str = _internal_mutable_externalnote();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOABonusDepositWithdraw.externalNote");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 introducingBrokerId = 9;
-      case 9: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 72) goto handle_unusual;
-        set_introducingbrokerid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          _Internal::set_has_introducingbrokerid(&has_bits);
+          introducingbrokerid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint32 moneyDigits = 10;
-      case 10: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 80) goto handle_unusual;
-        set_moneydigits(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+          _Internal::set_has_moneydigits(&has_bits);
+          moneydigits_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOABonusDepositWithdraw::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOABonusDepositWithdraw)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .ProtoOAChangeBonusType operationType = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOAChangeBonusType_IsValid(value)) {
-            set_operationtype(static_cast< ::ProtoOAChangeBonusType >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                1, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 bonusHistoryId = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_bonushistoryid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &bonushistoryid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 managerBonus = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_managerbonus(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &managerbonus_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 managerDelta = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_managerdelta(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &managerdelta_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 ibBonus = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-          HasBitSetters::set_has_ibbonus(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &ibbonus_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 ibDelta = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-          HasBitSetters::set_has_ibdelta(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &ibdelta_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 changeBonusTimestamp = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
-          HasBitSetters::set_has_changebonustimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &changebonustimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string externalNote = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (66 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_externalnote()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->externalnote().data(), static_cast<int>(this->externalnote().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOABonusDepositWithdraw.externalNote");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 introducingBrokerId = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
-          HasBitSetters::set_has_introducingbrokerid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &introducingbrokerid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 moneyDigits = 10;
-      case 10: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (80 & 0xFF)) {
-          HasBitSetters::set_has_moneydigits(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &moneydigits_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOABonusDepositWithdraw)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOABonusDepositWithdraw)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOABonusDepositWithdraw::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOABonusDepositWithdraw)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required .ProtoOAChangeBonusType operationType = 1;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      1, this->operationtype(), output);
-  }
-
-  // required int64 bonusHistoryId = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->bonushistoryid(), output);
-  }
-
-  // required int64 managerBonus = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->managerbonus(), output);
-  }
-
-  // required int64 managerDelta = 4;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->managerdelta(), output);
-  }
-
-  // required int64 ibBonus = 5;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->ibbonus(), output);
-  }
-
-  // required int64 ibDelta = 6;
-  if (cached_has_bits & 0x00000080u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(6, this->ibdelta(), output);
-  }
-
-  // required int64 changeBonusTimestamp = 7;
-  if (cached_has_bits & 0x00000100u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(7, this->changebonustimestamp(), output);
-  }
-
-  // optional string externalNote = 8;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->externalnote().data(), static_cast<int>(this->externalnote().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOABonusDepositWithdraw.externalNote");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      8, this->externalnote(), output);
-  }
-
-  // optional int64 introducingBrokerId = 9;
-  if (cached_has_bits & 0x00000200u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(9, this->introducingbrokerid(), output);
-  }
-
-  // optional uint32 moneyDigits = 10;
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(10, this->moneydigits(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOABonusDepositWithdraw)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOABonusDepositWithdraw::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOABonusDepositWithdraw::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOABonusDepositWithdraw)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -10947,64 +8055,72 @@ void ProtoOABonusDepositWithdraw::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required .ProtoOAChangeBonusType operationType = 1;
   if (cached_has_bits & 0x00000020u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      1, this->operationtype(), target);
+      1, this->_internal_operationtype(), target);
   }
 
   // required int64 bonusHistoryId = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->bonushistoryid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_bonushistoryid(), target);
   }
 
   // required int64 managerBonus = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->managerbonus(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_managerbonus(), target);
   }
 
   // required int64 managerDelta = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->managerdelta(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_managerdelta(), target);
   }
 
   // required int64 ibBonus = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->ibbonus(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_ibbonus(), target);
   }
 
   // required int64 ibDelta = 6;
   if (cached_has_bits & 0x00000080u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->ibdelta(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_ibdelta(), target);
   }
 
   // required int64 changeBonusTimestamp = 7;
   if (cached_has_bits & 0x00000100u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->changebonustimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->_internal_changebonustimestamp(), target);
   }
 
   // optional string externalNote = 8;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->externalnote().data(), static_cast<int>(this->externalnote().length()),
+      this->_internal_externalnote().data(), static_cast<int>(this->_internal_externalnote().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOABonusDepositWithdraw.externalNote");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        8, this->externalnote(), target);
+    target = stream->WriteStringMaybeAliased(
+        8, this->_internal_externalnote(), target);
   }
 
   // optional int64 introducingBrokerId = 9;
   if (cached_has_bits & 0x00000200u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->introducingbrokerid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->_internal_introducingbrokerid(), target);
   }
 
   // optional uint32 moneyDigits = 10;
   if (cached_has_bits & 0x00000040u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(10, this->moneydigits(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(10, this->_internal_moneydigits(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOABonusDepositWithdraw)
   return target;
@@ -11014,52 +8130,52 @@ size_t ProtoOABonusDepositWithdraw::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOABonusDepositWithdraw)
   size_t total_size = 0;
 
-  if (has_bonushistoryid()) {
+  if (_internal_has_bonushistoryid()) {
     // required int64 bonusHistoryId = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->bonushistoryid());
+        this->_internal_bonushistoryid());
   }
 
-  if (has_managerbonus()) {
+  if (_internal_has_managerbonus()) {
     // required int64 managerBonus = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->managerbonus());
+        this->_internal_managerbonus());
   }
 
-  if (has_managerdelta()) {
+  if (_internal_has_managerdelta()) {
     // required int64 managerDelta = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->managerdelta());
+        this->_internal_managerdelta());
   }
 
-  if (has_ibbonus()) {
+  if (_internal_has_ibbonus()) {
     // required int64 ibBonus = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->ibbonus());
+        this->_internal_ibbonus());
   }
 
-  if (has_operationtype()) {
+  if (_internal_has_operationtype()) {
     // required .ProtoOAChangeBonusType operationType = 1;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->operationtype());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_operationtype());
   }
 
-  if (has_ibdelta()) {
+  if (_internal_has_ibdelta()) {
     // required int64 ibDelta = 6;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->ibdelta());
+        this->_internal_ibdelta());
   }
 
-  if (has_changebonustimestamp()) {
+  if (_internal_has_changebonustimestamp()) {
     // required int64 changeBonusTimestamp = 7;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->changebonustimestamp());
+        this->_internal_changebonustimestamp());
   }
 
   return total_size;
@@ -11068,45 +8184,40 @@ size_t ProtoOABonusDepositWithdraw::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOABonusDepositWithdraw)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x000001be) ^ 0x000001be) == 0) {  // All required fields are present.
     // required int64 bonusHistoryId = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->bonushistoryid());
+        this->_internal_bonushistoryid());
 
     // required int64 managerBonus = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->managerbonus());
+        this->_internal_managerbonus());
 
     // required int64 managerDelta = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->managerdelta());
+        this->_internal_managerdelta());
 
     // required int64 ibBonus = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->ibbonus());
+        this->_internal_ibbonus());
 
     // required .ProtoOAChangeBonusType operationType = 1;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->operationtype());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_operationtype());
 
     // required int64 ibDelta = 6;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->ibdelta());
+        this->_internal_ibdelta());
 
     // required int64 changeBonusTimestamp = 7;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->changebonustimestamp());
+        this->_internal_changebonustimestamp());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -11120,23 +8231,27 @@ size_t ProtoOABonusDepositWithdraw::ByteSizeLong() const {
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->externalnote());
+        this->_internal_externalnote());
   }
 
   // optional uint32 moneyDigits = 10;
   if (cached_has_bits & 0x00000040u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->moneydigits());
+        this->_internal_moneydigits());
   }
 
   // optional int64 introducingBrokerId = 9;
   if (cached_has_bits & 0x00000200u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->introducingbrokerid());
+        this->_internal_introducingbrokerid());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -11160,15 +8275,14 @@ void ProtoOABonusDepositWithdraw::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Messa
 void ProtoOABonusDepositWithdraw::MergeFrom(const ProtoOABonusDepositWithdraw& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOABonusDepositWithdraw)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      externalnote_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.externalnote_);
+      _internal_set_externalnote(from._internal_externalnote());
     }
     if (cached_has_bits & 0x00000002u) {
       bonushistoryid_ = from.bonushistoryid_;
@@ -11219,97 +8333,79 @@ void ProtoOABonusDepositWithdraw::CopyFrom(const ProtoOABonusDepositWithdraw& fr
 }
 
 bool ProtoOABonusDepositWithdraw::IsInitialized() const {
-  if ((_has_bits_[0] & 0x000001be) != 0x000001be) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOABonusDepositWithdraw::Swap(ProtoOABonusDepositWithdraw* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOABonusDepositWithdraw::InternalSwap(ProtoOABonusDepositWithdraw* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  externalnote_.Swap(&other->externalnote_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(bonushistoryid_, other->bonushistoryid_);
-  swap(managerbonus_, other->managerbonus_);
-  swap(managerdelta_, other->managerdelta_);
-  swap(ibbonus_, other->ibbonus_);
-  swap(operationtype_, other->operationtype_);
-  swap(moneydigits_, other->moneydigits_);
-  swap(ibdelta_, other->ibdelta_);
-  swap(changebonustimestamp_, other->changebonustimestamp_);
-  swap(introducingbrokerid_, other->introducingbrokerid_);
+  externalnote_.Swap(&other->externalnote_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOABonusDepositWithdraw, introducingbrokerid_)
+      + sizeof(ProtoOABonusDepositWithdraw::introducingbrokerid_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOABonusDepositWithdraw, bonushistoryid_)>(
+          reinterpret_cast<char*>(&bonushistoryid_),
+          reinterpret_cast<char*>(&other->bonushistoryid_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOABonusDepositWithdraw::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOADepositWithdraw::InitAsDefaultInstance() {
-}
-class ProtoOADepositWithdraw::HasBitSetters {
+class ProtoOADepositWithdraw::_Internal {
  public:
-  static void set_has_operationtype(ProtoOADepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  using HasBits = decltype(std::declval<ProtoOADepositWithdraw>()._has_bits_);
+  static void set_has_operationtype(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  static void set_has_balancehistoryid(ProtoOADepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_balancehistoryid(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_balance(ProtoOADepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_balance(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_delta(ProtoOADepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_delta(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_changebalancetimestamp(ProtoOADepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_changebalancetimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_externalnote(ProtoOADepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_externalnote(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_balanceversion(ProtoOADepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000080u;
+  static void set_has_balanceversion(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
   }
-  static void set_has_equity(ProtoOADepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000100u;
+  static void set_has_equity(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
   }
-  static void set_has_moneydigits(ProtoOADepositWithdraw* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_moneydigits(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x0000003e) ^ 0x0000003e) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOADepositWithdraw::kOperationTypeFieldNumber;
-const int ProtoOADepositWithdraw::kBalanceHistoryIdFieldNumber;
-const int ProtoOADepositWithdraw::kBalanceFieldNumber;
-const int ProtoOADepositWithdraw::kDeltaFieldNumber;
-const int ProtoOADepositWithdraw::kChangeBalanceTimestampFieldNumber;
-const int ProtoOADepositWithdraw::kExternalNoteFieldNumber;
-const int ProtoOADepositWithdraw::kBalanceVersionFieldNumber;
-const int ProtoOADepositWithdraw::kEquityFieldNumber;
-const int ProtoOADepositWithdraw::kMoneyDigitsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOADepositWithdraw::ProtoOADepositWithdraw()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOADepositWithdraw::ProtoOADepositWithdraw(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOADepositWithdraw)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOADepositWithdraw)
 }
 ProtoOADepositWithdraw::ProtoOADepositWithdraw(const ProtoOADepositWithdraw& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   externalnote_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_externalnote()) {
-    externalnote_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.externalnote_);
+  if (from._internal_has_externalnote()) {
+    externalnote_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_externalnote(), 
+      GetArena());
   }
   ::memcpy(&balancehistoryid_, &from.balancehistoryid_,
     static_cast<size_t>(reinterpret_cast<char*>(&equity_) -
@@ -11318,23 +8414,31 @@ ProtoOADepositWithdraw::ProtoOADepositWithdraw(const ProtoOADepositWithdraw& fro
 }
 
 void ProtoOADepositWithdraw::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOADepositWithdraw_OpenApiModelMessages_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOADepositWithdraw_OpenApiModelMessages_2eproto.base);
   externalnote_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&balancehistoryid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&equity_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&balancehistoryid_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&equity_) -
       reinterpret_cast<char*>(&balancehistoryid_)) + sizeof(equity_));
 }
 
 ProtoOADepositWithdraw::~ProtoOADepositWithdraw() {
   // @@protoc_insertion_point(destructor:ProtoOADepositWithdraw)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOADepositWithdraw::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   externalnote_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void ProtoOADepositWithdraw::ArenaDtor(void* object) {
+  ProtoOADepositWithdraw* _this = reinterpret_cast< ProtoOADepositWithdraw* >(object);
+  (void)_this;
+}
+void ProtoOADepositWithdraw::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOADepositWithdraw::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -11352,7 +8456,7 @@ void ProtoOADepositWithdraw::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    externalnote_.ClearNonDefaultToEmptyNoArena();
+    externalnote_.ClearNonDefaultToEmpty();
   }
   if (cached_has_bits & 0x000000feu) {
     ::memset(&balancehistoryid_, 0, static_cast<size_t>(
@@ -11361,322 +8465,121 @@ void ProtoOADepositWithdraw::Clear() {
   }
   equity_ = PROTOBUF_LONGLONG(0);
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOADepositWithdraw::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required .ProtoOAChangeBalanceType operationType = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOAChangeBalanceType_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(1, val, mutable_unknown_fields());
-          break;
-        }
-        set_operationtype(static_cast<::ProtoOAChangeBalanceType>(val));
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOAChangeBalanceType_IsValid(val))) {
+            _internal_set_operationtype(static_cast<::ProtoOAChangeBalanceType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(1, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // required int64 balanceHistoryId = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
-        set_balancehistoryid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_balancehistoryid(&has_bits);
+          balancehistoryid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 balance = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_balance(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_balance(&has_bits);
+          balance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 delta = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_delta(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_delta(&has_bits);
+          delta_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 changeBalanceTimestamp = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 40) goto handle_unusual;
-        set_changebalancetimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_changebalancetimestamp(&has_bits);
+          changebalancetimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional string externalNote = 6;
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 50) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_externalnote(), ptr, ctx, "ProtoOADepositWithdraw.externalNote");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          auto str = _internal_mutable_externalnote();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOADepositWithdraw.externalNote");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 balanceVersion = 7;
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 56) goto handle_unusual;
-        set_balanceversion(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          _Internal::set_has_balanceversion(&has_bits);
+          balanceversion_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 equity = 8;
-      case 8: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 64) goto handle_unusual;
-        set_equity(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          _Internal::set_has_equity(&has_bits);
+          equity_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint32 moneyDigits = 9;
-      case 9: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 72) goto handle_unusual;
-        set_moneydigits(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          _Internal::set_has_moneydigits(&has_bits);
+          moneydigits_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOADepositWithdraw::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOADepositWithdraw)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .ProtoOAChangeBalanceType operationType = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOAChangeBalanceType_IsValid(value)) {
-            set_operationtype(static_cast< ::ProtoOAChangeBalanceType >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                1, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 balanceHistoryId = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_balancehistoryid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &balancehistoryid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 balance = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_balance(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &balance_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 delta = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_delta(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &delta_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 changeBalanceTimestamp = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-          HasBitSetters::set_has_changebalancetimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &changebalancetimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string externalNote = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_externalnote()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->externalnote().data(), static_cast<int>(this->externalnote().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOADepositWithdraw.externalNote");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 balanceVersion = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
-          HasBitSetters::set_has_balanceversion(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &balanceversion_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 equity = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
-          HasBitSetters::set_has_equity(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &equity_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 moneyDigits = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
-          HasBitSetters::set_has_moneydigits(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &moneydigits_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOADepositWithdraw)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOADepositWithdraw)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOADepositWithdraw::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOADepositWithdraw)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required .ProtoOAChangeBalanceType operationType = 1;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      1, this->operationtype(), output);
-  }
-
-  // required int64 balanceHistoryId = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->balancehistoryid(), output);
-  }
-
-  // required int64 balance = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->balance(), output);
-  }
-
-  // required int64 delta = 4;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->delta(), output);
-  }
-
-  // required int64 changeBalanceTimestamp = 5;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->changebalancetimestamp(), output);
-  }
-
-  // optional string externalNote = 6;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->externalnote().data(), static_cast<int>(this->externalnote().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOADepositWithdraw.externalNote");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      6, this->externalnote(), output);
-  }
-
-  // optional int64 balanceVersion = 7;
-  if (cached_has_bits & 0x00000080u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(7, this->balanceversion(), output);
-  }
-
-  // optional int64 equity = 8;
-  if (cached_has_bits & 0x00000100u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(8, this->equity(), output);
-  }
-
-  // optional uint32 moneyDigits = 9;
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(9, this->moneydigits(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOADepositWithdraw)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOADepositWithdraw::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOADepositWithdraw::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOADepositWithdraw)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -11684,59 +8587,66 @@ void ProtoOADepositWithdraw::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required .ProtoOAChangeBalanceType operationType = 1;
   if (cached_has_bits & 0x00000020u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      1, this->operationtype(), target);
+      1, this->_internal_operationtype(), target);
   }
 
   // required int64 balanceHistoryId = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->balancehistoryid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_balancehistoryid(), target);
   }
 
   // required int64 balance = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->balance(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_balance(), target);
   }
 
   // required int64 delta = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->delta(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_delta(), target);
   }
 
   // required int64 changeBalanceTimestamp = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->changebalancetimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_changebalancetimestamp(), target);
   }
 
   // optional string externalNote = 6;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->externalnote().data(), static_cast<int>(this->externalnote().length()),
+      this->_internal_externalnote().data(), static_cast<int>(this->_internal_externalnote().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOADepositWithdraw.externalNote");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        6, this->externalnote(), target);
+    target = stream->WriteStringMaybeAliased(
+        6, this->_internal_externalnote(), target);
   }
 
   // optional int64 balanceVersion = 7;
   if (cached_has_bits & 0x00000080u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->balanceversion(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->_internal_balanceversion(), target);
   }
 
   // optional int64 equity = 8;
   if (cached_has_bits & 0x00000100u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->equity(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_equity(), target);
   }
 
   // optional uint32 moneyDigits = 9;
   if (cached_has_bits & 0x00000040u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(9, this->moneydigits(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(9, this->_internal_moneydigits(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOADepositWithdraw)
   return target;
@@ -11746,38 +8656,38 @@ size_t ProtoOADepositWithdraw::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOADepositWithdraw)
   size_t total_size = 0;
 
-  if (has_balancehistoryid()) {
+  if (_internal_has_balancehistoryid()) {
     // required int64 balanceHistoryId = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->balancehistoryid());
+        this->_internal_balancehistoryid());
   }
 
-  if (has_balance()) {
+  if (_internal_has_balance()) {
     // required int64 balance = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->balance());
+        this->_internal_balance());
   }
 
-  if (has_delta()) {
+  if (_internal_has_delta()) {
     // required int64 delta = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->delta());
+        this->_internal_delta());
   }
 
-  if (has_changebalancetimestamp()) {
+  if (_internal_has_changebalancetimestamp()) {
     // required int64 changeBalanceTimestamp = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->changebalancetimestamp());
+        this->_internal_changebalancetimestamp());
   }
 
-  if (has_operationtype()) {
+  if (_internal_has_operationtype()) {
     // required .ProtoOAChangeBalanceType operationType = 1;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->operationtype());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_operationtype());
   }
 
   return total_size;
@@ -11786,35 +8696,30 @@ size_t ProtoOADepositWithdraw::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOADepositWithdraw)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x0000003e) ^ 0x0000003e) == 0) {  // All required fields are present.
     // required int64 balanceHistoryId = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->balancehistoryid());
+        this->_internal_balancehistoryid());
 
     // required int64 balance = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->balance());
+        this->_internal_balance());
 
     // required int64 delta = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->delta());
+        this->_internal_delta());
 
     // required int64 changeBalanceTimestamp = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->changebalancetimestamp());
+        this->_internal_changebalancetimestamp());
 
     // required .ProtoOAChangeBalanceType operationType = 1;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->operationtype());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_operationtype());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -11828,7 +8733,7 @@ size_t ProtoOADepositWithdraw::ByteSizeLong() const {
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->externalnote());
+        this->_internal_externalnote());
   }
 
   if (cached_has_bits & 0x000000c0u) {
@@ -11836,14 +8741,14 @@ size_t ProtoOADepositWithdraw::ByteSizeLong() const {
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->moneydigits());
+          this->_internal_moneydigits());
     }
 
     // optional int64 balanceVersion = 7;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->balanceversion());
+          this->_internal_balanceversion());
     }
 
   }
@@ -11851,9 +8756,13 @@ size_t ProtoOADepositWithdraw::ByteSizeLong() const {
   if (cached_has_bits & 0x00000100u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->equity());
+        this->_internal_equity());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -11877,15 +8786,14 @@ void ProtoOADepositWithdraw::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& f
 void ProtoOADepositWithdraw::MergeFrom(const ProtoOADepositWithdraw& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOADepositWithdraw)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      externalnote_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.externalnote_);
+      _internal_set_externalnote(from._internal_externalnote());
     }
     if (cached_has_bits & 0x00000002u) {
       balancehistoryid_ = from.balancehistoryid_;
@@ -11911,7 +8819,7 @@ void ProtoOADepositWithdraw::MergeFrom(const ProtoOADepositWithdraw& from) {
     _has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 0x00000100u) {
-    set_equity(from.equity());
+    _internal_set_equity(from._internal_equity());
   }
 }
 
@@ -11930,133 +8838,105 @@ void ProtoOADepositWithdraw::CopyFrom(const ProtoOADepositWithdraw& from) {
 }
 
 bool ProtoOADepositWithdraw::IsInitialized() const {
-  if ((_has_bits_[0] & 0x0000003e) != 0x0000003e) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOADepositWithdraw::Swap(ProtoOADepositWithdraw* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOADepositWithdraw::InternalSwap(ProtoOADepositWithdraw* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  externalnote_.Swap(&other->externalnote_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(balancehistoryid_, other->balancehistoryid_);
-  swap(balance_, other->balance_);
-  swap(delta_, other->delta_);
-  swap(changebalancetimestamp_, other->changebalancetimestamp_);
-  swap(operationtype_, other->operationtype_);
-  swap(moneydigits_, other->moneydigits_);
-  swap(balanceversion_, other->balanceversion_);
-  swap(equity_, other->equity_);
+  externalnote_.Swap(&other->externalnote_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOADepositWithdraw, equity_)
+      + sizeof(ProtoOADepositWithdraw::equity_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOADepositWithdraw, balancehistoryid_)>(
+          reinterpret_cast<char*>(&balancehistoryid_),
+          reinterpret_cast<char*>(&other->balancehistoryid_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOADepositWithdraw::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOADeal::InitAsDefaultInstance() {
-  ::_ProtoOADeal_default_instance_._instance.get_mutable()->closepositiondetail_ = const_cast< ::ProtoOAClosePositionDetail*>(
-      ::ProtoOAClosePositionDetail::internal_default_instance());
-}
-class ProtoOADeal::HasBitSetters {
+class ProtoOADeal::_Internal {
  public:
-  static void set_has_dealid(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  using HasBits = decltype(std::declval<ProtoOADeal>()._has_bits_);
+  static void set_has_dealid(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_orderid(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_orderid(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_positionid(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_positionid(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_volume(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_volume(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_filledvolume(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  static void set_has_filledvolume(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  static void set_has_symbolid(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_symbolid(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
   }
-  static void set_has_createtimestamp(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000080u;
+  static void set_has_createtimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
   }
-  static void set_has_executiontimestamp(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000100u;
+  static void set_has_executiontimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
   }
-  static void set_has_utclastupdatetimestamp(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000200u;
+  static void set_has_utclastupdatetimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
   }
-  static void set_has_executionprice(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000400u;
+  static void set_has_executionprice(HasBits* has_bits) {
+    (*has_bits)[0] |= 1024u;
   }
-  static void set_has_tradeside(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00008000u;
+  static void set_has_tradeside(HasBits* has_bits) {
+    (*has_bits)[0] |= 32768u;
   }
-  static void set_has_dealstatus(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00010000u;
+  static void set_has_dealstatus(HasBits* has_bits) {
+    (*has_bits)[0] |= 65536u;
   }
-  static void set_has_marginrate(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000800u;
+  static void set_has_marginrate(HasBits* has_bits) {
+    (*has_bits)[0] |= 2048u;
   }
-  static void set_has_commission(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00001000u;
+  static void set_has_commission(HasBits* has_bits) {
+    (*has_bits)[0] |= 4096u;
   }
-  static void set_has_basetousdconversionrate(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00002000u;
+  static void set_has_basetousdconversionrate(HasBits* has_bits) {
+    (*has_bits)[0] |= 8192u;
   }
   static const ::ProtoOAClosePositionDetail& closepositiondetail(const ProtoOADeal* msg);
-  static void set_has_closepositiondetail(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_closepositiondetail(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_moneydigits(ProtoOADeal* msg) {
-    msg->_has_bits_[0] |= 0x00004000u;
+  static void set_has_moneydigits(HasBits* has_bits) {
+    (*has_bits)[0] |= 16384u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x000181fe) ^ 0x000181fe) != 0;
   }
 };
 
 const ::ProtoOAClosePositionDetail&
-ProtoOADeal::HasBitSetters::closepositiondetail(const ProtoOADeal* msg) {
+ProtoOADeal::_Internal::closepositiondetail(const ProtoOADeal* msg) {
   return *msg->closepositiondetail_;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOADeal::kDealIdFieldNumber;
-const int ProtoOADeal::kOrderIdFieldNumber;
-const int ProtoOADeal::kPositionIdFieldNumber;
-const int ProtoOADeal::kVolumeFieldNumber;
-const int ProtoOADeal::kFilledVolumeFieldNumber;
-const int ProtoOADeal::kSymbolIdFieldNumber;
-const int ProtoOADeal::kCreateTimestampFieldNumber;
-const int ProtoOADeal::kExecutionTimestampFieldNumber;
-const int ProtoOADeal::kUtcLastUpdateTimestampFieldNumber;
-const int ProtoOADeal::kExecutionPriceFieldNumber;
-const int ProtoOADeal::kTradeSideFieldNumber;
-const int ProtoOADeal::kDealStatusFieldNumber;
-const int ProtoOADeal::kMarginRateFieldNumber;
-const int ProtoOADeal::kCommissionFieldNumber;
-const int ProtoOADeal::kBaseToUsdConversionRateFieldNumber;
-const int ProtoOADeal::kClosePositionDetailFieldNumber;
-const int ProtoOADeal::kMoneyDigitsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOADeal::ProtoOADeal()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOADeal::ProtoOADeal(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOADeal)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOADeal)
 }
 ProtoOADeal::ProtoOADeal(const ProtoOADeal& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_closepositiondetail()) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_closepositiondetail()) {
     closepositiondetail_ = new ::ProtoOAClosePositionDetail(*from.closepositiondetail_);
   } else {
     closepositiondetail_ = nullptr;
@@ -12068,10 +8948,10 @@ ProtoOADeal::ProtoOADeal(const ProtoOADeal& from)
 }
 
 void ProtoOADeal::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOADeal_OpenApiModelMessages_2eproto.base);
-  ::memset(&closepositiondetail_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&moneydigits_) -
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOADeal_OpenApiModelMessages_2eproto.base);
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&closepositiondetail_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&moneydigits_) -
       reinterpret_cast<char*>(&closepositiondetail_)) + sizeof(moneydigits_));
   tradeside_ = 1;
   dealstatus_ = 2;
@@ -12080,12 +8960,20 @@ void ProtoOADeal::SharedCtor() {
 ProtoOADeal::~ProtoOADeal() {
   // @@protoc_insertion_point(destructor:ProtoOADeal)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOADeal::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete closepositiondetail_;
 }
 
+void ProtoOADeal::ArenaDtor(void* object) {
+  ProtoOADeal* _this = reinterpret_cast< ProtoOADeal* >(object);
+  (void)_this;
+}
+void ProtoOADeal::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOADeal::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -12119,526 +9007,185 @@ void ProtoOADeal::Clear() {
   }
   dealstatus_ = 2;
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOADeal::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 dealId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_dealid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_dealid(&has_bits);
+          dealid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 orderId = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
-        set_orderid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_orderid(&has_bits);
+          orderid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 positionId = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_positionid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_positionid(&has_bits);
+          positionid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 volume = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_volume(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_volume(&has_bits);
+          volume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 filledVolume = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 40) goto handle_unusual;
-        set_filledvolume(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_filledvolume(&has_bits);
+          filledvolume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 symbolId = 6;
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 48) goto handle_unusual;
-        set_symbolid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          _Internal::set_has_symbolid(&has_bits);
+          symbolid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 createTimestamp = 7;
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 56) goto handle_unusual;
-        set_createtimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          _Internal::set_has_createtimestamp(&has_bits);
+          createtimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 executionTimestamp = 8;
-      case 8: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 64) goto handle_unusual;
-        set_executiontimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          _Internal::set_has_executiontimestamp(&has_bits);
+          executiontimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 utcLastUpdateTimestamp = 9;
-      case 9: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 72) goto handle_unusual;
-        set_utclastupdatetimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          _Internal::set_has_utclastupdatetimestamp(&has_bits);
+          utclastupdatetimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional double executionPrice = 10;
-      case 10: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 81) goto handle_unusual;
-        set_executionprice(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 81)) {
+          _Internal::set_has_executionprice(&has_bits);
+          executionprice_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required .ProtoOATradeSide tradeSide = 11;
-      case 11: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 88) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOATradeSide_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(11, val, mutable_unknown_fields());
-          break;
-        }
-        set_tradeside(static_cast<::ProtoOATradeSide>(val));
-        break;
-      }
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOATradeSide_IsValid(val))) {
+            _internal_set_tradeside(static_cast<::ProtoOATradeSide>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(11, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // required .ProtoOADealStatus dealStatus = 12;
-      case 12: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 96) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOADealStatus_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(12, val, mutable_unknown_fields());
-          break;
-        }
-        set_dealstatus(static_cast<::ProtoOADealStatus>(val));
-        break;
-      }
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOADealStatus_IsValid(val))) {
+            _internal_set_dealstatus(static_cast<::ProtoOADealStatus>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(12, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional double marginRate = 13;
-      case 13: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 105) goto handle_unusual;
-        set_marginrate(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 105)) {
+          _Internal::set_has_marginrate(&has_bits);
+          marginrate_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional int64 commission = 14;
-      case 14: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 112) goto handle_unusual;
-        set_commission(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
+          _Internal::set_has_commission(&has_bits);
+          commission_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional double baseToUsdConversionRate = 15;
-      case 15: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 121) goto handle_unusual;
-        set_basetousdconversionrate(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 121)) {
+          _Internal::set_has_basetousdconversionrate(&has_bits);
+          basetousdconversionrate_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOAClosePositionDetail closePositionDetail = 16;
-      case 16: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 130) goto handle_unusual;
-        ptr = ctx->ParseMessage(mutable_closepositiondetail(), ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 16:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 130)) {
+          ptr = ctx->ParseMessage(_internal_mutable_closepositiondetail(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint32 moneyDigits = 17;
-      case 17: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 136) goto handle_unusual;
-        set_moneydigits(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 17:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 136)) {
+          _Internal::set_has_moneydigits(&has_bits);
+          moneydigits_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOADeal::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOADeal)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 dealId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_dealid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &dealid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 orderId = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_orderid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &orderid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 positionId = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_positionid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &positionid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 volume = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_volume(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &volume_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 filledVolume = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-          HasBitSetters::set_has_filledvolume(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &filledvolume_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 symbolId = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-          HasBitSetters::set_has_symbolid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &symbolid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 createTimestamp = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
-          HasBitSetters::set_has_createtimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &createtimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 executionTimestamp = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
-          HasBitSetters::set_has_executiontimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &executiontimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 utcLastUpdateTimestamp = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
-          HasBitSetters::set_has_utclastupdatetimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &utclastupdatetimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double executionPrice = 10;
-      case 10: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (81 & 0xFF)) {
-          HasBitSetters::set_has_executionprice(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &executionprice_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required .ProtoOATradeSide tradeSide = 11;
-      case 11: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (88 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOATradeSide_IsValid(value)) {
-            set_tradeside(static_cast< ::ProtoOATradeSide >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                11, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required .ProtoOADealStatus dealStatus = 12;
-      case 12: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (96 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOADealStatus_IsValid(value)) {
-            set_dealstatus(static_cast< ::ProtoOADealStatus >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                12, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double marginRate = 13;
-      case 13: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (105 & 0xFF)) {
-          HasBitSetters::set_has_marginrate(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &marginrate_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 commission = 14;
-      case 14: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (112 & 0xFF)) {
-          HasBitSetters::set_has_commission(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &commission_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double baseToUsdConversionRate = 15;
-      case 15: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (121 & 0xFF)) {
-          HasBitSetters::set_has_basetousdconversionrate(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &basetousdconversionrate_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOAClosePositionDetail closePositionDetail = 16;
-      case 16: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (130 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_closepositiondetail()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 moneyDigits = 17;
-      case 17: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (136 & 0xFF)) {
-          HasBitSetters::set_has_moneydigits(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &moneydigits_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOADeal)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOADeal)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOADeal::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOADeal)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 dealId = 1;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->dealid(), output);
-  }
-
-  // required int64 orderId = 2;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->orderid(), output);
-  }
-
-  // required int64 positionId = 3;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->positionid(), output);
-  }
-
-  // required int64 volume = 4;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->volume(), output);
-  }
-
-  // required int64 filledVolume = 5;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->filledvolume(), output);
-  }
-
-  // required int64 symbolId = 6;
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(6, this->symbolid(), output);
-  }
-
-  // required int64 createTimestamp = 7;
-  if (cached_has_bits & 0x00000080u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(7, this->createtimestamp(), output);
-  }
-
-  // required int64 executionTimestamp = 8;
-  if (cached_has_bits & 0x00000100u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(8, this->executiontimestamp(), output);
-  }
-
-  // optional int64 utcLastUpdateTimestamp = 9;
-  if (cached_has_bits & 0x00000200u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(9, this->utclastupdatetimestamp(), output);
-  }
-
-  // optional double executionPrice = 10;
-  if (cached_has_bits & 0x00000400u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(10, this->executionprice(), output);
-  }
-
-  // required .ProtoOATradeSide tradeSide = 11;
-  if (cached_has_bits & 0x00008000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      11, this->tradeside(), output);
-  }
-
-  // required .ProtoOADealStatus dealStatus = 12;
-  if (cached_has_bits & 0x00010000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      12, this->dealstatus(), output);
-  }
-
-  // optional double marginRate = 13;
-  if (cached_has_bits & 0x00000800u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(13, this->marginrate(), output);
-  }
-
-  // optional int64 commission = 14;
-  if (cached_has_bits & 0x00001000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(14, this->commission(), output);
-  }
-
-  // optional double baseToUsdConversionRate = 15;
-  if (cached_has_bits & 0x00002000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(15, this->basetousdconversionrate(), output);
-  }
-
-  // optional .ProtoOAClosePositionDetail closePositionDetail = 16;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      16, HasBitSetters::closepositiondetail(this), output);
-  }
-
-  // optional uint32 moneyDigits = 17;
-  if (cached_has_bits & 0x00004000u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(17, this->moneydigits(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOADeal)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOADeal::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOADeal::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOADeal)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -12646,96 +9193,113 @@ void ProtoOADeal::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 dealId = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->dealid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_dealid(), target);
   }
 
   // required int64 orderId = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->orderid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_orderid(), target);
   }
 
   // required int64 positionId = 3;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->positionid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_positionid(), target);
   }
 
   // required int64 volume = 4;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->volume(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_volume(), target);
   }
 
   // required int64 filledVolume = 5;
   if (cached_has_bits & 0x00000020u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->filledvolume(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_filledvolume(), target);
   }
 
   // required int64 symbolId = 6;
   if (cached_has_bits & 0x00000040u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->symbolid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_symbolid(), target);
   }
 
   // required int64 createTimestamp = 7;
   if (cached_has_bits & 0x00000080u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->createtimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->_internal_createtimestamp(), target);
   }
 
   // required int64 executionTimestamp = 8;
   if (cached_has_bits & 0x00000100u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->executiontimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_executiontimestamp(), target);
   }
 
   // optional int64 utcLastUpdateTimestamp = 9;
   if (cached_has_bits & 0x00000200u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->utclastupdatetimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->_internal_utclastupdatetimestamp(), target);
   }
 
   // optional double executionPrice = 10;
   if (cached_has_bits & 0x00000400u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(10, this->executionprice(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(10, this->_internal_executionprice(), target);
   }
 
   // required .ProtoOATradeSide tradeSide = 11;
   if (cached_has_bits & 0x00008000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      11, this->tradeside(), target);
+      11, this->_internal_tradeside(), target);
   }
 
   // required .ProtoOADealStatus dealStatus = 12;
   if (cached_has_bits & 0x00010000u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      12, this->dealstatus(), target);
+      12, this->_internal_dealstatus(), target);
   }
 
   // optional double marginRate = 13;
   if (cached_has_bits & 0x00000800u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(13, this->marginrate(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(13, this->_internal_marginrate(), target);
   }
 
   // optional int64 commission = 14;
   if (cached_has_bits & 0x00001000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(14, this->commission(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(14, this->_internal_commission(), target);
   }
 
   // optional double baseToUsdConversionRate = 15;
   if (cached_has_bits & 0x00002000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(15, this->basetousdconversionrate(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(15, this->_internal_basetousdconversionrate(), target);
   }
 
   // optional .ProtoOAClosePositionDetail closePositionDetail = 16;
   if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        16, HasBitSetters::closepositiondetail(this), target);
+      InternalWriteMessage(
+        16, _Internal::closepositiondetail(this), target, stream);
   }
 
   // optional uint32 moneyDigits = 17;
   if (cached_has_bits & 0x00004000u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(17, this->moneydigits(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(17, this->_internal_moneydigits(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOADeal)
   return target;
@@ -12745,72 +9309,72 @@ size_t ProtoOADeal::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOADeal)
   size_t total_size = 0;
 
-  if (has_dealid()) {
+  if (_internal_has_dealid()) {
     // required int64 dealId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->dealid());
+        this->_internal_dealid());
   }
 
-  if (has_orderid()) {
+  if (_internal_has_orderid()) {
     // required int64 orderId = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->orderid());
+        this->_internal_orderid());
   }
 
-  if (has_positionid()) {
+  if (_internal_has_positionid()) {
     // required int64 positionId = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->positionid());
+        this->_internal_positionid());
   }
 
-  if (has_volume()) {
+  if (_internal_has_volume()) {
     // required int64 volume = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->volume());
+        this->_internal_volume());
   }
 
-  if (has_filledvolume()) {
+  if (_internal_has_filledvolume()) {
     // required int64 filledVolume = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->filledvolume());
+        this->_internal_filledvolume());
   }
 
-  if (has_symbolid()) {
+  if (_internal_has_symbolid()) {
     // required int64 symbolId = 6;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->symbolid());
+        this->_internal_symbolid());
   }
 
-  if (has_createtimestamp()) {
+  if (_internal_has_createtimestamp()) {
     // required int64 createTimestamp = 7;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->createtimestamp());
+        this->_internal_createtimestamp());
   }
 
-  if (has_executiontimestamp()) {
+  if (_internal_has_executiontimestamp()) {
     // required int64 executionTimestamp = 8;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->executiontimestamp());
+        this->_internal_executiontimestamp());
   }
 
-  if (has_tradeside()) {
+  if (_internal_has_tradeside()) {
     // required .ProtoOATradeSide tradeSide = 11;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->tradeside());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_tradeside());
   }
 
-  if (has_dealstatus()) {
+  if (_internal_has_dealstatus()) {
     // required .ProtoOADealStatus dealStatus = 12;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->dealstatus());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_dealstatus());
   }
 
   return total_size;
@@ -12819,59 +9383,54 @@ size_t ProtoOADeal::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOADeal)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x000181fe) ^ 0x000181fe) == 0) {  // All required fields are present.
     // required int64 dealId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->dealid());
+        this->_internal_dealid());
 
     // required int64 orderId = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->orderid());
+        this->_internal_orderid());
 
     // required int64 positionId = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->positionid());
+        this->_internal_positionid());
 
     // required int64 volume = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->volume());
+        this->_internal_volume());
 
     // required int64 filledVolume = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->filledvolume());
+        this->_internal_filledvolume());
 
     // required int64 symbolId = 6;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->symbolid());
+        this->_internal_symbolid());
 
     // required int64 createTimestamp = 7;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->createtimestamp());
+        this->_internal_createtimestamp());
 
     // required int64 executionTimestamp = 8;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->executiontimestamp());
+        this->_internal_executiontimestamp());
 
     // required .ProtoOATradeSide tradeSide = 11;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->tradeside());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_tradeside());
 
     // required .ProtoOADealStatus dealStatus = 12;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->dealstatus());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_dealstatus());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -12893,7 +9452,7 @@ size_t ProtoOADeal::ByteSizeLong() const {
     if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->utclastupdatetimestamp());
+          this->_internal_utclastupdatetimestamp());
     }
 
     // optional double executionPrice = 10;
@@ -12910,7 +9469,7 @@ size_t ProtoOADeal::ByteSizeLong() const {
     if (cached_has_bits & 0x00001000u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->commission());
+          this->_internal_commission());
     }
 
     // optional double baseToUsdConversionRate = 15;
@@ -12922,9 +9481,13 @@ size_t ProtoOADeal::ByteSizeLong() const {
     if (cached_has_bits & 0x00004000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->moneydigits());
+          this->_internal_moneydigits());
     }
 
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -12949,14 +9512,14 @@ void ProtoOADeal::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ProtoOADeal::MergeFrom(const ProtoOADeal& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOADeal)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      mutable_closepositiondetail()->::ProtoOAClosePositionDetail::MergeFrom(from.closepositiondetail());
+      _internal_mutable_closepositiondetail()->::ProtoOAClosePositionDetail::MergeFrom(from._internal_closepositiondetail());
     }
     if (cached_has_bits & 0x00000002u) {
       dealid_ = from.dealid_;
@@ -13009,7 +9572,7 @@ void ProtoOADeal::MergeFrom(const ProtoOADeal& from) {
     _has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 0x00010000u) {
-    set_dealstatus(from.dealstatus());
+    _internal_set_dealstatus(from._internal_dealstatus());
   }
 }
 
@@ -13028,103 +9591,79 @@ void ProtoOADeal::CopyFrom(const ProtoOADeal& from) {
 }
 
 bool ProtoOADeal::IsInitialized() const {
-  if ((_has_bits_[0] & 0x000181fe) != 0x000181fe) return false;
-  if (has_closepositiondetail()) {
-    if (!this->closepositiondetail_->IsInitialized()) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_internal_has_closepositiondetail()) {
+    if (!closepositiondetail_->IsInitialized()) return false;
   }
   return true;
 }
 
-void ProtoOADeal::Swap(ProtoOADeal* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOADeal::InternalSwap(ProtoOADeal* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(closepositiondetail_, other->closepositiondetail_);
-  swap(dealid_, other->dealid_);
-  swap(orderid_, other->orderid_);
-  swap(positionid_, other->positionid_);
-  swap(volume_, other->volume_);
-  swap(filledvolume_, other->filledvolume_);
-  swap(symbolid_, other->symbolid_);
-  swap(createtimestamp_, other->createtimestamp_);
-  swap(executiontimestamp_, other->executiontimestamp_);
-  swap(utclastupdatetimestamp_, other->utclastupdatetimestamp_);
-  swap(executionprice_, other->executionprice_);
-  swap(marginrate_, other->marginrate_);
-  swap(commission_, other->commission_);
-  swap(basetousdconversionrate_, other->basetousdconversionrate_);
-  swap(moneydigits_, other->moneydigits_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOADeal, moneydigits_)
+      + sizeof(ProtoOADeal::moneydigits_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOADeal, closepositiondetail_)>(
+          reinterpret_cast<char*>(&closepositiondetail_),
+          reinterpret_cast<char*>(&other->closepositiondetail_));
   swap(tradeside_, other->tradeside_);
   swap(dealstatus_, other->dealstatus_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOADeal::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOAClosePositionDetail::InitAsDefaultInstance() {
-}
-class ProtoOAClosePositionDetail::HasBitSetters {
+class ProtoOAClosePositionDetail::_Internal {
  public:
-  static void set_has_entryprice(ProtoOAClosePositionDetail* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  using HasBits = decltype(std::declval<ProtoOAClosePositionDetail>()._has_bits_);
+  static void set_has_entryprice(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_grossprofit(ProtoOAClosePositionDetail* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_grossprofit(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_swap(ProtoOAClosePositionDetail* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_swap(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_commission(ProtoOAClosePositionDetail* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_commission(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_balance(ProtoOAClosePositionDetail* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_balance(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_quotetodepositconversionrate(ProtoOAClosePositionDetail* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  static void set_has_quotetodepositconversionrate(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  static void set_has_closedvolume(ProtoOAClosePositionDetail* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_closedvolume(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
   }
-  static void set_has_balanceversion(ProtoOAClosePositionDetail* msg) {
-    msg->_has_bits_[0] |= 0x00000080u;
+  static void set_has_balanceversion(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
   }
-  static void set_has_moneydigits(ProtoOAClosePositionDetail* msg) {
-    msg->_has_bits_[0] |= 0x00000100u;
+  static void set_has_moneydigits(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x0000001f) ^ 0x0000001f) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOAClosePositionDetail::kEntryPriceFieldNumber;
-const int ProtoOAClosePositionDetail::kGrossProfitFieldNumber;
-const int ProtoOAClosePositionDetail::kSwapFieldNumber;
-const int ProtoOAClosePositionDetail::kCommissionFieldNumber;
-const int ProtoOAClosePositionDetail::kBalanceFieldNumber;
-const int ProtoOAClosePositionDetail::kQuoteToDepositConversionRateFieldNumber;
-const int ProtoOAClosePositionDetail::kClosedVolumeFieldNumber;
-const int ProtoOAClosePositionDetail::kBalanceVersionFieldNumber;
-const int ProtoOAClosePositionDetail::kMoneyDigitsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOAClosePositionDetail::ProtoOAClosePositionDetail()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOAClosePositionDetail::ProtoOAClosePositionDetail(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOAClosePositionDetail)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOAClosePositionDetail)
 }
 ProtoOAClosePositionDetail::ProtoOAClosePositionDetail(const ProtoOAClosePositionDetail& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&entryprice_, &from.entryprice_,
     static_cast<size_t>(reinterpret_cast<char*>(&moneydigits_) -
     reinterpret_cast<char*>(&entryprice_)) + sizeof(moneydigits_));
@@ -13132,19 +9671,28 @@ ProtoOAClosePositionDetail::ProtoOAClosePositionDetail(const ProtoOAClosePositio
 }
 
 void ProtoOAClosePositionDetail::SharedCtor() {
-  ::memset(&entryprice_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&moneydigits_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&entryprice_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&moneydigits_) -
       reinterpret_cast<char*>(&entryprice_)) + sizeof(moneydigits_));
 }
 
 ProtoOAClosePositionDetail::~ProtoOAClosePositionDetail() {
   // @@protoc_insertion_point(destructor:ProtoOAClosePositionDetail)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOAClosePositionDetail::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ProtoOAClosePositionDetail::ArenaDtor(void* object) {
+  ProtoOAClosePositionDetail* _this = reinterpret_cast< ProtoOAClosePositionDetail* >(object);
+  (void)_this;
+}
+void ProtoOAClosePositionDetail::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOAClosePositionDetail::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -13168,303 +9716,114 @@ void ProtoOAClosePositionDetail::Clear() {
   }
   moneydigits_ = 0u;
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOAClosePositionDetail::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required double entryPrice = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 9) goto handle_unusual;
-        set_entryprice(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+          _Internal::set_has_entryprice(&has_bits);
+          entryprice_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required int64 grossProfit = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
-        set_grossprofit(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_grossprofit(&has_bits);
+          grossprofit_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 swap = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_swap(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_swap(&has_bits);
+          swap_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 commission = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_commission(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_commission(&has_bits);
+          commission_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 balance = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 40) goto handle_unusual;
-        set_balance(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_balance(&has_bits);
+          balance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional double quoteToDepositConversionRate = 6;
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 49) goto handle_unusual;
-        set_quotetodepositconversionrate(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 49)) {
+          _Internal::set_has_quotetodepositconversionrate(&has_bits);
+          quotetodepositconversionrate_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional int64 closedVolume = 7;
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 56) goto handle_unusual;
-        set_closedvolume(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          _Internal::set_has_closedvolume(&has_bits);
+          closedvolume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 balanceVersion = 8;
-      case 8: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 64) goto handle_unusual;
-        set_balanceversion(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          _Internal::set_has_balanceversion(&has_bits);
+          balanceversion_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint32 moneyDigits = 9;
-      case 9: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 72) goto handle_unusual;
-        set_moneydigits(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          _Internal::set_has_moneydigits(&has_bits);
+          moneydigits_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOAClosePositionDetail::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOAClosePositionDetail)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required double entryPrice = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (9 & 0xFF)) {
-          HasBitSetters::set_has_entryprice(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &entryprice_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 grossProfit = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_grossprofit(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &grossprofit_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 swap = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_swap(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &swap_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 commission = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_commission(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &commission_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 balance = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-          HasBitSetters::set_has_balance(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &balance_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional double quoteToDepositConversionRate = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (49 & 0xFF)) {
-          HasBitSetters::set_has_quotetodepositconversionrate(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &quotetodepositconversionrate_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 closedVolume = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
-          HasBitSetters::set_has_closedvolume(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &closedvolume_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 balanceVersion = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
-          HasBitSetters::set_has_balanceversion(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &balanceversion_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 moneyDigits = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
-          HasBitSetters::set_has_moneydigits(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &moneydigits_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOAClosePositionDetail)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOAClosePositionDetail)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOAClosePositionDetail::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOAClosePositionDetail)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required double entryPrice = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(1, this->entryprice(), output);
-  }
-
-  // required int64 grossProfit = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->grossprofit(), output);
-  }
-
-  // required int64 swap = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->swap(), output);
-  }
-
-  // required int64 commission = 4;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->commission(), output);
-  }
-
-  // required int64 balance = 5;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->balance(), output);
-  }
-
-  // optional double quoteToDepositConversionRate = 6;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(6, this->quotetodepositconversionrate(), output);
-  }
-
-  // optional int64 closedVolume = 7;
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(7, this->closedvolume(), output);
-  }
-
-  // optional int64 balanceVersion = 8;
-  if (cached_has_bits & 0x00000080u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(8, this->balanceversion(), output);
-  }
-
-  // optional uint32 moneyDigits = 9;
-  if (cached_has_bits & 0x00000100u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(9, this->moneydigits(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOAClosePositionDetail)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAClosePositionDetail::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAClosePositionDetail::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOAClosePositionDetail)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -13472,52 +9831,61 @@ void ProtoOAClosePositionDetail::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required double entryPrice = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->entryprice(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_entryprice(), target);
   }
 
   // required int64 grossProfit = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->grossprofit(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_grossprofit(), target);
   }
 
   // required int64 swap = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->swap(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_swap(), target);
   }
 
   // required int64 commission = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->commission(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_commission(), target);
   }
 
   // required int64 balance = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->balance(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_balance(), target);
   }
 
   // optional double quoteToDepositConversionRate = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->quotetodepositconversionrate(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->_internal_quotetodepositconversionrate(), target);
   }
 
   // optional int64 closedVolume = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->closedvolume(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->_internal_closedvolume(), target);
   }
 
   // optional int64 balanceVersion = 8;
   if (cached_has_bits & 0x00000080u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->balanceversion(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_balanceversion(), target);
   }
 
   // optional uint32 moneyDigits = 9;
   if (cached_has_bits & 0x00000100u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(9, this->moneydigits(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(9, this->_internal_moneydigits(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOAClosePositionDetail)
   return target;
@@ -13527,37 +9895,37 @@ size_t ProtoOAClosePositionDetail::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOAClosePositionDetail)
   size_t total_size = 0;
 
-  if (has_entryprice()) {
+  if (_internal_has_entryprice()) {
     // required double entryPrice = 1;
     total_size += 1 + 8;
   }
 
-  if (has_grossprofit()) {
+  if (_internal_has_grossprofit()) {
     // required int64 grossProfit = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->grossprofit());
+        this->_internal_grossprofit());
   }
 
-  if (has_swap()) {
+  if (_internal_has_swap()) {
     // required int64 swap = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->swap());
+        this->_internal_swap());
   }
 
-  if (has_commission()) {
+  if (_internal_has_commission()) {
     // required int64 commission = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->commission());
+        this->_internal_commission());
   }
 
-  if (has_balance()) {
+  if (_internal_has_balance()) {
     // required int64 balance = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->balance());
+        this->_internal_balance());
   }
 
   return total_size;
@@ -13566,11 +9934,6 @@ size_t ProtoOAClosePositionDetail::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOAClosePositionDetail)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x0000001f) ^ 0x0000001f) == 0) {  // All required fields are present.
     // required double entryPrice = 1;
     total_size += 1 + 8;
@@ -13578,22 +9941,22 @@ size_t ProtoOAClosePositionDetail::ByteSizeLong() const {
     // required int64 grossProfit = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->grossprofit());
+        this->_internal_grossprofit());
 
     // required int64 swap = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->swap());
+        this->_internal_swap());
 
     // required int64 commission = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->commission());
+        this->_internal_commission());
 
     // required int64 balance = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->balance());
+        this->_internal_balance());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -13613,14 +9976,14 @@ size_t ProtoOAClosePositionDetail::ByteSizeLong() const {
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->closedvolume());
+          this->_internal_closedvolume());
     }
 
     // optional int64 balanceVersion = 8;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->balanceversion());
+          this->_internal_balanceversion());
     }
 
   }
@@ -13628,9 +9991,13 @@ size_t ProtoOAClosePositionDetail::ByteSizeLong() const {
   if (cached_has_bits & 0x00000100u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->moneydigits());
+        this->_internal_moneydigits());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -13654,7 +10021,7 @@ void ProtoOAClosePositionDetail::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Messag
 void ProtoOAClosePositionDetail::MergeFrom(const ProtoOAClosePositionDetail& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOAClosePositionDetail)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -13687,7 +10054,7 @@ void ProtoOAClosePositionDetail::MergeFrom(const ProtoOAClosePositionDetail& fro
     _has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 0x00000100u) {
-    set_moneydigits(from.moneydigits());
+    _internal_set_moneydigits(from._internal_moneydigits());
   }
 }
 
@@ -13706,84 +10073,68 @@ void ProtoOAClosePositionDetail::CopyFrom(const ProtoOAClosePositionDetail& from
 }
 
 bool ProtoOAClosePositionDetail::IsInitialized() const {
-  if ((_has_bits_[0] & 0x0000001f) != 0x0000001f) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOAClosePositionDetail::Swap(ProtoOAClosePositionDetail* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOAClosePositionDetail::InternalSwap(ProtoOAClosePositionDetail* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(entryprice_, other->entryprice_);
-  swap(grossprofit_, other->grossprofit_);
-  swap(swap_, other->swap_);
-  swap(commission_, other->commission_);
-  swap(balance_, other->balance_);
-  swap(quotetodepositconversionrate_, other->quotetodepositconversionrate_);
-  swap(closedvolume_, other->closedvolume_);
-  swap(balanceversion_, other->balanceversion_);
-  swap(moneydigits_, other->moneydigits_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOAClosePositionDetail, moneydigits_)
+      + sizeof(ProtoOAClosePositionDetail::moneydigits_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOAClosePositionDetail, entryprice_)>(
+          reinterpret_cast<char*>(&entryprice_),
+          reinterpret_cast<char*>(&other->entryprice_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOAClosePositionDetail::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOATrendbar::InitAsDefaultInstance() {
-}
-class ProtoOATrendbar::HasBitSetters {
+class ProtoOATrendbar::_Internal {
  public:
-  static void set_has_volume(ProtoOATrendbar* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  using HasBits = decltype(std::declval<ProtoOATrendbar>()._has_bits_);
+  static void set_has_volume(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_period(ProtoOATrendbar* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_period(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
   }
-  static void set_has_low(ProtoOATrendbar* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_low(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_deltaopen(ProtoOATrendbar* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_deltaopen(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_deltaclose(ProtoOATrendbar* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_deltaclose(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_deltahigh(ProtoOATrendbar* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_deltahigh(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_utctimestampinminutes(ProtoOATrendbar* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  static void set_has_utctimestampinminutes(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOATrendbar::kVolumeFieldNumber;
-const int ProtoOATrendbar::kPeriodFieldNumber;
-const int ProtoOATrendbar::kLowFieldNumber;
-const int ProtoOATrendbar::kDeltaOpenFieldNumber;
-const int ProtoOATrendbar::kDeltaCloseFieldNumber;
-const int ProtoOATrendbar::kDeltaHighFieldNumber;
-const int ProtoOATrendbar::kUtcTimestampInMinutesFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOATrendbar::ProtoOATrendbar()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOATrendbar::ProtoOATrendbar(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOATrendbar)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOATrendbar)
 }
 ProtoOATrendbar::ProtoOATrendbar(const ProtoOATrendbar& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&volume_, &from.volume_,
     static_cast<size_t>(reinterpret_cast<char*>(&period_) -
     reinterpret_cast<char*>(&volume_)) + sizeof(period_));
@@ -13791,8 +10142,9 @@ ProtoOATrendbar::ProtoOATrendbar(const ProtoOATrendbar& from)
 }
 
 void ProtoOATrendbar::SharedCtor() {
-  ::memset(&volume_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&utctimestampinminutes_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&volume_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&utctimestampinminutes_) -
       reinterpret_cast<char*>(&volume_)) + sizeof(utctimestampinminutes_));
   period_ = 1;
 }
@@ -13800,11 +10152,19 @@ void ProtoOATrendbar::SharedCtor() {
 ProtoOATrendbar::~ProtoOATrendbar() {
   // @@protoc_insertion_point(destructor:ProtoOATrendbar)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOATrendbar::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ProtoOATrendbar::ArenaDtor(void* object) {
+  ProtoOATrendbar* _this = reinterpret_cast< ProtoOATrendbar* >(object);
+  (void)_this;
+}
+void ProtoOATrendbar::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOATrendbar::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -13828,265 +10188,102 @@ void ProtoOATrendbar::Clear() {
     period_ = 1;
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOATrendbar::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 volume = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_volume(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_volume(&has_bits);
+          volume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional .ProtoOATrendbarPeriod period = 4 [default = M1];
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOATrendbarPeriod_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(4, val, mutable_unknown_fields());
-          break;
-        }
-        set_period(static_cast<::ProtoOATrendbarPeriod>(val));
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOATrendbarPeriod_IsValid(val))) {
+            _internal_set_period(static_cast<::ProtoOATrendbarPeriod>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(4, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // optional int64 low = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 40) goto handle_unusual;
-        set_low(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_low(&has_bits);
+          low_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint64 deltaOpen = 6;
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 48) goto handle_unusual;
-        set_deltaopen(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          _Internal::set_has_deltaopen(&has_bits);
+          deltaopen_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint64 deltaClose = 7;
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 56) goto handle_unusual;
-        set_deltaclose(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          _Internal::set_has_deltaclose(&has_bits);
+          deltaclose_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint64 deltaHigh = 8;
-      case 8: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 64) goto handle_unusual;
-        set_deltahigh(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          _Internal::set_has_deltahigh(&has_bits);
+          deltahigh_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint32 utcTimestampInMinutes = 9;
-      case 9: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 72) goto handle_unusual;
-        set_utctimestampinminutes(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          _Internal::set_has_utctimestampinminutes(&has_bits);
+          utctimestampinminutes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOATrendbar::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOATrendbar)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 volume = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_volume(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &volume_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .ProtoOATrendbarPeriod period = 4 [default = M1];
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOATrendbarPeriod_IsValid(value)) {
-            set_period(static_cast< ::ProtoOATrendbarPeriod >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                4, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 low = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-          HasBitSetters::set_has_low(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &low_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint64 deltaOpen = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-          HasBitSetters::set_has_deltaopen(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &deltaopen_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint64 deltaClose = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
-          HasBitSetters::set_has_deltaclose(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &deltaclose_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint64 deltaHigh = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
-          HasBitSetters::set_has_deltahigh(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &deltahigh_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint32 utcTimestampInMinutes = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
-          HasBitSetters::set_has_utctimestampinminutes(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &utctimestampinminutes_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOATrendbar)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOATrendbar)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOATrendbar::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOATrendbar)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 volume = 3;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->volume(), output);
-  }
-
-  // optional .ProtoOATrendbarPeriod period = 4 [default = M1];
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      4, this->period(), output);
-  }
-
-  // optional int64 low = 5;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->low(), output);
-  }
-
-  // optional uint64 deltaOpen = 6;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(6, this->deltaopen(), output);
-  }
-
-  // optional uint64 deltaClose = 7;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(7, this->deltaclose(), output);
-  }
-
-  // optional uint64 deltaHigh = 8;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(8, this->deltahigh(), output);
-  }
-
-  // optional uint32 utcTimestampInMinutes = 9;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(9, this->utctimestampinminutes(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOATrendbar)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOATrendbar::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOATrendbar::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOATrendbar)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -14094,43 +10291,50 @@ void ProtoOATrendbar::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 volume = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->volume(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_volume(), target);
   }
 
   // optional .ProtoOATrendbarPeriod period = 4 [default = M1];
   if (cached_has_bits & 0x00000040u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      4, this->period(), target);
+      4, this->_internal_period(), target);
   }
 
   // optional int64 low = 5;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->low(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_low(), target);
   }
 
   // optional uint64 deltaOpen = 6;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(6, this->deltaopen(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(6, this->_internal_deltaopen(), target);
   }
 
   // optional uint64 deltaClose = 7;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(7, this->deltaclose(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(7, this->_internal_deltaclose(), target);
   }
 
   // optional uint64 deltaHigh = 8;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(8, this->deltahigh(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(8, this->_internal_deltahigh(), target);
   }
 
   // optional uint32 utcTimestampInMinutes = 9;
   if (cached_has_bits & 0x00000020u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(9, this->utctimestampinminutes(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(9, this->_internal_utctimestampinminutes(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOATrendbar)
   return target;
@@ -14140,16 +10344,11 @@ size_t ProtoOATrendbar::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOATrendbar)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   // required int64 volume = 3;
-  if (has_volume()) {
+  if (_internal_has_volume()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->volume());
+        this->_internal_volume());
   }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -14161,43 +10360,47 @@ size_t ProtoOATrendbar::ByteSizeLong() const {
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->low());
+          this->_internal_low());
     }
 
     // optional uint64 deltaOpen = 6;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-          this->deltaopen());
+          this->_internal_deltaopen());
     }
 
     // optional uint64 deltaClose = 7;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-          this->deltaclose());
+          this->_internal_deltaclose());
     }
 
     // optional uint64 deltaHigh = 8;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-          this->deltahigh());
+          this->_internal_deltahigh());
     }
 
     // optional uint32 utcTimestampInMinutes = 9;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->utctimestampinminutes());
+          this->_internal_utctimestampinminutes());
     }
 
     // optional .ProtoOATrendbarPeriod period = 4 [default = M1];
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->period());
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_period());
     }
 
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -14222,7 +10425,7 @@ void ProtoOATrendbar::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ProtoOATrendbar::MergeFrom(const ProtoOATrendbar& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOATrendbar)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -14268,66 +10471,57 @@ void ProtoOATrendbar::CopyFrom(const ProtoOATrendbar& from) {
 }
 
 bool ProtoOATrendbar::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOATrendbar::Swap(ProtoOATrendbar* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOATrendbar::InternalSwap(ProtoOATrendbar* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(volume_, other->volume_);
-  swap(low_, other->low_);
-  swap(deltaopen_, other->deltaopen_);
-  swap(deltaclose_, other->deltaclose_);
-  swap(deltahigh_, other->deltahigh_);
-  swap(utctimestampinminutes_, other->utctimestampinminutes_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOATrendbar, utctimestampinminutes_)
+      + sizeof(ProtoOATrendbar::utctimestampinminutes_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOATrendbar, volume_)>(
+          reinterpret_cast<char*>(&volume_),
+          reinterpret_cast<char*>(&other->volume_));
   swap(period_, other->period_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOATrendbar::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOAExpectedMargin::InitAsDefaultInstance() {
-}
-class ProtoOAExpectedMargin::HasBitSetters {
+class ProtoOAExpectedMargin::_Internal {
  public:
-  static void set_has_volume(ProtoOAExpectedMargin* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  using HasBits = decltype(std::declval<ProtoOAExpectedMargin>()._has_bits_);
+  static void set_has_volume(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_buymargin(ProtoOAExpectedMargin* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_buymargin(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_sellmargin(ProtoOAExpectedMargin* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_sellmargin(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000007) ^ 0x00000007) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOAExpectedMargin::kVolumeFieldNumber;
-const int ProtoOAExpectedMargin::kBuyMarginFieldNumber;
-const int ProtoOAExpectedMargin::kSellMarginFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOAExpectedMargin::ProtoOAExpectedMargin()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOAExpectedMargin::ProtoOAExpectedMargin(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOAExpectedMargin)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOAExpectedMargin)
 }
 ProtoOAExpectedMargin::ProtoOAExpectedMargin(const ProtoOAExpectedMargin& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&volume_, &from.volume_,
     static_cast<size_t>(reinterpret_cast<char*>(&sellmargin_) -
     reinterpret_cast<char*>(&volume_)) + sizeof(sellmargin_));
@@ -14335,19 +10529,28 @@ ProtoOAExpectedMargin::ProtoOAExpectedMargin(const ProtoOAExpectedMargin& from)
 }
 
 void ProtoOAExpectedMargin::SharedCtor() {
-  ::memset(&volume_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&sellmargin_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&volume_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&sellmargin_) -
       reinterpret_cast<char*>(&volume_)) + sizeof(sellmargin_));
 }
 
 ProtoOAExpectedMargin::~ProtoOAExpectedMargin() {
   // @@protoc_insertion_point(destructor:ProtoOAExpectedMargin)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOAExpectedMargin::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ProtoOAExpectedMargin::ArenaDtor(void* object) {
+  ProtoOAExpectedMargin* _this = reinterpret_cast< ProtoOAExpectedMargin* >(object);
+  (void)_this;
+}
+void ProtoOAExpectedMargin::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOAExpectedMargin::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -14370,153 +10573,66 @@ void ProtoOAExpectedMargin::Clear() {
         reinterpret_cast<char*>(&volume_)) + sizeof(sellmargin_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOAExpectedMargin::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 volume = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_volume(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_volume(&has_bits);
+          volume_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 buyMargin = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
-        set_buymargin(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_buymargin(&has_bits);
+          buymargin_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 sellMargin = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_sellmargin(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_sellmargin(&has_bits);
+          sellmargin_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOAExpectedMargin::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOAExpectedMargin)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 volume = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_volume(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &volume_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 buyMargin = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_buymargin(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &buymargin_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 sellMargin = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_sellmargin(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &sellmargin_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOAExpectedMargin)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOAExpectedMargin)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOAExpectedMargin::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOAExpectedMargin)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 volume = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->volume(), output);
-  }
-
-  // required int64 buyMargin = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->buymargin(), output);
-  }
-
-  // required int64 sellMargin = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->sellmargin(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOAExpectedMargin)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAExpectedMargin::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAExpectedMargin::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOAExpectedMargin)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -14524,22 +10640,25 @@ void ProtoOAExpectedMargin::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 volume = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->volume(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_volume(), target);
   }
 
   // required int64 buyMargin = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->buymargin(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_buymargin(), target);
   }
 
   // required int64 sellMargin = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->sellmargin(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_sellmargin(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOAExpectedMargin)
   return target;
@@ -14549,25 +10668,25 @@ size_t ProtoOAExpectedMargin::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOAExpectedMargin)
   size_t total_size = 0;
 
-  if (has_volume()) {
+  if (_internal_has_volume()) {
     // required int64 volume = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->volume());
+        this->_internal_volume());
   }
 
-  if (has_buymargin()) {
+  if (_internal_has_buymargin()) {
     // required int64 buyMargin = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->buymargin());
+        this->_internal_buymargin());
   }
 
-  if (has_sellmargin()) {
+  if (_internal_has_sellmargin()) {
     // required int64 sellMargin = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->sellmargin());
+        this->_internal_sellmargin());
   }
 
   return total_size;
@@ -14576,26 +10695,21 @@ size_t ProtoOAExpectedMargin::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOAExpectedMargin)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required int64 volume = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->volume());
+        this->_internal_volume());
 
     // required int64 buyMargin = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->buymargin());
+        this->_internal_buymargin());
 
     // required int64 sellMargin = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->sellmargin());
+        this->_internal_sellmargin());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -14604,6 +10718,10 @@ size_t ProtoOAExpectedMargin::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -14627,7 +10745,7 @@ void ProtoOAExpectedMargin::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void ProtoOAExpectedMargin::MergeFrom(const ProtoOAExpectedMargin& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOAExpectedMargin)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -14661,58 +10779,53 @@ void ProtoOAExpectedMargin::CopyFrom(const ProtoOAExpectedMargin& from) {
 }
 
 bool ProtoOAExpectedMargin::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOAExpectedMargin::Swap(ProtoOAExpectedMargin* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOAExpectedMargin::InternalSwap(ProtoOAExpectedMargin* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(volume_, other->volume_);
-  swap(buymargin_, other->buymargin_);
-  swap(sellmargin_, other->sellmargin_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOAExpectedMargin, sellmargin_)
+      + sizeof(ProtoOAExpectedMargin::sellmargin_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOAExpectedMargin, volume_)>(
+          reinterpret_cast<char*>(&volume_),
+          reinterpret_cast<char*>(&other->volume_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOAExpectedMargin::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOATickData::InitAsDefaultInstance() {
-}
-class ProtoOATickData::HasBitSetters {
+class ProtoOATickData::_Internal {
  public:
-  static void set_has_timestamp(ProtoOATickData* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  using HasBits = decltype(std::declval<ProtoOATickData>()._has_bits_);
+  static void set_has_timestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_tick(ProtoOATickData* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_tick(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOATickData::kTimestampFieldNumber;
-const int ProtoOATickData::kTickFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOATickData::ProtoOATickData()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOATickData::ProtoOATickData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOATickData)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOATickData)
 }
 ProtoOATickData::ProtoOATickData(const ProtoOATickData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&timestamp_, &from.timestamp_,
     static_cast<size_t>(reinterpret_cast<char*>(&tick_) -
     reinterpret_cast<char*>(&timestamp_)) + sizeof(tick_));
@@ -14720,19 +10833,28 @@ ProtoOATickData::ProtoOATickData(const ProtoOATickData& from)
 }
 
 void ProtoOATickData::SharedCtor() {
-  ::memset(&timestamp_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&tick_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&timestamp_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&tick_) -
       reinterpret_cast<char*>(&timestamp_)) + sizeof(tick_));
 }
 
 ProtoOATickData::~ProtoOATickData() {
   // @@protoc_insertion_point(destructor:ProtoOATickData)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOATickData::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ProtoOATickData::ArenaDtor(void* object) {
+  ProtoOATickData* _this = reinterpret_cast< ProtoOATickData* >(object);
+  (void)_this;
+}
+void ProtoOATickData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOATickData::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -14755,128 +10877,58 @@ void ProtoOATickData::Clear() {
         reinterpret_cast<char*>(&timestamp_)) + sizeof(tick_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOATickData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 timestamp = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_timestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_timestamp(&has_bits);
+          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 tick = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
-        set_tick(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_tick(&has_bits);
+          tick_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOATickData::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOATickData)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 timestamp = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_timestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &timestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 tick = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_tick(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &tick_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOATickData)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOATickData)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOATickData::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOATickData)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 timestamp = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->timestamp(), output);
-  }
-
-  // required int64 tick = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->tick(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOATickData)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOATickData::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOATickData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOATickData)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -14884,17 +10936,19 @@ void ProtoOATickData::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 timestamp = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->timestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_timestamp(), target);
   }
 
   // required int64 tick = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->tick(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_tick(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOATickData)
   return target;
@@ -14904,18 +10958,18 @@ size_t ProtoOATickData::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOATickData)
   size_t total_size = 0;
 
-  if (has_timestamp()) {
+  if (_internal_has_timestamp()) {
     // required int64 timestamp = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->timestamp());
+        this->_internal_timestamp());
   }
 
-  if (has_tick()) {
+  if (_internal_has_tick()) {
     // required int64 tick = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->tick());
+        this->_internal_tick());
   }
 
   return total_size;
@@ -14924,21 +10978,16 @@ size_t ProtoOATickData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOATickData)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required int64 timestamp = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->timestamp());
+        this->_internal_timestamp());
 
     // required int64 tick = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->tick());
+        this->_internal_tick());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -14947,6 +10996,10 @@ size_t ProtoOATickData::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -14970,7 +11023,7 @@ void ProtoOATickData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ProtoOATickData::MergeFrom(const ProtoOATickData& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOATickData)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -15001,53 +11054,50 @@ void ProtoOATickData::CopyFrom(const ProtoOATickData& from) {
 }
 
 bool ProtoOATickData::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOATickData::Swap(ProtoOATickData* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOATickData::InternalSwap(ProtoOATickData* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(timestamp_, other->timestamp_);
-  swap(tick_, other->tick_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOATickData, tick_)
+      + sizeof(ProtoOATickData::tick_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOATickData, timestamp_)>(
+          reinterpret_cast<char*>(&timestamp_),
+          reinterpret_cast<char*>(&other->timestamp_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOATickData::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOACtidProfile::InitAsDefaultInstance() {
-}
-class ProtoOACtidProfile::HasBitSetters {
+class ProtoOACtidProfile::_Internal {
  public:
-  static void set_has_userid(ProtoOACtidProfile* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  using HasBits = decltype(std::declval<ProtoOACtidProfile>()._has_bits_);
+  static void set_has_userid(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOACtidProfile::kUserIdFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOACtidProfile::ProtoOACtidProfile()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOACtidProfile::ProtoOACtidProfile(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOACtidProfile)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOACtidProfile)
 }
 ProtoOACtidProfile::ProtoOACtidProfile(const ProtoOACtidProfile& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   userid_ = from.userid_;
   // @@protoc_insertion_point(copy_constructor:ProtoOACtidProfile)
 }
@@ -15059,11 +11109,19 @@ void ProtoOACtidProfile::SharedCtor() {
 ProtoOACtidProfile::~ProtoOACtidProfile() {
   // @@protoc_insertion_point(destructor:ProtoOACtidProfile)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOACtidProfile::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ProtoOACtidProfile::ArenaDtor(void* object) {
+  ProtoOACtidProfile* _this = reinterpret_cast< ProtoOACtidProfile* >(object);
+  (void)_this;
+}
+void ProtoOACtidProfile::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOACtidProfile::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -15081,103 +11139,50 @@ void ProtoOACtidProfile::Clear() {
 
   userid_ = PROTOBUF_LONGLONG(0);
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOACtidProfile::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 userId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_userid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_userid(&has_bits);
+          userid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOACtidProfile::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOACtidProfile)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 userId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_userid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &userid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOACtidProfile)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOACtidProfile)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOACtidProfile::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOACtidProfile)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 userId = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->userid(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOACtidProfile)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOACtidProfile::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOACtidProfile::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOACtidProfile)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -15185,12 +11190,13 @@ void ProtoOACtidProfile::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 userId = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->userid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_userid(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOACtidProfile)
   return target;
@@ -15200,21 +11206,20 @@ size_t ProtoOACtidProfile::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOACtidProfile)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   // required int64 userId = 1;
-  if (has_userid()) {
+  if (_internal_has_userid()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->userid());
+        this->_internal_userid());
   }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -15238,12 +11243,12 @@ void ProtoOACtidProfile::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from)
 void ProtoOACtidProfile::MergeFrom(const ProtoOACtidProfile& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOACtidProfile)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_userid()) {
-    set_userid(from.userid());
+  if (from._internal_has_userid()) {
+    _internal_set_userid(from._internal_userid());
   }
 }
 
@@ -15262,60 +11267,51 @@ void ProtoOACtidProfile::CopyFrom(const ProtoOACtidProfile& from) {
 }
 
 bool ProtoOACtidProfile::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOACtidProfile::Swap(ProtoOACtidProfile* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOACtidProfile::InternalSwap(ProtoOACtidProfile* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(userid_, other->userid_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOACtidProfile::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOACtidTraderAccount::InitAsDefaultInstance() {
-}
-class ProtoOACtidTraderAccount::HasBitSetters {
+class ProtoOACtidTraderAccount::_Internal {
  public:
-  static void set_has_ctidtraderaccountid(ProtoOACtidTraderAccount* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  using HasBits = decltype(std::declval<ProtoOACtidTraderAccount>()._has_bits_);
+  static void set_has_ctidtraderaccountid(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_islive(ProtoOACtidTraderAccount* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_islive(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_traderlogin(ProtoOACtidTraderAccount* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_traderlogin(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOACtidTraderAccount::kCtidTraderAccountIdFieldNumber;
-const int ProtoOACtidTraderAccount::kIsLiveFieldNumber;
-const int ProtoOACtidTraderAccount::kTraderLoginFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOACtidTraderAccount::ProtoOACtidTraderAccount()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOACtidTraderAccount::ProtoOACtidTraderAccount(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOACtidTraderAccount)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOACtidTraderAccount)
 }
 ProtoOACtidTraderAccount::ProtoOACtidTraderAccount(const ProtoOACtidTraderAccount& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&ctidtraderaccountid_, &from.ctidtraderaccountid_,
     static_cast<size_t>(reinterpret_cast<char*>(&islive_) -
     reinterpret_cast<char*>(&ctidtraderaccountid_)) + sizeof(islive_));
@@ -15323,19 +11319,28 @@ ProtoOACtidTraderAccount::ProtoOACtidTraderAccount(const ProtoOACtidTraderAccoun
 }
 
 void ProtoOACtidTraderAccount::SharedCtor() {
-  ::memset(&ctidtraderaccountid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&islive_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&ctidtraderaccountid_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&islive_) -
       reinterpret_cast<char*>(&ctidtraderaccountid_)) + sizeof(islive_));
 }
 
 ProtoOACtidTraderAccount::~ProtoOACtidTraderAccount() {
   // @@protoc_insertion_point(destructor:ProtoOACtidTraderAccount)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOACtidTraderAccount::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ProtoOACtidTraderAccount::ArenaDtor(void* object) {
+  ProtoOACtidTraderAccount* _this = reinterpret_cast< ProtoOACtidTraderAccount* >(object);
+  (void)_this;
+}
+void ProtoOACtidTraderAccount::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOACtidTraderAccount::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -15358,153 +11363,66 @@ void ProtoOACtidTraderAccount::Clear() {
         reinterpret_cast<char*>(&ctidtraderaccountid_)) + sizeof(islive_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOACtidTraderAccount::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required uint64 ctidTraderAccountId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_ctidtraderaccountid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_ctidtraderaccountid(&has_bits);
+          ctidtraderaccountid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional bool isLive = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 16) goto handle_unusual;
-        set_islive(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_islive(&has_bits);
+          islive_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int64 traderLogin = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_traderlogin(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_traderlogin(&has_bits);
+          traderlogin_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOACtidTraderAccount::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOACtidTraderAccount)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required uint64 ctidTraderAccountId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_ctidtraderaccountid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &ctidtraderaccountid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bool isLive = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_islive(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &islive_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 traderLogin = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_traderlogin(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &traderlogin_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOACtidTraderAccount)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOACtidTraderAccount)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOACtidTraderAccount::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOACtidTraderAccount)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required uint64 ctidTraderAccountId = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(1, this->ctidtraderaccountid(), output);
-  }
-
-  // optional bool isLive = 2;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(2, this->islive(), output);
-  }
-
-  // optional int64 traderLogin = 3;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->traderlogin(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOACtidTraderAccount)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOACtidTraderAccount::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOACtidTraderAccount::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOACtidTraderAccount)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -15512,22 +11430,25 @@ void ProtoOACtidTraderAccount::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required uint64 ctidTraderAccountId = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->ctidtraderaccountid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_ctidtraderaccountid(), target);
   }
 
   // optional bool isLive = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->islive(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_islive(), target);
   }
 
   // optional int64 traderLogin = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->traderlogin(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_traderlogin(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOACtidTraderAccount)
   return target;
@@ -15537,16 +11458,11 @@ size_t ProtoOACtidTraderAccount::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOACtidTraderAccount)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   // required uint64 ctidTraderAccountId = 1;
-  if (has_ctidtraderaccountid()) {
+  if (_internal_has_ctidtraderaccountid()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->ctidtraderaccountid());
+        this->_internal_ctidtraderaccountid());
   }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -15558,7 +11474,7 @@ size_t ProtoOACtidTraderAccount::ByteSizeLong() const {
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->traderlogin());
+          this->_internal_traderlogin());
     }
 
     // optional bool isLive = 2;
@@ -15566,6 +11482,10 @@ size_t ProtoOACtidTraderAccount::ByteSizeLong() const {
       total_size += 1 + 1;
     }
 
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -15590,7 +11510,7 @@ void ProtoOACtidTraderAccount::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message&
 void ProtoOACtidTraderAccount::MergeFrom(const ProtoOACtidTraderAccount& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOACtidTraderAccount)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -15624,69 +11544,61 @@ void ProtoOACtidTraderAccount::CopyFrom(const ProtoOACtidTraderAccount& from) {
 }
 
 bool ProtoOACtidTraderAccount::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOACtidTraderAccount::Swap(ProtoOACtidTraderAccount* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOACtidTraderAccount::InternalSwap(ProtoOACtidTraderAccount* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(ctidtraderaccountid_, other->ctidtraderaccountid_);
-  swap(traderlogin_, other->traderlogin_);
-  swap(islive_, other->islive_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOACtidTraderAccount, islive_)
+      + sizeof(ProtoOACtidTraderAccount::islive_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOACtidTraderAccount, ctidtraderaccountid_)>(
+          reinterpret_cast<char*>(&ctidtraderaccountid_),
+          reinterpret_cast<char*>(&other->ctidtraderaccountid_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOACtidTraderAccount::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOAAssetClass::InitAsDefaultInstance() {
-}
-class ProtoOAAssetClass::HasBitSetters {
+class ProtoOAAssetClass::_Internal {
  public:
-  static void set_has_id(ProtoOAAssetClass* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  using HasBits = decltype(std::declval<ProtoOAAssetClass>()._has_bits_);
+  static void set_has_id(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_name(ProtoOAAssetClass* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_name(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOAAssetClass::kIdFieldNumber;
-const int ProtoOAAssetClass::kNameFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOAAssetClass::ProtoOAAssetClass()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOAAssetClass::ProtoOAAssetClass(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOAAssetClass)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOAAssetClass)
 }
 ProtoOAAssetClass::ProtoOAAssetClass(const ProtoOAAssetClass& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_name()) {
-    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
+  if (from._internal_has_name()) {
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
+      GetArena());
   }
   id_ = from.id_;
   // @@protoc_insertion_point(copy_constructor:ProtoOAAssetClass)
 }
 
 void ProtoOAAssetClass::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOAAssetClass_OpenApiModelMessages_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAAssetClass_OpenApiModelMessages_2eproto.base);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   id_ = PROTOBUF_LONGLONG(0);
 }
@@ -15694,12 +11606,20 @@ void ProtoOAAssetClass::SharedCtor() {
 ProtoOAAssetClass::~ProtoOAAssetClass() {
   // @@protoc_insertion_point(destructor:ProtoOAAssetClass)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOAAssetClass::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void ProtoOAAssetClass::ArenaDtor(void* object) {
+  ProtoOAAssetClass* _this = reinterpret_cast< ProtoOAAssetClass* >(object);
+  (void)_this;
+}
+void ProtoOAAssetClass::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOAAssetClass::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -15717,139 +11637,65 @@ void ProtoOAAssetClass::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    name_.ClearNonDefaultToEmptyNoArena();
+    name_.ClearNonDefaultToEmpty();
   }
   id_ = PROTOBUF_LONGLONG(0);
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOAAssetClass::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // optional int64 id = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_id(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_id(&has_bits);
+          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional string name = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_name(), ptr, ctx, "ProtoOAAssetClass.name");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOAAssetClass.name");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOAAssetClass::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOAAssetClass)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional int64 id = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_id(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string name = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_name()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->name().data(), static_cast<int>(this->name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOAAssetClass.name");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOAAssetClass)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOAAssetClass)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOAAssetClass::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOAAssetClass)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // optional int64 id = 1;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->id(), output);
-  }
-
-  // optional string name = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->name().data(), static_cast<int>(this->name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOAAssetClass.name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->name(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOAAssetClass)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAAssetClass::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAAssetClass::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOAAssetClass)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -15857,23 +11703,23 @@ void ProtoOAAssetClass::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // optional int64 id = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_id(), target);
   }
 
   // optional string name = 2;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->name().data(), static_cast<int>(this->name().length()),
+      this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOAAssetClass.name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->name(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_name(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOAAssetClass)
   return target;
@@ -15883,11 +11729,6 @@ size_t ProtoOAAssetClass::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOAAssetClass)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -15898,16 +11739,20 @@ size_t ProtoOAAssetClass::ByteSizeLong() const {
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-          this->name());
+          this->_internal_name());
     }
 
     // optional int64 id = 1;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->id());
+          this->_internal_id());
     }
 
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -15932,15 +11777,14 @@ void ProtoOAAssetClass::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) 
 void ProtoOAAssetClass::MergeFrom(const ProtoOAAssetClass& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOAAssetClass)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
+      _internal_set_name(from._internal_name());
     }
     if (cached_has_bits & 0x00000002u) {
       id_ = from.id_;
@@ -15967,62 +11811,51 @@ bool ProtoOAAssetClass::IsInitialized() const {
   return true;
 }
 
-void ProtoOAAssetClass::Swap(ProtoOAAssetClass* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOAAssetClass::InternalSwap(ProtoOAAssetClass* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   swap(id_, other->id_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOAAssetClass::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOADepthQuote::InitAsDefaultInstance() {
-}
-class ProtoOADepthQuote::HasBitSetters {
+class ProtoOADepthQuote::_Internal {
  public:
-  static void set_has_id(ProtoOADepthQuote* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  using HasBits = decltype(std::declval<ProtoOADepthQuote>()._has_bits_);
+  static void set_has_id(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_size(ProtoOADepthQuote* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_size(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_bid(ProtoOADepthQuote* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_bid(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_ask(ProtoOADepthQuote* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  static void set_has_ask(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOADepthQuote::kIdFieldNumber;
-const int ProtoOADepthQuote::kSizeFieldNumber;
-const int ProtoOADepthQuote::kBidFieldNumber;
-const int ProtoOADepthQuote::kAskFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOADepthQuote::ProtoOADepthQuote()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOADepthQuote::ProtoOADepthQuote(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOADepthQuote)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOADepthQuote)
 }
 ProtoOADepthQuote::ProtoOADepthQuote(const ProtoOADepthQuote& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&id_, &from.id_,
     static_cast<size_t>(reinterpret_cast<char*>(&ask_) -
     reinterpret_cast<char*>(&id_)) + sizeof(ask_));
@@ -16030,19 +11863,28 @@ ProtoOADepthQuote::ProtoOADepthQuote(const ProtoOADepthQuote& from)
 }
 
 void ProtoOADepthQuote::SharedCtor() {
-  ::memset(&id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&ask_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&id_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&ask_) -
       reinterpret_cast<char*>(&id_)) + sizeof(ask_));
 }
 
 ProtoOADepthQuote::~ProtoOADepthQuote() {
   // @@protoc_insertion_point(destructor:ProtoOADepthQuote)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOADepthQuote::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ProtoOADepthQuote::ArenaDtor(void* object) {
+  ProtoOADepthQuote* _this = reinterpret_cast< ProtoOADepthQuote* >(object);
+  (void)_this;
+}
+void ProtoOADepthQuote::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOADepthQuote::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -16065,178 +11907,74 @@ void ProtoOADepthQuote::Clear() {
         reinterpret_cast<char*>(&id_)) + sizeof(ask_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOADepthQuote::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required uint64 id = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_id(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_id(&has_bits);
+          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint64 size = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_size(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_size(&has_bits);
+          size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint64 bid = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 32) goto handle_unusual;
-        set_bid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_bid(&has_bits);
+          bid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional uint64 ask = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 40) goto handle_unusual;
-        set_ask(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_ask(&has_bits);
+          ask_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOADepthQuote::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOADepthQuote)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required uint64 id = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_id(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required uint64 size = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_size(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &size_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint64 bid = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          HasBitSetters::set_has_bid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &bid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional uint64 ask = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-          HasBitSetters::set_has_ask(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &ask_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOADepthQuote)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOADepthQuote)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOADepthQuote::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOADepthQuote)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required uint64 id = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(1, this->id(), output);
-  }
-
-  // required uint64 size = 3;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(3, this->size(), output);
-  }
-
-  // optional uint64 bid = 4;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(4, this->bid(), output);
-  }
-
-  // optional uint64 ask = 5;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(5, this->ask(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOADepthQuote)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOADepthQuote::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOADepthQuote::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOADepthQuote)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -16244,27 +11982,31 @@ void ProtoOADepthQuote::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required uint64 id = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_id(), target);
   }
 
   // required uint64 size = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(3, this->size(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(3, this->_internal_size(), target);
   }
 
   // optional uint64 bid = 4;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->bid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->_internal_bid(), target);
   }
 
   // optional uint64 ask = 5;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->ask(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->_internal_ask(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOADepthQuote)
   return target;
@@ -16274,18 +12016,18 @@ size_t ProtoOADepthQuote::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOADepthQuote)
   size_t total_size = 0;
 
-  if (has_id()) {
+  if (_internal_has_id()) {
     // required uint64 id = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->id());
+        this->_internal_id());
   }
 
-  if (has_size()) {
+  if (_internal_has_size()) {
     // required uint64 size = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->size());
+        this->_internal_size());
   }
 
   return total_size;
@@ -16294,21 +12036,16 @@ size_t ProtoOADepthQuote::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOADepthQuote)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required uint64 id = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->id());
+        this->_internal_id());
 
     // required uint64 size = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->size());
+        this->_internal_size());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -16323,16 +12060,20 @@ size_t ProtoOADepthQuote::ByteSizeLong() const {
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-          this->bid());
+          this->_internal_bid());
     }
 
     // optional uint64 ask = 5;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-          this->ask());
+          this->_internal_ask());
     }
 
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -16357,7 +12098,7 @@ void ProtoOADepthQuote::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) 
 void ProtoOADepthQuote::MergeFrom(const ProtoOADepthQuote& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOADepthQuote)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -16394,63 +12135,56 @@ void ProtoOADepthQuote::CopyFrom(const ProtoOADepthQuote& from) {
 }
 
 bool ProtoOADepthQuote::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOADepthQuote::Swap(ProtoOADepthQuote* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOADepthQuote::InternalSwap(ProtoOADepthQuote* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(id_, other->id_);
-  swap(size_, other->size_);
-  swap(bid_, other->bid_);
-  swap(ask_, other->ask_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOADepthQuote, ask_)
+      + sizeof(ProtoOADepthQuote::ask_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOADepthQuote, id_)>(
+          reinterpret_cast<char*>(&id_),
+          reinterpret_cast<char*>(&other->id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOADepthQuote::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOAMarginCall::InitAsDefaultInstance() {
-}
-class ProtoOAMarginCall::HasBitSetters {
+class ProtoOAMarginCall::_Internal {
  public:
-  static void set_has_margincalltype(ProtoOAMarginCall* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  using HasBits = decltype(std::declval<ProtoOAMarginCall>()._has_bits_);
+  static void set_has_margincalltype(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_marginlevelthreshold(ProtoOAMarginCall* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_marginlevelthreshold(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_utclastupdatetimestamp(ProtoOAMarginCall* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_utclastupdatetimestamp(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000005) ^ 0x00000005) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOAMarginCall::kMarginCallTypeFieldNumber;
-const int ProtoOAMarginCall::kMarginLevelThresholdFieldNumber;
-const int ProtoOAMarginCall::kUtcLastUpdateTimestampFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOAMarginCall::ProtoOAMarginCall()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOAMarginCall::ProtoOAMarginCall(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOAMarginCall)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOAMarginCall)
 }
 ProtoOAMarginCall::ProtoOAMarginCall(const ProtoOAMarginCall& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&marginlevelthreshold_, &from.marginlevelthreshold_,
     static_cast<size_t>(reinterpret_cast<char*>(&margincalltype_) -
     reinterpret_cast<char*>(&marginlevelthreshold_)) + sizeof(margincalltype_));
@@ -16458,8 +12192,9 @@ ProtoOAMarginCall::ProtoOAMarginCall(const ProtoOAMarginCall& from)
 }
 
 void ProtoOAMarginCall::SharedCtor() {
-  ::memset(&marginlevelthreshold_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&utclastupdatetimestamp_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&marginlevelthreshold_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&utclastupdatetimestamp_) -
       reinterpret_cast<char*>(&marginlevelthreshold_)) + sizeof(utclastupdatetimestamp_));
   margincalltype_ = 61;
 }
@@ -16467,11 +12202,19 @@ void ProtoOAMarginCall::SharedCtor() {
 ProtoOAMarginCall::~ProtoOAMarginCall() {
   // @@protoc_insertion_point(destructor:ProtoOAMarginCall)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOAMarginCall::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void ProtoOAMarginCall::ArenaDtor(void* object) {
+  ProtoOAMarginCall* _this = reinterpret_cast< ProtoOAMarginCall* >(object);
+  (void)_this;
+}
+void ProtoOAMarginCall::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOAMarginCall::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -16495,165 +12238,70 @@ void ProtoOAMarginCall::Clear() {
     margincalltype_ = 61;
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOAMarginCall::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required .ProtoOANotificationType marginCallType = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        if (!::ProtoOANotificationType_IsValid(val)) {
-          ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(1, val, mutable_unknown_fields());
-          break;
-        }
-        set_margincalltype(static_cast<::ProtoOANotificationType>(val));
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+          if (PROTOBUF_PREDICT_TRUE(::ProtoOANotificationType_IsValid(val))) {
+            _internal_set_margincalltype(static_cast<::ProtoOANotificationType>(val));
+          } else {
+            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(1, val, mutable_unknown_fields());
+          }
+        } else goto handle_unusual;
+        continue;
       // required double marginLevelThreshold = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 17) goto handle_unusual;
-        set_marginlevelthreshold(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-        ptr += sizeof(double);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          _Internal::set_has_marginlevelthreshold(&has_bits);
+          marginlevelthreshold_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // optional int64 utcLastUpdateTimestamp = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 24) goto handle_unusual;
-        set_utclastupdatetimestamp(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_utclastupdatetimestamp(&has_bits);
+          utclastupdatetimestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOAMarginCall::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOAMarginCall)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .ProtoOANotificationType marginCallType = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::ProtoOANotificationType_IsValid(value)) {
-            set_margincalltype(static_cast< ::ProtoOANotificationType >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                1, static_cast<::PROTOBUF_NAMESPACE_ID::uint64>(value));
-          }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required double marginLevelThreshold = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (17 & 0xFF)) {
-          HasBitSetters::set_has_marginlevelthreshold(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &marginlevelthreshold_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int64 utcLastUpdateTimestamp = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          HasBitSetters::set_has_utclastupdatetimestamp(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &utclastupdatetimestamp_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOAMarginCall)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOAMarginCall)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOAMarginCall::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOAMarginCall)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required .ProtoOANotificationType marginCallType = 1;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      1, this->margincalltype(), output);
-  }
-
-  // required double marginLevelThreshold = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(2, this->marginlevelthreshold(), output);
-  }
-
-  // optional int64 utcLastUpdateTimestamp = 3;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->utclastupdatetimestamp(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOAMarginCall)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAMarginCall::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAMarginCall::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOAMarginCall)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -16661,23 +12309,26 @@ void ProtoOAMarginCall::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required .ProtoOANotificationType marginCallType = 1;
   if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      1, this->margincalltype(), target);
+      1, this->_internal_margincalltype(), target);
   }
 
   // required double marginLevelThreshold = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->marginlevelthreshold(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_marginlevelthreshold(), target);
   }
 
   // optional int64 utcLastUpdateTimestamp = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->utclastupdatetimestamp(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_utclastupdatetimestamp(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOAMarginCall)
   return target;
@@ -16687,15 +12338,15 @@ size_t ProtoOAMarginCall::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOAMarginCall)
   size_t total_size = 0;
 
-  if (has_marginlevelthreshold()) {
+  if (_internal_has_marginlevelthreshold()) {
     // required double marginLevelThreshold = 2;
     total_size += 1 + 8;
   }
 
-  if (has_margincalltype()) {
+  if (_internal_has_margincalltype()) {
     // required .ProtoOANotificationType marginCallType = 1;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->margincalltype());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_margincalltype());
   }
 
   return total_size;
@@ -16704,18 +12355,13 @@ size_t ProtoOAMarginCall::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOAMarginCall)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000005) ^ 0x00000005) == 0) {  // All required fields are present.
     // required double marginLevelThreshold = 2;
     total_size += 1 + 8;
 
     // required .ProtoOANotificationType marginCallType = 1;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->margincalltype());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_margincalltype());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -16729,9 +12375,13 @@ size_t ProtoOAMarginCall::ByteSizeLong() const {
   if (cached_has_bits & 0x00000002u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->utclastupdatetimestamp());
+        this->_internal_utclastupdatetimestamp());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -16755,7 +12405,7 @@ void ProtoOAMarginCall::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) 
 void ProtoOAMarginCall::MergeFrom(const ProtoOAMarginCall& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOAMarginCall)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -16789,93 +12439,86 @@ void ProtoOAMarginCall::CopyFrom(const ProtoOAMarginCall& from) {
 }
 
 bool ProtoOAMarginCall::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000005) != 0x00000005) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOAMarginCall::Swap(ProtoOAMarginCall* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOAMarginCall::InternalSwap(ProtoOAMarginCall* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(marginlevelthreshold_, other->marginlevelthreshold_);
-  swap(utclastupdatetimestamp_, other->utclastupdatetimestamp_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOAMarginCall, utclastupdatetimestamp_)
+      + sizeof(ProtoOAMarginCall::utclastupdatetimestamp_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOAMarginCall, marginlevelthreshold_)>(
+          reinterpret_cast<char*>(&marginlevelthreshold_),
+          reinterpret_cast<char*>(&other->marginlevelthreshold_));
   swap(margincalltype_, other->margincalltype_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOAMarginCall::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void ProtoOAHoliday::InitAsDefaultInstance() {
-}
-class ProtoOAHoliday::HasBitSetters {
+class ProtoOAHoliday::_Internal {
  public:
-  static void set_has_holidayid(ProtoOAHoliday* msg) {
-    msg->_has_bits_[0] |= 0x00000008u;
+  using HasBits = decltype(std::declval<ProtoOAHoliday>()._has_bits_);
+  static void set_has_holidayid(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  static void set_has_name(ProtoOAHoliday* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+  static void set_has_name(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  static void set_has_description(ProtoOAHoliday* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+  static void set_has_description(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  static void set_has_scheduletimezone(ProtoOAHoliday* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+  static void set_has_scheduletimezone(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  static void set_has_holidaydate(ProtoOAHoliday* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
+  static void set_has_holidaydate(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  static void set_has_isrecurring(ProtoOAHoliday* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
+  static void set_has_isrecurring(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  static void set_has_startsecond(ProtoOAHoliday* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+  static void set_has_startsecond(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
   }
-  static void set_has_endsecond(ProtoOAHoliday* msg) {
-    msg->_has_bits_[0] |= 0x00000080u;
+  static void set_has_endsecond(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x0000003d) ^ 0x0000003d) != 0;
   }
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ProtoOAHoliday::kHolidayIdFieldNumber;
-const int ProtoOAHoliday::kNameFieldNumber;
-const int ProtoOAHoliday::kDescriptionFieldNumber;
-const int ProtoOAHoliday::kScheduleTimeZoneFieldNumber;
-const int ProtoOAHoliday::kHolidayDateFieldNumber;
-const int ProtoOAHoliday::kIsRecurringFieldNumber;
-const int ProtoOAHoliday::kStartSecondFieldNumber;
-const int ProtoOAHoliday::kEndSecondFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ProtoOAHoliday::ProtoOAHoliday()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ProtoOAHoliday::ProtoOAHoliday(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:ProtoOAHoliday)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ProtoOAHoliday)
 }
 ProtoOAHoliday::ProtoOAHoliday(const ProtoOAHoliday& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_name()) {
-    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
+  if (from._internal_has_name()) {
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
+      GetArena());
   }
   description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_description()) {
-    description_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.description_);
+  if (from._internal_has_description()) {
+    description_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_description(), 
+      GetArena());
   }
   scheduletimezone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.has_scheduletimezone()) {
-    scheduletimezone_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.scheduletimezone_);
+  if (from._internal_has_scheduletimezone()) {
+    scheduletimezone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_scheduletimezone(), 
+      GetArena());
   }
   ::memcpy(&holidayid_, &from.holidayid_,
     static_cast<size_t>(reinterpret_cast<char*>(&endsecond_) -
@@ -16884,27 +12527,35 @@ ProtoOAHoliday::ProtoOAHoliday(const ProtoOAHoliday& from)
 }
 
 void ProtoOAHoliday::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(
-      &scc_info_ProtoOAHoliday_OpenApiModelMessages_2eproto.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProtoOAHoliday_OpenApiModelMessages_2eproto.base);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   scheduletimezone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&holidayid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&endsecond_) -
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&holidayid_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&endsecond_) -
       reinterpret_cast<char*>(&holidayid_)) + sizeof(endsecond_));
 }
 
 ProtoOAHoliday::~ProtoOAHoliday() {
   // @@protoc_insertion_point(destructor:ProtoOAHoliday)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProtoOAHoliday::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   description_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   scheduletimezone_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void ProtoOAHoliday::ArenaDtor(void* object) {
+  ProtoOAHoliday* _this = reinterpret_cast< ProtoOAHoliday* >(object);
+  (void)_this;
+}
+void ProtoOAHoliday::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ProtoOAHoliday::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -16923,13 +12574,13 @@ void ProtoOAHoliday::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      name_.ClearNonDefaultToEmptyNoArena();
+      name_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      description_.ClearNonDefaultToEmptyNoArena();
+      description_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000004u) {
-      scheduletimezone_.ClearNonDefaultToEmptyNoArena();
+      scheduletimezone_.ClearNonDefaultToEmpty();
     }
   }
   if (cached_has_bits & 0x000000f8u) {
@@ -16938,299 +12589,115 @@ void ProtoOAHoliday::Clear() {
         reinterpret_cast<char*>(&holidayid_)) + sizeof(endsecond_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ProtoOAHoliday::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    CHK_(ptr);
     switch (tag >> 3) {
       // required int64 holidayId = 1;
-      case 1: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 8) goto handle_unusual;
-        set_holidayid(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_holidayid(&has_bits);
+          holidayid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required string name = 2;
-      case 2: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_name(), ptr, ctx, "ProtoOAHoliday.name");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOAHoliday.name");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional string description = 3;
-      case 3: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 26) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_description(), ptr, ctx, "ProtoOAHoliday.description");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          auto str = _internal_mutable_description();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOAHoliday.description");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required string scheduleTimeZone = 4;
-      case 4: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 34) goto handle_unusual;
-        ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(mutable_scheduletimezone(), ptr, ctx, "ProtoOAHoliday.scheduleTimeZone");
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          auto str = _internal_mutable_scheduletimezone();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProtoOAHoliday.scheduleTimeZone");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required int64 holidayDate = 5;
-      case 5: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 40) goto handle_unusual;
-        set_holidaydate(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_holidaydate(&has_bits);
+          holidaydate_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required bool isRecurring = 6;
-      case 6: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 48) goto handle_unusual;
-        set_isrecurring(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          _Internal::set_has_isrecurring(&has_bits);
+          isrecurring_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int32 startSecond = 7;
-      case 7: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 56) goto handle_unusual;
-        set_startsecond(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          _Internal::set_has_startsecond(&has_bits);
+          startsecond_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // optional int32 endSecond = 8;
-      case 8: {
-        if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) != 64) goto handle_unusual;
-        set_endsecond(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          _Internal::set_has_endsecond(&has_bits);
+          endsecond_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
-          return ptr;
+          goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
     }  // switch
   }  // while
-  return ptr;
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ProtoOAHoliday::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:ProtoOAHoliday)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required int64 holidayId = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_holidayid(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &holidayid_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required string name = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_name()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->name().data(), static_cast<int>(this->name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOAHoliday.name");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string description = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_description()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->description().data(), static_cast<int>(this->description().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOAHoliday.description");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required string scheduleTimeZone = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_scheduletimezone()));
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->scheduletimezone().data(), static_cast<int>(this->scheduletimezone().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::PARSE,
-            "ProtoOAHoliday.scheduleTimeZone");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required int64 holidayDate = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-          HasBitSetters::set_has_holidaydate(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &holidaydate_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // required bool isRecurring = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-          HasBitSetters::set_has_isrecurring(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &isrecurring_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int32 startSecond = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
-          HasBitSetters::set_has_startsecond(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &startsecond_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional int32 endSecond = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
-          HasBitSetters::set_has_endsecond(this);
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &endsecond_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
 success:
-  // @@protoc_insertion_point(parse_success:ProtoOAHoliday)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:ProtoOAHoliday)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ProtoOAHoliday::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:ProtoOAHoliday)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required int64 holidayId = 1;
-  if (cached_has_bits & 0x00000008u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->holidayid(), output);
-  }
-
-  // required string name = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->name().data(), static_cast<int>(this->name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOAHoliday.name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->name(), output);
-  }
-
-  // optional string description = 3;
-  if (cached_has_bits & 0x00000002u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->description().data(), static_cast<int>(this->description().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOAHoliday.description");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->description(), output);
-  }
-
-  // required string scheduleTimeZone = 4;
-  if (cached_has_bits & 0x00000004u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->scheduletimezone().data(), static_cast<int>(this->scheduletimezone().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
-      "ProtoOAHoliday.scheduleTimeZone");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      4, this->scheduletimezone(), output);
-  }
-
-  // required int64 holidayDate = 5;
-  if (cached_has_bits & 0x00000010u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->holidaydate(), output);
-  }
-
-  // required bool isRecurring = 6;
-  if (cached_has_bits & 0x00000020u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(6, this->isrecurring(), output);
-  }
-
-  // optional int32 startSecond = 7;
-  if (cached_has_bits & 0x00000040u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(7, this->startsecond(), output);
-  }
-
-  // optional int32 endSecond = 8;
-  if (cached_has_bits & 0x00000080u) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(8, this->endsecond(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:ProtoOAHoliday)
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAHoliday::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ProtoOAHoliday::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtoOAHoliday)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -17238,65 +12705,67 @@ void ProtoOAHoliday::SerializeWithCachedSizes(
   cached_has_bits = _has_bits_[0];
   // required int64 holidayId = 1;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->holidayid(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_holidayid(), target);
   }
 
   // required string name = 2;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->name().data(), static_cast<int>(this->name().length()),
+      this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOAHoliday.name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->name(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_name(), target);
   }
 
   // optional string description = 3;
   if (cached_has_bits & 0x00000002u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->description().data(), static_cast<int>(this->description().length()),
+      this->_internal_description().data(), static_cast<int>(this->_internal_description().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOAHoliday.description");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        3, this->description(), target);
+    target = stream->WriteStringMaybeAliased(
+        3, this->_internal_description(), target);
   }
 
   // required string scheduleTimeZone = 4;
   if (cached_has_bits & 0x00000004u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->scheduletimezone().data(), static_cast<int>(this->scheduletimezone().length()),
+      this->_internal_scheduletimezone().data(), static_cast<int>(this->_internal_scheduletimezone().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "ProtoOAHoliday.scheduleTimeZone");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        4, this->scheduletimezone(), target);
+    target = stream->WriteStringMaybeAliased(
+        4, this->_internal_scheduletimezone(), target);
   }
 
   // required int64 holidayDate = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->holidaydate(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_holidaydate(), target);
   }
 
   // required bool isRecurring = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->isrecurring(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_isrecurring(), target);
   }
 
   // optional int32 startSecond = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->startsecond(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_startsecond(), target);
   }
 
   // optional int32 endSecond = 8;
   if (cached_has_bits & 0x00000080u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->endsecond(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_endsecond(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtoOAHoliday)
   return target;
@@ -17306,35 +12775,35 @@ size_t ProtoOAHoliday::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProtoOAHoliday)
   size_t total_size = 0;
 
-  if (has_name()) {
+  if (_internal_has_name()) {
     // required string name = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->name());
+        this->_internal_name());
   }
 
-  if (has_scheduletimezone()) {
+  if (_internal_has_scheduletimezone()) {
     // required string scheduleTimeZone = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->scheduletimezone());
+        this->_internal_scheduletimezone());
   }
 
-  if (has_holidayid()) {
+  if (_internal_has_holidayid()) {
     // required int64 holidayId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->holidayid());
+        this->_internal_holidayid());
   }
 
-  if (has_holidaydate()) {
+  if (_internal_has_holidaydate()) {
     // required int64 holidayDate = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->holidaydate());
+        this->_internal_holidaydate());
   }
 
-  if (has_isrecurring()) {
+  if (_internal_has_isrecurring()) {
     // required bool isRecurring = 6;
     total_size += 1 + 1;
   }
@@ -17345,31 +12814,26 @@ size_t ProtoOAHoliday::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtoOAHoliday)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x0000003d) ^ 0x0000003d) == 0) {  // All required fields are present.
     // required string name = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->name());
+        this->_internal_name());
 
     // required string scheduleTimeZone = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->scheduletimezone());
+        this->_internal_scheduletimezone());
 
     // required int64 holidayId = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->holidayid());
+        this->_internal_holidayid());
 
     // required int64 holidayDate = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->holidaydate());
+        this->_internal_holidaydate());
 
     // required bool isRecurring = 6;
     total_size += 1 + 1;
@@ -17386,7 +12850,7 @@ size_t ProtoOAHoliday::ByteSizeLong() const {
   if (cached_has_bits & 0x00000002u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->description());
+        this->_internal_description());
   }
 
   if (cached_has_bits & 0x000000c0u) {
@@ -17394,16 +12858,20 @@ size_t ProtoOAHoliday::ByteSizeLong() const {
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->startsecond());
+          this->_internal_startsecond());
     }
 
     // optional int32 endSecond = 8;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->endsecond());
+          this->_internal_endsecond());
     }
 
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -17428,23 +12896,20 @@ void ProtoOAHoliday::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ProtoOAHoliday::MergeFrom(const ProtoOAHoliday& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProtoOAHoliday)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
+      _internal_set_name(from._internal_name());
     }
     if (cached_has_bits & 0x00000002u) {
-      _has_bits_[0] |= 0x00000002u;
-      description_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.description_);
+      _internal_set_description(from._internal_description());
     }
     if (cached_has_bits & 0x00000004u) {
-      _has_bits_[0] |= 0x00000004u;
-      scheduletimezone_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.scheduletimezone_);
+      _internal_set_scheduletimezone(from._internal_scheduletimezone());
     }
     if (cached_has_bits & 0x00000008u) {
       holidayid_ = from.holidayid_;
@@ -17480,107 +12945,100 @@ void ProtoOAHoliday::CopyFrom(const ProtoOAHoliday& from) {
 }
 
 bool ProtoOAHoliday::IsInitialized() const {
-  if ((_has_bits_[0] & 0x0000003d) != 0x0000003d) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void ProtoOAHoliday::Swap(ProtoOAHoliday* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ProtoOAHoliday::InternalSwap(ProtoOAHoliday* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  description_.Swap(&other->description_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  scheduletimezone_.Swap(&other->scheduletimezone_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(holidayid_, other->holidayid_);
-  swap(holidaydate_, other->holidaydate_);
-  swap(isrecurring_, other->isrecurring_);
-  swap(startsecond_, other->startsecond_);
-  swap(endsecond_, other->endsecond_);
+  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  description_.Swap(&other->description_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  scheduletimezone_.Swap(&other->scheduletimezone_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ProtoOAHoliday, endsecond_)
+      + sizeof(ProtoOAHoliday::endsecond_)
+      - PROTOBUF_FIELD_OFFSET(ProtoOAHoliday, holidayid_)>(
+          reinterpret_cast<char*>(&holidayid_),
+          reinterpret_cast<char*>(&other->holidayid_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProtoOAHoliday::GetMetadata() const {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::assign_descriptors_table_OpenApiModelMessages_2eproto);
-  return ::file_level_metadata_OpenApiModelMessages_2eproto[kIndexInFileMessages];
+  return GetMetadataStatic();
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::ProtoOAAsset* Arena::CreateMaybeMessage< ::ProtoOAAsset >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOAAsset >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOAAsset >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOASymbol* Arena::CreateMaybeMessage< ::ProtoOASymbol >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOASymbol >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOASymbol >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOALightSymbol* Arena::CreateMaybeMessage< ::ProtoOALightSymbol >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOALightSymbol >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOALightSymbol >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOAArchivedSymbol* Arena::CreateMaybeMessage< ::ProtoOAArchivedSymbol >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOAArchivedSymbol >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOAArchivedSymbol >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOASymbolCategory* Arena::CreateMaybeMessage< ::ProtoOASymbolCategory >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOASymbolCategory >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOASymbolCategory >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOAInterval* Arena::CreateMaybeMessage< ::ProtoOAInterval >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOAInterval >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOAInterval >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOATrader* Arena::CreateMaybeMessage< ::ProtoOATrader >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOATrader >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOATrader >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOAPosition* Arena::CreateMaybeMessage< ::ProtoOAPosition >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOAPosition >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOAPosition >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOATradeData* Arena::CreateMaybeMessage< ::ProtoOATradeData >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOATradeData >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOATradeData >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOAOrder* Arena::CreateMaybeMessage< ::ProtoOAOrder >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOAOrder >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOAOrder >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOABonusDepositWithdraw* Arena::CreateMaybeMessage< ::ProtoOABonusDepositWithdraw >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOABonusDepositWithdraw >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOABonusDepositWithdraw >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOADepositWithdraw* Arena::CreateMaybeMessage< ::ProtoOADepositWithdraw >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOADepositWithdraw >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOADepositWithdraw >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOADeal* Arena::CreateMaybeMessage< ::ProtoOADeal >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOADeal >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOADeal >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOAClosePositionDetail* Arena::CreateMaybeMessage< ::ProtoOAClosePositionDetail >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOAClosePositionDetail >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOAClosePositionDetail >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOATrendbar* Arena::CreateMaybeMessage< ::ProtoOATrendbar >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOATrendbar >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOATrendbar >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOAExpectedMargin* Arena::CreateMaybeMessage< ::ProtoOAExpectedMargin >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOAExpectedMargin >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOAExpectedMargin >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOATickData* Arena::CreateMaybeMessage< ::ProtoOATickData >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOATickData >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOATickData >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOACtidProfile* Arena::CreateMaybeMessage< ::ProtoOACtidProfile >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOACtidProfile >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOACtidProfile >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOACtidTraderAccount* Arena::CreateMaybeMessage< ::ProtoOACtidTraderAccount >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOACtidTraderAccount >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOACtidTraderAccount >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOAAssetClass* Arena::CreateMaybeMessage< ::ProtoOAAssetClass >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOAAssetClass >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOAAssetClass >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOADepthQuote* Arena::CreateMaybeMessage< ::ProtoOADepthQuote >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOADepthQuote >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOADepthQuote >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOAMarginCall* Arena::CreateMaybeMessage< ::ProtoOAMarginCall >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOAMarginCall >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOAMarginCall >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProtoOAHoliday* Arena::CreateMaybeMessage< ::ProtoOAHoliday >(Arena* arena) {
-  return Arena::CreateInternal< ::ProtoOAHoliday >(arena);
+  return Arena::CreateMessageInternal< ::ProtoOAHoliday >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

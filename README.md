@@ -22,6 +22,18 @@ OPT += -I /usr/local/include/google/protobuf
 Define protobuf libraries folder:
 LIBS += -L /usr/local/lib
 
+# Generating C++ files from protobuf
+
+protoc --cpp_out=./src/ --proto_path=./protobuf OpenApiMessages.proto
+
+protoc --cpp_out=./src/ --proto_path=./protobuf OpenApiModelMessages.proto
+
+protoc --cpp_out=./src/ --proto_path=./protobuf OpenApiCommonMessages.proto
+
+protoc --cpp_out=./src/ --proto_path=./protobuf OpenApiCommonModelMessages.prot
+
+mv src/*.h include/
+
 # Donations
 
 1. Bitcoin address: 3LVEhsDKBQwGE6WfCWGXvvK5m99CFsQR9v
