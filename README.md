@@ -23,7 +23,7 @@ Define protobuf libraries folder:
 LIBS += -L /usr/local/lib
 
 # Generating C++ files from protobuf
-Download the last files her: https://github.com/spotware/openapi-proto-messages
+Download the last files here: https://github.com/spotware/openapi-proto-messages
 
 protoc --cpp_out=./src/ --proto_path=./protobuf OpenApiMessages.proto
 
