@@ -37,9 +37,9 @@ mv src/*.h include/
 
 # Donations
 
-1. Bitcoin address: 3LVEhsDKBQwGE6WfCWGXvvK5m99CFsQR9v
+1. Bitcoin address: 1MSKScjAL5WAZTpYKGAkXBmqhqaNymTbhn
 
-2. Ethereum address: 0x80aac844f39b478c699d1c0c8bc2e6c9c9e02026
+2. Ethereum address: 0x776814358c6475bbf531ff9760298fdf90607ea1
 
 3. Tron address: TKLVUCkcfrqCyqRP3vR5UCNkMqCwWZwmmU
 
